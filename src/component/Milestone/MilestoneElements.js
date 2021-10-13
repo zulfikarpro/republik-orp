@@ -1,11 +1,14 @@
 import styled from "styled-components";
 
 export const MilestoneContainer = styled.div`
+    display: flex;
     padding-top: 100px;
+    margin-top: 100px;
     height: 840px;
     align-items: center;
     justify-content: center;
-    /* background: blue; */
+    
+    width: 100%;
     /* opacity: 0.2; */
 
     @media screen and (max-width: 768px) {
@@ -61,6 +64,6 @@ export const MilestoneImages = styled.img`
 
 
     @media screen and (max-width: 960px) {
-        min-width: 800px;
+        width: 100vw;
   }
 `

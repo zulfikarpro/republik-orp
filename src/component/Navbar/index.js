@@ -11,7 +11,7 @@ const mainLogo =  require('../../images/LOGO-01@2x.png');
 const Navbar = ({toggle}) => {
     const [scrollNav, setScrollNav] = useState(false);
     const changeNav = () => {
-        if (window.scrollY >= 200) {
+        if (window.scrollY >= 5300 && window.scrollY<=6380) {
           setScrollNav(true);
         } else {
           setScrollNav(false);
@@ -39,7 +39,8 @@ const Navbar = ({toggle}) => {
                     <MobileIcon onClick={toggle}>
                         <FaBars/>
                     </MobileIcon>
-                    <NavMenu>
+                    <NavMenu 
+                             scrollNav={scrollNav}>
                         <NavItem>
                             <NavLinks 
                             to='menu1'
@@ -48,15 +49,15 @@ const Navbar = ({toggle}) => {
                             spy={true}
                             exact='true'
                             offset={-80}
-                            >Menu1</NavLinks>
+                            >About Us</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to='milestone'
+                            <NavLinks to='visimisi'
                             smooth={true}
                             duration={500}
                             spy={true}
                             exact='true'
-                            offset={-80}>Menu2</NavLinks>
+                            offset={-80}>Target</NavLinks>
                         </NavItem>
                         <NavItem>
                             <NavLinks to='menu3'
@@ -64,15 +65,15 @@ const Navbar = ({toggle}) => {
                             duration={500}
                             spy={true}
                             exact='true'
-                            offset={-80}>Menu3</NavLinks>
+                            offset={-80}>How We Work</NavLinks>
                         </NavItem>
                         <NavItem>    
-                            <NavLinks to='menu4'
+                            <NavLinks to='ourclients'
                             smooth={true}
                             duration={500}
                             spy={true}
                             exact='true'
-                            offset={-80}>Menu4</NavLinks>
+                            offset={-80}>Our Clients</NavLinks>
                         </NavItem>
                         <NavItem>
                                 <NavLinks to='contactus'
@@ -80,7 +81,7 @@ const Navbar = ({toggle}) => {
                             duration={500}
                             spy={true}
                             exact='true'
-                            offset={-80}>Menu5</NavLinks>
+                            offset={-80}>Contact Us</NavLinks>
                         </NavItem>
 
                     </NavMenu>

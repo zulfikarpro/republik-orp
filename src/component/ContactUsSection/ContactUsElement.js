@@ -7,8 +7,8 @@ color: #fff;
 export const ContactUseWrapper = styled.div`
 display: grid;
   z-index: 1;
-  height: 860px;
-  width: 100%;
+  height: 100vh;
+  width: auto;
   max-width: 1100px;
   margin-right: auto;
   margin-left: auto;

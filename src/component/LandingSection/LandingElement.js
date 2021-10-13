@@ -5,8 +5,8 @@ export const LandingContainer = styled.div`
     justify-content: center;
     align-items: center;
     padding: 0 30px;
-    height: 1000px;
-    position: relative;
+    height: 100vh;
+    width: 100%;
     z-index: 1;
 
     :before {
@@ -29,7 +29,7 @@ export const LandingContainer = styled.div`
         //     rgba(0, 0, 0, 0.2) 0%,
         //     rgba(0, 0, 0, 0.6) 100%
         //   ),
-        background: linear-gradient(to right, #fff 20%, transparent);
+        /* background: linear-gradient(to right, #fff 20%, transparent); */
         opacity: 0.7;
         z-index: 2;
       }

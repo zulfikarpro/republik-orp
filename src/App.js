@@ -6,6 +6,7 @@ function App() {
   return (
     <Router>
       <Home/>
+      {/* <div style={{height:'1920', width:'100%',backgroundColor: '#fff' }}/> */}
     </Router>
   );
 }

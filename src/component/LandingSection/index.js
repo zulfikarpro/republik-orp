@@ -1,6 +1,5 @@
 import React from 'react'
 import { LandingContainer, LandingBg, VideoBg, LandingContent, Logo} from './LandingElement'
-import Video from '../../videos/video.mp4'
 import logo from '../../images/logo.svg'
 
 const LandingSection = () => {

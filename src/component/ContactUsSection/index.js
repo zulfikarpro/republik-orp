@@ -10,11 +10,12 @@ const index = () => {
             <ContactUseWrapper>
                 <ContactUsTextWrapper>
                     <TextLineOne>
-                    Answer the phone, I know that you're home
-I wanna get you alone. And do it again, do it again
+                    Our continuously growing extensive network enables us to deliver goods and customer
+satisfaction across Indonesia and around the world. With REX, you will have a delightful
+shipping experience. 
                     </TextLineOne>
                     <TextLineTwo>
-                    Phone call and answering machine
+                    For more info &amp; get in touch with us
                     </TextLineTwo>
                     <InputWrapper>
                     <Input />
