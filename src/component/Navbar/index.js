@@ -4,9 +4,7 @@ import { IconContext } from 'react-icons/lib';
 import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, Img} from './NavbarElement'
 import { animateScroll as scroll } from 'react-scroll';
 // import { Logo } from '../LandingSection/LandingElement';
-import logo from '../../images/logo.svg';
-
-const mainLogo =  require('../../images/LOGO-01@2x.png');
+import logo from '../../images/logo.png';
 
 const Navbar = ({toggle}) => {
     const [scrollNav, setScrollNav] = useState(false);
@@ -37,51 +35,63 @@ const Navbar = ({toggle}) => {
                         {/* <img src="C:\projects\republik-orp\public\images\LOGO-01.png"  alt=""></img> */}
                         </NavLogo>
                     <MobileIcon onClick={toggle}>
-                        <FaBars/>
+                        <FaBars style={{color:'black'}}/>
                     </MobileIcon>
                     <NavMenu 
                              scrollNav={scrollNav}>
                         <NavItem>
                             <NavLinks 
-                            to='menu1'
+                            onClick={()=>{console.log('test')}}
+                            to='home'
                             smooth={true}
                             duration={500}
                             spy={true}
                             exact='true'
                             offset={-80}
-                            >About Us</NavLinks>
+                            >Home</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to='visimisi'
+                            <NavLinks to='aboutus'
                             smooth={true}
                             duration={500}
                             spy={true}
                             exact='true'
-                            offset={-80}>Target</NavLinks>
+                            offset={-80}>About Us</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to='menu3'
+                            <NavLinks to='layanan'
                             smooth={true}
                             duration={500}
                             spy={true}
                             exact='true'
-                            offset={-80}>How We Work</NavLinks>
+                            offset={-80}>Layanan</NavLinks>
                         </NavItem>
                         <NavItem>    
-                            <NavLinks to='ourclients'
+                            <NavLinks to='kelas'
                             smooth={true}
                             duration={500}
                             spy={true}
                             exact='true'
-                            offset={-80}>Our Clients</NavLinks>
+                            offset={-80}>Events/Kelas Impor</NavLinks>
                         </NavItem>
+                        <NavItem>    
+                            <NavLinks to='testimoni'
+                            smooth={true}
+                            duration={500}
+                            spy={true}
+                            exact='true'
+                            offset={-80}>Testimoni</NavLinks>
+                        </NavItem>
+                        
+                        <div style={{marginLeft:'10vw'}}></div>
                         <NavItem>
                                 <NavLinks to='contactus'
                             smooth={true}
                             duration={500}
                             spy={true}
                             exact='true'
-                            offset={-80}>Contact Us</NavLinks>
+                            offset={-80}><h1 style={{color:'#C0022D'
+                            }}>Join Us</h1></NavLinks>
                         </NavItem>
 
                     </NavMenu>

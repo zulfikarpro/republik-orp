@@ -9,17 +9,24 @@ const Sidebar = ({isOpen, toggle}) => {
             </Icon>
             <SidebarWrapper>
                 <SidebarMenu>
-                    <SidebarLink to='menu1' onClick={toggle}>
-                        Menu1
+                    <SidebarLink to='home' onClick={toggle}>
+                        Home
                     </SidebarLink>
-                    <SidebarLink to='menu2' onClick={toggle}>
-                        Menu2
+                    <SidebarLink to='aboutus' onClick={toggle}>
+                        About Us
                     </SidebarLink>
-                    <SidebarLink to='menu3' onClick={toggle}>
-                        Menu3
+                    <SidebarLink to='layanan' onClick={toggle}>
+                        Layanan
                     </SidebarLink>
-                    <SidebarLink to='menu4' onClick={toggle}>
-                        Menu4
+                    <SidebarLink to='kelas' onClick={toggle}>
+                    Events/Kelas Impor
+                    </SidebarLink>
+                    <SidebarLink to='testimoni' onClick={toggle}>
+                    Testimoni
+                    </SidebarLink>
+                    <SidebarLink to='contactus' onClick={toggle}>
+                    <h1 style={{color:'#C0022D'
+                            }}>Join Us</h1>
                     </SidebarLink>
                 </SidebarMenu>
             </SidebarWrapper>
