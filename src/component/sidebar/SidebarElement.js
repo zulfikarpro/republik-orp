@@ -5,7 +5,7 @@ import {Link as LinkS} from 'react-scroll';
 export const SidebarContainer = styled.aside`
     position: fixed;
     z-index: 999;
-    width: 220px;
+    width: 40%;
     height: 100%;
     background: rgba(0,0,0,1);
     display: grid;
@@ -39,7 +39,7 @@ export const SidebarLink = styled(LinkS)`
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-decoration: none;
     list-style: none;
     transition: 0.2s ease-in-out;

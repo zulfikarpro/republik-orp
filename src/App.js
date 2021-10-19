@@ -4,9 +4,9 @@ import Home from './pages';
 
 function App() {
   return (
-    <Router>
+    <Router >
       <Home/>
-      {/* <div style={{height:'1920', width:'100%',backgroundColor: '#fff' }}/> */}
+      <div style={{height:'1920', width:'100%',backgroundColor: '#fff' }}/>
     </Router>
   );
 }

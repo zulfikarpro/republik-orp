@@ -2,18 +2,20 @@ import React from 'react'
 import { Container, ContentDiv } from '../Home/HomeElement'
 import bgKepuasan from '../../images/bg/bgkepuasan.png'
 import { Title } from '../AboutUs/AboutUsElement'
+import {TextBox, CarouselContainer, P} from './KepuasanElements'
 import Carousel from 'react-material-ui-carousel'
+
 const Kepuasan = () => {
     return (
         <>
-          <Container id='testimoni'>
-              <ContentDiv style={{color:'#fff',background:`url(${bgKepuasan})`,backgroundSize:'cover',backgroundRepeat: 'no-repeat', width:'100%'}}>
+          <Container id='testimoni' style={{marginTop:'0px'}}>
+              <ContentDiv style={{color:'#fff',background:`url(${bgKepuasan})`,backgroundPosition:'center', backgroundSize:'cover',backgroundRepeat: 'no-repeat', width:'100%'}}>
                 <Title style={{color:'#fff'}}>Kepuasan Pelanggan</Title>
-                <div style={{paddingLeft: '40px', paddingRight: '40px', marginBottom:'60px'}}>
+                <CarouselContainer>
 
                 <Carousel>
-                    <div style={{background:'white', borderRadius:'10px', maxWidth:'620px', margin:'auto'}}>
-                        <p style={{padding: '40px',color:'#000'}}>Dear Ninja Team, <br/>
+                    <TextBox style={{background:'white', borderRadius:'10px', maxWidth:'620px', margin:'auto'}}>
+                        <P style={{padding: '40px',color:'#000'}}>Dear Ninja Team, <br/>
 i feel that you guys are far beyond than just being my forwarder. Saya kenal Ninja kurang lebih 4 bulan  dan super duper tebantu denggan semua layanan Ninja.<br/><br/>
 
 Pengalaman yang super berkesan adalah bagaimana Ninja Team merubah kondisi yang semula minus nyari 22 juta. turun ke minus 16 juta, lalu berubah menjadi profit puluhan juta rupiah dalam produk toaster machine!<br/>
@@ -23,10 +25,10 @@ Dengan layanan Find for You, Ninja Team berkolaborasi dengan tim purchasing Chin
 
 Terima kasih Ninja Team, Semoga kalian sehat terus. Salam Sukses<br/><br/><br/>
 Miss C, Jakarta
-</p>
-                    </div>
-                    <div style={{background:'white', borderRadius:'10px', maxWidth:'620px', margin:'auto'}}>
-                        <p style={{padding: '40px',color:'#000'}}>Salam Hangat Ninja Team,<br/>
+</P>
+                    </TextBox>
+                    <TextBox style={{background:'white', borderRadius:'10px', maxWidth:'620px', margin:'auto'}}>
+                        <P style={{padding: '40px',color:'#000'}}>Salam Hangat Ninja Team,<br/>
 Saya sudah menjalankan kurang lebih 9 shipment dengan Ninja selama 4-5 bulan ini.<br/>
 Yang mengherankan adalah, rate delay nya ampun, pengen nangis, hampir tidak pernah terjadi !!!!<br/>
 Yang ada malah : percepatan barang tiba di Gudang Ninja Jakarta, saya pernah ngalamin barang lebih cepat 2 minggu dari ETA awal, WAW !<br/><br/>
@@ -36,11 +38,11 @@ Sebagai seorang ibu rumah tangga/ pelaku onlineshop kecil - kecilan, percepatan 
 Terima kasih Ninja Team.<br/>
 Sehat terus ya, biar bisa merajai Dunia Import Indonesia.<br/><br/><br/>
 Cici C, Jakarta
-</p>
-                    </div>
+</P>
+                    </TextBox>
                 </Carousel>
                 
-                </div>
+                </CarouselContainer>
               </ContentDiv>
               </Container>  
         </>

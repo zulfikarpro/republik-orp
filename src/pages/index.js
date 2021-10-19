@@ -9,6 +9,7 @@ import AboutUsPage from '../component/AboutUs'
 import Layanan from '../component/Layanan'
 import KelasImport from '../component/Kelas'
 import Kepuasan from '../component/KepuasanPelanggan'
+import logoWa from '../images/logowa.png'
 
 
 const Home = () => {
@@ -20,7 +21,12 @@ const toggle = () =>{
 
 
     return (
-        <>
+        <div style={{minWidth:'100%'}}>
+            <DivWa>
+                <a href={'https://wa.me/628119933501'}>
+                <Img src={logoWa}></Img>
+                </a>
+                </DivWa>
             <Sidebar isOpen={isOpen} toggle={toggle}/>
             <Navbar toggle={toggle}/>
             <HomePage/>
@@ -29,9 +35,10 @@ const toggle = () =>{
             <KelasImport/>
             <Kepuasan/>
             <ContactUsSection/>
-            <Footer/>
+            {/* <Footer/> */}
+            
             {/* <div style={{position:'flex',height:'200px', width:'auto'}}></div> */}
-        </>
+        </div>
     )
 }
 
@@ -44,6 +51,36 @@ export const VideoBg = styled.video`
     -o-object-fit: cover;
     object-fit: fill;
     opacity: 0.7;
+`
+
+export const DivWa = styled.div`
+    position:fixed;
+    margin-left: 10vw;
+    margin-bottom: 2%;
+    padding:10px;
+    border-radius: 60px;
+    background:#fffff0;
+    width: 60px;
+    height: auto;
+    bottom:0;
+    z-index: 5;
+
+    @media screen and (max-width:960px){
+        margin-left: 5px;
+        width: 40px;
+        height: 40px;
+    }
+`
+
+export const Img = styled.img`
+    width: 100%;
+    height: 100%;
+    position: center;
+    @media screen and(max-width:960px){
+        /* width: 100%;
+        height:100%; */
+        /* height:auto; */
+    }
 `
 
 const BackgroundMerahDiv = styled.div`

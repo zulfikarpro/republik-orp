@@ -4,7 +4,7 @@ import bg from '../../images/bg/bglayanan.png'
 import { Title } from '../AboutUs/AboutUsElement'
 import logoecommerce from '../../images/logoecommerce.png'
 import logodistributor from '../../images/logodistributor.png'
-import { Nav, NavItem, NavMenu, NavLinks } from './LayananElements'
+import { Nav, NavItem, NavMenu, NavLinks, GridView } from './LayananElements'
 import lclbyair from '../../images/expertise/lclbyair.png'
 import lclbysea from '../../images/expertise/lclbysea.png'
 import fclbysea from '../../images/expertise/fclbysea.png'
@@ -77,11 +77,11 @@ const Layanan = () => {
 
     return (
         <>
-          <Container>
-              <ContentDiv style={{backgroundImage:`url(${bg})` , backgroundRepeat:'no-repeat',backgroundSize:'cover', backgroundPosition:'center', paddingLeft: '0px',paddingRight:' 0px'}}>
+          <Container style={{marginTop:'0px'}}>
+              <ContentDiv style={{backgroundImage:`url(${bg})` , backgroundPosition:'center' ,backgroundSize:'cover', backgroundRepeat:'no-repeat' ,paddingBottom:'5vh', paddingTop:'5vh',width:'100vw', minHeight:'400px'}}>
                 <Title>Our Partners</Title>
-                <div style={{display:'flex', flexDirection:'row', justifyContent:'space-evenly', maxWidth:'960px',color:'#C0022D'}}>
-                    <div style={{alignContent:'center', }}>
+                <GridView >
+                    <div style={{alignContent:'center'}}>
                         <div style={{display:'flex', flexDirection:'row', justifyContent:'center' }}>
                         <h2>E-Commerce Partners</h2>
                         </div>
@@ -92,9 +92,9 @@ const Layanan = () => {
                     <div style={{display:'flex', flexDirection:'row', justifyContent:'center' }}>
                         <h2>RetailDistribution</h2>
                         </div>
-                        <img src={logodistributor} style={{width:'100%', maxWidth:'739px'}}/>
+                        <img src={logodistributor} style={{width:'100%', maxWidth:'739px', margin:'auto'}}/>
                     </div>
-                </div>
+                </GridView>
 
                 <div style={{display:'flex', flexDirection:'row', width:'100%', background:'#C0022D', color:'#fff', justifyContent:'center',}}>
                     <div style={{display:'flex', flexDirection:'column', margin:'10%'}}>

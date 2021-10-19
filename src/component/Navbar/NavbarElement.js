@@ -6,7 +6,7 @@ export const Nav = styled.nav`
 /* background: linear-gradient(to right, #fff, transparent); */
   height: 80px;
   margin-top: -80px;
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,6 +14,7 @@ export const Nav = styled.nav`
   position: sticky;
   top: 0;
   z-index: 10;
+  /* box-shadow: 5px 10px #888888; */
 
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;

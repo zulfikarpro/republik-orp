@@ -8,10 +8,20 @@ export const Title = styled.h1`
   padding-right: 10vw;
   font-style: bold;
 
+  @media screen and (max-width:960px){
+
+    font-size: 1.6rem;
+  }
+
 
 `
 
 export const Paragraph = styled.p`
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-align: center;
+  margin: 5%;
+
+  @media screen and(max-width:960px){
+    font-size: 2px;
+  }
 `

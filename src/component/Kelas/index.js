@@ -1,24 +1,27 @@
 import React from 'react'
 import { Container, ContentDiv } from '../Home/HomeElement'
 import backgroundImages from '../../images/bg/bgkelas.png'
-import { Title } from '../AboutUs/AboutUsElement'
+import { TestDiv, P, Title } from './KelasElements'
+import bgKepuasan from '../../images/bg/bgkepuasan.png'
 
 const KelasImport = () => {
     return (
         <>
-            <Container id='kelas'>
-             <ContentDiv style={{backgroundImages:`url(${backgroundImages})`}}> 
+            <Container id='kelas' style={{marginTop:'0px'}}>
+             {/* <ContentDiv style={{backgroundImage:`url(${backgroundImages})`, backgroundPosition:'center' ,backgroundSize:'contain', backgroundRepeat:'no-repeat', backgroundSize:'1080px',paddingBottom:'5vh', paddingTop:'5vh',width:'100%', height:'100%', minHeight:'200px'}}>  */}
+                 <ContentDiv style={{paddingLeft:'0px', paddingRight:'0px'}}>
+             <div style={{display:'flex' ,backgroundImages:`url(${backgroundImages})` ,minWidth:'100%',minHeight:'100%', display:'flex', flexDirection:'row', justifyContent:'center'}}>
+             <img src={backgroundImages} style={{ position:'center', width:'100%', height:'auto'}} alt='bg'>   
+             </img>
+             </div>
              <div style={{position:'absolute', display:'flex', flexDirection:'column', right:0, left:0, textAlign:'center', color:'#fff', justifyContent:'center'}}>
 
                 <Title style={{color:'white'}}>KELAS IMPOR</Title>
-                Ikuti kelas impor bagi anda yang ingin memulai impor
+                <P>Ikuti kelas impor bagi anda yang ingin memulai impor</P>
                 <div style={{display: 'flex',flexDirection:'row', alignItems:'center', justifyContent:'center'}}>
-                    <div style={{padding:'10px 20px',marginTop:'20px',borderRadius:'10px', background:'white', color:'#C0022D'}}>INFO SELENGKAPNYA</div>
+                    <TestDiv>INFO SELENGKAPNYA</TestDiv>
                 </div>
              </div>
-             <img src={backgroundImages} style={{background:'transparent', width:'100%', height:'auto'}} alt='bg'>
-                 
-             </img>
              
              </ContentDiv>
              </Container>   

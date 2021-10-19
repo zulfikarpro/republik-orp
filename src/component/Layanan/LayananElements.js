@@ -15,8 +15,6 @@ export const Nav = styled.div`
 `
 
 export const NavMenu = styled.div`
-
-    /* background: #C0022D; */
     border-radius: 20px;
   width: auto;
   display: flex;
@@ -24,16 +22,19 @@ export const NavMenu = styled.div`
   align-items: center;
   text-align: center;
 
-  /* @media screen and (max-width: 960px) {
-    display: none;
-  } */
+  @media screen and (max-width: 960px) {
+    /* display: none; */
+  }
 `;
 
 export const NavItem = styled.div`
 background: #C0022D;
 text-align: center;
-  height: 80px;
+  height: 60px;
   width: 100%;
+  @media screen and (max-width:960px){
+    height: 60px;
+  }
 `;
 
 
@@ -44,6 +45,23 @@ text-align: center;
   justify-content: center;
   flex-direction: row;
   align-items: center;
-  width: 8rem;
+  width: 9rem;
   height: 100%;
+    @media screen and (max-width:960px){
+      width: 5rem;
+      font-size: 0.8rem;
+    }
 `;
+
+export const GridView = styled.div`
+  display:flex ;
+  flex-direction:row ;
+  justify-content:space-evenly ;
+  max-width:960px ;
+  color:#C0022D;
+
+  @media screen and (max-width:960px){
+    flex-direction: column;
+  }
+
+`

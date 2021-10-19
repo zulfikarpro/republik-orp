@@ -5,8 +5,10 @@ export const Container = styled.div`
     display:flex;
     justify-content: center;
     align-items: center;
-    margin-top: 80px;
-    min-height: 600px;
+    margin-top: 10vh;
+    /* min-height: 600px; */
+    /* max-height: 1080px; */
+    max-width: 100%;
 `
 
 export const Image = styled.div`
