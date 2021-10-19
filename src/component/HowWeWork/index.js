@@ -16,15 +16,15 @@ const HowWeWork = () => {
         <Container id={'menu3'} >
             <BgImage src= {bgImage}/>
             <ContentWrapper>
-                <div style={{paddingTop:'50px',background:'black',width:'100%', display:'flex',flexDirection:'row-reverse'}}>
+                <div style={{paddingTop:'50px',width:'100%', display:'flex',flexDirection:'row-reverse'}}>
                     <HWWShadow>How We Work</HWWShadow>
                     <Title>Our Expertise</Title>
                 </div>
             <RowWrapper>
-                <LeftColumn>
+                <LeftColumn >
                     <ImageLeft src={warehouseimg}></ImageLeft>
                 </LeftColumn>
-                <RightColumn>
+                <RightColumn >
                     <ImageList src={img1}/>
                     <ImageList src={img2}/>
                     <ImageList src={img3}/>

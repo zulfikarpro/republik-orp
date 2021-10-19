@@ -32,7 +32,7 @@ const toggle = () =>{
 
 
     return (
-        <>
+        <div style={{minWidth:'100%'}}>
             <div style={{position:'absolute', top:'-50%', left:'-50%', width:'100vw', height:'200%'}}>
                 <video style={{position: 'fixed', height:'100vh', width: '100%',right:'0', top:0, bottom:0, left:0, margin:'auto', zIndex:-4, overflow:'hidden', opacity: 1, background:'black'}} autoPlay loop muted src={Video} type='video/mp4'/>
                 <div style={{position:'fixed',height:'100vh', width: 'auto', margin:'auto', top:0, bottom:0, right:0, left:0, background:'red', opacity:.2, zIndex:-1,overflowX:'hidden'}}/>
@@ -42,12 +42,16 @@ const toggle = () =>{
             <LandingSection/>
             
             <BackgroundMerahDiv>
-                {/* <div style={{position:'flex', width:'100%'}}> */}
-                {/* <CustomInfoSection {...homeObjOne}/> */}
-                <AboutUsPage {...homeObjOne}/>
+                <div style={{position:'flex', width:'100%', flexDirection:'column'}}>
+                <div style={{display:'flex', flexDirection:'row', justifyContent:'center', maxWidth:'100%'}}>
+                    {/* <CustomInfoSection {...homeObjOne}/> */}
+                    <AboutUsPage {...homeObjOne}/>
+                </div>
                 <Milestone {...homeObjOne} style={{width:'100%'}}/>
-                {/* </div> */}
-                <ImageBgMerah src={bgMerah}/>
+                </div>
+                <div style={{position:'absolute',display:'flex', flexDirection:'row', justifyContent:'center', maxWidth:'100%'}}>
+                    <ImageBgMerah src={bgMerah}/>
+                </div>
             </BackgroundMerahDiv>
             <Visimisi/>
             <HowWeWork/>
@@ -58,8 +62,8 @@ const toggle = () =>{
             <InfoSection {...homeObjFour} /> */}
             <ContactUsSection/>
             <Footer/>
-            <div style={{position:'flex',height:'200px', width:'auto'}}></div>
-        </>
+            {/* <div style={{position:'flex',height:'200px', width:'auto'}}></div> */}
+        </div>
     )
 }
 
@@ -80,16 +84,17 @@ const BackgroundMerahDiv = styled.div`
     z-index: 1;
     flex-direction: column;
     height: '200vh';
-    width: auto;
+    max-width: 100%;
     /* @media screen and (max-width: 768px) {
     width: 120;
   } */
 `
 const ImageBgMerah = styled.img`
-z-index: -1;
-    position:absolute;
+    display: flex;
+    z-index: -1;
     height:'200vh';
     width: auto;
+    max-width: 100%;
     /* width:100%; */
     /* height: 100vh; */
     object-fit: fill;

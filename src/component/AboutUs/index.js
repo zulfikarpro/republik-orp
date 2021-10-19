@@ -27,8 +27,8 @@ const AboutUsPage = ({
                 <AboutUsWrapper>
                   
             <DarkerBackground/>
-            <AboutUsRow imgStart={imgStart}>
-            <AboutUsColumn1>
+            <AboutUsRow imgStart={imgStart} style={{maxWidth:'100%'}}>
+            <AboutUsColumn1 >
               <AboutUsImage src={truckImage}/>
               {/* <AboutUsTextWrapper>
                 <TopLine lightText={lightText}>{topLine}</TopLine>

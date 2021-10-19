@@ -2,17 +2,20 @@ import styled from "styled-components";
 
 export const MilestoneContainer = styled.div`
     display: flex;
+    flex-direction: row;
     padding-top: 100px;
     margin-top: 100px;
     height: 840px;
     align-items: center;
     justify-content: center;
     
-    width: 100%;
+    /* width: 100%; */
+    max-width: 100%;
     /* opacity: 0.2; */
+    /* background:red; */
 
     @media screen and (max-width: 768px) {
-        padding: 100px 0;
+        /* padding: 100px 0; */
         margin-top: 20px;
   }
 `
@@ -24,8 +27,9 @@ export const MilestoneWrapper = styled.div`
   margin-right: auto;
   margin-left: auto;
   padding: 0 24px;
-    max-width: 1100px;
+    max-width: 100%;
     z-index: 1;
+    /* background:yellow; */
 `
 
 export const MilestoneTextWrapper = styled.div`
@@ -55,7 +59,7 @@ export const MilestoneTitle = styled.h1`
 
 export const MilestoneImages = styled.img`
 /* background: blue; */
-    max-width: 1280px;
+    max-width: 100%;
     object-fit: contain;
     width: auto;
     height: auto;

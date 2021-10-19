@@ -6,7 +6,7 @@ export const LandingContainer = styled.div`
     align-items: center;
     padding: 0 30px;
     height: 100vh;
-    width: 100%;
+    max-width: 100%;
     z-index: 1;
 
     :before {

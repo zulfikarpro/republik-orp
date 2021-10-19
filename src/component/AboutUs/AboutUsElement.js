@@ -5,7 +5,7 @@ import truckImage from '../../images/Group89@2x.png'
 
 export const AboutUsContainer = styled.div`
     padding-top: 100px;
-    width: auto;
+    width: 100%;
     height: 100vh;
     align-items: center;
     justify-items: center;
@@ -19,6 +19,7 @@ export const AboutUsContainer = styled.div`
     /* object-fit: contain; */
     background-blend-mode: multiply;
     background-position: center;
+    max-width: 100%;
     /* @media screen and (max-width: 768px) {
         padding: 100px 0;
         margin-top: 20px;
@@ -31,6 +32,7 @@ export const AboutUsWrapper = styled.div`
   z-index: 1;
   height: 60%;
   width: 100%;
+  background:'black'
   /* align-self: center;
   justify-self: center; */
   /* max-width: 1100px; */
@@ -62,11 +64,13 @@ justify-items: center;
 `
 
 export const AboutUsRow = styled.div`
+/* background:blue; */
       display: flex;
-      grid-auto-columns: minmax(auto, 1fr);
-        align-items: center;
+      flex-direction: row;
+      /* grid-auto-columns: minmax(auto, 1fr); */
         justify-content: center;
-      z-index: 2;
+        z-index: 2;
+      max-width: 100%;
 
         @media screen and (max-width: 768px) {
             // grid-template-areas: ${({ imgStart }) => imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`};
@@ -76,21 +80,49 @@ export const AboutUsRow = styled.div`
 `
 
 export const AboutUsColumn2 = styled.div`
-    grid-area: col2;
-    display: flex;
-    justify-self: center;
+    /* background:white; */
+        display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 50%;
+    /* grid-area: col2; */
+    /* display: flex; */
+    /* max-width: 60%; */
+    /* background:black; */
+    /* flex:1; */
+    /* justify-self: center;
     align-self: center;
     justify-content: end;
-    align-items: flex-end;
+    align-items: flex-end; */
     /* background: yellow; */
 `
 
 export const AboutUsColumn1 = styled.div`
-    grid-area: col1;
-    /* background: green; */
-    justify-content: start;
+    /* background:white; */
+        display:flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
+    max-width: 50%;
+    /* max-width: 100%; */
+    /* grid-area: col1; */
+    /* background: green; */
+    /* max-width: 100%; */
+    /* justify-content: center;
+    align-items: center;
+    flex:1; */
 `
+export const AboutUsImage = styled.img`
+    align-items: center;
+    justify-self: center;
+    align-content: center;
+    /* position: fixed; */
+    max-width: 60%;
+    @media screen and (max-width: 1080px) {
+      width: 100%;
+  }
+  `
 
 export const AboutUsHeading = styled.h1`
   margin-bottom: 24px;
@@ -108,7 +140,6 @@ export const AboutUsHeading = styled.h1`
 export const HeadingShadow = styled.h1`
     position: absolute;
     height: 10%;
-    width: 50%;
     color:transparent;
     font-size: 64px;
     text-shadow: 20px -100px 0px rgba(255, 255, 255, 0.2) ;
@@ -130,15 +161,7 @@ export const AboutUsSubtitle = styled.p`
     font-size: 12px;
   }
 `
-export const AboutUsImage = styled.img`
-    align-items: center;
-    justify-self: center;
-    align-content: center;
-    width: 70%;
-    @media screen and (max-width: 1080px) {
-      width: 100%;
-  }
-  `
+
 export const DarkerBackground = styled.div`
   background: rgba(0,0,0, 0.4);
   position: absolute;
@@ -148,5 +171,9 @@ export const DarkerBackground = styled.div`
   z-index: 1;
   height: 40%;
   width: 100%;
+
+  @media screen and(max-width:960px){
+    height:80%
+  }
 `
 ;

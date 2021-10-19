@@ -5,7 +5,7 @@ const Visimisi = () => {
     return (
         <>
             <VisimisiContainer id={"visimisi"} img={'../../images/bg1@2x.png'}>
-                <img src={bg} style={{zIndex:'-1' ,position:'absolute',width:'100%', height:'100vh'}}/>;
+                <img src={bg} style={{zIndex:'-1' ,objectFit:'cover', position:'absolute', width:'100%', height:'100vh'}}/>;
                 <VisimisiWrapper>
                     <VisimisiTextWrapper>
                     <TitleShadow> Vision &amp; Mission </TitleShadow>
