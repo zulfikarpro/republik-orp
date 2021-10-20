@@ -6,7 +6,7 @@ export const Nav = styled.nav`
 background: linear-gradient(to right, #fff, transparent);
   height: 80px;
   margin-top: -80px;
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;

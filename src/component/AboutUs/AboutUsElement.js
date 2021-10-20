@@ -1,7 +1,4 @@
 import styled from 'styled-components';
-import image1 from '../../images/bg1@2x.png'
-import logo from '../../images/logo.svg'
-import truckImage from '../../images/Group89@2x.png'
 
 export const AboutUsContainer = styled.div`
     padding-top: 100px;
@@ -10,13 +7,6 @@ export const AboutUsContainer = styled.div`
     align-items: center;
     justify-items: center;
     justify-content: center;
-    /* display: flex; */
-    /* background: blue; */
-    /* background: ${({ lightBg }) => (lightBg ? 'transparent' : 'rgba(0,0,0, 0.4)')}; */
-    // background-image: url(${image1});
-    /* background-image:linear-gradient(red, red), url(${props=> props.img? image1: ''}); */
-    /* background-image: ${props=>props.img? 'url('+image1+'),linear-gradient(rgba(0,0,0, 0.4),rgba(0,0,0, 0.4))' : ''}; */
-    /* object-fit: contain; */
     background-blend-mode: multiply;
     background-position: center;
     /* @media screen and (max-width: 768px) {

@@ -4,9 +4,7 @@ import { IconContext } from 'react-icons/lib';
 import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, Img} from './NavbarElement'
 import { animateScroll as scroll } from 'react-scroll';
 // import { Logo } from '../LandingSection/LandingElement';
-import logo from '../../images/logo.svg';
-
-const mainLogo =  require('../../images/LOGO-01@2x.png');
+import logo from '../../images/logotrimatra.png';
 
 const Navbar = ({toggle}) => {
     const [scrollNav, setScrollNav] = useState(false);
