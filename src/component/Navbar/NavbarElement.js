@@ -55,7 +55,6 @@ export const MobileIcon = styled.div`
   display: none;
 
   @media screen and (max-width: 960px) {
-    color: #fff;
     display: block;
     position: absolute;
     top: 0;
@@ -93,7 +92,7 @@ export const NavBtn = styled.nav`
 `;
 
 export const NavLinks = styled(LinkS)`
-  /* color: #fff; */
+  color: #000;
   display: flex;
   align-items: center;
   text-decoration: none;

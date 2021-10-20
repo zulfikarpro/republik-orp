@@ -4,7 +4,7 @@ import { IconContext } from 'react-icons/lib';
 import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, Img} from './NavbarElement'
 import { animateScroll as scroll } from 'react-scroll';
 // import { Logo } from '../LandingSection/LandingElement';
-import logo from '../../images/logotrimatra.png';
+import logo from '../../images/logospace.png';
 
 const Navbar = ({toggle}) => {
     const [scrollNav, setScrollNav] = useState(false);
@@ -58,20 +58,28 @@ const Navbar = ({toggle}) => {
                             offset={-80}>Who We Are</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to='whatwedo'
+                            <NavLinks to='ourproduct'
                             smooth={true}
                             duration={500}
                             spy={true}
                             exact='true'
-                            offset={-80}>What We Do</NavLinks>
+                            offset={-80}>Our Product</NavLinks>
                         </NavItem>
                         <NavItem>    
-                            <NavLinks to='partnership'
+                            <NavLinks to='ourtarget'
                             smooth={true}
                             duration={500}
                             spy={true}
                             exact='true'
-                            offset={-80}>Partnership</NavLinks>
+                            offset={-80}>Our Target</NavLinks>
+                        </NavItem>
+                        <NavItem>    
+                            <NavLinks to='ourpartner'
+                            smooth={true}
+                            duration={500}
+                            spy={true}
+                            exact='true'
+                            offset={-80}>Our Partner</NavLinks>
                         </NavItem>
                         <NavItem>
                                 <NavLinks to='contactus'
@@ -79,7 +87,7 @@ const Navbar = ({toggle}) => {
                             duration={500}
                             spy={true}
                             exact='true'
-                            offset={-80}>Contact Us</NavLinks>
+                            offset={-80}>Join Our Force</NavLinks>
                         </NavItem>
 
                     </NavMenu>

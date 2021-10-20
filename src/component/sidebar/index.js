@@ -15,16 +15,16 @@ const Sidebar = ({isOpen, toggle}) => {
                     <SidebarLink to='whoweare' onClick={toggle}>
                         Who We are
                     </SidebarLink>
-                    <SidebarLink to='whatwedo' onClick={toggle}>
-                        What We Do
+                    <SidebarLink to='ourproduct' onClick={toggle}>
+                        Our Product
                     </SidebarLink>
-                    <SidebarLink to='partnership' onClick={toggle}>
-                        Partnership
+                    <SidebarLink to='ourtarget' onClick={toggle}>
+                        Our Target
                     </SidebarLink>
-                    <SidebarLink to='ourproducts' onClick={toggle}>
-                        Products
+                    <SidebarLink to='ourpartner' onClick={toggle}>
+                        Our Partner
                     </SidebarLink><SidebarLink to='contactus' onClick={toggle}>
-                        Contact Us
+                        Join Our Force
                     </SidebarLink>
 
                 </SidebarMenu>

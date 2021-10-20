@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
+z-index: 1;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -17,7 +18,7 @@ export const ContentDiv = styled.div`
 `
 
 export const CarouselDiv = styled.div`
-    z-index:-1;left:0; max-width:100%; max-height:100%;
+    z-index:-1;left:0; max-width:100%; max-height:100%; padding-bottom:10%;
     @media screen and (max-width: 960px){
         margin-top: 80px;
         /* padding-bottom:30%; */
@@ -25,17 +26,26 @@ export const CarouselDiv = styled.div`
 `
 
 export const Img = styled.img`
-margin-right: 10%;
-        width:50%;
+/* margin-right: 10%;
+        width:50%; */
     @media screen and (max-width:960px){
-        width:40%;
-margin-right: 20%;
+        /* width:40%;
+margin-right: 20%; */
     }
 `
 
 export const TitleDiv = styled.div`
-top:40;
+/* top:40; */
     @media screen and (max-width:960px){
-        top:20
+        /* top:20 */
+    }
+`
+
+export const Title = styled.h1`
+    font-size:4vw;
+    line-height:.1rem;
+    color:#282855;
+    @media screen and (max-width:960px){
+        font-size: 6vw;
     }
 `
