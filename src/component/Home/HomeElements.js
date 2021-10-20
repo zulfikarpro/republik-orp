@@ -17,7 +17,7 @@ export const ContentDiv = styled.div`
 `
 
 export const CarouselDiv = styled.div`
-    z-index:-1;left:0; max-width:100%; max-height:100%; padding-bottom:10%;
+    z-index:-1;left:0; max-width:100%; max-height:100%;
     @media screen and (max-width: 960px){
         margin-top: 80px;
         /* padding-bottom:30%; */

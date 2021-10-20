@@ -9,7 +9,7 @@ import titletrimatra from '../../images/titletrimatra.png'
 const HomePage = () => {
     return (
         <Container>
-            <ContentDiv>
+            <ContentDiv id='home'>
                 <TitleDiv style={{display:'flex', flexDirection:'row', justifyContent:'center', alignItems:'center', position:'absolute', width:'100%', color:'red'}}>
                     {/* <div style={{display:'flex', flexDirection:'column', backGround:'blue'}}> */}
                         <Img src={titletrimatra}/>

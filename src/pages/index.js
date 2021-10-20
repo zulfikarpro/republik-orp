@@ -6,6 +6,9 @@ import ContactUsSection from '../component/ContactUsSection';
 import Footer from '../component/Footer';
 import HomePage from '../component/Home';
 import AboutUsPage from '../component/AboutUs';
+import WhatWeDO from '../component/WhatWeDo/Index';
+import Partnership from '../component/Partnership/Index';
+import OurProducts from '../component/OurProducts/Index';
 
 
 const Home = () => {
@@ -23,8 +26,11 @@ const toggle = () =>{
             {/* <LandingSection/> */}
             <HomePage/>
             <AboutUsPage/>
+            <WhatWeDO/>
+            <Partnership/>
+            <OurProducts/>
             <ContactUsSection/>
-            <Footer/>
+            {/* <Footer/> */}
             <div style={{position:'flex',height:'200px', width:'auto'}}></div>
         </div>
     )

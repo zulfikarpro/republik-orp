@@ -4,7 +4,11 @@ export const FooterContainer = styled.div`
     color: #fff;
     justify-content: center;
     align-items: center;
+    margin:0px;
+    
+background:linear-gradient(248.89deg, #596B80 27.08%, #0C1A2B 112.98%);
 `
+
 
 export const FooterWrapper = styled.div`
 display: flex;

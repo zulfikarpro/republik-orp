@@ -9,18 +9,24 @@ const Sidebar = ({isOpen, toggle}) => {
             </Icon>
             <SidebarWrapper>
                 <SidebarMenu>
-                    <SidebarLink to='menu1' onClick={toggle}>
-                        Menu1
+                    <SidebarLink to='home' onClick={toggle}>
+                        Home
                     </SidebarLink>
-                    <SidebarLink to='menu2' onClick={toggle}>
-                        Menu2
+                    <SidebarLink to='whoweare' onClick={toggle}>
+                        Who We are
                     </SidebarLink>
-                    <SidebarLink to='menu3' onClick={toggle}>
-                        Menu3
+                    <SidebarLink to='whatwedo' onClick={toggle}>
+                        What We Do
                     </SidebarLink>
-                    <SidebarLink to='menu4' onClick={toggle}>
-                        Menu4
+                    <SidebarLink to='partnership' onClick={toggle}>
+                        Partnership
                     </SidebarLink>
+                    <SidebarLink to='ourproducts' onClick={toggle}>
+                        Products
+                    </SidebarLink><SidebarLink to='contactus' onClick={toggle}>
+                        Contact Us
+                    </SidebarLink>
+
                 </SidebarMenu>
             </SidebarWrapper>
         </SidebarContainer>

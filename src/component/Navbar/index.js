@@ -41,37 +41,37 @@ const Navbar = ({toggle}) => {
                              scrollNav={scrollNav}>
                         <NavItem>
                             <NavLinks 
-                            to='menu1'
+                            to='home'
                             smooth={true}
                             duration={500}
                             spy={true}
                             exact='true'
                             offset={-80}
-                            >About Us</NavLinks>
+                            >Home</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to='visimisi'
+                            <NavLinks to='whoweare'
                             smooth={true}
                             duration={500}
                             spy={true}
                             exact='true'
-                            offset={-80}>Target</NavLinks>
+                            offset={-80}>Who We Are</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to='menu3'
+                            <NavLinks to='whatwedo'
                             smooth={true}
                             duration={500}
                             spy={true}
                             exact='true'
-                            offset={-80}>How We Work</NavLinks>
+                            offset={-80}>What We Do</NavLinks>
                         </NavItem>
                         <NavItem>    
-                            <NavLinks to='ourclients'
+                            <NavLinks to='partnership'
                             smooth={true}
                             duration={500}
                             spy={true}
                             exact='true'
-                            offset={-80}>Our Clients</NavLinks>
+                            offset={-80}>Partnership</NavLinks>
                         </NavItem>
                         <NavItem>
                                 <NavLinks to='contactus'
