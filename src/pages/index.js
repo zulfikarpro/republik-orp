@@ -10,6 +10,7 @@ import WhatWeDO from '../component/WhatWeDo/Index';
 import Partnership from '../component/Partnership/Index';
 import OurProducts from '../component/OurProducts/Index';
 import bgvideo from '../videos/bgvideo.mp4'
+import OurTarget from '../component/OurTarget';
 
 
 const Home = () => {
@@ -31,6 +32,7 @@ const toggle = () =>{
             <HomePage/>
             <AboutUsPage/>
             <OurProducts/>
+            <OurTarget/>
             <Partnership/>
             {/* <ContactUsSection/> */}
             {/* <Footer/> */}
