@@ -11,7 +11,7 @@ const mainLogo =  require('../../images/LOGO-01@2x.png');
 const Navbar = ({toggle}) => {
     const [scrollNav, setScrollNav] = useState(false);
     const changeNav = () => {
-        if (window.scrollY >= 4900 && window.scrollY<=6380) {
+        if (window.scrollY >= 4100 && window.scrollY<=5180) {
           setScrollNav(true);
         } else {
           setScrollNav(false);
