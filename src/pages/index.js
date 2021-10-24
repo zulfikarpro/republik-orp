@@ -22,7 +22,7 @@ const toggle = () =>{
 
 
     return (
-            <div style={{minWidth:'100%', display:'flex', flexDirection:'column'}}>
+            <div style={{minWidth:'100%', display:'flex', flexDirection:'column', fontFamily:'EquinoxRegular'}}>
             <Sidebar isOpen={isOpen} toggle={toggle}/>
             <Navbar toggle={toggle}/>
             <div style={{position:'fixed', top:'-50%', left:'', width:'200vw', height:'200%', }}>

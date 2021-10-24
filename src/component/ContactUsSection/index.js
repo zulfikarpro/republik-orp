@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container, ContentDiv } from '../Home/HomeElements'
 import { ContactUsDiv } from './ContactUsElement'
-import bg from '../../images/bg/bg5.png'
+// import bg from '../../images/bg/bg5.png'
 import { Grid } from '@material-ui/core'
 const ContactUsSection = (
   ) => {

@@ -1,6 +1,7 @@
 import React from 'react'
 import { Grid } from '@material-ui/core'
 import {FaWhatsapp, FaInstagram, FaFacebookF, FaTwitter, FaYoutube} from 'react-icons/fa'
+import {Title, TitleShadow} from '../OurProducts/OurProductElements'
 import { Container, ContentDiv } from '../Home/HomeElements'
 import bg from '../../images/bg/bg4space.png'
 import brand1 from '../../images/brand/brand1.png'
@@ -17,9 +18,14 @@ const Partnership = (
                <img style={{zIndex:-1 ,height:'100%', objectFit:'cover'}} src={bg}/>
                {/* <div style={{height:'100%'}}> */}
                 <div style={{position:'absolute', width:'100%', height:'100%', display:'flex', flexDirection:'row', justifyContent:'center'}}  >
-                  <div style={{display:'flex', flexDirection:'column', color:'#fff',justifyContent:'space-evenly', height:'200%'}}id="ourpartner">
+                  <div style={{display:'flex', flexDirection:'column', color:'#fff',justifyContent:'space-evenly', height:'200%'}}>
                    <div style={{width:'100%', display:'flex', flexDirection:'row', justifyContent:'center', height:'20%'}}>
-                    <Grid container spacing={2} style={{marginTop:'400px'}}>
+                    <Grid container spacing={2} style={{marginTop:'400px'}} id="ourpartner">
+                      <Grid item xs={12} md={12}>
+                        <div style={{width:'100%', textAlign:'center'}}>
+                        <Title>Our Partners<TitleShadow>Our Partners</TitleShadow></Title>
+                        </div>
+                        </Grid>
                         <Grid item xs={12} md={3}>
                           <div style={{width:'100%', maxWidth:'100%', display:'flex', flexDirection:'row', justifyContent:'center'}}>
                           <Img src={brand1}/>
@@ -46,8 +52,13 @@ const Partnership = (
                       </Grid>
                     </div>
 
-                    <div style={{height:'100%', marginTop:'600px'}}>
-                      <Grid container spacing={2} style={{marginTop:'20%'}}>
+                    <div style={{height:'100%', marginTop:'400px'}}>
+                      <Grid container spacing={2} style={{marginTop:'20%'}} id>
+                        <Grid item xs={12} md={12}>
+                          <div style={{width:'100%', textAlign:'center'}}>
+                          <Title>Join Our Force<TitleShadow>Join Our Force</TitleShadow></Title>
+                          </div>
+                          </Grid>
                         <Grid item xs={12} md={6}>
                           <div style={{height:'100%', maxWidth:'100%', display:'flex', flexDirection:'column', justifyContent:'flex-end', paddingLeft:'12%', paddingRight:'12%', maxWidth:'400px'}}>
                           <h2 style={{paddingLeft:'20px'}}>Drop Us a Line</h2>

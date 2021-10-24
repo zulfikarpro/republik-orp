@@ -6,8 +6,7 @@ const OurTarget = () => {
     return (
         <>
           <Container style={{maxHeight:'200vh',minHeight:'100vh', width:'100%', marginTop:'0px'}} id='ourtarget'>
-              <ContentDiv style={{minWidth:'100%', minHeight:'100%',height:'100vh', justifyContent:'center' }}  >
-                  
+              <ContentDiv style={{minWidth:'100%', minHeight:'100%',height:'100vh', justifyContent:'center' }}  >  
                   <DivBlue >
                   <div style={{color:'white', transform:'rotate(180deg)'}}>
                   <h1 style={{width:'100%', textAlign:'center'}}>Vision</h1>
