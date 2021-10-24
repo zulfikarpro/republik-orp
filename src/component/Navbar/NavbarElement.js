@@ -48,6 +48,7 @@ export const NavLogo = styled(LinkR)`
     height:50%;
     width:auto;
     margin-top:20px;
+    max-width:120px;
   }
 `;
 
