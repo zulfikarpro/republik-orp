@@ -128,8 +128,8 @@ const Layanan = () => {
                     </NavLinks>
                 </NavItem>
                 <NavItem className="tab" onClick={()=>{ChangeColor(4)}} style={{borderRadius:' 0px 20px 20px 0px',}}>
-                    <NavLinks >
-                    Jasa titip Transfer
+                    <NavLinks style={{maxWidth:'100%'}} >
+                    <p style={{maxWidth:'100%'}}>Jasa&nbsp;<b>TITIP</b><br/>Transfer</p>
                     </NavLinks>
                 </NavItem>
                 </NavMenu>
