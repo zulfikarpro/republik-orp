@@ -7,48 +7,46 @@ const ContactUsSection = (
   ) => {
     return (
         <>
-           <Container style={{minHeight:'100%', minWidth:'100%', marginTop:'0px', justifyContent:'flex-start'}}>
-             <ContentDiv style={{minWidth:'100%', minHeight:'100%',height:'100vh', justifyContent:'flex-start'}} id='contactus'>
+           <Container style={{width:'100%', marginTop:'0px', justifyContent:'flex-start', }}>
+             <ContentDiv style={{minWidth:'100%', minHeight:'100%',height:'auto', justifyContent:'flex-start'}} id='contactus'>
                  <ContactUsDiv style={{width:'100%', height:'auto', minHeight:'100%', display:'flex', flexDirection:'row', justifyContent:'center', color:'#fff'}}>
-                   <div style={{display:'flex', flexDirection:'column', textAlign:'center', minWidth:'90%'}}>
-                  <h1 style={{margin:'10%'}}>Contact Us</h1>
-                  <div style={{width:'100%', display:'flex', flexDirection:'row', justifyContent:'center'}}>
-                  <Grid container spacing={2}>
-                    <Grid item xs={8} md={6}>
-                      <div style={{display:'flex', flexDirection:'column',width:'100%'}}>
-                      <div style={{display:'flex', flexDirection:'row', width:'100%' , justifyContent:'flex-start'}}>
-                        <h2>Drop us a Line</h2>
+                   <div style={{display:'flex', flexDirection:'column', textAlign:'center', minWidth:'100%'}}>
+                  <div style={{width:'100%', display:'flex', flexDirection:'row', justifyContent:'center', alignItems:'center'}}>
+                  <Grid container spacing={2} style={{margin:'auto', paddingLeft:'50px', paddingRight:'50px'}}>
+                    <Grid item xs={12} md={6}>
+                      <div style={{display:'flex', flexDirection:'column',width:'100%',}}>
+                      <div style={{display:'flex', flexDirection:'row', width:'100%' , justifyContent:'center'}}>
+                        <h1>Contact Us</h1>
                         </div>
                         <div style={{display:'flex', flexDirection:'row', width:'100%' , justifyContent:'center'}}>
-                          <input placeholder='name' style={{padding:'10px', borderRadius:'30px', marginBottom:'10px', width:'100%'}}/>
+                          <input placeholder='Your Name' style={{padding:'10px', borderRadius:'30px', marginBottom:'10px', width:'100%'}}/>
                           </div>
                           
                         <div style={{display:'flex', flexDirection:'row', width:'100%' , justifyContent:'center'}}>
-                        <input placeholder='email' style={{padding:'10px', borderRadius:'30px', marginBottom:'10px', width:'100%'}}/>
-                        </div>
-                    
-                        <div style={{display:'flex', flexDirection:'row', width:'100%' , justifyContent:'center'}}>
-                        <input placeholder='phone' style={{padding:'10px', borderRadius:'30px', marginBottom:'10px', width:'100%'}}/>
-                        <input placeholder='subjject' style={{padding:'10px', borderRadius:'30px', marginBottom:'10px', width:'100%'}}/>
+                        <input placeholder='Your email' style={{padding:'10px', borderRadius:'30px', marginBottom:'10px', width:'100%'}}/>
                         </div>
                         <div style={{display:'flex', flexDirection:'row', width:'100%' , justifyContent:'center'}}>
                         <textarea rows='12' placeholder='' style={{padding:'10px', borderRadius:'10px', marginBottom:'10px', width:'100%'}}/>
                         </div>
                       </div>
                     </Grid>
-                    <Grid item xs={8}md={6}>
+                    <Grid item xs={12}md={6}>
                     <div style={{display:'flex', flexDirection:'column', minWidth:'400px'}}>
                       <div>
-                        <h2>Contact Address</h2>
-                        
+                        <h2>Address</h2> 
                       </div>
                         <div style={{display:'flex', flexDirection:'row', justifyContent:'center', width:'100%'}}>
-                        <p style={{textAlign:'end'}}>OFFICE 8 BUILDING 18TH FLOOR<br/> UNIT A, JL. JENDERAL SUDIRMAN <br/>KAV.
-52-53, DKI JAKARTA 12190 <br/>REPUBLIC OF INDONESIA
-<br/>
-021 - xxx xxx<br/>
-info@trimatraindustries.com
-</p>
+                        <p style={{textAlign:'center', maxWidth:'200px'}}>Lorem ipsum dolor sit amet, et diceret volumus nam, nusquam gubergren quaerendum at vix. At nam audiam ullamcorper, consul laoreet te est.
+                        </p>
+                        </div>
+                        <div>
+                        <h2>Contact</h2> 
+                      </div>
+                        <div style={{display:'flex', flexDirection:'row', justifyContent:'center', width:'100%'}}>
+                        <p style={{textAlign:'center', maxWidth:'200px'}}>
+                        (021) 777 888
+                        info@republikorp.com
+                        </p>
                         </div>
                       </div>
                     </Grid>

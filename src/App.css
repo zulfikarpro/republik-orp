@@ -20,6 +20,14 @@
   }
 }
 
+/* textarea,
+input[type=text] {
+  font-family: "EquinoxRegular";
+    src: local("EquinoxRegular"),
+    url("./fonts/equinox_regular.otf") format("truetype");
+  font-weight: normal;
+} */
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

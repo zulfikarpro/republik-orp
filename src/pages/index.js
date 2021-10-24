@@ -22,7 +22,7 @@ const toggle = () =>{
 
 
     return (
-            <div style={{minWidth:'100%', display:'flex', flexDirection:'column'}}>
+            <div style={{minWidth:'100%', display:'flex', flexDirection:'column', }}>
             <Sidebar isOpen={isOpen} toggle={toggle}/>
             <Navbar toggle={toggle}/>
             <div style={{position:'fixed', top:'-50%', left:'', width:'200vw', height:'200%', }}>
@@ -30,11 +30,11 @@ const toggle = () =>{
                 <div style={{position:'fixed',height:'100vh', width: 'auto', margin:'auto', top:0, bottom:0, right:0, left:0, background:'white', opacity:.2, zIndex:-3,overflowX:'hidden'}}/>
             </div>
             <HomePage/>
-            <AboutUsPage/>
-            {/* <OurProducts/> */}
+            {/* <AboutUsPage/> */}
+            <OurProducts/>
             {/* <OurTarget/> */}
-            {/* <Partnership/> */}
-            {/* <ContactUsSection/> */}
+            <Partnership/>
+            <ContactUsSection/>
             {/* <Footer/> */}
             {/* <div style={{position:'flex',height:'200px', width:'auto'}}></div> */}
         </div>

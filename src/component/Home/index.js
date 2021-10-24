@@ -6,10 +6,11 @@ import banner2 from '../../images/banner/banner2.png'
 import banner3 from '../../images/banner/banner3.png'
 import logo from '../../images/logoorp.png'
 import bg from '../../images/bg/bghome.svg'
+import bgimage from '../../images/bg/bgimagehome.png'
 
 const HomePage = () => {
     return (
-        <Container>
+        <Container style={{backgroundImage:`url(${bgimage})`}}>
             <ContentDiv id='home' style={{height:'100vh', width:'100%'}}>
                 <DivContent>
                     <img src={bg} style={{position:'absolute', width:'100%', minHeight:'200px', objectFit:'cover', zIndex:'-1', top:'40%'}}/>

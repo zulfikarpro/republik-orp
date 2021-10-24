@@ -22,9 +22,7 @@ z-index: 1;
     display:flex;
     justify-content: center;
     align-items: center;
-    min-height: 100%;
     max-width: 100%;
-    height: 100%;
 max-height: 200vh;
 
 @media screen and (max-width:960px){
@@ -39,8 +37,6 @@ export const ContentDiv = styled.div`
     justify-content: center;
     max-width: 100%;
     min-width: 100%;
-    height: 100vh;
-
     @media screen and (max-width:960px){
     height: 200vh;
 }
