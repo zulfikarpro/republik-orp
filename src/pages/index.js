@@ -31,9 +31,9 @@ const toggle = () =>{
             </div>
             <HomePage/>
             <AboutUsPage/>
-            <OurProducts/>
-            <OurTarget/>
-            <Partnership/>
+            {/* <OurProducts/> */}
+            {/* <OurTarget/> */}
+            {/* <Partnership/> */}
             {/* <ContactUsSection/> */}
             {/* <Footer/> */}
             {/* <div style={{position:'flex',height:'200px', width:'auto'}}></div> */}

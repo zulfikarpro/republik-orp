@@ -17,6 +17,18 @@ export const ContentDiv = styled.div`
 
 `
 
+export const DivContent = styled.div`
+    display:flex; 
+    flex-direction:row;
+    margin-top:14%;
+    max-width:100%;
+
+    @media screen and (max-width:960px){
+        margin-top: 0%;
+    }
+
+`
+
 export const CarouselDiv = styled.div`
     z-index:-1;left:0; max-width:100%; max-height:100%; padding-bottom:10%;
     @media screen and (max-width: 960px){
@@ -26,11 +38,11 @@ export const CarouselDiv = styled.div`
 `
 
 export const Img = styled.img`
-/* margin-right: 10%;
-        width:50%; */
+/* margin-right: 10%; */
+        /* width:50%; */
     @media screen and (max-width:960px){
-        /* width:40%;
-margin-right: 20%; */
+        /* width:40%; */
+/* margin-right: 20%; */
     }
 `
 
@@ -42,10 +54,19 @@ export const TitleDiv = styled.div`
 `
 
 export const Title = styled.h1`
-    font-size:4vw;
+    font-size:2vw;
     line-height:.1rem;
-    color:#282855;
+    /* color:#282855; */
     @media screen and (max-width:960px){
         font-size: 6vw;
+    }
+`
+
+export const P = styled.p`
+    font-size: 1vw;
+    padding-right: 10%;
+
+    @media screen and (max-width:960px){
+        /* font-size: 0.4rem; */
     }
 `

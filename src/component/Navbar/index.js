@@ -4,7 +4,8 @@ import { IconContext } from 'react-icons/lib';
 import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, Img} from './NavbarElement'
 import { animateScroll as scroll } from 'react-scroll';
 // import { Logo } from '../LandingSection/LandingElement';
-import logo from '../../images/logospace.png';
+import logo from '../../images/logoorp.png';
+import bg from '../../images/bg/headerbg2.png'
 
 const Navbar = ({toggle}) => {
     const [scrollNav, setScrollNav] = useState(false);
@@ -29,13 +30,14 @@ const Navbar = ({toggle}) => {
         
       <IconContext.Provider value={{ color: '#fff' }}>
             <Nav scrollNav={scrollNav}>
+                <img src={bg} style={{position:'absolute', top:'0px', left:0, right:0, maxWidth:'100vw', minHeight:'120px'}}/>
                 <NavbarContainer>
                     <NavLogo onClick={toggleHome} to='/'>
                         <Img src={logo}/>
                         {/* <img src="C:\projects\republik-orp\public\images\LOGO-01.png"  alt=""></img> */}
                         </NavLogo>
                     <MobileIcon onClick={toggle}>
-                        <FaBars/>
+                        <FaBars style={{color:'black'}}/>
                     </MobileIcon>
                     <NavMenu 
                              scrollNav={scrollNav}>
