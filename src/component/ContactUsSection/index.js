@@ -7,28 +7,50 @@ import {GridView} from './ContactUsElement'
 import axios from 'axios'
 const ContactUsSection = () => {
     const [alreadyHave, setAlreadyHave] = useState('');
+    const envName = 'production'
+    const config = require('../../config.json')[envName];
+    const url = config.url;
     const submit = () => {
+        console.log(url)
         const name = document.getElementsByClassName('name')[0].value
         const storeName = document.getElementsByClassName('storeName')[0].value
         const email = document.getElementsByClassName('email')[0].value
         const address = document.getElementsByClassName('address')[0].value
         const isHave = alreadyHave
-        if(!name || !storeName || !email || !address || !isHave){
+        const phone = document.getElementsByClassName('telpon')[0].value
+
+        if(!name || !storeName || !email || !address || !isHave || !phone){
             return alert('Lengkapi Data Anda');
         }
 
-        const request = postApi(name, storeName, email, address, isHave);
-        if(request.status===200){
-            return alert('success')
-        }else{
-            return alert('error 502')
-        }
+        const headers = {"Access-Control-Allow-Origin": "*"}
+        const data = {name,store_name:storeName,phone,email,city:address}
+        axios.post(url+'submit', data, {headers} ).then((res)=>{
+            console.log(res.data.statusCode)
+            if(res.data.statusCode===200){
+                alert('success')
+                window.location.reload();
+            }else{
+                alert(res.data.message)
+            }
+        })
+
+       
+        // const request = postApi(url, name, storeName, email, address, isHave, phone);
+        // console.log(request.json)
+        // if(request.status===200){
+        //     return alert('success')
+        // }else{
+        //     return alert('error 502')
+        // }
 
     }
 
-    const postApi = async (name, storeName, email, address, isHave) =>{
-        const url = 'http://172.104.53.17/submit'
-        const request = await axios.post(url, {name,storeName,email,address,isHave })
+    const postApi = async (url, name, storeName, email, address, isHave, phone) =>{
+        const headers = {"Access-Control-Allow-Origin": "*"}
+        const data = {name,store_name:storeName,phone,email,city:address}
+        const request = await axios.post(url+'submit', data, {headers} )
+        // console.log('request', request);
         return request;
     }
 
@@ -48,6 +70,8 @@ const ContactUsSection = () => {
                     <input style={{padding:'5px' ,}}className='email'/>
                     <p>Lokasi (Nama Kota)</p>
                     <input style={{padding:'5px' ,}}className='address'/>
+                    <p>Telpon</p>
+                    <input style={{padding:'5px' ,}}className='telpon'/>
                     <p>Pernahkah Anda melakukan pembelian dari luar negeri sebelumnya?)</p>
                     <tr>
                         <td><input type="radio" name="ishave" onClick={()=>setAlreadyHave('true')}/>Ya</td>
@@ -57,6 +81,7 @@ const ContactUsSection = () => {
                     <div onClick={()=>submit()}style={{background:'#C0022D', borderRadius:'16px', width:'200px', color:'#fff', textAlign:'center', padding: '10px', marginTop:'20px'}}>Submit</div>
                 </div>
                 <div style={{flex:1, display:'flex', flexDirection:'column'}}>
+                    <br/>
                 <Title>Atau</Title>
                 <div style={{display:'flex', flexDirection:'row', justifyContent:'center'}}>
                 <p style={{justifyContent:"center", textAlign:'center'}}>Hubungi kontak representatif<br/> kami di :</p>

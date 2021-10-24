@@ -1,0 +1,8 @@
+{
+    "development": {
+        "url":"http://localhost:3001/"
+    },
+    "production": {
+        "url":"http://172.104.53.17:3001/"
+    }
+}

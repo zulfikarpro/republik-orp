@@ -6,8 +6,8 @@ import banner from '../../images/MainBanner.png'
 const HomePage = () => {
     return (
         <>
-        <Container id={'home'}>
-           <ContentDiv>
+        <Container id={'home'} >
+           <ContentDiv style={{paddingLeft:'0px', paddingRight:'0px'}}>
                <img src={banner} style={{width:'auto', maxWidth:'100%', maxHeight:'100%'}}/>
                {/* <Image src={banner} alt={'banner'}/> */}
                </ContentDiv> 
