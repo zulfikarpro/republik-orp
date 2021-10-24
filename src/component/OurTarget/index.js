@@ -9,7 +9,7 @@ import content3 from '../../images/content/content3.png'
 const OurTarget = () => {
     return (
         <>
-          <Container style={{maxHeight:'100vh',minHeight:'100vh', width:'100%', marginTop:'60px'}} id='ourtarget'>
+          <Container style={{maxHeight:'100vh',minHeight:'100vh', width:'100%', marginTop:'60px', background:'#fff'}} id='ourtarget'>
               <ContentDiv style={{minWidth:'100%', minHeight:'100%',height:'100vh', justifyContent:'flex-start' , color:'#7D4545'}}>
                   <div style={{width:'100%',display:'flex', flexDirection:'row', justifyContent:'center'}}>
                     <h1>Lorem Ipsum</h1>

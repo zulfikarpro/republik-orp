@@ -10,7 +10,7 @@ import bgimage from '../../images/bg/bgimagehome.png'
 
 const HomePage = () => {
     return (
-        <Container style={{backgroundImage:`url(${bgimage})`}}>
+        <Container id="home">
             <ContentDiv id='home' style={{height:'100vh', width:'100%'}}>
                 <DivContent>
                     <img src={bg} style={{position:'absolute', width:'100%', minHeight:'200px', objectFit:'cover', zIndex:'-1', top:'40%'}}/>

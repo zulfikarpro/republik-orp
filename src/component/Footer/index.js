@@ -15,7 +15,7 @@ const Footer = () => {
                         <FaYoutube style={{width:'auto', height:'30px',marginRight:'8px'}}/>
                     </FooterFirstLine>
                     <FooterSecondLine>
-                    © 2021 Trimatra.  Trademarks and brands are the property of their respective owners.
+                    © 2021 Republik Orp.  Trademarks and brands are the property of their respective owners.
                     </FooterSecondLine>
                 </FooterWrapper>
             </FooterContainer>

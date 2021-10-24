@@ -70,3 +70,20 @@ export const P = styled.p`
         /* font-size: 0.4rem; */
     }
 `
+
+
+export const DivText = styled.div`
+
+margin-top:200px ;
+position:absolute; 
+width:100%; 
+height:100%;
+display:flex; 
+flex-direction:row; 
+justify-content:start;
+
+@media screen and (max-width:960px){
+    margin-top: 0px;
+}
+
+`

@@ -52,12 +52,20 @@ const Navbar = ({toggle}) => {
                             >Home</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to='whoweare'
+                            <NavLinks to='whatwedo'
                             smooth={true}
                             duration={500}
                             spy={true}
                             exact='true'
-                            offset={-80}>Who We Are</NavLinks>
+                            offset={-80}>What We Do</NavLinks>
+                        </NavItem>
+                        <NavItem>    
+                            <NavLinks to='ourtarget'
+                            smooth={true}
+                            duration={500}
+                            spy={true}
+                            exact='true'
+                            offset={-80}>Menu3</NavLinks>
                         </NavItem>
                         <NavItem>
                             <NavLinks to='ourproduct'
@@ -66,14 +74,6 @@ const Navbar = ({toggle}) => {
                             spy={true}
                             exact='true'
                             offset={-80}>Our Product</NavLinks>
-                        </NavItem>
-                        <NavItem>    
-                            <NavLinks to='ourtarget'
-                            smooth={true}
-                            duration={500}
-                            spy={true}
-                            exact='true'
-                            offset={-80}>Our Target</NavLinks>
                         </NavItem>
                         <NavItem>    
                             <NavLinks to='ourpartner'
@@ -89,7 +89,7 @@ const Navbar = ({toggle}) => {
                             duration={500}
                             spy={true}
                             exact='true'
-                            offset={-80}>Join Our Force</NavLinks>
+                            offset={-80}>Contact Us</NavLinks>
                         </NavItem>
 
                     </NavMenu>

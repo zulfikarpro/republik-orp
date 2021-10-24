@@ -10,7 +10,7 @@ import { P } from '../Home/HomeElements'
 const OurProducts = (
   ) => {
     return (
-               <Container style={{height:'auto', paddingTop:'100px', paddingBotom:'100px'}}>
+               <Container style={{height:'auto', }} id='ourproduct'>
                  <ContentDiv style={{backgroundImage:`url(${bg})`, height:'80vh', paddingTop:'50px',objectFit:'contain', backgroundRepeat:'no-repeat'}}>
                  {/* <DivBackground style={{ backgroundImage:`url(${bg})`}}> */}
                    <div style={{display:'flex', flexDirection:'column', color:'#fff',  width:'100%', height:'100%', justifyContent:'center'}}>

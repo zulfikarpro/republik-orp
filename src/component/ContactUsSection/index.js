@@ -3,6 +3,7 @@ import { Container, ContentDiv } from '../Home/HomeElements'
 import { ContactUsDiv } from './ContactUsElement'
 import bg from '../../images/bg/bgcontactus.png'
 import { Grid } from '@material-ui/core'
+import Footer from '../Footer'
 const ContactUsSection = (
   ) => {
     return (
@@ -52,9 +53,13 @@ const ContactUsSection = (
                     </Grid>
                   </Grid>
                   </div>
+                  
+                  
+                    <Footer/>
                   </div>
                  </ContactUsDiv>                
              </ContentDiv>
+             
            </Container>
         </>
     )
