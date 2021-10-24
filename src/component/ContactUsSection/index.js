@@ -1,13 +1,13 @@
 import React from 'react'
 import { Container, ContentDiv } from '../Home/HomeElements'
 import { ContactUsDiv } from './ContactUsElement'
-import bg from '../../images/bg/bg5.png'
+import bg from '../../images/bg/bgcontactus.png'
 import { Grid } from '@material-ui/core'
 const ContactUsSection = (
   ) => {
     return (
         <>
-           <Container style={{width:'100%', marginTop:'0px', justifyContent:'flex-start', }}>
+           <Container style={{width:'100%', marginTop:'0px', justifyContent:'flex-start', backgroundImage:`url(${bg})`}}>
              <ContentDiv style={{minWidth:'100%', minHeight:'100%',height:'auto', justifyContent:'flex-start'}} id='contactus'>
                  <ContactUsDiv style={{width:'100%', height:'auto', minHeight:'100%', display:'flex', flexDirection:'row', justifyContent:'center', color:'#fff'}}>
                    <div style={{display:'flex', flexDirection:'column', textAlign:'center', minWidth:'100%'}}>

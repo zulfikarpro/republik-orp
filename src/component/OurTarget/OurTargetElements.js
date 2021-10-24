@@ -11,7 +11,17 @@ transform: rotate(-180deg);
 z-index: -1;
 position: absolute;
 height: 100%;
-    @media screen and (max-height: 960px){
+    @media screen and (max-width: 960px){
         height: 50vh;
     }
+`
+
+export const DivMenu = styled.div`
+    width: 60%;
+    background: 'red';
+
+    @media screen and(max-width: 960px){
+        width:100%;
+    }
+
 `
