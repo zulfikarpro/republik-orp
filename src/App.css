@@ -8,9 +8,9 @@
 }
 
 @font-face {
-  font-family: "EquinoxRegular";
-  src: local("EquinoxRegular"),
-    url("./fonts/equinox_regular.otf") format("truetype");
+  font-family: "Exo2";
+  src: local("Exo2"),
+    url("./fonts/Exo_2/static/Exo2-Medium.ttf") format("truetype");
   font-weight: normal;
 }
 
