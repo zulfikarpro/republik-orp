@@ -11,20 +11,24 @@ const ContactUsSection = () => {
     const config = require('../../config.json')[envName];
     const url = config.url;
     const submit = () => {
-        console.log(url)
+        // console.log(url)
         const name = document.getElementsByClassName('name')[0].value
         const storeName = document.getElementsByClassName('storeName')[0].value
         const email = document.getElementsByClassName('email')[0].value
         const address = document.getElementsByClassName('address')[0].value
         const isHave = alreadyHave
         const phone = document.getElementsByClassName('telpon')[0].value
-
-        if(!name || !storeName || !email || !address || !isHave || !phone){
-            return alert('Lengkapi Data Anda');
-        }
+        
 
         const headers = {"Access-Control-Allow-Origin": "*"}
-        const data = {name,store_name:storeName,phone,email,city:address}
+        const data = {name:name,store_name:storeName,phone:phone,email:email,city:address,isHave}
+        // if(!inputChecker(data)){
+        //     return alert('Lengkapi Data Anda');
+        // }
+        const checker = inputChecker(data)
+        if(!inputChecker(data)){
+            return alert('Periksa kembali data anda')
+        }
         axios.post(url+'submit', data, {headers} ).then((res)=>{
             console.log(res.data.statusCode)
             if(res.data.statusCode===200){
@@ -35,16 +39,59 @@ const ContactUsSection = () => {
             }
         })
 
-       
-        // const request = postApi(url, name, storeName, email, address, isHave, phone);
-        // console.log(request.json)
-        // if(request.status===200){
-        //     return alert('success')
-        // }else{
-        //     return alert('error 502')
-        // }
-
     }
+
+    const inputChecker = (data)=>{
+        const {name,store_name,phone,email,city,isHave} = data
+        var nameChecker = true
+        var storeNameChecker = true
+        var emailChecker = true
+        var phoneChecker = true
+        var cityChecker = true
+        var isHaveChecker = true 
+        if(!name){
+            changeBorderColor('name', false)
+            nameChecker = false 
+        }
+        if(!store_name){
+            changeBorderColor('storeName', false)
+            storeNameChecker = false
+        }
+
+        if(!email.includes('@')){
+            changeBorderColor('email', false)
+            emailChecker = false
+        }
+
+        if(isNaN(phone)){
+            // console.log(document.getElementsByClassName('telpon')[0].style)
+            changeBorderColor('telpon', false)
+            phoneChecker = false
+        }
+        if(!city){
+            changeBorderColor('address', false)
+            cityChecker = false
+        }
+        if(isHave==null || isHave==undefined){
+            isHaveChecker = false
+        }
+
+        return nameChecker && storeNameChecker && emailChecker && phoneChecker && cityChecker && isHaveChecker
+    }
+
+    const changeBorderColor = (component, status) => {
+        if(status){
+            document.getElementsByClassName(component)[0].style.borderColor = 'black'
+        }else{
+            document.getElementsByClassName(component)[0].style.borderColor = '#F10000'
+
+        }
+    }
+
+    // const phoneChecker = (e) =>{
+        
+    //     console.log(isNaN(e.value))
+    // }
 
     const postApi = async (url, name, storeName, email, address, isHave, phone) =>{
         const headers = {"Access-Control-Allow-Origin": "*"}
@@ -67,11 +114,11 @@ const ContactUsSection = () => {
                     <p>Nama Toko / Online store / Perusahaan</p>
                     <input style={{padding:'5px' ,}}className='storeName'/>
                     <p>Alamat E-mail</p>
-                    <input style={{padding:'5px' ,}}className='email'/>
+                    <input type="email" style={{padding:'5px' ,}} className='email'/>
                     <p>Lokasi (Nama Kota)</p>
                     <input style={{padding:'5px' ,}}className='address'/>
                     <p>Telpon</p>
-                    <input style={{padding:'5px' ,}}className='telpon'/>
+                    <input type="tel" pattern="[0-9]*" style={{padding:'5px' ,}} className='telpon' />
                     <p>Pernahkah Anda melakukan pembelian dari luar negeri sebelumnya?)</p>
                     <tr>
                         <td><input type="radio" name="ishave" onClick={()=>setAlreadyHave('true')}/>Ya</td>
