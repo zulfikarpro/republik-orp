@@ -4,7 +4,7 @@ import {useHistory } from 'react-router-dom';
 
 const Login = () => {
     let history = useHistory();
-    const envName = 'development'
+    const envName = 'production'
     const config = require('../../config.json')[envName];
     const url = config.url;
 
@@ -17,7 +17,6 @@ const Login = () => {
 
 
     const submitData = async() =>{
-        console.log('tesssst')
         const username = document.getElementsByClassName('user')[0].value
         const password = document.getElementsByClassName('password')[0].value 
         const headers = {"Access-Control-Allow-Origin": "*"}

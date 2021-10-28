@@ -9,8 +9,13 @@ import lclbyair from '../../images/expertise/lclbyair.png'
 import lclbysea from '../../images/expertise/lclbysea.png'
 import fclbysea from '../../images/expertise/fclbysea.png'
 import jasatitip from '../../images/expertise/jasatitiptransfer.png'
+import LclBySea from './lclbysea'
+import LclByAir from './lclbyair'
+import FclBySea from './fclbysea'
+import JasaTitip from './jasatitip'
 const Layanan = () => {
     const [imgSource, setImgSource] = useState(lclbysea)
+    const [carousel, setCarousel] = useState('lclBySea')
     useEffect(() => {
         // Update the document title using the browser API
         // document.title = `You clicked ${count} times`;
@@ -28,6 +33,7 @@ const Layanan = () => {
         switch(e){
             case 1:
                 setImgSource(lclbysea)
+                setCarousel('lclBySea')
             document.getElementsByClassName("tab")[0].style.background='#fff'
             document.getElementsByClassName("tab")[0].style.color='#C0022D'
             document.getElementsByClassName("tab")[1].style.background='#C0022D'
@@ -39,6 +45,7 @@ const Layanan = () => {
             break;
             case 2:
                 setImgSource(lclbyair)
+                setCarousel('lclByAir')
                 document.getElementsByClassName("tab")[0].style.background='#C0022D'
                 document.getElementsByClassName("tab")[1].style.background='#fff'
                 document.getElementsByClassName("tab")[1].style.color='#C0022D'
@@ -50,6 +57,7 @@ const Layanan = () => {
             break;
             case 3:
                 setImgSource(fclbysea)
+                setCarousel('fclBySea')
                 document.getElementsByClassName("tab")[0].style.background='#C0022D'
                 document.getElementsByClassName("tab")[1].style.background='#C0022D'
                 document.getElementsByClassName("tab")[2].style.background='#fff'
@@ -61,6 +69,7 @@ const Layanan = () => {
             break;
             case 4:
                 setImgSource(jasatitip)
+                setCarousel('jasaTitip')
                 document.getElementsByClassName("tab")[0].style.background='#C0022D'
                 document.getElementsByClassName("tab")[1].style.background='#C0022D'
                 document.getElementsByClassName("tab")[2].style.background='#C0022D'
@@ -72,6 +81,22 @@ const Layanan = () => {
             break;
 
             default:
+        }
+    }
+
+
+    const CarouselOption = () =>{
+        switch(carousel){
+            case 'lclBySea':
+            return<LclBySea/>
+            case 'lclByAir':
+            return<LclByAir/>
+            case 'fclBySea':
+            return<FclBySea/>
+            case 'jasaTitip':
+            return<JasaTitip/>
+            
+        default:
         }
     }
 
@@ -135,7 +160,8 @@ const Layanan = () => {
                 </NavMenu>
                 </Nav>
                 <div style={{display:'flex', flexDirection:'row', justifyContent:'center'}}></div>
-                <img src={imgSource} alt='expertise' style={{width:'100%', height:'auto'}}/>
+                {/* <img src={imgSource} alt='expertise' style={{width:'100%', height:'auto'}}/> */}
+                {CarouselOption()}
               </ContentDiv>
             </Container>  
         </>

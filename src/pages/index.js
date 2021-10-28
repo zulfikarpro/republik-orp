@@ -10,6 +10,7 @@ import Layanan from '../component/Layanan'
 import KelasImport from '../component/Kelas'
 import Kepuasan from '../component/KepuasanPelanggan'
 import logoWa from '../images/logowa.png'
+import LclBySea from '../component/Layanan/lclbysea';
 
 
 const Home = () => {

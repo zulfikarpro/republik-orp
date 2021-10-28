@@ -17,7 +17,7 @@ import {DateTime} from 'luxon'
 
 const AdminPage = () => {
     let history = useHistory();
-    const envName = 'development'
+    const envName = 'production'
     const config = require('../../config.json')[envName];
     const url = config.url;
     const initialTableData = []
@@ -39,10 +39,9 @@ const AdminPage = () => {
     
     
     useEffect(() => {
-       
         getData()
-        if(localStorage.getItem('auth_token'))
-        {history.push('/admin')}
+        if(!localStorage.getItem('auth_token'))
+        {history.push('/login')}
     }, [])
 
     const getData = async () =>{
