@@ -12,9 +12,35 @@ import icon10 from './icon_layanan/icon-10.png'
 import icon11 from './icon_layanan/icon-11.png'
 import icon12 from './icon_layanan/icon-12.png'
 import icon13 from './icon_layanan/icon-13.png'
-import { ImageIcon, DivItemRow, DivArrow, ArrowLeft, ArrowRight, LineSpan, Number, BoldTitle } from './LayananElements'
+import { ImageIcon, DivItemRow, DivArrow, ArrowLeft, ArrowRight, LineSpan, Number, BoldTitle, Arrow } from './LayananElements'
 
 const LclBySea = () => {
+    const [windowSize, setWindowSize] = React.useState(0)
+
+    const arrow = () =>{
+        let maxLine = 8;
+        
+        if(windowSize <582 )
+        return (
+        <Arrow>
+            {/* for(i=0; i<maxLine; i++){ */}
+
+            {/* } */}
+        </Arrow>
+        )
+    }
+    
+    const handleResize = () =>{
+        setWindowSize(window.innerWidth)
+    }
+    
+    
+    React.useEffect(() => {
+        window.addEventListener("resize", handleResize)
+      })
+
+
+
     return (
         <div style={{maxWidth:'600px', width:'100vw', display:'flex', flexDirection:'row', justifyContent:'center',margin:'auto'}}>
             <div className='column1' style={{display:'flex', flexDirection:'column', maxWidth:'25%', marginTop:'5%'}}>
@@ -42,17 +68,17 @@ const LclBySea = () => {
                     <ImageIcon src={icon10}  style={{maxHeight:'80px',width:'auto', height:'auto', margin:'auto'}}/>
                     <div style={{display:'flex', flexDirection:'row', height:'auto', width:'auto', color:'#C0022D', textAlign:'center',justifyContent:'center', margin:'auto'}}>
                         
-                    <h4>{'-----------'}</h4>
+                    <Arrow>{'-----'}</Arrow>
                     <div style={{maxWidth:'200px', width:'40%',display:'flex', flexDirection:'row',justifyContent:'center',background: 'white', borderRadius:'20px',paddingLeft:'10px', paddingRight:'10px', magrin:'auto', boxShadow:'5px 5px #888888' }}>
                             <h3 style={{fontSize:'.6rem', lineHeight:'1.2', margin:'auto'}}><b style={{fontWeight:'600'}}>Barang diantar menuju gudang Ninja Direct di China</b></h3>
                     </div>
-                        <h4>{'--------->'}</h4>
+                        <Arrow>{'----->'}</Arrow>
                     </div>
                 </DivItemRow>
                 <DivItemRow style={{maxWidth:'400px', color:'#C0022D', margin:'auto'}} className='imagecenter'>
                     <div style={{display:'flex', flexDirection:'row'}}>
                         <div style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
-                        <h4 style={{margin:'auto'}}>{'<----------'}</h4>
+                        <Arrow style={{margin:'auto'}}>{'<-----'}</Arrow>
                         </div>
                         <div style={{display:'flex', flexDirection:'column'}}>
                         <img src={icon8} style={{maxWidth:'160px',marginTop:'20px'}} />
@@ -63,7 +89,7 @@ const LclBySea = () => {
                         </div>
                         </div>
                         <div style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
-                        <h4>{'-----------'}</h4>
+                        <Arrow>{'-----'}</Arrow>
                         </div>
                     </div>
                 </DivItemRow>
@@ -71,11 +97,11 @@ const LclBySea = () => {
                     <ImageIcon src={icon11}  style={{maxHeight:'80px', width:'auto', height:'auto', margin:'auto'}}/>
                     <div style={{display:'flex', flexDirection:'row', height:'auto', width:'auto', color:'#C0022D', textAlign:'center',justifyContent:'center'}}>
                     
-                    <h4>{'-----------'}</h4>
+                    <Arrow>{'-----'}</Arrow>
                     <div style={{maxWidth:'200px',  width:'40%', display:'flex', flexDirection:'row',justifyContent:'center',background: 'white', borderRadius:'20px',paddingLeft:'10px', paddingRight:'10px', magrin:'auto', boxShadow:'5px 5px #888888' }}>
-                            <h3 style={{fontSize:'.6rem', lineHeight:'1.2', margin:'auto'}}><b style={{fontWeight:'600'}}>Barang diantar menuju gudang Ninja Direct di China</b></h3>
+                            <h3 style={{fontSize:'.6rem', lineHeight:'1.2', margin:'auto'}}><b style={{fontWeight:'600'}}>Pembayaran Diterima</b></h3>
                     </div>
-                        <h4>{'--------->'}</h4>
+                        <Arrow>{'----->'}</Arrow>
                     </div>
                 </DivItemRow>
             </div>

@@ -105,7 +105,7 @@ const Layanan = () => {
           <Container style={{marginTop:'0px'}}>
               <ContentDiv style={{backgroundImage:`url(${bg})` , backgroundPosition:'center' ,backgroundSize:'cover', backgroundRepeat:'no-repeat' ,paddingBottom:'5vh', paddingTop:'5vh',width:'100vw', minHeight:'400px'}}>
                 <Title>Our Partners</Title>
-                <GridView >
+                <GridView  style={{margin:'auto'}}>
                     <div style={{alignContent:'center'}}>
                         <div style={{display:'flex', flexDirection:'row', justifyContent:'center' }}>
                         <h2>E-Commerce Partners</h2>
@@ -159,9 +159,10 @@ const Layanan = () => {
                 </NavItem>
                 </NavMenu>
                 </Nav>
-                <div style={{display:'flex', flexDirection:'row', justifyContent:'center'}}></div>
+                <div style={{display:'flex', flexDirection:'row', minHeight:'500px', justifyContent:'center'}}>
                 {/* <img src={imgSource} alt='expertise' style={{width:'100%', height:'auto'}}/> */}
                 {CarouselOption()}
+                </div>
               </ContentDiv>
             </Container>  
         </>

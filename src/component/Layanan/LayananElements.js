@@ -122,9 +122,19 @@ export const Number = styled.h1`
 
 export const BoldTitle = styled.h3`
 font-size:.8rem; line-height:1.2;
-
-
 @media screen and (max-width:960px){
   /* font-size: 0.4rem; */
-}
+};
+`
+
+export const Arrow = styled.p`
+font-size:16px
+  letter-spacing:8px;
+  font-weight:900;
+
+
+  @media screen and (max-width:960px){
+    /* letter-spacing:3px */
+  }
+
 `

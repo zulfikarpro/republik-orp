@@ -41,10 +41,10 @@ Pengiriman Paket Anda
                     <Paragraph>
                     Ninja adalah perusahaan pengiriman ekspres berbasis teknologi yang menyediakan layanan pengiriman tanpa repot untuk bisnis dari semua ukuran di Asia Tenggara. Diluncurkan pada tahun 2014, Ninja memulai operasinya di Singapura dan telah menjadi perusahaan pengiriman terbesar dan tercepat di kawasan ini, dengan jaringan yang mencakup enam negara di Asia Tenggara - Singapura, Malaysia, Filipina, Indonesia, Thailand, dan Vietnam.
                     </Paragraph>
-                    <div style={{display:'flex', flexDirection:'row', justifyContent:'center', alignItems:'center', padding:'5%', maxWidth:'960px'}}>
+                    <div style={{display:'flex', flexDirection:'row', justifyContent:'center', alignItems:'center', padding:'5%', maxWidth:'960px',margin:'auto'}}>
                     <Carousel>
                     {
-                        items.map((item)=> <img src={item.pic} style={{maxHeight:'400px', height:'auto', width:'100%', alignSelf:'center' }}/>)
+                        items.map((item)=> <img src={item.pic} style={{maxHeight:'400px', height:'auto', width:'100%', margin:'auto',alignSelf:'center' }}/>)
                     }
                     </Carousel>
                     </div>

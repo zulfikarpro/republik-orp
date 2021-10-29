@@ -21,6 +21,6 @@ export const ContentDiv = styled.div`
     justify-content: center;
     padding-left: 40px;
     padding-right: 40px;
-    max-width: 960px;
+    max-width: 100%;
 
 `
