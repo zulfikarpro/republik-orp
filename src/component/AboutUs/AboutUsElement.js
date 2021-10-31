@@ -17,9 +17,10 @@ export const Title = styled.h1`
 `
 
 export const Paragraph = styled.p`
+  max-width: 960px;
   font-size: 1rem;
   text-align: center;
-  margin: 5%;
+  margin: auto;
 
   @media screen and(max-width:960px){
     font-size: 2px;

@@ -12,13 +12,13 @@ import icon10 from './icon_layanan/icon-10.png'
 import icon11 from './icon_layanan/icon-11.png'
 import icon12 from './icon_layanan/icon-12.png'
 import icon13 from './icon_layanan/icon-13.png'
-import { ImageIcon, DivItemRow, DivArrow, ArrowLeft, ArrowRight, LineSpan, Number, BoldTitle, Arrow } from './LayananElements'
+import { ImageIcon, DivItemRow, DivArrow, ArrowLeft, ArrowRight, LineSpan, Number, BoldTitle, Arrow, ContainerDiv } from './LayananElements'
 
 
 const JasaTitip = () => {
     return (
-    <div style={{maxWidth:'600px', width:'100vw', display:'flex', flexDirection:'row', justifyContent:'center',margin:'auto'}}>
-            <div className='column1' style={{display:'flex', flexDirection:'column', maxWidth:'20%', marginTop:'5%'}}>
+    <ContainerDiv>
+            <div className='column1' style={{display:'flex', flexDirection:'column', maxWidth:'25%', marginTop:'5%'}}>
                 <DivItemRow style={{}}>
                     <div style={{display:'flex', flexDirection:'row', height:'auto', width:'auto', color:'#C0022D',margin:'auto'}}>
                         <Number>1</Number>
@@ -29,21 +29,23 @@ const JasaTitip = () => {
                     <ImageIcon src={icon3}  />
                 </DivItemRow>
             </div>
-            <div className='column1' style={{display:'flex', flexDirection:'column',justifyContent:'center', maxWidth:'60%', marginTop:'5%'}}>    
-                    <div style={{display:'flex', flexDirection:'row', height:'auto', width:'auto', color:'#C0022D',margin:'auto'}}>
-                    <Arrow style={{margin:'auto', textAlign:'right'}}>{'-----'}</Arrow>
-                    <DivItemRow style={{}}>
-                        {/* <Number>1</Number>
-                        <div style={{display:'flex', flexDirection:'column',justifyContent:'center'}}>
-                            <BoldTitle><b style={{fontWeight:'900'}}>Proses Picking</b><br/><b style={{fontWeight:'200'}}>Oleh Suplier China</b></BoldTitle>
-                        </div> */}
+            <div className='column2' style={{display:'flex', flexDirection:'column',justifyContent:'center', maxWidth:'50%', marginTop:'5%'}}>    
+                    <div style={{display:'flex', flexDirection:'row',justifyContent:'center', height:'auto', width:'auto', color:'#C0022D',margin:'auto'}}>
+                        <div style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
+                        <Arrow style={{margin:'auto', textAlign:'right'}}>{'----'}</Arrow>
+                        </div>
+                        {/* <DivItemRow style={{}}> */}
 
-                    <ImageIcon src={icon9}  />
-                    </DivItemRow>
-                <Arrow style={{margin:'auto', textAlign:'left'}}>{'----->'}</Arrow>
+                        <div style={{display:'flex', flexDirection:'column', maxWidth:'60%'}}>
+                        <ImageIcon src={icon9} style={{maxWidth:'140px',}}  />
+                        </div>
+                        {/* </DivItemRow> */}
+                        <div style={{display:'flex', flexDirection:'column', justifyContent:'center', }}>
+                        <Arrow style={{margin:'auto', textAlign:'left'}}>{'---->'}</Arrow>
+                        </div>
                     </div>
             </div>
-            <div className='column1' style={{display:'flex', flexDirection:'column', maxWidth:'20%', marginTop:'5%'}}>
+            <div className='column3' style={{display:'flex', flexDirection:'column', maxWidth:'25%', marginTop:'5%'}}>
                 <DivItemRow style={{}}>
                     <ImageIcon src={icon6}  />
                     <div style={{display:'flex', flexDirection:'row', height:'auto', width:'auto', color:'#C0022D',margin:'auto'}}>
@@ -54,7 +56,7 @@ const JasaTitip = () => {
                     </div>
                 </DivItemRow>
             </div>
-    </div>
+    </ContainerDiv>
     )
 }
 

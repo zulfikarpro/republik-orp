@@ -3,7 +3,7 @@ import { Container, ContentDiv } from '../Home/HomeElement'
 import bg from '../../images/bg/bgregister.png'
 import { Title } from '../AboutUs/AboutUsElement'
 import logoWa from '../../images/logowa.png'
-import {GridView} from './ContactUsElement'
+import {GridView, ButtonWADesktop, ButtonSubmit, FormInput, P} from './ContactUsElement'
 import axios from 'axios'
 const ContactUsSection = () => {
     const [alreadyHave, setAlreadyHave] = useState('');
@@ -104,28 +104,29 @@ const ContactUsSection = () => {
     return (
         <>
         <Container style={{marginTop:'0px'}} id="contactus">
-        <ContentDiv style={{backgroundImage:`url(${bg})`, backgroundSize:'cover', paddingBottom:'5vh', paddingTop: '5vh', width:'100%'}}>
-            <GridView >
-                <div style={{flex:1, display:'flex', flexDirection:'column'}}>
-                    <h2 style={{color:'#C0022D'}}>REGISTER MEMBER / JOIN US</h2>
-                    <p style={{fontSize:'.8rem'}}>Ninja akan membagikan pengalaman dan informasi segala hal yang berhubungan dengan pembelian import dan sebagai nya dan sebagai nya</p>
-                    <p>Nama Lengkap</p>
-                    <input style={{padding:'5px' ,}} className='name'/>
-                    <p>Nama Toko / Online store / Perusahaan</p>
-                    <input style={{padding:'5px' ,}}className='storeName'/>
-                    <p>Alamat E-mail</p>
-                    <input type="email" style={{padding:'5px' ,}} className='email'/>
-                    <p>Lokasi (Nama Kota)</p>
-                    <input style={{padding:'5px' ,}}className='address'/>
-                    <p>Telpon</p>
-                    <input type="tel" pattern="[0-9]*" style={{padding:'5px' ,}} className='telpon' />
-                    <p>Pernahkah Anda melakukan pembelian dari luar negeri sebelumnya?)</p>
-                    <tr>
+        <ContentDiv style={{backgroundImage:`url(${bg})`, backgroundSize:'cover', paddingBottom:'5vh', paddingTop: '5vh',paddingLeft:'0px', paddingRight:'0px', width:'100%'}}>
+            <div></div>
+            <GridView style={{maxWidth:'960px', margin:'auto'}} >
+                <div style={{flex:1, display:'flex', flexDirection:'column', width:'100%'}}>
+                    <h2 style={{color:'#C0022D', paddingLeft:'10%'}}>REGISTER MEMBER / JOIN US</h2>
+                    <P style={{fontSize:'.8rem', marginRight:'10%'}}>Ninja akan membagikan pengalaman dan informasi segala hal yang berhubungan dengan pembelian import dan sebagai nya dan sebagai nya</P>
+                    <P >Nama Lengkap</P>
+                    <FormInput className='name'/>
+                    <P >Nama Toko / Online store / Perusahaan</P>
+                    <FormInput className='storeName'/>
+                    <P >Alamat E-mail</P>
+                    <FormInput type="email" className='email'/>
+                    <P>Lokasi (Nama Kota)</P>
+                    <FormInput className='address'/>
+                    <P>Telpon</P>
+                    <FormInput type="tel" pattern="[0-9]*" className='telpon' />
+                    <P>Pernahkah Anda melakukan pembelian dari luar negeri sebelumnya?)</P>
+                    <tr style={{marginLeft:'10%'}}>
                         <td><input type="radio" name="ishave" onClick={()=>setAlreadyHave('true')}/>Ya</td>
                         
-                        <td><input type="radio" name="ishave" onClick={()=>setAlreadyHave('false')}/>Tidak</td>
+                        <td><input type="radio" name="ishave" style={{marginLeft:'20px'}} onClick={()=>setAlreadyHave('false')}/>Tidak</td>
                     </tr>
-                    <div onClick={()=>submit()}style={{background:'#C0022D', borderRadius:'16px', width:'200px', color:'#fff', textAlign:'center', padding: '10px', marginTop:'20px'}}>Submit</div>
+                    <ButtonSubmit onClick={()=>submit()}style={{width:'95%', marginTop:'20px', marginBottom:'30px'}}>Submit</ButtonSubmit>
                 </div>
                 <div style={{flex:1, display:'flex', flexDirection:'column'}}>
                     <br/>
@@ -133,12 +134,19 @@ const ContactUsSection = () => {
                 <div style={{display:'flex', flexDirection:'row', justifyContent:'center'}}>
                 <p style={{justifyContent:"center", textAlign:'center'}}>Hubungi kontak representatif<br/> kami di :</p>
                 </div>
-                <div style={{display:'flex', flexDirection:'row', justifyContent:'center'}}>
-                <a href={'https://wa.me/628119933501'}>
+                {/* <div style={{display:'flex', flexDirection:'row', justifyContent:'center'}}> */}
+                {/* <a href={'https://wa.me/628119933501'}>
                 <img src={logoWa}></img>
-                </a>
-                </div>
+                </a> */}
+                {/* </div> */}
                 <h1 style={{textAlign:'center'}}>0811-9933-501</h1>
+                <ButtonWADesktop>
+                    <a  style={{textDecoration:'none'}}href={'https://wa.me/628119933501'}>
+                    <div style={{margin:'auto', background:'#25D366', padding:'6px', width:'60%', textAlign:'center', borderRadius:'20px'}}>
+                        <h1 style={{color:'white'}}>WhatsApp Kami</h1>
+                        </div>
+                    </a>
+                </ButtonWADesktop>
                 </div>
             </GridView>
             

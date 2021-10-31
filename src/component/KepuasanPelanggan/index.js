@@ -16,12 +16,12 @@ const Kepuasan = () => {
                 <Carousel>
                     <TextBox style={{background:'white', borderRadius:'10px', maxWidth:'620px', margin:'auto'}}>
                         <P style={{padding: '40px',color:'#000'}}>Dear Ninja Team, <br/>
-i feel that you guys are far beyond than just being my forwarder. Saya kenal Ninja kurang lebih 4 bulan  dan super duper tebantu denggan semua layanan Ninja.<br/><br/>
+i feel that you guys are far beyond than just being my forwarder. Saya kenal Ninja kurang lebih 4 bulan  dan super duper terbantu denggan semua layanan Ninja.<br/><br/>
 
 Pengalaman yang super berkesan adalah bagaimana Ninja Team merubah kondisi yang semula minus nyari 22 juta. turun ke minus 16 juta, lalu berubah menjadi profit puluhan juta rupiah dalam produk toaster machine!<br/>
 Amazing right? Dan itu kenyataan.<br/><br/>
 
-Dengan layanan Find for You, Ninja Team berkolaborasi dengan tim purchasing China memastikan agar saya mendapatkan barang yang sama, dan dengan harga yang jauh lebih murah dari agen purcashing saya yang sudah saya gunaka bertahun - tahun.<br/><br/>
+Dengan layanan Find for You, Ninja Team berkolaborasi dengan tim purchasing China memastikan agar saya mendapatkan barang yang sama, dan dengan harga yang jauh lebih murah dari agen purcashing saya yang sudah saya gunakan bertahun - tahun.<br/><br/>
 
 Terima kasih Ninja Team, Semoga kalian sehat terus. Salam Sukses<br/><br/><br/>
 Miss C, Jakarta

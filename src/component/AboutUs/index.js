@@ -31,10 +31,10 @@ const AboutUsPage = () => {
 
     return (
         <>
-            <Container id={'aboutus'} page='aboutus'>
+            <Container page='aboutus' id='aboutus' style={{marginTop:'100px'}}>
                 <ContentDiv style={{backgroundImage:`url(${bgaboutus})`, backgroundSize:'cover', backgroundRepeat:'no-repeat' ,paddingBottom:'5vh', paddingTop:'5vh'}}>
                   <div style={{display:'flex', flexDirection:'column'}}>
-                    <Title>
+                    <Title style={{maxWidth:'960px'}}>
                     Kami Tuntaskan Masalah
 Pengiriman Paket Anda
                     </Title>

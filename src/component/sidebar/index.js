@@ -12,19 +12,48 @@ const Sidebar = ({isOpen, toggle}) => {
                     <SidebarLink to='home' onClick={toggle}>
                         Home
                     </SidebarLink>
-                    <SidebarLink to='aboutus' onClick={toggle}>
+                    <SidebarLink 
+                            smooth={true}
+                            duration={500}
+                            spy={true}
+                            exact='false'
+                            offset={-80}
+                            to='aboutus' exact='false' onClick={toggle}>
                         About Us
                     </SidebarLink>
-                    <SidebarLink to='layanan' onClick={toggle}>
+                    <SidebarLink
+                            smooth={true}
+                            duration={500}
+                            spy={true}
+                            exact='false'
+                            offset={-80}
+                             to='layanan' onClick={toggle}>
                         Layanan
                     </SidebarLink>
-                    <SidebarLink to='kelas' onClick={toggle}>
+                    <SidebarLink
+                            smooth={true}
+                            duration={500}
+                            spy={true}
+                            exact='false'
+                            offset={-80} to='kelas' onClick={toggle}>
                     Events/Kelas Impor
                     </SidebarLink>
-                    <SidebarLink to='testimoni' onClick={toggle}>
+                    <SidebarLink 
+                            smooth={true}
+                            duration={500}
+                            spy={true}
+                            exact='false'
+                            offset={-80} 
+                            to='testimoni' onClick={toggle}>
                     Testimoni
                     </SidebarLink>
-                    <SidebarLink to='contactus' onClick={toggle}>
+                    <SidebarLink
+                            smooth={true}
+                            duration={500}
+                            spy={true}
+                            exact='false'
+                            offset={-80} 
+                            to='contactus' onClick={toggle}>
                     <h1 style={{color:'#C0022D'
                             }}>Join Us</h1>
                     </SidebarLink>

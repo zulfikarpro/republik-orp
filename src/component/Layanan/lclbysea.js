@@ -12,7 +12,7 @@ import icon10 from './icon_layanan/icon-10.png'
 import icon11 from './icon_layanan/icon-11.png'
 import icon12 from './icon_layanan/icon-12.png'
 import icon13 from './icon_layanan/icon-13.png'
-import { ImageIcon, DivItemRow, DivArrow, ArrowLeft, ArrowRight, LineSpan, Number, BoldTitle, Arrow } from './LayananElements'
+import { ImageIcon, DivItemRow, DivArrow, ArrowLeft, ArrowRight, LineSpan, Number, BoldTitle, Arrow, ContainerDiv } from './LayananElements'
 
 const LclBySea = () => {
     const [windowSize, setWindowSize] = React.useState(0)
@@ -42,7 +42,7 @@ const LclBySea = () => {
 
 
     return (
-        <div style={{maxWidth:'600px', width:'100vw', display:'flex', flexDirection:'row', justifyContent:'center',margin:'auto'}}>
+        <ContainerDiv>
             <div className='column1' style={{display:'flex', flexDirection:'column', maxWidth:'25%', marginTop:'5%'}}>
                 <DivItemRow style={{}}>
                     <div style={{display:'flex', flexDirection:'row', height:'auto', width:'auto', color:'#C0022D',margin:'auto'}}>
@@ -76,20 +76,22 @@ const LclBySea = () => {
                     </div>
                 </DivItemRow>
                 <DivItemRow style={{maxWidth:'400px', color:'#C0022D', margin:'auto'}} className='imagecenter'>
-                    <div style={{display:'flex', flexDirection:'row'}}>
+
+                    <div style={{height:'40px', width:'100%'}}></div>
+                    <div style={{display:'flex', flexDirection:'row', justifyContent:'center'}}>
                         <div style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
-                        <Arrow style={{margin:'auto'}}>{'<-----'}</Arrow>
+                        <Arrow style={{margin:'auto'}}>{'<----'}</Arrow>
                         </div>
-                        <div style={{display:'flex', flexDirection:'column'}}>
-                        <img src={icon8} style={{maxWidth:'160px',marginTop:'20px'}} />
-                        <div style={{display:'flex', flexDirection:'row', height:'auto', width:'auto', color:'#C0022D',margin:'auto', textAlign:'center'}}>                                
-                            {/* <div style={{display:'flex', flexDirection:'column',justifyContent:'center'}}> */}
-                                <h3 style={{fontSize:'.8rem', lineHeight:'0'}}><b style={{fontWeight:'900'}}>LCL by Sea</b><br/></h3>
-                            {/* </div> */}
-                        </div>
+                        <div style={{display:'flex', flexDirection:'column', maxWidth:'60%'}}>
+                            <img src={icon8} style={{maxWidth:'140px',width:'80%', margin:'auto'}} />
+                            <div style={{display:'flex', flexDirection:'row', height:'auto', width:'auto', color:'#C0022D',margin:'auto', textAlign:'center'}}>                                
+                                {/* <div style={{display:'flex', flexDirection:'column',justifyContent:'center'}}> */}
+                                    <h3 style={{fontSize:'.8rem', lineHeight:'0'}}><b style={{fontWeight:'900'}}>LCL by Sea</b><br/></h3>
+                                {/* </div> */}
+                            </div>
                         </div>
                         <div style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
-                        <Arrow>{'-----'}</Arrow>
+                        <Arrow style={{margin:'auto'}}>{'----'}</Arrow>
                         </div>
                     </div>
                 </DivItemRow>
@@ -134,7 +136,7 @@ const LclBySea = () => {
                     </div>
                 </div> */}
             </div>
-        </div>
+        </ContainerDiv>
     )
 }
 

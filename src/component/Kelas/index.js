@@ -3,6 +3,7 @@ import { Container, ContentDiv } from '../Home/HomeElement'
 import backgroundImages from '../../images/bg/bgkelas.png'
 import { TestDiv, P, Title } from './KelasElements'
 import bgKepuasan from '../../images/bg/bgkepuasan.png'
+import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, Img} from '../Navbar/NavbarElement'
 
 const KelasImport = () => {
     return (
@@ -18,9 +19,19 @@ const KelasImport = () => {
 
                 <Title style={{color:'white'}}>KELAS IMPOR</Title>
                 <P>Ikuti kelas impor bagi anda yang ingin memulai impor</P>
+                <NavLinks 
+                            to='contactus'
+                            smooth={true}
+                            duration={500}
+                            spy={true}
+                            exact='false'
+                            offset={-80}
+                            style={{margin:'auto'}}
+                            >
                 <div style={{display: 'flex',flexDirection:'row', alignItems:'center', justifyContent:'center'}}>
                     <TestDiv>INFO SELENGKAPNYA</TestDiv>
                 </div>
+                </NavLinks>
              </div>
              
              </ContentDiv>

@@ -123,9 +123,15 @@ const Layanan = () => {
 
                 <div style={{display:'flex', flexDirection:'row', width:'100%', background:'#C0022D', color:'#fff', justifyContent:'center',}}>
                     <div style={{display:'flex', flexDirection:'column', margin:'10%'}}>
+                    <h2 style={{alignSelf:'center', }}>Visi Kami</h2>
+                    <p style={{alignSelf:'center', textAlign:'center'}}>
+                    Menghubungkan Asia kepada setiap bisnis anda dalam satu proses pembelian dan pegiriman barang. 
+                    </p>
+                    <br/>
                     <h2 style={{alignSelf:'center', }}>Misi Kami</h2>
                     <p style={{alignSelf:'center', textAlign:'center'}}>
-                    Menghubungkan Asia Tenggara ke dunia berbagai kemungkinan, satu pengiriman yang menyenangkan secara sekaligus
+                    1. Memberikan nilai tambah yang maksimal kepada anda dengan harga yang paling kompetitif. <br/>
+                    2. Menciptakan keaamanan dalam setiap transaksi yang anda lakukan.
                     </p>
                     </div>
                 </div>
@@ -159,7 +165,7 @@ const Layanan = () => {
                 </NavItem>
                 </NavMenu>
                 </Nav>
-                <div style={{display:'flex', flexDirection:'row', minHeight:'500px', justifyContent:'center'}}>
+                <div style={{display:'flex', flexDirection:'row', minHeight:'500px',maxWidth:'95%',justifyContent:'center', margin:'auto'}}>
                 {/* <img src={imgSource} alt='expertise' style={{width:'100%', height:'auto'}}/> */}
                 {CarouselOption()}
                 </div>

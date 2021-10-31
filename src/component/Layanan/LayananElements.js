@@ -121,20 +121,37 @@ export const Number = styled.h1`
 `
 
 export const BoldTitle = styled.h3`
-font-size:.8rem; line-height:1.2;
+font-size:.8rem; 
+line-height:1.2;
 @media screen and (max-width:960px){
-  /* font-size: 0.4rem; */
+  font-size: 0.6rem;
 };
 `
 
 export const Arrow = styled.p`
-font-size:16px
-  letter-spacing:8px;
-  font-weight:900;
+font-size:16px;
+  letter-spacing:4px;
+  /* font-weight:900; */
 
 
   @media screen and (max-width:960px){
-    /* letter-spacing:3px */
+    letter-spacing:.2px;
+    font-size: 10px;
   }
 
 `
+
+
+export const ContainerDiv = styled.div`
+max-width:600px; 
+display:flex; 
+flex-direction:row; 
+justify-content:center;
+margin:auto;
+/* background:red; */
+
+@media screen and (max-width:600px){
+  max-width:95vw; 
+  /* width:90vw */
+}
+` 

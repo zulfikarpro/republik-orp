@@ -41,7 +41,6 @@ const Navbar = ({toggle}) => {
                              scrollNav={scrollNav}>
                         <NavItem>
                             <NavLinks 
-                            onClick={()=>{console.log('test')}}
                             to='home'
                             smooth={true}
                             duration={500}
@@ -55,7 +54,7 @@ const Navbar = ({toggle}) => {
                             smooth={true}
                             duration={500}
                             spy={true}
-                            exact='true'
+                            exact='false'
                             offset={-80}>About Us</NavLinks>
                         </NavItem>
                         <NavItem>
@@ -63,7 +62,7 @@ const Navbar = ({toggle}) => {
                             smooth={true}
                             duration={500}
                             spy={true}
-                            exact='true'
+                            exact='false'
                             offset={-80}>Layanan</NavLinks>
                         </NavItem>
                         <NavItem>    
@@ -71,7 +70,7 @@ const Navbar = ({toggle}) => {
                             smooth={true}
                             duration={500}
                             spy={true}
-                            exact='true'
+                            exact='false'
                             offset={-80}>Events/Kelas Impor</NavLinks>
                         </NavItem>
                         <NavItem>    
@@ -79,7 +78,7 @@ const Navbar = ({toggle}) => {
                             smooth={true}
                             duration={500}
                             spy={true}
-                            exact='true'
+                            exact='false'
                             offset={-80}>Testimoni</NavLinks>
                         </NavItem>
                         
@@ -89,7 +88,7 @@ const Navbar = ({toggle}) => {
                             smooth={true}
                             duration={500}
                             spy={true}
-                            exact='true'
+                            exact='false'
                             offset={-80}><h1 style={{color:'#C0022D'
                             }}>Join Us</h1></NavLinks>
                         </NavItem>

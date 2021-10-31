@@ -23,22 +23,29 @@ const toggle = () =>{
 
     return (
         <div style={{minWidth:'100%'}}>
-            <DivWa>
+            {/* <DivWa>
                 <a href={'https://wa.me/628119933501'}>
                 <Img src={logoWa}></Img>
                 </a>
-                </DivWa>
+                </DivWa> */}
+                <ButtonWADiv>
+                <a  style={{textDecoration:'none'}}href={'https://wa.me/628119933501'}>
+                    <ButtonWA style={{margin:'auto', background:'#25D366', paddingTop:'2px', paddingBottom:'2px', paddingLeft:'6px', paddingRight:'6px', textAlign:'center', borderRadius:'20px'}}>
+                        <h4 style={{color:'white'}}>WhatsApp Kami</h4>
+                        </ButtonWA>
+                    </a>
+            </ButtonWADiv>
             <Sidebar isOpen={isOpen} toggle={toggle}/>
             <Navbar toggle={toggle}/>
             <HomePage/>
-            <AboutUsPage/>
+            <AboutUsPage style={{background:'red'}}/>
             <Layanan/>
             <KelasImport/>
             <Kepuasan/>
             <ContactUsSection/>
             {/* <Footer/> */}
             
-            {/* <div style={{position:'flex',height:'200px', width:'auto'}}></div> */}
+            {/* <div style={{position:'flex',height:'40px', width:'auto'}}></div> */}
         </div>
     )
 }
@@ -52,6 +59,32 @@ export const VideoBg = styled.video`
     -o-object-fit: cover;
     object-fit: fill;
     opacity: 0.7;
+`
+
+export const ButtonWA = styled.div`
+    max-width: 200px;
+
+    @media screen and (max-width:960px){
+        width: 95%;
+        max-width: 100%;
+    }
+
+`
+
+export const ButtonWADiv = styled.div`
+    position:fixed;
+    bottom: 0;
+    background: #fff;
+    width: 100%;
+    max-width: 100%;
+    height: 60px;
+    z-index: 2;
+    padding-top:2px ;
+
+    @media screen and (max-width:960px){
+        /* max-width: 200px; */
+
+    }
 `
 
 export const DivWa = styled.div`
