@@ -1,6 +1,6 @@
 {
   "name": "Ninja-Direct",
-  "homepage": ".",
+  "homepage": "https://ninjadirectpromo.com/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -29,7 +29,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "deploy": "npm run build && rm -rf build.zip && zip -r build.zip build && scp -r build.zip root@172.104.53.17:~/web_staging",
+    "startprod": "HTTPS=true react-scripts start",
+    "deploy": "npm run build && rm -rf build.zip && zip -r build.zip build && scp -r build.zip root@172.104.53.17:~/web_staging/build.zip",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

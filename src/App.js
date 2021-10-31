@@ -6,10 +6,10 @@ import AdminPage from './pages/admin';
 
 function App() {
   return (
-    <Router >
-      <Route exact path = '/'>
-        <Home/>
-      </Route>
+    <Router basename='/index.html'>
+      <Route exact path = '/' component={Home}/>
+        {/* <Home/> */}
+      {/* </Route> */}
       <Route exact path = '/login'>
         <Login/>
       </Route>
