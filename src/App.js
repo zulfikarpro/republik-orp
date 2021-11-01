@@ -10,13 +10,13 @@ function App() {
       <Route exact path = '/' component={Home}/>
         {/* <Home/> */}
       {/* </Route> */}
-      <Route exact path = '/login'>
-        <Login/>
-      </Route>
-      <Route exact path = '/admin'>
-        <AdminPage/>
-      </Route>
-      <div style={{height:'1920', width:'100%',backgroundColor: '#fff' }}/>
+      <Route exact path = '/login' component={{Login}}/>
+        {/* <Login/> */}
+      {/* </Route> */}
+      <Route exact path = '/admin' component={{AdminPage}}/>
+        {/* <AdminPage/>
+      </Route> */}
+      {/* <div style={{height:'1920', width:'100%',backgroundColor: '#fff' }}/> */}
     </Router>
   );
 }

@@ -126,7 +126,9 @@ const ContactUsSection = () => {
                         
                         <td><input type="radio" name="ishave" style={{marginLeft:'20px'}} onClick={()=>setAlreadyHave('false')}/>Tidak</td>
                     </tr>
-                    <ButtonSubmit onClick={()=>submit()}style={{width:'95%', marginTop:'20px', marginBottom:'30px'}}>Submit</ButtonSubmit>
+                    <br/>
+                    <ButtonSubmit onClick={()=>submit()}style={{width:'95%', maxWidth:'200px', margin:'auto'}}>Submit</ButtonSubmit>
+                    <br/>
                 </div>
                 <div style={{flex:1, display:'flex', flexDirection:'column'}}>
                     <br/>

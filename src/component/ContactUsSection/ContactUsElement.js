@@ -39,9 +39,11 @@ background:#C0022D;
 border-radius:16px; 
 color:#fff; 
 text-align:center; 
-padding: 10px;
+padding: 12px;
 margin-top:20px;
-
+    @media screen and(max-widtH:960px){
+        max-width: 400px;
+    }
 `
 
 export const FormInput = styled.input`

@@ -121,7 +121,7 @@ const Layanan = () => {
                     </div>
                 </GridView>
 
-                <div style={{display:'flex', flexDirection:'row', width:'100%', background:'#C0022D', color:'#fff', justifyContent:'center',}}>
+                <div style={{display:'flex', flexDirection:'row', width:'100vw', background:'#C0022D', color:'#fff', justifyContent:'center',}}>
                     <div style={{display:'flex', flexDirection:'column', margin:'10%'}}>
                     <h2 style={{alignSelf:'center', }}>Visi Kami</h2>
                     <p style={{alignSelf:'center', textAlign:'center'}}>
