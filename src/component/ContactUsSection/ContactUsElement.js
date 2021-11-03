@@ -41,6 +41,7 @@ color:#fff;
 text-align:center; 
 padding: 12px;
 margin-top:20px;
+cursor: pointer;
     @media screen and(max-widtH:960px){
         max-width: 400px;
     }

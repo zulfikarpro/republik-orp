@@ -15,6 +15,7 @@
     "axios": "^0.23.0",
     "dotenv": "^10.0.0",
     "luxon": "^2.0.2",
+    "npm-run-all": "^4.1.5",
     "react": "^17.0.2",
     "react-datepicker": "^4.3.0",
     "react-dom": "^17.0.2",
@@ -30,7 +31,10 @@
   "scripts": {
     "start": "react-scripts start",
     "startprod": "HTTPS=true react-scripts start",
-    "deploy": "npm run build && rm -rf build.zip && zip -r build.zip build && scp -r build.zip root@172.104.53.17:~/web_staging/build.zip",
+    "build-css": "GENERATE_SOURCEMAP=false --include-path ./src --include-path ./node_modules src/ -o src/",
+    "build-js": "GENERATE_SOURCEMAP=false react-scripts build",
+    "build:prod": "npm-run-all build-css build-js",
+    "deploy": "npm run build-js && rm -rf build.zip && zip -r build.zip build && scp -r build.zip root@172.104.53.17:~/web_staging/build.zip",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

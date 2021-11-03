@@ -28,8 +28,8 @@ const toggle = () =>{
                 <Img src={logoWa}></Img>
                 </a>
                 </DivWa> */}
-                <ButtonWADiv>
-                <a  style={{textDecoration:'none'}}href={'https://wa.me/628119933501'}>
+            <ButtonWADiv>
+                <a  style={{textDecoration:'none'}}href={'https://wa.me/628119933501'} target="_blank" rel="noopener noreferrer" >
                     <ButtonWA style={{margin:'auto', background:'#25D366', paddingTop:'2px', paddingBottom:'2px', paddingLeft:'6px', paddingRight:'6px', textAlign:'center', borderRadius:'20px'}}>
                         <h4 style={{color:'white'}}>WhatsApp Kami</h4>
                         </ButtonWA>
@@ -66,7 +66,7 @@ export const ButtonWA = styled.div`
 
     @media screen and (max-width:960px){
         width: 95%;
-        max-width: 100%;
+        max-width: 95vh;
     }
 
 `

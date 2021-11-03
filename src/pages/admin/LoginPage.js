@@ -2,7 +2,7 @@ import axios from 'axios';
 import React, {useState, useEffect} from 'react'
 import {useHistory } from 'react-router-dom';
 
-const Login = () => {
+const LoginPage = () => {
     let history = useHistory();
     const envName = 'production'
     const config = require('../../config.json')[envName];
@@ -46,4 +46,4 @@ const Login = () => {
     )
 }
 
-export default Login
+export default LoginPage

@@ -8,7 +8,7 @@ export const Container = styled.div`
     margin-top: 10vh;
     /* min-height: 600px; */
     /* max-height: 1080px; */
-    max-width: 100%;
+    max-width: 100vw;
 `
 
 export const Image = styled.div`

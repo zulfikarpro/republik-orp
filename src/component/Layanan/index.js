@@ -103,7 +103,7 @@ const Layanan = () => {
     return (
         <>
           <Container style={{marginTop:'0px'}}>
-              <ContentDiv style={{backgroundImage:`url(${bg})` , backgroundPosition:'center' ,backgroundSize:'cover', backgroundRepeat:'no-repeat' ,paddingBottom:'5vh', paddingTop:'5vh',width:'100vw', minHeight:'400px'}}>
+              <ContentDiv style={{backgroundImage:`url(${bg})` , backgroundPosition:'center' ,backgroundSize:'cover', backgroundRepeat:'no-repeat' ,padding:0, minHeight:'400px'}}>
                 <Title>Our Partners</Title>
                 <GridView  style={{margin:'auto'}}>
                     <div style={{alignContent:'center'}}>
@@ -121,7 +121,7 @@ const Layanan = () => {
                     </div>
                 </GridView>
 
-                <div style={{display:'flex', flexDirection:'row', width:'100vw', background:'#C0022D', color:'#fff', justifyContent:'center',}}>
+                <div style={{display:'flex', flexDirection:'row', width:'98vw',margin:'auto', background:'#C0022D', color:'#fff', justifyContent:'center',}}>
                     <div style={{display:'flex', flexDirection:'column', margin:'10%'}}>
                     <h2 style={{alignSelf:'center', }}>Visi Kami</h2>
                     <p style={{alignSelf:'center', textAlign:'center'}}>
@@ -142,8 +142,8 @@ const Layanan = () => {
                 <Nav>    
                 <NavMenu>
                 <NavItem className="tab" onClick={()=>{ChangeColor(1)}} style={{background:'#fff', color:'#C0022D' ,borderRadius:' 20px 0px 0px 20px'}}>
-                    <NavLinks >
-                    <b>LCL</b>&nbsp;by Sea
+                    <NavLinks>
+                    <b >LCL</b>&nbsp;by Sea
                     </NavLinks>
                 </NavItem>
                 

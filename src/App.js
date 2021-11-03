@@ -1,22 +1,15 @@
 import './App.css';
 import {BrowserRouter as Router, Route} from 'react-router-dom'
 import Home from './pages';
-import Login from './pages/admin/login';
-import AdminPage from './pages/admin';
+import LoginPage from './pages/admin/LoginPage.js';
+import AdminPage from './pages/admin/AdminPage.js';
 
 function App() {
   return (
-    <Router basename='/index.html'>
+    <Router basename='/'>
       <Route exact path = '/' component={Home}/>
-        {/* <Home/> */}
-      {/* </Route> */}
-      <Route exact path = '/login' component={{Login}}/>
-        {/* <Login/> */}
-      {/* </Route> */}
+      <Route exact path = '/login' component={{LoginPage}}/>
       <Route exact path = '/admin' component={{AdminPage}}/>
-        {/* <AdminPage/>
-      </Route> */}
-      {/* <div style={{height:'1920', width:'100%',backgroundColor: '#fff' }}/> */}
     </Router>
   );
 }

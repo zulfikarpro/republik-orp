@@ -127,7 +127,7 @@ const ContactUsSection = () => {
                         <td><input type="radio" name="ishave" style={{marginLeft:'20px'}} onClick={()=>setAlreadyHave('false')}/>Tidak</td>
                     </tr>
                     <br/>
-                    <ButtonSubmit onClick={()=>submit()}style={{width:'95%', maxWidth:'200px', margin:'auto'}}>Submit</ButtonSubmit>
+                    <ButtonSubmit onMouseDown={()=>submit()} style={{width:'95%', maxWidth:'200px', margin:'auto'}}>Submit</ButtonSubmit>
                     <br/>
                 </div>
                 <div style={{flex:1, display:'flex', flexDirection:'column'}}>
@@ -143,7 +143,7 @@ const ContactUsSection = () => {
                 {/* </div> */}
                 <h1 style={{textAlign:'center'}}>0811-9933-501</h1>
                 <ButtonWADesktop>
-                    <a  style={{textDecoration:'none'}}href={'https://wa.me/628119933501'}>
+                    <a  style={{textDecoration:'none'}}href={'https://wa.me/628119933501'} target="_blank" rel="noopener noreferrer" >
                     <div style={{margin:'auto', background:'#25D366', padding:'6px', width:'60%', textAlign:'center', borderRadius:'20px'}}>
                         <h1 style={{color:'white'}}>WhatsApp Kami</h1>
                         </div>

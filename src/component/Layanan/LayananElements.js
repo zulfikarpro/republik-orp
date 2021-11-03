@@ -47,6 +47,7 @@ text-align: center;
   align-items: center;
   width: 9rem;
   height: 100%;
+  cursor:pointer;
     @media screen and (max-width:960px){
       width: 5rem;
       font-size: 0.8rem;
