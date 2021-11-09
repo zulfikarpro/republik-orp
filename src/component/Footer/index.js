@@ -10,12 +10,12 @@ const Footer = () => {
                     <FooterFirstLine>
                         <FaWhatsapp style={{width:'auto', height:'30px',marginRight:'8px'}}/>
                         <FaInstagram style={{width:'auto', height:'30px',marginRight:'8px'}}/>
-                        <FaFacebookF style={{width:'auto', height:'30px',marginRight:'8px'}}/>
-                        <FaTwitter style={{width:'auto', height:'30px',marginRight:'8px'}}/>
+                        {/* <FaFacebookF style={{width:'auto', height:'30px',marginRight:'8px'}}/> */}
+                        {/* <FaTwitter style={{width:'auto', height:'30px',marginRight:'8px'}}/> */}
                         <FaYoutube style={{width:'auto', height:'30px',marginRight:'8px'}}/>
                     </FooterFirstLine>
                     <FooterSecondLine>
-                    © 2021 Trimatra.  Trademarks and brands are the property of their respective owners.
+                    © 2021 Trimatra Industries.  Trademarks and brands are the property of their respective owners.
                     </FooterSecondLine>
                 </FooterWrapper>
             </FooterContainer>

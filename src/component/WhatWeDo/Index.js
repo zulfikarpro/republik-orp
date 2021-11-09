@@ -10,7 +10,7 @@ const WhatWeDO = (
                <img style={{zIndex:-1 ,maxWidth:'100%', height:'auto', }} src={bg}/>
                {/* <div style={{height:'100%'}}> */}
                <div style={{position:'absolute', width:'100%', height:'100%',display:'flex', flexDirection:'row', justifyContent:'start'}}>
-                  <div style={{display:'flex', flexDirection:'column', margin:'10%', color:'#fff', maxWidth:'40%'}}>
+                  <div style={{display:'flex', flexDirection:'column', margin:'10%', color:'#fff', maxWidth:'40%', textAlign:'center'}}>
                   <h1>What We Do</h1>
                   <br/>
                   <h3 style={{maxWidth:'400px'}}>WE SELECT WORLDWIDE PROVIDERS WITH

@@ -43,8 +43,8 @@ useEffect(() => {
             <Partnership/>
             <OurProducts/>
             <ContactUsSection/>
-            {/* <Footer/> */}
-            <div style={{position:'flex',height:'200px', width:'auto'}}></div>
+            <Footer/>
+            {/* <div style={{position:'flex',height:'200px', width:'auto'}}></div> */}
         </div>
     )
   }else{

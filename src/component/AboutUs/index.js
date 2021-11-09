@@ -11,7 +11,7 @@ const AboutUsPage = (
                <img style={{zIndex:-1 ,maxWidth:'100%', height:'auto', }} src={bg}/>
                {/* <div style={{height:'100%'}}> */}
                  <div style={{position:'absolute', width:'100%', height:'100%',display:'flex', flexDirection:'row', justifyContent:'end'}}>
-                  <div style={{display:'flex', flexDirection:'column', margin:'10%', color:'#fff', maxWidth:'40%'}}>
+                  <div style={{display:'flex', flexDirection:'column', margin:'10%', color:'#fff', maxWidth:'40%', textAlign:'center'}}>
                   <h1>Who We Are</h1>
                   <p>WE ARE PRIVATE OWNED COMPANY WITH A
 DECADE HISTORY AND EXPERIENCE OF SUPPLY 

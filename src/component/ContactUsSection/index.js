@@ -1,6 +1,7 @@
 import React from 'react'
 import { Container, ContentDiv } from '../Home/HomeElements'
 import { ContactUsDiv } from './ContactUsElement'
+import Footer from '../Footer'
 import bg from '../../images/bg/bg5.png'
 import { Grid } from '@material-ui/core'
 const ContactUsSection = (
@@ -8,7 +9,7 @@ const ContactUsSection = (
     return (
         <>
            <Container style={{minHeight:'100%', minWidth:'100%', marginTop:'0px', justifyContent:'flex-start'}}>
-             <ContentDiv style={{minWidth:'100%', minHeight:'100%',height:'100vh', justifyContent:'flex-start'}} id='contactus'>
+             <ContentDiv style={{minWidth:'100%', minHeight:'100%',height:'100vh', justifyContent:'flex-start',}} id='contactus'>
                  <ContactUsDiv style={{width:'100%', height:'auto', minHeight:'100%', display:'flex', flexDirection:'row', justifyContent:'center', color:'#fff'}}>
                    <div style={{display:'flex', flexDirection:'column', textAlign:'center', minWidth:'90%'}}>
                   <h1 style={{margin:'10%'}}>Contact Us</h1>
@@ -29,7 +30,7 @@ const ContactUsSection = (
                     
                         <div style={{display:'flex', flexDirection:'row', width:'100%' , justifyContent:'center'}}>
                         <input placeholder='phone' style={{padding:'10px', borderRadius:'30px', marginBottom:'10px', width:'100%'}}/>
-                        <input placeholder='subjject' style={{padding:'10px', borderRadius:'30px', marginBottom:'10px', width:'100%'}}/>
+                        <input placeholder='subject' style={{padding:'10px', borderRadius:'30px', marginBottom:'10px', width:'100%'}}/>
                         </div>
                         <div style={{display:'flex', flexDirection:'row', width:'100%' , justifyContent:'center'}}>
                         <textarea rows='12' placeholder='' style={{padding:'10px', borderRadius:'10px', marginBottom:'10px', width:'100%'}}/>
@@ -55,7 +56,8 @@ info@trimatraindustries.com
                   </Grid>
                   </div>
                   </div>
-                 </ContactUsDiv>                
+                 </ContactUsDiv>       
+                 {/* <Footer/>          */}
              </ContentDiv>
            </Container>
         </>
