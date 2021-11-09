@@ -7,6 +7,7 @@ export const Title = styled.h1`
     
 `
 export const TitleShadow = styled.h1`
+    user-select: none;
     color: #707070;
     /* margin-left: auto; */
     /* position: absolute; */

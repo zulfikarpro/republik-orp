@@ -15,6 +15,7 @@ export const VisimisiContainer = styled.div`
 `
 
 export const VisimisiWrapper = styled.div`
+    z-index: 1;
     display: flex;
     flex-direction: row;
     /* background: blue; */
@@ -41,6 +42,7 @@ export const VisimisiTitle = styled.h1`
 
 
 export const TitleShadow = styled.h1`
+    user-select: none;
     position: absolute;
     height: 10%;
     width: 50%;

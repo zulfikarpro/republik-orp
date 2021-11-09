@@ -37,6 +37,7 @@ export const MilestoneTextWrapper = styled.div`
 `
 
 export const MilestoneTitleShadow = styled.h1`
+    user-select: none;
     position: absolute;
     color:transparent;
     font-size: 64px;

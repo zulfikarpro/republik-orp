@@ -27,6 +27,7 @@ export const ContentWrapper = styled.div`
 `
 export const TitleShadow = styled.div`
 /* background: blue; */
+    user-select: none;
     position: absolute;
     height: 10%;
     width: 100%;
@@ -66,6 +67,11 @@ export const RowWrapper = styled.div`
 
 export const ImageList = styled.img`
     margin-top: 10px;
+    max-width: 300px;
+
+    @media screen and (max-width: 960px) {
+    max-width: 300px;
+  }
 `
 
 export const LeftColumn = styled.div`

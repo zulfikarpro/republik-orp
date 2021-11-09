@@ -13,8 +13,11 @@ import img8 from '../../images/expertise/8.png'
 const HowWeWork = () => {
     return (
         <>
-        <Container id={'menu3'} >
-            <BgImage src= {bgImage}/>
+        <Container id={'menu3'} style={{marginTop:'60px'}}>
+            {/* <BgImage src= {bgImage}/> */}
+            <div style={{position:'absolute', right:'', marginTop:'70%',width:'200vw', height:'200%', zIndex:-1}}>
+                <img src={bgImage} style={{}}/>
+            </div>
             <ContentWrapper>
                 <div style={{paddingTop:'50px',width:'100%', display:'flex',flexDirection:'row-reverse'}}>
                     <HWWShadow>How We Work</HWWShadow>
@@ -24,7 +27,7 @@ const HowWeWork = () => {
                 <LeftColumn >
                     <ImageLeft src={warehouseimg}></ImageLeft>
                 </LeftColumn>
-                <RightColumn >
+                <RightColumn style={{margin:'auto'}} >
                     <ImageList src={img1}/>
                     <ImageList src={img2}/>
                     <ImageList src={img3}/>
