@@ -48,11 +48,12 @@ export const ContentDiv = styled.div`
 
 export const Img = styled.img`
     max-width: 100%;
+    position: static;
 
-    @media screen and (max-width:960px){
+    /* @media screen and (max-width:960px){
         margin: 10%;
         max-width: 80%;
-    }
+    } */
 
 `
 
@@ -69,6 +70,7 @@ margin-top: 100px;
 `
 
 export const TitleShadow = styled.h1`
+    user-select: none;
     position:absolute;
     font-size: 5rem;
   color: transparent;

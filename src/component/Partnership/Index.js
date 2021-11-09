@@ -8,7 +8,8 @@ import brand1 from '../../images/brand/brand1.png'
 import brand2 from '../../images/brand/brand2.png'
 import brand3 from '../../images/brand/brand3.png'
 import brand4 from '../../images/brand/brand4.png'
-import { Img } from './PartnershipElements'
+import { Img, Input } from './PartnershipElements'
+import zIndex from '@material-ui/core/styles/zIndex'
 const Partnership = (
   ) => {
     return (
@@ -20,32 +21,32 @@ const Partnership = (
                 <div style={{position:'absolute', width:'100%', height:'100%', display:'flex', flexDirection:'row', justifyContent:'center'}}  >
                   <div style={{display:'flex', flexDirection:'column', color:'#fff',justifyContent:'space-evenly', height:'200%'}}>
                    <div style={{width:'100%', display:'flex', flexDirection:'row', justifyContent:'center', height:'20%'}}>
-                    <Grid container spacing={2} style={{marginTop:'400px'}} id="ourpartner">
+                    <Grid container spacing={2} style={{marginTop:'20%'}} id="ourpartner">
                       <Grid item xs={12} md={12}>
-                        <div style={{width:'100%', textAlign:'center'}}>
+                        <div style={{width:'100%', textAlign:'center', zIndex:'-1'}}>
                         <Title>Our Partners<TitleShadow>Our Partners</TitleShadow></Title>
                         </div>
                         </Grid>
-                        <Grid item xs={12} md={3}>
-                          <div style={{width:'100%', maxWidth:'100%', display:'flex', flexDirection:'row', justifyContent:'center'}}>
+                        <Grid item xs={12} md={6} >
+                          <div style={{width:'100%', maxWidth:'400px', margin:'auto', display:'flex', flexDirection:'row', justifyContent:'center'}}>
                           <Img src={brand1}/>
                           </div>
                         </Grid>
-                        <Grid item xs={12} md={3}>
+                        <Grid item xs={12} md={6}>
                           
-                        <div style={{width:'100%', maxWidth:'100%', display:'flex', flexDirection:'row', justifyContent:'center'}}>
+                        <div style={{width:'100%', maxWidth:'400px', margin:'auto', display:'flex', flexDirection:'row', justifyContent:'center'}}>
                           <Img src={brand2}/>
                           </div>
                         </Grid>
-                        <Grid item xs={12} md={3}>
+                        <Grid item xs={12} md={6}>
                           
-                        <div style={{width:'100%', maxWidth:'100%', display:'flex', flexDirection:'row', justifyContent:'center'}}>
+                        <div style={{width:'100%', maxWidth:'400px', margin:'auto', display:'flex', flexDirection:'row', justifyContent:'center'}}>
                           <Img src={brand3}/>
                           </div>
                         </Grid>
-                        <Grid item xs={12} md={3}>
+                        <Grid item xs={12} md={6}>
                           
-                        <div style={{width:'100%', maxWidth:'100%', display:'flex', flexDirection:'row', justifyContent:'center'}}>
+                        <div style={{width:'100%', maxWidth:'400px', margin:'auto', display:'flex', flexDirection:'row', justifyContent:'center'}}>
                           <Img src={brand4}/>
                         </div>
                         </Grid>
@@ -54,25 +55,25 @@ const Partnership = (
 
                     <div style={{height:'100%', marginTop:'400px'}}>
                       <Grid container spacing={2} style={{marginTop:'20%'}} id>
-                        <Grid item xs={12} md={12}>
+                        <Grid item xs={12} md={12} style={{zIndex:'-1'}}>
                           <div style={{width:'100%', textAlign:'center'}}>
                           <Title>Join Our Force<TitleShadow>Join Our Force</TitleShadow></Title>
                           </div>
                           </Grid>
-                        <Grid item xs={12} md={6}>
-                          <div style={{height:'100%', maxWidth:'100%', display:'flex', flexDirection:'column', justifyContent:'flex-end', paddingLeft:'12%', paddingRight:'12%', maxWidth:'400px'}}>
+                        <Grid item xs={12} md={6} style={{zIndex:'4',}}>
+                          <div style={{height:'100%', maxWidth:'400px', display:'flex', flexDirection:'column', justifyContent:'flex-end', paddingLeft:'12%', paddingRight:'12%', margin:'auto'}}>
                           <h2 style={{paddingLeft:'20px'}}>Drop Us a Line</h2>
-                          <input placeholder='Name' style={{paddingLeft:'10px', borderRadius:'20px', padding:'6px', marginBottom:'10px', width:'auto'}}/>
-                          <input placeholder='Email' style={{paddingLeft:'10px', borderRadius:'20px', padding:'6px', marginBottom:'10px', width:'auto'}}/>
+                          <Input placeholder='Name' style={{paddingLeft:'10px', borderRadius:'20px', padding:'6px', marginBottom:'10px', width:'auto'}}/>
+                          <Input placeholder='Email' style={{paddingLeft:'10px', borderRadius:'20px', padding:'6px', marginBottom:'10px', width:'auto'}}/>
                           <div style={{display:'flex', flexDirection:'row', maxWidth:'480px', background:'black'}}>
-                            <input placeholder='Phone' style={{paddingLeft:'10px', borderRadius:'20px', padding:'6px', marginBottom:'10px', width:'auto', flex:1 }}/>
-                            <input placeholder='Subject' style={{paddingLeft:'10px', borderRadius:'20px', padding:'6px', marginBottom:'10px', width:'auto', flex:1}}/>
+                            <Input placeholder='Phone' style={{paddingLeft:'10px', borderRadius:'20px', padding:'6px', marginBottom:'10px', width:'auto', flex:1 }}/>
+                            <Input placeholder='Subject' style={{paddingLeft:'10px', borderRadius:'20px', padding:'6px', marginBottom:'10px', width:'auto', flex:1}}/>
                           </div>
                           <textarea rows='3' placeholder='' style={{padding:'10px', borderRadius:'10px', marginBottom:'10px', width:'auto'}}/>
                           </div>
                         </Grid>
                         <Grid item xs={12} md={6}>
-                        <div style={{ lineHeight:'1.2rem',height:'100%', maxWidth:'100%', display:'flex', flexDirection:'column', justifyContent:'center', paddingLeft:'14%', paddingRight:'14%', maxWidth:'400px', textAlign:'right'}}>
+                        <div style={{ lineHeight:'1.2rem',height:'100%', maxWidth:'400px', display:'flex', flexDirection:'column', justifyContent:'center', paddingLeft:'14%', paddingRight:'14%', margin:'auto' ,textAlign:'right'}}>
                           <h2 id='contactus'>Contact Address</h2>
                           <p>
                             OFFICE 8 BUILDING 18th FLOOR<br/>
@@ -89,12 +90,10 @@ const Partnership = (
                   <div class={'socialmedia'} style={{maxWidth:'100%', paddingRight:'15%', paddingLeft:'15%', display:'flex', flexDirection:'row', justifyContent:'center', margin:'20px' }}>
                   <FaWhatsapp style={{width:'auto', height:'30px',marginRight:'8px'}}/>
                         <FaInstagram style={{width:'auto', height:'30px',marginRight:'8px'}}/>
-                        <FaFacebookF style={{width:'auto', height:'30px',marginRight:'8px'}}/>
-                        <FaTwitter style={{width:'auto', height:'30px',marginRight:'8px'}}/>
                         <FaYoutube style={{width:'auto', height:'30px',marginRight:'8px'}}/>
                   </div>
-                  <div style={{maxWidth:'100%', paddingRight:'15%', paddingLeft:'15%', textAlign:'center', fontSize:'0.6rem'}}>
-                  © 2021 space.  Trademarks and brands are the property of their respective owners.
+                  <div style={{maxWidth:'100%', paddingRight:'15%', paddingLeft:'15%', textAlign:'center', fontSize:'1rem'}}>
+                  © 2021 Republic Space.  Trademarks and brands are the property of their respective owners.
                   </div>
                   </div> 
                  </div>

@@ -6,6 +6,37 @@ import Carousel from 'react-material-ui-carousel'
 import produk1 from '../../images/products/produk1.png'
 import produk2 from '../../images/products/produk2.png'
 import { DivBackground, Container, ContentDiv, Img, Title, TitleShadow } from './OurProductElements'
+
+const ItemsCarousel = ({pic, title, text}) =>{
+  return (
+    // <Img src={pic} style={{width:'474', height:'578'}}/>
+    <div style={{display:'flex', flexDirection:'column', justifyContent:'flex-end', width:'474px', height:'578px', backgroundImage:`url(${pic})`,
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center',
+    backgroundSize:'474px 578px'}}>
+      {/* <Img src={pic}/> */}
+      <h2 style={{margin:'20px', textAlign:'center'}}>{title}</h2>
+      <p style={{margin:'20px', textAlign:'center'}}>{text}</p>
+      <div style={{height:'40px'}}></div>
+    </div>
+  )
+}
+
+const onProductSeclected = (clicked) =>{
+  const telco = document.getElementById('telco')
+  const wireless = document.getElementById('wireless')
+
+  if(clicked){
+    telco.style.color='white'
+    wireless.style.color='grey'
+  }else{
+    telco.style.color='grey'
+    wireless.style.color='white'
+
+  }
+  
+}
+
 const OurProducts = (
   ) => {
     return (
@@ -27,8 +58,8 @@ const OurProducts = (
                         <div style={{minHeight:'30vh' ,height:'100%', display:'flex', flexDirection:'column', justifyContent:'flex-end'}}>
                           <div style={{display:'flex', width:'100%', flexDirection:'row', justifyContent:'center'}}>
                              <div style={{display:'flex', flexDirection:'column', height:'60%', justifyContent:'flex-end'}}>
-                              <h1 style={{lineHeight:'.8'}}>Telecomunication</h1>
-                              <h1 style={{lineHeight:'.8', color:'#5B5B5B'}}>Wireless Telecomunication</h1>
+                              <h1 style={{lineHeight:'.8', cursor:'pointer'}}id='telco' onMouseDown={()=> onProductSeclected(true)}>Telecomunication</h1>
+                              <h1 style={{lineHeight:'.8', color:'grey', cursor:'pointer'}} id='wireless' onMouseDown={()=> onProductSeclected(false)}>Wireless Telecomunication</h1>
                             </div>
                           </div>
                         </div>
@@ -45,8 +76,8 @@ const OurProducts = (
                           }
                           }}
                         >
-                          <Img src={produk1}></Img>
-                          <Img src={produk2}></Img>
+                          <ItemsCarousel pic={produk1} title='Recording System' text='Recording System provides comprehensive solution to record voice, screen and data and deliver system solutions with high added value.'/>
+                          <ItemsCarousel pic={produk2}/>
                         </Carousel>
                           </div>
                         </div>

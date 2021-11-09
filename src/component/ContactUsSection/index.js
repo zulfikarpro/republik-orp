@@ -22,7 +22,6 @@ const ContactUsSection = (
                         <div style={{display:'flex', flexDirection:'row', width:'100%' , justifyContent:'center'}}>
                           <input placeholder='name' style={{padding:'10px', borderRadius:'30px', marginBottom:'10px', width:'100%'}}/>
                           </div>
-                          
                         <div style={{display:'flex', flexDirection:'row', width:'100%' , justifyContent:'center'}}>
                         <input placeholder='email' style={{padding:'10px', borderRadius:'30px', marginBottom:'10px', width:'100%'}}/>
                         </div>
