@@ -1,6 +1,6 @@
 import React from 'react'
 import {Container, Title, RowWrapper, LeftColumn, RightColumn, ContentWrapper, HWWShadow, ImageLeft, ImageList, BgImage} from './HowWeWorkElements'
-import bgImage from '../../images/ourexpertisebg2x.png'
+import bgImage from '../../images/bghww.jpg'
 import warehouseimg from '../../images/warehousbg2x.png'
 import img1 from '../../images/expertise/1.png'
 import img2 from '../../images/expertise/2.png'
@@ -13,9 +13,9 @@ import img8 from '../../images/expertise/8.png'
 const HowWeWork = () => {
     return (
         <>
-        <Container id={'menu3'} style={{marginTop:'60px'}}>
+        <Container id={'menu3'} style={{marginTop:'60px'}} style={{backgroundImage:`url(${bgImage})`}}>
             {/* <BgImage src= {bgImage}/> */}
-            <div style={{position:'absolute', right:'', marginTop:'70%',width:'200vw', height:'200%', zIndex:-1}}>
+            <div style={{position:'fixed', right:'',top:'', width:'200vw', height:'200%', zIndex:-1}}>
                 <img src={bgImage} style={{}}/>
             </div>
             <ContentWrapper>

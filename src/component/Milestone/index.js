@@ -21,7 +21,7 @@ const Milestone = ({
   }) => {
     return (
         <>
-            <MilestoneContainer id={"milestone"}>
+            <MilestoneContainer id={"milestone"} style={{marginTop:'0px'}}>
                 <MilestoneWrapper>
                     <MilestoneTextWrapper>
                         <MilestoneTitleShadow lightText={lightText}>

@@ -24,11 +24,15 @@ margin-left: auto;
 export const FooterFirstLine = styled.div`
 display: flex;
 flex-direction: row;
-justify-content:space-evenly
 height:40px;
 `
 
 export const FooterSecondLine = styled.div`
-font-size: 1.2rem;
+/* text-align: center; */
+font-size: 1rem;
 
+@media screen and (max-width:960px){
+    text-align: center;
+    font-size: 0.8rem;
+}
 `
