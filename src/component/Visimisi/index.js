@@ -1,6 +1,6 @@
 import React from 'react'
 import {VisimisiContainer, VisimisiWrapper, VisimisiTextWrapper, VisimisiTitle, VisimisiParagraph, TitleShadow} from './VisimisiElements'
-import bg from '../../images/visimisibg2x.png'
+import bg from '../../images/grup101.png'
 const Visimisi = () => {
     return (
         <>
