@@ -51,6 +51,7 @@ export const TitleShadow = styled.h1`
 
 export const VisimisiParagraph = styled.p`
     color: #fff;
-    font-size: 14px;
+    max-width: 300px;
+    font-size: 1rem;
 
 `

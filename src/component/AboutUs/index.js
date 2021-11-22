@@ -15,7 +15,7 @@ const AboutUsPage = (
                  <div style={{width:'20%',height:'100%'}}>
                    
                  </div>
-                  <div style={{display:'flex', flexDirection:'column', color:'#fff', maxWidth:'90%', justifyContent:'flex-start'}}>
+                  <div style={{display:'flex', flexDirection:'column', color:'#fff', maxWidth:'90%', justifyContent:'flex-start' , height:'100vh'}}>
                   <Title>Who We Are<TitleShadow>Who We Are</TitleShadow></Title>
                   <Text1>Republik Aerospace Dirgantara Established to strengthen the Indonesian Defense ecosystem</Text1>
                   <Text2>pushes aerospace innovation and technology for strategic advancements which will further drive Indonesia's global positioning. </Text2>
