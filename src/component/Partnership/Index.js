@@ -12,7 +12,9 @@ const Partnership = (
         <>
            <Container style={{minHeight:'100%', minWidth:'100%', marginTop:'0px', justifyContent:'flex-start'}}>
              <ContentDiv style={{minWidth:'100%', minHeight:'100%',height:'100vh', justifyContent:'flex-start'}} id='partnership'>
-               <img style={{zIndex:-1 ,maxWidth:'100%', height:'auto', }} src={bg}/>
+             <div style={{position:'absolute',left:'', width:'100%', height:'200%'}}>
+               <img style={{position:'absolute', zIndex:-1 , width:'100%', height:'100vh', objectFit:'cover' }} src={bg}/>
+                </div>
                <div style={{position:'absolute', width:'100%', height:'100%',display:'flex', flexDirection:'row', justifyContent:'end'}}>
                   <div style={{display:'flex', flexDirection:'column', margin:'10%', color:'#fff', maxWidth:'40%'}}>
                   <h1>Partnership</h1>

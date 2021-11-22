@@ -14,8 +14,8 @@ const ContactUsSection = (
                    <div style={{display:'flex', flexDirection:'column',justifyContent:'flex-end', textAlign:'center', minWidth:'90%'}}>
                   <h1 style={{}}>Contact Us</h1>
                   <div style={{width:'100%', display:'flex', flexDirection:'row', justifyContent:'center'}}>
-                  <Grid container spacing={2}>
-                    <Grid item xs={8} md={6}>
+                  <Grid container spacing={2} style={{margin:'auto', width:'100%', marginBottom:'10%'}}>
+                    <Grid item xs={12}md={6} style={{display:'flex', flexDirection:'row', justifyContent:'center'}}>
                       <div style={{display:'flex', flexDirection:'column',width:'100%'}}>
                       <div style={{display:'flex', flexDirection:'row', width:'100%' , justifyContent:'flex-start'}}>
                         <h2>Drop us a Line</h2>
@@ -37,14 +37,14 @@ const ContactUsSection = (
                         </div>
                       </div>
                     </Grid>
-                    <Grid item xs={8}md={6}>
+                    <Grid item xs={12}md={6} style={{display:'flex', flexDirection:'row', justifyContent:'center'}}>
                     <div style={{display:'flex', flexDirection:'column', minWidth:'400px'}}>
                       <div>
                         <h2>Contact Address</h2>
                         
                       </div>
                         <div style={{display:'flex', flexDirection:'row', justifyContent:'center', width:'100%'}}>
-                        <p style={{textAlign:'end'}}>OFFICE 8 BUILDING 18TH FLOOR<br/> UNIT A, JL. JENDERAL SUDIRMAN <br/>KAV.
+                        <p style={{textAlign:'start'}}>OFFICE 8 BUILDING 18TH FLOOR<br/> UNIT A, JL. JENDERAL SUDIRMAN <br/>KAV.
 52-53, DKI JAKARTA 12190 <br/>REPUBLIC OF INDONESIA
 <br/>
 021 - xxx xxx<br/>

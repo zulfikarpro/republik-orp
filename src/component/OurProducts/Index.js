@@ -11,7 +11,9 @@ const OurProducts = (
         <>
            <Container style={{minHeight:'100%', minWidth:'100%', marginTop:'0px', justifyContent:'flex-start'}}>
              <ContentDiv style={{minWidth:'100%', minHeight:'100%',height:'100vh', justifyContent:'flex-start'}} id="ourproducts">
-               <img style={{zIndex:-1 ,maxWidth:'100%', height:'auto', }} src={bg}/>
+             <div style={{position:'absolute',left:'', width:'100%', height:'200%'}}>
+               <img style={{position:'absolute', zIndex:-1 , width:'100%', height:'100vh', objectFit:'cover' }} src={bg}/>
+                </div>
                {/* <div style={{height:'100%'}}> */}
                  <div style={{position:'absolute', width:'100%', height:'100%', display:'flex', flexDirection:'row', justifyContent:'center'}}>
                    <div style={{display:'flex', flexDirection:'column', color:'#fff', textAlign:'center'}}>
