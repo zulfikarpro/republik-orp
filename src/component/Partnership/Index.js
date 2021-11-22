@@ -93,7 +93,7 @@ const Partnership = (
                         <FaYoutube style={{width:'auto', height:'30px',marginRight:'8px'}}/>
                   </div>
                   <div style={{maxWidth:'100%', paddingRight:'15%', paddingLeft:'15%', textAlign:'center', fontSize:'1rem'}}>
-                  © 2021 Republic Space.  Trademarks and brands are the property of their respective owners.
+                  © 2021 Republik Space.  Trademarks and brands are the property of their respective owners.
                   </div>
                   </div> 
                  </div>
