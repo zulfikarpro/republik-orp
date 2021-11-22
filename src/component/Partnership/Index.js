@@ -65,7 +65,7 @@ const Partnership = (
                           <h2 style={{paddingLeft:'20px'}}>Drop Us a Line</h2>
                           <Input placeholder='Name' style={{paddingLeft:'10px', borderRadius:'20px', padding:'6px', marginBottom:'10px', width:'auto'}}/>
                           <Input placeholder='Email' style={{paddingLeft:'10px', borderRadius:'20px', padding:'6px', marginBottom:'10px', width:'auto'}}/>
-                          <div style={{display:'flex', flexDirection:'row', maxWidth:'480px', background:'black'}}>
+                          <div style={{display:'flex', flexDirection:'row', maxWidth:'480px'}}>
                             <Input placeholder='Phone' style={{paddingLeft:'10px', borderRadius:'20px', padding:'6px', marginBottom:'10px', width:'auto', flex:1 }}/>
                             <Input placeholder='Subject' style={{paddingLeft:'10px', borderRadius:'20px', padding:'6px', marginBottom:'10px', width:'auto', flex:1}}/>
                           </div>

@@ -26,9 +26,9 @@ const ContactUsSection = (
                         <input placeholder='email' style={{padding:'10px', borderRadius:'30px', marginBottom:'10px', width:'100%'}}/>
                         </div>
                     
-                        <div style={{display:'flex', flexDirection:'row', width:'100%' , justifyContent:'center'}}>
+                        <div style={{display:'flex', flexDirection:'row', width:'100%' , justifyContent:'center', background:'red'}}>
                         <input placeholder='phone' style={{padding:'10px', borderRadius:'30px', marginBottom:'10px', width:'100%'}}/>
-                        <input placeholder='subjject' style={{padding:'10px', borderRadius:'30px', marginBottom:'10px', width:'100%'}}/>
+                        <input placeholder='subject' style={{padding:'10px', borderRadius:'30px', marginBottom:'10px', width:'100%'}}/>
                         </div>
                         <div style={{display:'flex', flexDirection:'row', width:'100%' , justifyContent:'center'}}>
                         <textarea rows='12' placeholder='' style={{padding:'10px', borderRadius:'10px', marginBottom:'10px', width:'100%'}}/>

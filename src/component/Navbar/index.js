@@ -9,9 +9,14 @@ import logo from '../../images/logospace.png';
 const Navbar = ({toggle}) => {
     const [scrollNav, setScrollNav] = useState(false);
     const changeNav = () => {
-        if (window.scrollY >= 5300 && window.scrollY<=6380) {
-          setScrollNav(true);
-        } else {
+        if(window.scrollY>2000){
+            if(window.scrollY<=3000 || window.scrollY>4000){
+                return setScrollNav(true)
+            }
+            setScrollNav(false)
+        }
+        
+        else {
           setScrollNav(false);
         }
       };
@@ -63,7 +68,7 @@ const Navbar = ({toggle}) => {
                             duration={500}
                             spy={true}
                             exact='true'
-                            offset={-0}>Our Product</NavLinks>
+                            offset={10}>Our Product</NavLinks>
                         </NavItem>
                         <NavItem>    
                             <NavLinks to='ourtarget'

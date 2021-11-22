@@ -67,7 +67,8 @@ export const MobileIcon = styled.div`
 `;
 
 export const NavMenu = styled.ul`
-  color: ${({ scrollNav }) => (scrollNav ? '#000' : '#fff')};
+  color: ${({ scrollNav }) => (scrollNav ? '#fff' : '#000')};
+  /* color: white; */
   display: flex;
   align-items: center;
   list-style: none;
@@ -93,7 +94,7 @@ export const NavBtn = styled.nav`
 `;
 
 export const NavLinks = styled(LinkS)`
-  color: #000;
+  /* color: #000; */
   display: flex;
   align-items: center;
   text-decoration: none;

@@ -51,6 +51,8 @@ const OurProducts = (
                    <div style={{display:'flex', flexDirection:'column', color:'#fff',  width:'100%', height:'100%', justifyContent:'center'}}>
                    {/* <h1 style={{fontSize: '5rem', textShadow: '100px 200px 0px rgba(255, 255, 255, 0.2) '}}>Our Products</h1> */}
                      {/* <Title style={{width:'100%', textAlign:'center', textShadow: '0px -100px 0px rgba(255, 255, 255, 0.2) '}}>Our Products</Title> */}
+                      <br/>
+                      <br/>
                       <Title>Our Products<TitleShadow>Our Products</TitleShadow></Title>
                       <div style={{height:'100px'}}/>
                      <Grid container spacing={2}>

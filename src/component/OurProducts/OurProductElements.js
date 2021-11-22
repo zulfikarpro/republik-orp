@@ -75,7 +75,7 @@ export const TitleShadow = styled.h1`
     font-size: 5rem;
   color: transparent;
   width: 100%;
-  text-shadow: 0px -120px 0px rgba(255, 255, 255, 0.2);
+  text-shadow: 0px -170px 0px rgba(255, 255, 255, 0.2);
 
 
 `
