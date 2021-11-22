@@ -53,7 +53,7 @@ const OurProducts = (
                         <a href='http://170.187.226.245:31/' style={{margin:'auto'}}><GridContent pic={logotrimatra}/></a>
                        </Grid>
                        <Grid item xs={6} md={4} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
-                        <a href='http://170.187.226.245/' style={{margin:'auto'}}><GridContent pic={logoarmamen}/></a>
+                        <GridContent pic={logoarmamen}/>
                        </Grid>
                       {/* <Grid item xs={12} md={4}>
                       <div style={{display:'flex', flexDirection:'column', justifyContent:'center', height:'100%', width:'100%',}}>

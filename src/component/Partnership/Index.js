@@ -61,43 +61,43 @@ const Partnership = (
                           <GridContent pic={brand4}/>
                         {/* </div> */}
                         </Grid>
-                        <Grid item xs={12} sm={6} md={4} lg={3} xl={2} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
+                        <Grid item xs={12} sm={6} md={3} lg={3} xl={3} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
                           <GridContent pic={img1}/>
                           </Grid>
-                        <Grid item xs={12} sm={6} md={4} lg={3} xl={2} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
+                        <Grid item xs={12} sm={6} md={3} lg={3} xl={3} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
                           <GridContent pic={img2}/>
                           </Grid>
-                        <Grid item xs={12} sm={6} md={4} lg={3} xl={2} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
+                        <Grid item xs={12} sm={6} md={3} lg={3} xl={3} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
                           <GridContent pic={img3}/>
                           </Grid>
-                        <Grid item xs={12} sm={6} md={4} lg={3} xl={2} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
+                        <Grid item xs={12} sm={6} md={3} lg={3} xl={3} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
                           <GridContent pic={img4}/>
                           </Grid>
-                        <Grid item xs={12} sm={6} md={4} lg={3} xl={2} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
+                        <Grid item xs={12} sm={6} md={3} lg={3} xl={3} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
                           <GridContent pic={img5}/>
                           </Grid>
-                        <Grid item xs={12} sm={6} md={4} lg={3} xl={2} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
+                        <Grid item xs={12} sm={6} md={3} lg={3} xl={3} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
                           <GridContent pic={img6}/>
                           </Grid>
-                        <Grid item xs={12} sm={6} md={4} lg={3} xl={2} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
+                        <Grid item xs={12} sm={6} md={3} lg={3} xl={3} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
                           <GridContent pic={img7}/>
                           </Grid>
-                        <Grid item xs={12} sm={6} md={4} lg={3} xl={2} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
+                        <Grid item xs={12} sm={6} md={3} lg={3} xl={3} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
                           <GridContent pic={img8}/>
                           </Grid>
-                        <Grid item xs={12} sm={6} md={4} lg={3} xl={2} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
+                        <Grid item xs={12} sm={6} md={3} lg={3} xl={3} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
                           <GridContent pic={img9}/>
                           </Grid>
-                        <Grid item xs={12} sm={6} md={4} lg={3} xl={2} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
+                        <Grid item xs={12} sm={6} md={3} lg={3} xl={3} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
                           <GridContent pic={img10}/>
                           </Grid>
-                        <Grid item xs={12} sm={6} md={4} lg={3} xl={2} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
+                        <Grid item xs={12} sm={6} md={3} lg={3} xl={3} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
                           <GridContent pic={img11}/>
                           </Grid>
-                        <Grid item xs={12} sm={6} md={4} lg={3} xl={2} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
+                        <Grid item xs={12} sm={6} md={3} lg={3} xl={3} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
                           <GridContent pic={img12}/>
                           </Grid>
-                          <Grid item xs={12} sm={6} md={4} lg={3} xl={2} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
+                          <Grid item xs={12} sm={6} md={3} lg={3} xl={3} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
                           <GridContent pic={img13}/>
                           </Grid>
                       </Grid>
