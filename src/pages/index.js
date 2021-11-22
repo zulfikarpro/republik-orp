@@ -44,14 +44,14 @@ const toggle = () =>{
             <LandingSection/>
             
             <BackgroundMerahDiv>
-                <div style={{position:'flex', width:'100vw', flexDirection:'column'}}>
+                <div style={{position:'flex', width:'100vw', flexDirection:'column', justifyContent:'flex-start'}}>
                 <div style={{display:'flex', flexDirection:'row', justifyContent:'center', maxWidth:'100%'}}>
                     <AboutUsPage {...homeObjOne}/>
                 </div>
                 <Milestone {...homeObjOne} style={{width:'100%'}}/>
                 </div>
                 <div style={{position:'absolute', right:'',width:'100%', height:'200%', zIndex:-1}}>
-                    <img src={bgMerah} style={{maxWidth:'100%'}} style={{zIndex:'-1' ,objectFit:'cover', position:'absolute', width:'100%', height:'200vh'}}/>
+                    <img src={bgMerah} style={{maxWidth:'100%'}} style={{zIndex:'-1' ,objectFit:'cover', position:'absolute', width:'100%', height:'250vh'}}/>
                 </div>
             </BackgroundMerahDiv>
             <Visimisi/>
