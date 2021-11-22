@@ -4,7 +4,7 @@ import { IconContext } from 'react-icons/lib';
 import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, Img} from './NavbarElement'
 import { animateScroll as scroll } from 'react-scroll';
 // import { Logo } from '../LandingSection/LandingElement';
-import logo from '../../images/logotrimatra.png';
+import logo from '../../images/logopalindo.png';
 
 const Navbar = ({toggle}) => {
     const [scrollNav, setScrollNav] = useState(false);
@@ -50,28 +50,28 @@ const Navbar = ({toggle}) => {
                             >Home</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to='whoweare'
+                            <NavLinks to='aboutus'
                             smooth={true}
                             duration={500}
                             spy={true}
                             exact='true'
-                            offset={-80}>Who We Are</NavLinks>
+                            offset={-80}>About Us</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to='whatwedo'
+                            <NavLinks to='facilities'
                             smooth={true}
                             duration={500}
                             spy={true}
                             exact='true'
-                            offset={-80}>What We Do</NavLinks>
+                            offset={-80}>Facilities</NavLinks>
                         </NavItem>
                         <NavItem>    
-                            <NavLinks to='partnership'
+                            <NavLinks to='projects'
                             smooth={true}
                             duration={500}
                             spy={true}
                             exact='true'
-                            offset={-80}>Partnership</NavLinks>
+                            offset={-80}>Projects</NavLinks>
                         </NavItem>
                         <NavItem>
                                 <NavLinks to='contactus'

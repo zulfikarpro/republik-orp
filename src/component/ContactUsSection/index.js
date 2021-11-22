@@ -2,17 +2,21 @@ import React from 'react'
 import { Container, ContentDiv } from '../Home/HomeElements'
 import { ContactUsDiv } from './ContactUsElement'
 import Footer from '../Footer'
-import bg from '../../images/bg/bg5.png'
+import bg from '../../images/bg/contactusbg.png'
 import { Grid } from '@material-ui/core'
+import {FaEnvelope, FaMailchimp, FaMapMarkerAlt, FaPhone} from 'react-icons/fa'
 const ContactUsSection = (
   ) => {
     return (
         <>
            <Container style={{minWidth:'100%'}}>
-             <ContentDiv style={{background:'linear-gradient(270deg, #596B80 27.08%, #0C1A2B 112.98%)',minWidth:'100%', height:'100vh',margin:'auto', justifyContent:'flex-start'}} id='contactus'>
+             <ContentDiv style={{minWidth:'100%', height:'100vh',margin:'auto', justifyContent:'flex-start'}} id='contactus'>
                  <ContactUsDiv style={{width:'100%', minHeight:'100%', display:'flex', flexDirection:'row', justifyContent:'center', color:'#fff'}}>
+                 <div style={{position:'absolute',right:'', width:'100%', height:'100%', diplay:'flex', justifyContent:'flex-start'}}>
+                  <img style={{position:'absolute', zIndex:-1 , width:'100%', height:'100vh', objectFit:'cover' }} src={bg}/>
+                  </div>
+                  
                    <div style={{display:'flex', flexDirection:'column',justifyContent:'flex-end', textAlign:'center', minWidth:'90%'}}>
-                  <h1 style={{}}>Contact Us</h1>
                   <div style={{width:'100%', display:'flex', flexDirection:'row', justifyContent:'center'}}>
                   <Grid container spacing={2} style={{margin:'auto', width:'100%', marginBottom:'10%'}}>
                     <Grid item xs={12}md={6} style={{display:'flex', flexDirection:'row', justifyContent:'center'}}>
@@ -41,23 +45,30 @@ const ContactUsSection = (
                     <div style={{display:'flex', flexDirection:'column', minWidth:'400px'}}>
                       <div>
                         <h2>Contact Address</h2>
-                        
+                        <FaMapMarkerAlt size={30}/>
+                        <p style={{textAlign:'center'}}>Sungai Lekop, Sagulung, <br/>
+Batam, Indonesia</p>
+                        <FaPhone size={30}/>
+                        <p style={{textAlign:'center'}}>
+                        (0778) 454543<br/>
+                          Mon-Fri, 9am until 5pm
+                        </p>
+                        <FaEnvelope size={30}/>
+                        <p>
+                        info@palindomarine.co.id</p>
                       </div>
-                        <div style={{display:'flex', flexDirection:'row', justifyContent:'center', width:'100%'}}>
-                        <p style={{textAlign:'start'}}>OFFICE 8 BUILDING 18TH FLOOR<br/> UNIT A, JL. JENDERAL SUDIRMAN <br/>KAV.
-52-53, DKI JAKARTA 12190 <br/>REPUBLIC OF INDONESIA
-<br/>
-021 - xxx xxx<br/>
-info@trimatraindustries.com
-</p>
-                        </div>
+                        {/* <div style={{display:'flex', flexDirection:'row', justifyContent:'center', width:'100%'}}>
+                        
+                        </div> */}
                       </div>
                     </Grid>
                   </Grid>
                   </div>
+                  
+             <Footer/>    
                   </div>
-                 </ContactUsDiv>
-             <Footer/>     
+                  
+                 </ContactUsDiv> 
              </ContentDiv>    
            </Container>
         </>

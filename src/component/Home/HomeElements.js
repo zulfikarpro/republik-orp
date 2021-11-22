@@ -40,3 +40,14 @@ top:40;
         top:20
     }
 `
+export const Title1 = styled.h1`
+    font-size: 4rem;
+    max-width: 800px;
+    color:#fff;
+`
+
+export const Title2 = styled.h1`
+    font-size: 1rem;
+    max-width: 800px;
+    color:#fff;
+`

@@ -4,11 +4,12 @@ import Navbar from '../component/Navbar'
 import Sidebar from '../component/sidebar'
 import ContactUsSection from '../component/ContactUsSection';
 import Footer from '../component/Footer';
+import FacilitiesPage from '../component/Facilities'
 import HomePage from '../component/Home';
 import AboutUsPage from '../component/AboutUs';
-import WhatWeDO from '../component/WhatWeDo/Index';
 import Partnership from '../component/Partnership/Index';
 import OurProducts from '../component/OurProducts/Index';
+import ProjectsPage from '../component/Projects';
 
 
 const Home = () => {
@@ -39,9 +40,10 @@ useEffect(() => {
             {/* <LandingSection/> */}
             <HomePage/>
             <AboutUsPage/>
-            <WhatWeDO/>
-            <Partnership/>
-            <OurProducts/>
+            <FacilitiesPage/>
+            <ProjectsPage/>
+            {/* <Partnership/>
+            <OurProducts/> */}
             <ContactUsSection/>
             {/* <Footer/> */}
             {/* <div style={{position:'flex',height:'200px', width:'auto'}}></div> */}
