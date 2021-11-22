@@ -15,7 +15,7 @@ export const TitleShadow = styled.h1`
     /* background: green; */
     color:transparent;
     font-size: 64px;
-    text-shadow: -170px -100px 0px rgba(112, 112, 112, 0.2) ;
+    text-shadow: -170px -40px 0px rgba(112, 112, 112, 0.2) ;
 `
 
 export const ImageList = styled.img`
@@ -24,11 +24,12 @@ export const ImageList = styled.img`
 `
 
 export const ContentWrapper = styled.div`
+    max-width: 1440px;
+    margin:auto;
     display: flex;
     flex-direction: column;
     /* background: blue; */
     justify-content: left;
     /* opacity: .2; */
     height: 100%;
-    padding: 0px 100px
 `

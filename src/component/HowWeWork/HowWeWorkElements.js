@@ -41,7 +41,7 @@ export const HWWShadow = styled.h1`
     height: 10%;
     color:transparent;
     font-size: 64px;
-    text-shadow: -200px -80px 0px rgba(255, 255, 255, 0.2) ;
+    text-shadow: -170px -80px 0px rgba(255, 255, 255, 0.2) ;
 `
 
 export const Title = styled.h1`

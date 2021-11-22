@@ -5,7 +5,7 @@ export const homeObjOne = {
   lightTextDesc: true,
   topLine: '',
   headline: 'About Us',
-  description: 'REX is one of the pioneer in one stop logistics with more than 30 years of experience in Indonesia. We support industires and trade both domestic and International for : in land transport, worldwide air and ocean freight, contract logistics and supply chain management. we go beyond the bondaries to design and implementindustry-leading solutions in both freight management and contract logistics and fulfill the ever changing demands of e-commerce through our state of the art technology.',
+  description: 'REX is one of the pioneer in one stop logistics with more than 30 years of experience in Indonesia. We support industires and trade both domestic and International for inland transport, worldwide air and ocean freight, contract logistics and supply chain management. we go beyond the bondaries to design and implementindustry-leading solutions in both freight management and contract logistics and fulfill the ever changing demands of e-commerce through our state of the art technology.',
   buttonLabel: 'Get Started',
   imgStart: false,
   img: '',

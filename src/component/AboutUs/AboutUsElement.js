@@ -155,7 +155,7 @@ export const AboutUsSubtitle = styled.p`
   font-size: 18px;
   line-height: 24px;
   /* text-align:${({alignCenter})=> alignCenter? 'center': ''}; */
-  text-align: start;
+  text-align: justify;
   color: ${({ darkText }) => (darkText ? '#010606' : '#fff')};
   @media screen and (max-width: 960px) {
     font-size: 12px;

@@ -19,11 +19,11 @@ const HowWeWork = () => {
                 <img src={bgImage} style={{}}/>
             </div>
             <ContentWrapper>
-                <div style={{paddingTop:'50px',width:'100%', display:'flex',flexDirection:'row-reverse'}}>
-                    <HWWShadow>How We Work</HWWShadow>
+                <div style={{paddingTop:'100px',width:'100%', display:'flex',flexDirection:'row-reverse', maxWidth:'1440px', margin:'auto'}}>
+                    <HWWShadow>Our Expertise</HWWShadow>
                     <Title>Our Expertise</Title>
                 </div>
-            <RowWrapper>
+            <RowWrapper style={{maxWidth:'1440px', margin:'auto'}}>
                 <LeftColumn >
                     <ImageLeft src={warehouseimg}></ImageLeft>
                 </LeftColumn>

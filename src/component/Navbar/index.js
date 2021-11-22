@@ -11,7 +11,7 @@ const mainLogo =  require('../../images/LOGO-01@2x.png');
 const Navbar = ({toggle}) => {
     const [scrollNav, setScrollNav] = useState(false);
     const changeNav = () => {
-        if (window.scrollY >= 4900 && window.scrollY<=6380) {
+        if (window.scrollY >= 4600 && window.scrollY<=5700) {
           setScrollNav(true);
         } else {
           setScrollNav(false);
@@ -48,7 +48,7 @@ const Navbar = ({toggle}) => {
                             duration={500}
                             spy={true}
                             exact='true'
-                            offset={-80}
+                            offset={0}
                             >About Us</NavLinks>
                         </NavItem>
                         <NavItem>
@@ -57,7 +57,7 @@ const Navbar = ({toggle}) => {
                             duration={500}
                             spy={true}
                             exact='true'
-                            offset={-80}>Target</NavLinks>
+                            offset={0}>Target</NavLinks>
                         </NavItem>
                         <NavItem>
                             <NavLinks to='menu3'
@@ -65,7 +65,7 @@ const Navbar = ({toggle}) => {
                             duration={500}
                             spy={true}
                             exact='true'
-                            offset={-80}>How We Work</NavLinks>
+                            offset={0}>Our Expertise</NavLinks>
                         </NavItem>
                         <NavItem>    
                             <NavLinks to='ourclients'
@@ -73,7 +73,7 @@ const Navbar = ({toggle}) => {
                             duration={500}
                             spy={true}
                             exact='true'
-                            offset={-80}>Our Clients</NavLinks>
+                            offset={0}>Our Clients</NavLinks>
                         </NavItem>
                         <NavItem>
                                 <NavLinks to='contactus'

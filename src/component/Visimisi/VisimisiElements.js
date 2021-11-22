@@ -27,10 +27,11 @@ export const VisimisiWrapper = styled.div`
 export const VisimisiTextWrapper = styled.div`
     width: 50%;
     margin-right: 20px;
-    margin-left: 120px;
+    margin-left: 20px;
     align-self: center;
     /* background: red; */
     @media screen and (max-width: 960px) {
+        margin: auto;
     padding-bottom: 20px;
   }
 `
@@ -48,10 +49,13 @@ export const TitleShadow = styled.h1`
     width: 50%;
     color:transparent;
     font-size: 64px;
-    text-shadow: 20px -100px 0px rgba(255, 255, 255, 0.2) ;
+    text-shadow: -10px -90px 0px rgba(255, 255, 255, 0.2) ;
 `
 
 export const VisimisiParagraph = styled.p`
+    width: 80%;
+    margin-right: 20px;
+    text-align: justify;
     color: #fff;
     font-size: 14px;
 

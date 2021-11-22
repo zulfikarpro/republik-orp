@@ -23,7 +23,7 @@ const Milestone = ({
         <>
             <MilestoneContainer id={"milestone"} style={{marginTop:'0px'}}>
                 <MilestoneWrapper>
-                    <MilestoneTextWrapper>
+                    <MilestoneTextWrapper style={{maxWidth:'1440px', margin:'auto'}}>
                         <MilestoneTitleShadow lightText={lightText}>
                             Group Milestones
                         </MilestoneTitleShadow>
@@ -31,7 +31,6 @@ const Milestone = ({
                             Group Milestones
                         </MilestoneTitle>
                     </MilestoneTextWrapper>
-                    
                     <MilestoneImages src={MilestoneImage}/>
                 </MilestoneWrapper>
             </MilestoneContainer>

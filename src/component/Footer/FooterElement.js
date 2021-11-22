@@ -25,6 +25,11 @@ export const FooterFirstLine = styled.div`
 display: flex;
 flex-direction: row;
 height:40px;
+
+@media screen and (max-width:960px){
+    justify-content: center;
+}
+
 `
 
 export const FooterSecondLine = styled.div`
