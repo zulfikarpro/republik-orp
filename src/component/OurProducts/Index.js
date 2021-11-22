@@ -39,7 +39,7 @@ const OurProducts = (
                           <h1>Product</h1>
                           </div>
                           <div style={{width:'100%', justifyContent:'center', display:'flex', flexDirection:'row'}}>
-                          <p style={{maxWidth:'400px', fontSize:'.8rem'}}>Lorem ipsum dolor sit amet, et diceret volumus nam, nusquam gubergren quaerendum at vix. At nam audiam ullamcorper, consul laoreet te est. Ut vidisse dolorem mel, possim qualisque pertinacia mel ei, option qualisque usu an. Ne sint paulo congue usu, ne cibo salutandi constituam his, ne menandri hendrerit abhorreant eos. Primis quaerendum definitionem te vix, iuvaret nostrum voluptaria sea cu.</p>
+                          <p style={{maxWidth:'400px', fontSize:'.8rem', textAlign:'justify'}}>Lorem ipsum dolor sit amet, et diceret volumus nam, nusquam gubergren quaerendum at vix. At nam audiam ullamcorper, consul laoreet te est. Ut vidisse dolorem mel, possim qualisque pertinacia mel ei, option qualisque usu an. Ne sint paulo congue usu, ne cibo salutandi constituam his, ne menandri hendrerit abhorreant eos. Primis quaerendum definitionem te vix, iuvaret nostrum voluptaria sea cu.</p>
                           </div>
                         </div>
                       </Grid>

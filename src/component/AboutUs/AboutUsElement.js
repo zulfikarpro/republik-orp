@@ -7,7 +7,8 @@ export const Text1 = styled.p`
 `
 
 export const Text2 = styled.p`
-
+text-align: justify;
+text-justify: inter-word; 
 font-size: 1rem;
     max-width: 600px;
 

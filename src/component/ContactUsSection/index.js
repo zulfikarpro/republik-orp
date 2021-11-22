@@ -37,7 +37,8 @@ const ContactUsSection = (
                         <h2>Address</h2> 
                       </div>
                         <div style={{display:'flex', flexDirection:'row', justifyContent:'center', width:'100%'}}>
-                        <p style={{textAlign:'center', maxWidth:'200px'}}>Lorem ipsum dolor sit amet, et diceret volumus nam, nusquam gubergren quaerendum at vix. At nam audiam ullamcorper, consul laoreet te est.
+                        <p style={{textAlign:'center', maxWidth:'200px'}}>
+                          RPX Center Building 9th floor, Jl. Ciputat Raya no. 99, tlp: (021) 75918007  
                         </p>
                         </div>
                         <div>
@@ -45,8 +46,8 @@ const ContactUsSection = (
                       </div>
                         <div style={{display:'flex', flexDirection:'row', justifyContent:'center', width:'100%'}}>
                         <p style={{textAlign:'center', maxWidth:'200px'}}>
-                        (021) 777 888
-                        info@republikorp.com
+                        (021) 75918007
+info@republikorp.com
                         </p>
                         </div>
                       </div>

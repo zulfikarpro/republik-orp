@@ -10,8 +10,6 @@ const Footer = () => {
                     <FooterFirstLine>
                         <FaWhatsapp style={{width:'auto', height:'30px',marginRight:'8px'}}/>
                         <FaInstagram style={{width:'auto', height:'30px',marginRight:'8px'}}/>
-                        <FaFacebookF style={{width:'auto', height:'30px',marginRight:'8px'}}/>
-                        <FaTwitter style={{width:'auto', height:'30px',marginRight:'8px'}}/>
                         <FaYoutube style={{width:'auto', height:'30px',marginRight:'8px'}}/>
                     </FooterFirstLine>
                     <FooterSecondLine>
