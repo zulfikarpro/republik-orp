@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Text1 = styled.p`
     align-self: center;
-    text-align:justify;
+    text-align:left;
     width: 70%;
     font-size: 2rem;
     font-weight: 900;
@@ -16,7 +16,7 @@ export const Text1 = styled.p`
 
 export const Text2 = styled.p`
 align-self: center;
-    text-align:justify;
+    text-align:left;
 width: 70%;
 font-size: 1rem;
 max-width: 500px;

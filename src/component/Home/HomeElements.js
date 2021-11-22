@@ -42,8 +42,14 @@ export const TitleDiv = styled.div`
 `
 
 export const Title = styled.h1`
+ /* Will override color (regardless of order) */
     font-size:4vw;
     line-height:.1rem;
+    text-shadow:
+   -.5px -.5px 0 #fff,  
+    /* .5px -.5px 0 #fff, */
+    /* -.5px .5px 0 #fff, */
+     .5px .5px 0 #fff;
     color:#282855;
     @media screen and (max-width:960px){
         font-size: 6vw;
