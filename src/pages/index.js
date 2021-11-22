@@ -5,7 +5,6 @@ import Sidebar from '../component/sidebar'
 import ContactUsSection from '../component/ContactUsSection';
 import Footer from '../component/Footer';
 import HomePage from '../component/Home';
-import AboutUsPage from '../component/AboutUs';
 import WhatWeDO from '../component/WhatWeDo/Index';
 import Partnership from '../component/Partnership/Index';
 import OurProducts from '../component/OurProducts/Index';
@@ -31,7 +30,7 @@ const toggle = () =>{
             </div>
             <HomePage/>
             <WhatWeDO/>
-            <OurTarget/>
+            {/* <OurTarget/> */}
             {/* <AboutUsPage/> */}
             <OurProducts/>
             <Partnership/>

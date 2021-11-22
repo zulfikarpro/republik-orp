@@ -5,7 +5,7 @@ import banner1 from '../../images/banner/banner1.png'
 import banner2 from '../../images/banner/banner2.png'
 import banner3 from '../../images/banner/banner3.png'
 import logo from '../../images/logoorp.png'
-import bg from '../../images/bg/bghome.svg'
+import bg from '../../images/bg/bghome2.png'
 import bgimage from '../../images/bg/bgimagehome.png'
 
 const HomePage = () => {
@@ -17,7 +17,7 @@ const HomePage = () => {
                 <div style={{width:'50%', display:'flex', flexDirection:'row', justifyContent:'center', maxHeight:'200px', padding:'auto', margin:'auto'}}>
                     <Img src={logo} style={{maxHeight:'200px',maxWidth:'50%', objectFit:'contain'}}></Img>
                 </div>
-                <div style={{display:'flex', flexDirection:'column', height:'100%',width:'50vw' ,color:'#7D4545'}}>
+                <div style={{display:'flex', flexDirection:'column', height:'100%',width:'50vw' ,color:'#fff'}}>
                     <Title>Our Company</Title>
                     <P style={{textAlign:'justify'}}>
                     Berdiri sejak 27 Oktober 2014 sebagai holding company dari beberapa anak 
