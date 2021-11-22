@@ -18,20 +18,21 @@ const Partnership = (
                   <h1>Partnership</h1>
                   <div>
                   <Grid container spacing={2}>
-                    <Grid item xs={8} md={6}>
-                      <img style={{maxWidth:'400px'}}src={brand1}/>
+                    <Grid item xs={12} md={6} style={{ display:'flex', flexDirection:'column', justifyContent:'center'}}>
+                      <img style={{maxWidth:'350px', margin:'auto', width:'100%'}}src={brand1}/>
                     </Grid>
-                    <Grid item xs={8}md={6}>
+
+                    <Grid item xs={12}md={6} style={{ display:'flex', flexDirection:'column', justifyContent:'center'}}>
                     
-                    <img style={{maxWidth:'400px'}}src={brand2}/>
+                    <img style={{maxWidth:'350px', margin:'auto', width:'100%'}}src={brand2}/>
                     </Grid>
-                    <Grid item xs={8}md={6}>
+                    <Grid item xs={12}md={6} style={{ display:'flex', flexDirection:'column', justifyContent:'center'}}>
                     
-                    <img style={{maxWidth:'400px'}}src={brand3}/>
+                    <img style={{maxWidth:'350px', margin:'auto', width:'100%'}}src={brand3}/>
                     </Grid>
-                    <Grid item xs={8} md={6}>
+                    <Grid item xs={12} md={6} style={{ display:'flex', flexDirection:'column', justifyContent:'center'}}>
                     
-                    <img style={{maxWidth:'400px'}}src={brand4}/>
+                    <img style={{maxWidth:'350px', margin:'auto', width:'100%'}}src={brand4}/>
                     </Grid>
                   </Grid>
                   </div>

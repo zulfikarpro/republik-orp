@@ -31,9 +31,9 @@ useEffect(() => {
     window.addEventListener("resize", handleResize)
   })
 
-  if(!isMobile){
+//   if(!isMobile){
     return (
-            <div style={{minWidth:'100%', display:'flex', flexDirection:'column'}}>
+        <div style={{minWidth:'100%', display:'flex', flexDirection:'column'}}>
             <Sidebar isOpen={isOpen} toggle={toggle}/>
             <Navbar toggle={toggle}/>
             {/* <LandingSection/> */}
@@ -43,17 +43,17 @@ useEffect(() => {
             <Partnership/>
             <OurProducts/>
             <ContactUsSection/>
-            <Footer/>
+            {/* <Footer/> */}
             {/* <div style={{position:'flex',height:'200px', width:'auto'}}></div> */}
         </div>
     )
-  }else{
-      return(
-      <div style={{display:'flex', flexDirection:'column', width:'100%', height:'100%', textAlign:'center'}}>
-          <h1>404 Unknown</h1>
+//   }else{
+//       return(
+//       <div style={{display:'flex', flexDirection:'column', width:'100%', height:'100%', textAlign:'center'}}>
+//           <h1>404 Unknown</h1>
 
-      </div>)
-  }
+//       </div>)
+//   }
 }
 
 export const VideoBg = styled.video`

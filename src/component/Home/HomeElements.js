@@ -4,7 +4,8 @@ export const Container = styled.div`
     display:flex;
     justify-content: center;
     align-items: center;
-    max-height: 100%;
+    max-height: 100vh;
+    min-height: 100vh;
 `
 
 export const ContentDiv = styled.div`

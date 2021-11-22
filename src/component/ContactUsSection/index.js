@@ -8,11 +8,11 @@ const ContactUsSection = (
   ) => {
     return (
         <>
-           <Container style={{minHeight:'100%', minWidth:'100%', marginTop:'0px', justifyContent:'flex-start'}}>
-             <ContentDiv style={{minWidth:'100%', minHeight:'100%',height:'100vh', justifyContent:'flex-start',}} id='contactus'>
-                 <ContactUsDiv style={{width:'100%', height:'auto', minHeight:'100%', display:'flex', flexDirection:'row', justifyContent:'center', color:'#fff'}}>
-                   <div style={{display:'flex', flexDirection:'column', textAlign:'center', minWidth:'90%'}}>
-                  <h1 style={{margin:'10%'}}>Contact Us</h1>
+           <Container style={{minWidth:'100%'}}>
+             <ContentDiv style={{background:'linear-gradient(270deg, #596B80 27.08%, #0C1A2B 112.98%)',minWidth:'100%', height:'100vh',margin:'auto', justifyContent:'flex-start'}} id='contactus'>
+                 <ContactUsDiv style={{width:'100%', minHeight:'100%', display:'flex', flexDirection:'row', justifyContent:'center', color:'#fff'}}>
+                   <div style={{display:'flex', flexDirection:'column',justifyContent:'flex-end', textAlign:'center', minWidth:'90%'}}>
+                  <h1 style={{}}>Contact Us</h1>
                   <div style={{width:'100%', display:'flex', flexDirection:'row', justifyContent:'center'}}>
                   <Grid container spacing={2}>
                     <Grid item xs={8} md={6}>
@@ -56,9 +56,9 @@ info@trimatraindustries.com
                   </Grid>
                   </div>
                   </div>
-                 </ContactUsDiv>       
-                 {/* <Footer/>          */}
-             </ContentDiv>
+                 </ContactUsDiv>
+             <Footer/>     
+             </ContentDiv>    
            </Container>
         </>
     )
