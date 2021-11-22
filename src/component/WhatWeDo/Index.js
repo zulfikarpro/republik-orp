@@ -13,7 +13,10 @@ const WhatWeDO = (
                   <div style={{display:'flex', flexDirection:'column', margin:'10%', color:'#fff', maxWidth:'40%'}}>
                   <h1>What We Do</h1>
                   <br/>
-                  <p style={{maxWidth:'400px', textAlign:'justify'}}>Lorem ipsum dolor sit amet, et diceret volumus nam, nusquam gubergren quaerendum at vix. At nam audiam ullamcorper, consul laoreet te est. Ut vidisse dolorem mel, possim qualisque pertinacia mel ei, option qualisque usu an. Ne sint paulo congue usu, ne cibo salutandi constituam his, ne menandri hendrerit abhorreant eos. Primis quaerendum definitionem te vix, iuvaret nostrum voluptaria sea cu.</p>
+                  <p style={{maxWidth:'400px', textAlign:'justify'}}>
+                  Dengan beberapa anak perusahaan yang handal dibidang masing masing, 
+kami mensupport segala kebutuhan pertahanan baik nasional dan internasional
+</p>
                   </div>
                  </DivText>
                {/* </div> */}

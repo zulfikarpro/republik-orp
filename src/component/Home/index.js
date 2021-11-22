@@ -19,7 +19,12 @@ const HomePage = () => {
                 </div>
                 <div style={{display:'flex', flexDirection:'column', height:'100%',width:'50vw' ,color:'#7D4545'}}>
                     <Title>Our Company</Title>
-                    <P>Lorem ipsum dolor sit amet, et diceret volumus nam, nusquam gubergren quaerendum at vix. At nam audiam ullamcorper, consul laoreet te est. Ut vidisse dolorem mel, possim qualisque pertinacia mel ei, option qualisque usu an. Ne sint paulo congue usu, ne cibo salutandi constituam his, ne menandri hendrerit abhorreant eos. Primis quaerendum definitionem te vix, iuvaret nostrum voluptaria sea cu.</P>
+                    <P style={{textAlign:'justify'}}>
+                    Berdiri sejak 27 Oktober 2014 sebagai holding company dari beberapa anak 
+perusahaan seperti aero, space, palindo, trimatra, rex, armamen, republik defence dengan mayoritas 
+bisnis yang bergerak untuk mendukung kebutuhan pertahanan darat , laut dan udara dengan 
+profesionalisme tinggi dan didukung oleh sumber daya manusia yg terlatih dan berpengalaman.
+                    </P>
                     
                 </div>
                 </DivContent>

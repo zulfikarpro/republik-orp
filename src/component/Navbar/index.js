@@ -57,7 +57,7 @@ const Navbar = ({toggle}) => {
                             duration={500}
                             spy={true}
                             exact='true'
-                            offset={-80}>What We Do</NavLinks>
+                            offset={0}>What We Do</NavLinks>
                         </NavItem>
                         <NavItem>    
                             <NavLinks to='ourtarget'
