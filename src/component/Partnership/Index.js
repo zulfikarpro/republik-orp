@@ -17,24 +17,26 @@ const Partnership = (
                 </div>
                <div style={{position:'absolute', width:'100%', height:'100%',display:'flex', flexDirection:'row', justifyContent:'end'}}>
                   <div style={{display:'flex', flexDirection:'column', margin:'10%', color:'#fff', maxWidth:'40%'}}>
-                  <h1>Partnership</h1>
+                  
                   <div>
                   <Grid container spacing={2}>
-                    <Grid item xs={12} md={6} style={{ display:'flex', flexDirection:'column', justifyContent:'center'}}>
-                      <img style={{maxWidth:'350px', margin:'auto', width:'100%'}}src={brand1}/>
-                    </Grid>
-
+                    <Grid item xs={12}>
+                    <h1 style={{marginLeft:'5px'}}>Partnership</h1>
+                      </Grid>
                     <Grid item xs={12}md={6} style={{ display:'flex', flexDirection:'column', justifyContent:'center'}}>
-                    
+
                     <img style={{maxWidth:'350px', margin:'auto', width:'100%'}}src={brand2}/>
                     </Grid>
-                    <Grid item xs={12}md={6} style={{ display:'flex', flexDirection:'column', justifyContent:'center'}}>
-                    
-                    <img style={{maxWidth:'350px', margin:'auto', width:'100%'}}src={brand3}/>
+                    <Grid item xs={12} md={6} style={{ display:'flex', flexDirection:'column', justifyContent:'flex-start'}}>
+                      <img style={{maxWidth:'350px', width:'100%'}}src={brand1}/>
                     </Grid>
                     <Grid item xs={12} md={6} style={{ display:'flex', flexDirection:'column', justifyContent:'center'}}>
                     
                     <img style={{maxWidth:'350px', margin:'auto', width:'100%'}}src={brand4}/>
+                    </Grid>
+                    <Grid item xs={12}md={6} style={{ display:'flex', flexDirection:'column', justifyContent:'center'}}>
+                    
+                    <img style={{maxWidth:'350px', margin:'auto', width:'100%'}}src={brand3}/>
                     </Grid>
                   </Grid>
                   </div>

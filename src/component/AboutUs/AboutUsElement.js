@@ -16,6 +16,6 @@ export const P = styled.p`
     font-size: 1rem;
     @media screen and (max-width: 960px){
         
-    font-size: 1.4vh;
+    font-size: 1.2vh;
     }
 `

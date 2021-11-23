@@ -14,7 +14,6 @@ export const FooterWrapper = styled.div`
 display: flex;
 flex-direction: column;
 z-index: 1;
-height: 80px;
 width: 100%;
 max-width: 1100px;
 margin:auto;
