@@ -5,6 +5,7 @@ import Footer from '../Footer'
 import bg from '../../images/bg/contactusbg.png'
 import { Grid } from '@material-ui/core'
 import {FaEnvelope, FaMailchimp, FaMapMarkerAlt, FaPhone} from 'react-icons/fa'
+import { H1 } from '../AboutUs/AboutUsElement'
 const ContactUsSection = (
   ) => {
     return (
@@ -12,11 +13,14 @@ const ContactUsSection = (
            <Container style={{minWidth:'100%'}}>
              <ContentDiv style={{minWidth:'100%', height:'100vh',margin:'auto', justifyContent:'flex-start'}} id='contactus'>
                  <ContactUsDiv style={{width:'100%', minHeight:'100%', display:'flex', flexDirection:'row', justifyContent:'center', color:'#fff'}}>
+                   
                  <div style={{position:'absolute',right:'', width:'100%', height:'100%', diplay:'flex', justifyContent:'flex-start'}}>
                   <img style={{position:'absolute', zIndex:-1 , width:'100%', height:'100vh', objectFit:'cover' }} src={bg}/>
                   </div>
                   
                    <div style={{display:'flex', flexDirection:'column',justifyContent:'flex-end', textAlign:'center', minWidth:'90%'}}>
+                     
+             <H1>Contact Us</H1>
                   <div style={{width:'100%', display:'flex', flexDirection:'row', justifyContent:'center'}}>
                   <Grid container spacing={2} style={{margin:'auto', width:'100%', marginBottom:'10%'}}>
                     <Grid item xs={12}md={6} style={{display:'flex', flexDirection:'row', justifyContent:'center'}}>
@@ -43,7 +47,7 @@ const ContactUsSection = (
                     </Grid>
                     <Grid item xs={12}md={6} style={{display:'flex', flexDirection:'row', justifyContent:'center'}}>
                     <div style={{display:'flex', flexDirection:'column', minWidth:'400px'}}>
-                      <div>
+                      {/* <div>
                         <h2>Contact Address</h2>
                         <FaMapMarkerAlt size={30}/>
                         <p style={{textAlign:'center'}}>Sungai Lekop, Sagulung, <br/>
@@ -56,7 +60,7 @@ Batam, Indonesia</p>
                         <FaEnvelope size={30}/>
                         <p>
                         info@palindomarine.co.id</p>
-                      </div>
+                      </div> */}
                         {/* <div style={{display:'flex', flexDirection:'row', justifyContent:'center', width:'100%'}}>
                         
                         </div> */}

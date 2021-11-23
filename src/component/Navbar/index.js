@@ -4,7 +4,7 @@ import { IconContext } from 'react-icons/lib';
 import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, Img} from './NavbarElement'
 import { animateScroll as scroll } from 'react-scroll';
 // import { Logo } from '../LandingSection/LandingElement';
-import logo from '../../images/logopalindo.png';
+import logo from '../../images/logoaero.png';
 
 const Navbar = ({toggle}) => {
     const [scrollNav, setScrollNav] = useState(false);
@@ -46,7 +46,7 @@ const Navbar = ({toggle}) => {
                             duration={500}
                             spy={true}
                             exact='true'
-                            offset={-80}
+                            offset={0}
                             >Home</NavLinks>
                         </NavItem>
                         <NavItem>
@@ -55,23 +55,31 @@ const Navbar = ({toggle}) => {
                             duration={500}
                             spy={true}
                             exact='true'
-                            offset={-80}>About Us</NavLinks>
+                            offset={-340}>About Us</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to='facilities'
+                            <NavLinks to='ourworks'
                             smooth={true}
                             duration={500}
                             spy={true}
                             exact='true'
-                            offset={-80}>Facilities</NavLinks>
+                            offset={0}>Our Works</NavLinks>
                         </NavItem>
                         <NavItem>    
-                            <NavLinks to='projects'
+                            <NavLinks to='product'
                             smooth={true}
                             duration={500}
                             spy={true}
                             exact='true'
-                            offset={-80}>Projects</NavLinks>
+                            offset={0}>Our Products</NavLinks>
+                        </NavItem>
+                        <NavItem>    
+                            <NavLinks to='partner'
+                            smooth={true}
+                            duration={500}
+                            spy={true}
+                            exact='true'
+                            offset={0}>Our Partners</NavLinks>
                         </NavItem>
                         <NavItem>
                                 <NavLinks to='contactus'

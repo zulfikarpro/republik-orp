@@ -7,9 +7,10 @@ import Footer from '../component/Footer';
 import FacilitiesPage from '../component/Facilities'
 import HomePage from '../component/Home';
 import AboutUsPage from '../component/AboutUs';
-import Partnership from '../component/Partnership/Index';
-import OurProducts from '../component/OurProducts/Index';
 import ProjectsPage from '../component/Projects';
+import ProductsPage from '../component/OurProduct';
+import OurClients from '../component/OurClients';
+import OurWorksPage from '../component/OurWorks';
 
 
 const Home = () => {
@@ -39,11 +40,12 @@ useEffect(() => {
             <Navbar toggle={toggle}/>
             {/* <LandingSection/> */}
             <HomePage/>
-            <AboutUsPage/>
+            <OurWorksPage/>
+            <ProductsPage/>
+            <OurClients/>
+            {/* <AboutUsPage/>
             <FacilitiesPage/>
-            <ProjectsPage/>
-            {/* <Partnership/>
-            <OurProducts/> */}
+            <ProjectsPage/> */}
             <ContactUsSection/>
             {/* <Footer/> */}
             {/* <div style={{position:'flex',height:'200px', width:'auto'}}></div> */}

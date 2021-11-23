@@ -1,33 +1,31 @@
 import React from 'react'
 import { Container, ContentDiv, CarouselDiv, Img, TitleDiv,Title1, Title2 } from './HomeElements'
-import Carousel from 'react-material-ui-carousel'
-import banner1 from '../../images/banner/banner1.png'
-import banner2 from '../../images/banner/banner2.png'
-import banner3 from '../../images/banner/banner3.png'
+import logo from '../../images/logoaero.png'
+import main from '../../images/bg/main.jpg'
+import { H1, P } from '../AboutUs/AboutUsElement'
 
 const HomePage = () => {
     return (
-        <Container>
-            <ContentDiv id='home'>
-                <TitleDiv style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', position:'absolute', width:'100%', color:'red'}}>
-                    <Title1>We’re Professional Trusted &amp; Competent</Title1>
-                    <Title2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</Title2>
-                </TitleDiv>
-                <CarouselDiv>
-                <Carousel
-                indicatorContainerProps={{
-                    style: {
-                        marginTop: '-40px', // 5
-                        textAlign: 'center' // 4
-                    }
-            
-                }}
-                >
-                    <img src={banner1} style={{maxWidth:'100%'}}></img>
-                    <img src={banner2} style={{maxWidth:'100%'}}></img>
-                    <img src={banner3} style={{maxWidth:'100%'}}></img>
-                </Carousel>
-                </CarouselDiv>
+        <Container style={{maxHeight:'200vh'}}>
+            <ContentDiv id='home' style={{height:'200vh', background:`url(${main})`, backgroundRepeat:'no-repeat'}}>
+                <div style={{width:'100%', height:'100vh', display:'flex', flexDirection:'column', justifyContent:'center'}} id='home'>
+                    <div style={{margin:'auto'}}>
+                    <img src={logo}></img>
+                    </div>
+                </div>
+                <div style={{display:'flex', flexDirection:'row',height:'100vh', width:'100%', zIndex:'1'}}>
+                    <div style={{display:'flex', flexDirection:'column', justifyContent:'center', maxWidth:'50%', paddingLeft:'40px', color:'white'}}>
+                        <H1 style={{textDecoration:'underline'}} id='aboutus'>About Us</H1>
+                        <P>
+                        From the field of telecommunications RETIA has shaped its business division ReDat Recording Systems.<br/>
+
+ReDat Recording System provides comprehensive solution to record voice, screen and data and deliver system solutions with high added value. ReDat is a reliable and technologically independents solution for quality management, voice analysis, phone communications and radar operations.<br/>
+
+Within its broad portfolio, ReDat offers a secure and stable system for the ATM/ATC sector and helps improved abilities of agents and dispatchers, lowering costs for their training and thereby streamlining operations and improving services of contact and dispatch centers<br/>
+
+                        </P>
+                    </div>
+                </div>
             </ContentDiv>
         </Container>
     )
