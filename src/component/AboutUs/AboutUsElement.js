@@ -1,6 +1,31 @@
 import styled from 'styled-components';
 
 
+export const Container = styled.div`
+    /* height: 90vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    /* margin-bottom: 100px; */
+    top:0;
+    right:0;
+    /* position: fixed; */
+    padding-bottom: 100px;
+    @media screen and (max-width: 960px) {
+        /* margin-bottom: 200px;
+        height: 150vh; */
+  }
+    `
+
+export const ContentWrapper = styled.div`
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+/* background: blue; */
+/* opacity: .2; */
+/* height: 100%; */
+`
 
 export const H1 = styled.h1`
     font-size: 2.4rem;

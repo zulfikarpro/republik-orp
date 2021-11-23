@@ -9,7 +9,7 @@ import imageIso from '../../images/iso.png'
 import imageClients from '../../images/client.png'
 const CarouselItem = ({title, image}) =>{
   return(
-  <div style={{width:'100%', maxWidth:'500px',minHeight:'200px', display:'flex', flexDirection:'column'}}>
+  <div style={{width:'100%', maxWidth:'500px',minHeight:'500px', display:'flex', flexDirection:'column'}}>
     <H1 style={{fontSize:'1.3rem', textAlign:'center'}}>{title}</H1>
     {/* <div style={{width:'100%', height:'20px'}}/> */}
     <img src={image} style={{height:'50%', width:'auto'}}/>
@@ -22,16 +22,16 @@ const AboutUsPage = (
   ) => {
     return (
         <>
-           <Container style={{marginTop:'0px',marginBottom:'0px', justifyContent:'flex-start',}}>
-             <ContentDiv style={{minWidth:'100%', justifyContent:'flex-start',}} id='aboutus'>
-                <div style={{right:'', width:'100%',height:'4vh' }}>
-                  <img style={{zIndex:-1 , width:'100%', objectFit:'cover' }} src={bg}/>
+           <Container style={{minHeight:'100vh', minWidth:'100%', marginTop:'0px', justifyContent:'flex-start'}}>
+             <ContentDiv style={{minWidth:'100%', minHeight:'100%',height:'100vh', justifyContent:'flex-start'}} id='aboutus'>
+               <div style={{position:'absolute',right:'', width:'100%', height:'200%'}}>
+               <img style={{position:'absolute', zIndex:-1 , width:'100%', height:'100vh', objectFit:'cover' }} src={bg}/>
                 </div>
-                <div style={{width:'100%',display:'flex', flexDirection:'row', justifyContent:'end'}}>
-                   <div style={{ display:'flex', flexDirection:'column', justifyContent:'center'}}>
-                     <img src={image} style={{width:'100%'}}/>
+                 <div style={{width:'100%',display:'flex', flexDirection:'row', justifyContent:'end'}}>
+                   <div style={{ diplay:'flex', flexDirection:'column', justifyContent:'center'}}>
+                     <img src={image}/>
                    </div>
-                  <div style={{display:'flex', flexDirection:'column', margin:'10%', color:'#fff', maxWidth:'30%', textAlign:'justify'}}>
+                  <div style={{display:'flex', flexDirection:'column', margin:'10%', color:'#fff', maxWidth:'35%',maxHeight:'80%', textAlign:'justify'}}>
                     <H1>Company</H1>
                     <div style={{width:'100%', height:'2px', background:'white'}}/>
                     <P>
@@ -43,7 +43,7 @@ const AboutUsPage = (
                     <P>
                       Lastly, we would like deeply express out Thanks to every Customers who have given us Chance and Opportunity in building their vessels, without them we might not be as big as right now.
                     </P>
-                  <Carousel indicators={false}>
+                  <Carousel>
                     <CarouselItem title={'Partners'} image={imagePartner}/>
                     <CarouselItem title={'Management Standard'} image={imageIso}/>
                     <CarouselItem title={'Clients'} image={imageClients}/>

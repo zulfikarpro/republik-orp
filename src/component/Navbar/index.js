@@ -9,7 +9,7 @@ import logo from '../../images/logopalindo.png';
 const Navbar = ({toggle}) => {
     const [scrollNav, setScrollNav] = useState(false);
     const changeNav = () => {
-        if (window.scrollY >= 5300 && window.scrollY<=6380) {
+        if (window.scrollY >= 2000 && window.scrollY<=6380) {
           setScrollNav(true);
         } else {
           setScrollNav(false);
@@ -55,7 +55,7 @@ const Navbar = ({toggle}) => {
                             duration={500}
                             spy={true}
                             exact='true'
-                            offset={-80}>About Us</NavLinks>
+                            offset={15}>About Us</NavLinks>
                         </NavItem>
                         <NavItem>
                             <NavLinks to='facilities'
@@ -71,7 +71,7 @@ const Navbar = ({toggle}) => {
                             duration={500}
                             spy={true}
                             exact='true'
-                            offset={-80}>Projects</NavLinks>
+                            offset={0}>Projects</NavLinks>
                         </NavItem>
                         <NavItem>
                                 <NavLinks to='contactus'

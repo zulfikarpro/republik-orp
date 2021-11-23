@@ -5,13 +5,20 @@ import Footer from '../Footer'
 import bg from '../../images/bg/contactusbg.png'
 import { Grid } from '@material-ui/core'
 import {FaEnvelope, FaMailchimp, FaMapMarkerAlt, FaPhone} from 'react-icons/fa'
-import { ContentWrapper } from '../AboutUs/AboutUsElement'
 const ContactUsSection = (
   ) => {
     return (
-      <div id='contactus'style={{display:'flex', flexDirection:'column', justifyContent:'flex-end',backgroundImage:`url(${bg})`, backgroundRepeat:'no-repeat', backgroundSize:'cover',minHeight:'100vh', height:'100%', width:'100%'}}>
-      <div style={{display:'flex', flexDirection:'row', justifyContent:'center', color:'white', textAlign:'center', width:'90%', margin:'auto'}}>
-      <Grid container spacing={2} style={{margin:'auto', width:'100%'}}>
+        <>
+           <Container style={{minWidth:'100%', height:'100vh'}}>
+             <ContentDiv style={{minWidth:'100%', margin:'auto', justifyContent:'flex-start'}} id='contactus'>
+                 <ContactUsDiv style={{width:'100%', minHeight:'100%', display:'flex', flexDirection:'row', justifyContent:'center', color:'#fff'}}>
+                <div style={{position:'absolute',right:'', width:'100%', zIndex:'-1'}}>
+                  <img style={{zIndex:-1 , width:'100%', objectFit:'cover' }} src={bg}/>
+                </div>
+                  
+                   <div style={{height:'100%', display:'flex', flexDirection:'column',textAlign:'center', minWidth:'90%'}}>
+                  <div style={{width:'100%', display:'flex', flexDirection:'row', justifyContent:'center'}}>
+                  <Grid container spacing={2} style={{margin:'auto', width:'100%', marginBottom:'10%'}}>
                     <Grid item xs={12}md={6} style={{display:'flex', flexDirection:'row', justifyContent:'center'}}>
                       <div style={{display:'flex', flexDirection:'column',width:'100%'}}>
                       <div style={{display:'flex', flexDirection:'row', width:'100%' , justifyContent:'flex-start'}}>
@@ -56,10 +63,15 @@ Batam, Indonesia</p>
                       </div>
                     </Grid>
                   </Grid>
-      </div>
-      <Footer/>
-      </div>
-           
+                  </div>
+                  
+             <Footer/>    
+                  </div>
+                  
+                 </ContactUsDiv> 
+             </ContentDiv>    
+           </Container>
+        </>
     )
 }
 
