@@ -10,16 +10,19 @@ const Sidebar = ({isOpen, toggle}) => {
             <SidebarWrapper>
                 <SidebarMenu>
                     <SidebarLink to='menu1' onClick={toggle}>
-                        Menu1
+                    About Us
                     </SidebarLink>
-                    <SidebarLink to='menu2' onClick={toggle}>
-                        Menu2
+                    <SidebarLink to='visimisi' onClick={toggle}>
+                    Target
                     </SidebarLink>
                     <SidebarLink to='menu3' onClick={toggle}>
-                        Menu3
+                    Our Expertise
                     </SidebarLink>
-                    <SidebarLink to='menu4' onClick={toggle}>
-                        Menu4
+                    <SidebarLink to='ourclients' onClick={toggle}>
+                    Our Clients
+                    </SidebarLink>
+                    <SidebarLink to='contactus' onClick={toggle}>
+                    Contact Us
                     </SidebarLink>
                 </SidebarMenu>
             </SidebarWrapper>

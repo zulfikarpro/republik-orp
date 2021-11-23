@@ -29,8 +29,8 @@ const OurClients = () => {
         <>
         <Container id={'ourclients'} style={{background:'white', paddingTop:'100px', minHeight:'100vh'}}>
         <ContentWrapper>
-                <div style={{width:'100%', display:'flex',flexDirection:'row'}}>
-                <Title style={{color:'#707070'}}>Our Clients</Title>
+                <div style={{width:'90%', display:'flex',flexDirection:'row', margin:'auto'}}>
+                    <Title style={{color:'#707070'}}>Our Clients</Title>
                     <TitleShadow style={{margin:'0px'}}>Our Clients</TitleShadow>
                 </div>
             <RowWrapper>

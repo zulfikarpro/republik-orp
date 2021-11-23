@@ -26,11 +26,13 @@ shipping experience.
                     <TextLineTwo>
                     Address
                     </TextLineTwo>
-                    <TextLineOne style={{textAlign:'justify', direction:'rtl'}}>
-                    RPX Center Building, Jl. Ciputat Raya no. 99
-                    <br/>
-                    (021) 75918007
-                    <br/>
+                    <TextLineOne style={{textAlign:'rigtht'}}>
+                    RPX Center Building,
+                    <div style={{height:'5px'}}/>
+                     Jl. Ciputat Raya no. 99
+                    <div style={{height:'5px'}}/>
+                    (021)75918007
+                    <div style={{height:'5px'}}/>
                     info@republikexpres.com
                     </TextLineOne>
                 </ContactUsTextWrapper>  

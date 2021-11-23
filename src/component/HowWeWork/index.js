@@ -1,5 +1,5 @@
 import React from 'react'
-import {Container, Title, RowWrapper, LeftColumn, RightColumn, ContentWrapper, HWWShadow, ImageLeft, ImageList, BgImage} from './HowWeWorkElements'
+import {Container, Title, RowWrapper, LeftColumn, RightColumn, ContentWrapper, HWWShadow, ImageLeft, ImageList, TitleShadow} from './HowWeWorkElements'
 import bgImage from '../../images/bghww.jpg'
 import warehouseimg from '../../images/warehousbg2x.png'
 import img1 from '../../images/expertise/1.png'
@@ -13,17 +13,18 @@ import img8 from '../../images/expertise/8.png'
 const HowWeWork = () => {
     return (
         <>
-        <Container id={'menu3'} style={{marginTop:'60px'}} style={{backgroundImage:`url(${bgImage})`}}>
+        <Container style={{marginTop:'60px', maxHeight:'100vh'}} style={{backgroundImage:`url(${bgImage})`}}>
             {/* <BgImage src= {bgImage}/> */}
             <div style={{position:'fixed', right:'',top:'', width:'200vw', height:'200%', zIndex:-1}}>
                 <img src={bgImage} style={{}}/>
             </div>
             <ContentWrapper>
-                <div style={{paddingTop:'100px',width:'100%', display:'flex',flexDirection:'row-reverse', maxWidth:'1440px', margin:'auto'}}>
-                    <HWWShadow>Our Expertise</HWWShadow>
+                <div style={{display:'flex', flexDirection:'column', justifyContent: 'flex-start',marginTop:'10%', marginBottom:'0px'}}  id={'menu3'} >
                     <Title>Our Expertise</Title>
-                </div>
-            <RowWrapper style={{maxWidth:'1440px', margin:'auto'}}>
+                    <TitleShadow>Our Expertise</TitleShadow>
+                    
+                    </div>
+            <RowWrapper style={{maxWidth:'1440px', maxHeight:'60vh', margin:'auto'}}>
                 <LeftColumn >
                     <ImageLeft src={warehouseimg}></ImageLeft>
                 </LeftColumn>
