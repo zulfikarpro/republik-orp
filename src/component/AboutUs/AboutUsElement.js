@@ -142,7 +142,7 @@ export const HeadingShadow = styled.h1`
     height: 10%;
     color:transparent;
     font-size: 64px;
-    text-shadow: 20px -100px 0px rgba(255, 255, 255, 0.2) ;
+    text-shadow: -5px -100px 0px rgba(255, 255, 255, 0.2) ;
     @media screen and (max-width: 768px) {
     font-size: 50px;
     width: 50%;

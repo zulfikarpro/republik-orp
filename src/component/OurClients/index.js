@@ -27,15 +27,15 @@ const GridContent = ({pic}) =>{
 const OurClients = () => {
     return (
         <>
-        <Container id={'ourclients'} style={{background:'white', paddingTop:'100px'}}>
+        <Container id={'ourclients'} style={{background:'white', paddingTop:'100px', minHeight:'100vh'}}>
         <ContentWrapper>
-                <div style={{width:'100%', display:'flex',flexDirection:'row', marginLeft:'20px'}}>
+                <div style={{width:'100%', display:'flex',flexDirection:'row'}}>
                 <Title style={{color:'#707070'}}>Our Clients</Title>
                     <TitleShadow style={{margin:'0px'}}>Our Clients</TitleShadow>
                 </div>
             <RowWrapper>
-                <div style={{display:'flex', flexWrap:'wrap', flexDirection:'row', alignContent:'center',justifyContent:'space-evenly',alignSelf:'center'}}>
-                <Grid container spacing={2} style={{marginTop:'10%', marginBottom:'10%'}} id="ourpartner">
+                {/* <div style={{display:'flex', flexWrap:'wrap', flexDirection:'row', alignContent:'center',justifyContent:'space-evenly',alignSelf:'center'}}> */}
+                <Grid container spacing={2} style={{marginTop:'40px',marginBottom:'10%'}} id="ourpartner">
                         <Grid item xs={12} sm={6} md={4} lg={3} xl={2} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
                           <GridContent pic={img1}/>
                           </Grid>
@@ -76,7 +76,7 @@ const OurClients = () => {
                           <GridContent pic={img13}/>
                           </Grid>
                 </Grid>
-                </div>
+                {/* </div> */}
             </RowWrapper>
             </ContentWrapper>
         </Container>

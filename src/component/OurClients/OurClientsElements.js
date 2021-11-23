@@ -11,7 +11,6 @@ export const TitleShadow = styled.h1`
     color: #707070;
     /* margin-left: auto; */
     /* position: absolute; */
-    height: 10%;
     /* background: green; */
     color:transparent;
     font-size: 64px;

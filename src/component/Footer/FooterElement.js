@@ -24,20 +24,14 @@ margin-left: auto;
 export const FooterFirstLine = styled.div`
 display: flex;
 flex-direction: row;
+margin:auto;
+margin-bottom: 0px;
 height:40px;
-
-@media screen and (max-width:960px){
-    justify-content: center;
-}
-
+max-width: 200px;
 `
 
 export const FooterSecondLine = styled.div`
-/* text-align: center; */
 font-size: 1rem;
-
-@media screen and (max-width:960px){
-    text-align: center;
-    font-size: 0.8rem;
-}
+margin: auto;
+text-align: center;
 `
