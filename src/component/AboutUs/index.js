@@ -6,9 +6,9 @@ const AboutUsPage = (
   ) => {
     return (
         <>
-           <Container style={{minHeight:'100%', minWidth:'100%', marginTop:'0px', justifyContent:'flex-start'}}>
-             <ContentDiv style={{minWidth:'100%', minHeight:'100%',height:'100vh', justifyContent:'flex-start'}} id='whoweare'>
-               <div style={{position:'absolute',right:'', width:'100%', height:'200%'}}>
+           <Container style={{minWidth:'100%', marginTop:'0px', justifyContent:'flex-start'}}>
+             <ContentDiv style={{minWidth:'100%', minHeight:'100%',justifyContent:'flex-start'}} id='whoweare'>
+               <div style={{position:'absolute',right:'', width:'100%', height:'100%'}}>
                <img style={{position:'absolute', zIndex:-1 , width:'100%', height:'100vh', objectFit:'cover' }} src={bg}/>
                 </div>
                {/* <div style={{height:'100%'}}> */}

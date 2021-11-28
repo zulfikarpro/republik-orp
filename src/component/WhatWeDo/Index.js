@@ -12,11 +12,11 @@ const WhatWeDO = (
                <img style={{position:'absolute', zIndex:-1 , width:'100%', height:'100vh', objectFit:'cover' }} src={bg}/>
                 </div>
                {/* <div style={{height:'100%'}}> */}
-               <div style={{position:'absolute', width:'100%', height:'100%',display:'flex', flexDirection:'row', justifyContent:'start'}}>
-                  <div style={{display:'flex', flexDirection:'column', margin:'10%', color:'#fff', maxWidth:'30%', textAlign:'justify'}}>
+               <div style={{position:'absolute', width:'100%', height:'100%',display:'flex', flexDirection:'row', justifyContent:'flex-end'}}>
+                  <div style={{display:'flex', flexDirection:'column', color:'#fff', width:'40%',textAlign:'justify',justifyContent:'center',}}>
                   <H1>What We Do</H1>
                   <br/>
-                  <P style={{maxWidth:'400px'}}>WE SELECT WORLDWIDE PROVIDERS WITH
+                  <P style={{maxWidth:'400px', marginRight:'20px'}}>WE SELECT WORLDWIDE PROVIDERS WITH
 FOCUS ON TRANSFER OF TECHNOLOGY AND
 OFFSET GRANTS FOR THE REPUBLIC OF
 INDONESIA DEFENCE INDUSTRY, PAVING THE

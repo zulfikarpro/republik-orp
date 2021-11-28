@@ -10,12 +10,12 @@ const HomePage = () => {
     return (
         <Container>
             <ContentDiv id='home'>
-                <TitleDiv style={{display:'flex', flexDirection:'row', justifyContent:'center', alignItems:'center', position:'absolute', width:'100%', color:'red'}}>
-                    {/* <div style={{display:'flex', flexDirection:'column', backGround:'blue'}}> */}
+                <TitleDiv style={{left:'0', top:'0',display:'flex', flexDirection:'row',margin:'auto',position:'absolute', height:'100vh',width:'100vw'}}>
+                    <div style={{display:'flex', flexDirection:'row', backGround:'blue', justifyContent:'flex-start', width:'100%', zIndex:'4'}}>
                         <Img src={titletrimatra}/>
-                    {/* </div> */}
+                    </div>
                 </TitleDiv>
-                <CarouselDiv>
+                <CarouselDiv style={{height:'100vh', width:'100vw'}}>
                 <Carousel
                 indicatorContainerProps={{
                     style: {
@@ -25,7 +25,7 @@ const HomePage = () => {
             
                 }}
                 >
-                    <img src={banner1} style={{maxWidth:'100%'}}></img>
+                    <img src={banner1} style={{height:'110vh',width:'100vw', objectFit:'cover', margin:'auto'}}></img>
                     {/* <img src={banner2} style={{maxWidth:'100%'}}></img>
                     <img src={banner3} style={{maxWidth:'100%'}}></img> */}
                 </Carousel>
