@@ -9,8 +9,8 @@ import { H1,H2,P } from '../AboutUs/AboutUsElement'
 const CarouselContent = ({title, content})=>{
     return(
         <div style={{display:'flex', flexDirection:'column', justifyContent:'flex-end'}}>
-            <H1 style={{fontSize:'2vw'}}>{title}</H1>
-            <P style={{textAlign:'left', fontSize:'1.2vw'}}>{content}</P>
+            <H1 style={{fontSize:'2vw', WebkitTextStroke: '.2px black'}}>{title}</H1>
+            <P style={{textAlign:'left', fontSize:'1.2vw', WebkitTextStroke: '.2px black'}}>{content}</P>
         </div>
     )
 }

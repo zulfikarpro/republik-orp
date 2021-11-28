@@ -5,6 +5,11 @@ export const Container = styled.div`
     justify-content: center;
     align-items: center;
     min-height: 100%;
+    height: 100vh;
+
+    @media screen and (max-width:960px){
+        height: ${({ double }) => (double ? '200vh' : '100vh')};
+    } 
 `
 
 export const ContentDiv = styled.div`
@@ -16,11 +21,11 @@ export const ContentDiv = styled.div`
 `
 
 export const CarouselDiv = styled.div`
-    z-index:-1;left:0; max-width:100%; max-height:100%;
-    @media screen and (max-width: 960px){
-        margin-top: 80px;
+    /* z-index:-1;left:0; max-width:100%; max-height:100%; */
+    /* @media screen and (max-width: 960px){ */
+        /* margin-top: 80px; */
         /* padding-bottom:30%; */
-    }
+    /* } */
 `
 
 export const Img = styled.img`

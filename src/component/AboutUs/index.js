@@ -25,7 +25,7 @@ const AboutUsPage = (
            <Container style={{marginTop:'0px',marginBottom:'0px', justifyContent:'flex-start',}}>
              <ContentDiv style={{minWidth:'100%', justifyContent:'flex-start',}} id='aboutus'>
                 <div style={{right:'', width:'100%',height:'4vh' }}>
-                  <img style={{zIndex:-1 , width:'100%', objectFit:'cover' }} src={bg}/>
+                  <img style={{zIndex:-1 , height:'100vh', width:'100%', objectFit:'cover' }} src={bg}/>
                 </div>
                 <div style={{width:'100%',display:'flex', flexDirection:'row', justifyContent:'end'}}>
                    <div style={{ display:'flex', flexDirection:'column', justifyContent:'center'}}>
