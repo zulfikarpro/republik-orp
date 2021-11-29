@@ -5,9 +5,9 @@ const WhatWeDO = (
   ) => {
     return (
         <>
-           <Container style={{minWidth:'100%', marginTop:'0px', justifyContent:'flex-start'}} id="whatwedo">
-             <ContentDiv style={{minWidth:'100%',justifyContent:'flex-start'}} id="whatwedo">
-               <img style={{zIndex:-1 ,maxWidth:'100%', minHeight:'auto', }} src={bg}/>
+           <Container style={{height:'100vh',minWidth:'100%', marginTop:'0px', justifyContent:'flex-start'}} id="whatwedo">
+             <ContentDiv style={{height:'100vh', minWidth:'100%',justifyContent:'flex-start'}} id="whatwedo">
+               <img style={{zIndex:-1 ,height:'90vh', maxWidth:'100%', minHeight:'auto', }} src={bg}/>
                {/* <div style={{height:'100%'}}> */}
                <DivText>
                   <div style={{display:'flex', flexDirection:'column', margin:'10%', color:'#fff', maxWidth:'40%'}}>

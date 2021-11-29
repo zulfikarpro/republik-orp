@@ -6,6 +6,7 @@ z-index: 1;
     justify-content: center;
     align-items: center;
     max-height: 100%;
+    min-height: 100vh;
 `
 
 export const ContentDiv = styled.div`

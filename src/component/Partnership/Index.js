@@ -25,7 +25,7 @@ import { Img, Bg } from './PartnershipElements'
 const GridContent = ({pic}) =>{
   return (
       <div style={{margin:'auto'}}>
-          <img src={pic} style={{height:'100%' ,maxHeight:'100px', margin:'auto'}}/>
+          <img src={pic} style={{width:'100%' ,maxWidth:'250px', maxHeight:'100px', margin:'auto'}}/>
       </div>
   )
 }

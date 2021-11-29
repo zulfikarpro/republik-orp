@@ -8,6 +8,7 @@ import logotrimatra from '../../images/products/logotrimatra.png'
 import logopalindo from '../../images/products/logopalindo.png'
 import logoexpres from '../../images/products/logoexpres.png'
 import logoarmamen from '../../images/products/logoarmamen.png'
+import logodefensindo from '../../images/products/logodefensindo.png'
 // import Carousel from 'react-material-ui-carousel'
 // import produk1 from '../../images/products/produk1.png'
 // import produk2 from '../../images/products/produk2.png'
@@ -29,8 +30,8 @@ const GridContent = ({pic}) =>{
 const OurProducts = (
   ) => {
     return (
-               <Container style={{height:'auto', }} id='ourproduct'>
-                 <ContentDiv style={{backgroundImage:`url(${bg})`, height:'80vh', paddingTop:'50px',objectFit:'contain', backgroundRepeat:'no-repeat'}}>
+               <Container style={{height:'100vh', }} id='ourproduct'>
+                 <ContentDiv style={{backgroundImage:`url(${bg})`, height:'100vh', paddingTop:'50px',objectFit:'contain', backgroundRepeat:'no-repeat'}}>
                  {/* <DivBackground style={{ backgroundImage:`url(${bg})`}}> */}
                    <div style={{display:'flex', flexDirection:'column', color:'#fff',  width:'100%', height:'100%', justifyContent:'center'}}>
                      <Grid container spacing={5}>
@@ -46,14 +47,17 @@ const OurProducts = (
                        <Grid item xs={6} md={4} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
                         <a href='http://170.187.226.245/' style={{margin:'auto'}}><GridContent pic={logopalindo}/></a>
                        </Grid>
-                       <Grid item xs={6} md={4} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
+                       <Grid item xs={6} md={3} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
                         <a href='http://170.187.226.245/' style={{margin:'auto'}}><GridContent pic={logoexpres}/></a>
                        </Grid>
-                       <Grid item xs={6} md={4} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
+                       <Grid item xs={6} md={3} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
                         <a href='http://170.187.226.245:31/' style={{margin:'auto'}}><GridContent pic={logotrimatra}/></a>
                        </Grid>
-                       <Grid item xs={6} md={4} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
+                       <Grid item xs={6} md={3} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
                         <GridContent pic={logoarmamen}/>
+                       </Grid>
+                       <Grid item xs={6} md={3} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
+                        <GridContent pic={logodefensindo}/>
                        </Grid>
                       {/* <Grid item xs={12} md={4}>
                       <div style={{display:'flex', flexDirection:'column', justifyContent:'center', height:'100%', width:'100%',}}>
