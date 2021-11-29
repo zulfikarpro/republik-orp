@@ -33,7 +33,7 @@ const OurProducts = (
                <Container style={{height:'100vh', }} id='ourproduct'>
                  <ContentDiv style={{backgroundImage:`url(${bg})`, height:'100vh', paddingTop:'50px',objectFit:'contain', backgroundRepeat:'no-repeat'}}>
                  {/* <DivBackground style={{ backgroundImage:`url(${bg})`}}> */}
-                   <div style={{display:'flex', flexDirection:'column', color:'#fff',  width:'100%', height:'100%', justifyContent:'center'}}>
+                   <div style={{display:'flex', flexDirection:'column', color:'#fff',  width:'100%', height:'100%', justifyContent:'center', background:'rgba(0,0,0,0.4)'}}>
                      <Grid container spacing={5}>
                        <Grid item xs={12} md={12}>
                        <h1 style={{textAlign:'center'}}>Products</h1>
