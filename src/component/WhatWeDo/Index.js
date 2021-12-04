@@ -16,11 +16,11 @@ const WhatWeDO = (
                   <div style={{display:'flex', flexDirection:'column', color:'#fff', width:'40%',textAlign:'justify',justifyContent:'center',}}>
                   <H1>What We Do</H1>
                   <br/>
-                  <P style={{maxWidth:'400px', marginRight:'20px'}}>WE SELECT WORLDWIDE PROVIDERS WITH
-FOCUS ON TRANSFER OF TECHNOLOGY AND
-OFFSET GRANTS FOR THE REPUBLIC OF
-INDONESIA DEFENCE INDUSTRY, PAVING THE
-WAY FOR FUTURE INDUSTRIAL GROWTH.</P>
+                  <P style={{maxWidth:'400px', marginRight:'20px'}}>We select worldwide providers with
+focus on transfer of technology and
+offset grants for the republic of
+indonesia defence industry, paving the
+way for future industrial growth.</P>
                   </div>
                  </div>
                {/* </div> */}

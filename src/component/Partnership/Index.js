@@ -23,18 +23,18 @@ const Partnership = (
                     <Grid item xs={12}>
                     <h1 style={{marginLeft:'5px'}}>Partnership</h1>
                       </Grid>
-                    <Grid item xs={12}md={6} style={{ display:'flex', flexDirection:'column', justifyContent:'center'}}>
+                    <Grid item xs={12}md={6} style={{ display:'flex', flexDirection:'row', justifyContent:'flex-start'}}>
 
                     <img style={{maxWidth:'350px', margin:'auto', width:'100%'}}src={brand2}/>
                     </Grid>
-                    <Grid item xs={12} md={6} style={{ display:'flex', flexDirection:'column', justifyContent:'flex-start'}}>
-                      <img style={{maxWidth:'350px', width:'100%'}}src={brand1}/>
+                    <Grid item xs={12} md={6} style={{ display:'flex', flexDirection:'row', justifyContent:'flex-start'}}>
+                      <img style={{maxWidth:'350px', width:'100%',}}src={brand1}/>
                     </Grid>
-                    <Grid item xs={12} md={6} style={{ display:'flex', flexDirection:'column', justifyContent:'center'}}>
+                    <Grid item xs={12} md={6} style={{ display:'flex', flexDirection:'row', justifyContent:'flex-start'}}>
                     
                     <img style={{maxWidth:'350px', margin:'auto', width:'100%'}}src={brand4}/>
                     </Grid>
-                    <Grid item xs={12}md={6} style={{ display:'flex', flexDirection:'column', justifyContent:'center'}}>
+                    <Grid item xs={12}md={6} style={{ display:'flex', flexDirection:'row', justifyContent:'flex-start'}}>
                     
                     <img style={{maxWidth:'350px', margin:'auto', width:'100%'}}src={brand3}/>
                     </Grid>

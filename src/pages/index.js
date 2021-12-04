@@ -37,13 +37,12 @@ useEffect(() => {
             <Sidebar isOpen={isOpen} toggle={toggle}/>
             <Navbar toggle={toggle}/>
             {/* <LandingSection/> */}
-            <HomePage/>
+            <HomePage style={{maxWidth:'100vw'}}/>
             <AboutUsPage/>
             <WhatWeDO/>
             <Partnership/>
             <OurProducts/>
             <ContactUsSection/>
-            {/* <div style={{position:'flex',height:'200px', width:'auto'}}></div> */}
         </div>
     )
 //   }else{

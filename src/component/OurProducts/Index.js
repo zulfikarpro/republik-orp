@@ -5,6 +5,26 @@ import Carousel from 'react-material-ui-carousel'
 import produk1 from '../../images/products/produk 1.png'
 import produk2 from '../../images/products/produk 2.png'
 import produk3 from '../../images/products/produk 3.png'
+import { Grid } from '@material-ui/core'
+
+const CarouselItem = ({pic,pic2,pic3}) => {
+  return (
+    <div style={{marginTop:'80px'}}>
+    <Grid container spacing={2}>
+      <Grid item xs={12}md={4} style={{display:'flex', flexDirection:'row', justifyContent:'center'}}>
+        <img src={pic} style={{maxWidth:'300px'}}/>
+      </Grid>
+      <Grid item xs={12}md={4} style={{display:'flex', flexDirection:'row', justifyContent:'center'}}>
+        <img src={pic2} style={{maxWidth:'300px'}}/>
+      </Grid>
+      <Grid item xs={12}md={4} style={{display:'flex', flexDirection:'row', justifyContent:'center'}}>
+        <img src={pic3} style={{maxWidth:'300px'}}/>
+      </Grid>
+      </Grid>
+    </div>
+  )
+}
+
 const OurProducts = (
   ) => {
     return (
@@ -17,8 +37,8 @@ const OurProducts = (
                {/* <div style={{height:'100%'}}> */}
                  <div style={{position:'absolute', width:'100%', height:'100%', display:'flex', flexDirection:'row', justifyContent:'center'}}>
                    <div style={{display:'flex', flexDirection:'column', color:'#fff', textAlign:'center'}}>
-                     <h1>Our Products</h1>
-                  <Carousel
+                     <h1 style={{marginTop:'90px', fontSize:'1.4rem'}}>Our Products</h1>
+                  <Carousel style={{}}
                   indicatorContainerProps={{
                     style: {
                         marginTop: '-40px', // 5
@@ -27,10 +47,12 @@ const OurProducts = (
             
                 }}
                   >
-                  <img src={produk1} style={{maxWidth:'100%'}}></img>
-                  <img src={produk2} style={{maxWidth:'100%'}}></img>
-                  <img src={produk3} style={{maxWidth:'100%'}}></img>
+                  <CarouselItem pic={produk1} pic2={produk2} pic3={produk3}/>
+                  
+                  {/* <img src={produk2} style={{maxWidth:'100%'}}></img>
+                  <img src={produk3} style={{maxWidth:'100%'}}></img> */}
                   </Carousel>
+                  <div style={{marginBottom:'10%'}}/>
                   </div>
                  </div>
                {/* </div> */}
