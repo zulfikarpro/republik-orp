@@ -1,6 +1,6 @@
 import React from 'react'
 import { LandingContainer, LandingBg, VideoBg, LandingContent, Logo} from './LandingElement'
-import logo from '../../images/logo.svg'
+import logo from '../../images/logoexpres.svg'
 
 const LandingSection = () => {
     return (

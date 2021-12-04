@@ -27,9 +27,9 @@ const Milestone = ({
                         <MilestoneTitleShadow lightText={lightText}>
                             Group Milestones
                         </MilestoneTitleShadow>
-                        <MilestoneTitle lightText={lightText}>
+                        {/* <MilestoneTitle lightText={lightText}>
                             Group Milestones
-                        </MilestoneTitle>
+                        </MilestoneTitle> */}
                     </MilestoneTextWrapper>
                     <MilestoneImages src={MilestoneImage}/>
                 </MilestoneWrapper>

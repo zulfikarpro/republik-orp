@@ -8,13 +8,13 @@ export const Title = styled.h1`
 `
 export const TitleShadow = styled.h1`
     user-select: none;
-    color: #707070;
+    color: rgba(112, 112, 112, 0.5);
     /* margin-left: auto; */
     /* position: absolute; */
     /* background: green; */
-    color:transparent;
+    /* color:transparent; */
     font-size: 64px;
-    text-shadow: -170px -40px 0px rgba(112, 112, 112, 0.2) ;
+    /* text-shadow: -170px -40px 0px rgba(112, 112, 112, 0.5) ; */
 `
 
 export const ImageList = styled.img`

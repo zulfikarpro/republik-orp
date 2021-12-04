@@ -33,10 +33,9 @@ max-width: 540px;
 export const Input = styled.input`
 border: 0;
 margin: 10px 12px 10px 12px;
-/* min-width: 400px; */
 outline: none;
-/* background: transparent; */
-  /* font-weight: 300; */
+min-width: 400px;
+    /* border-radius: 32px; */
   font-size: 1.5rem;
   /* border-radius:20px; */
   /* border: 0px; */
@@ -57,10 +56,10 @@ outline: none;
 export const InputWrapper = styled.div`
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    background: #fff;
     border-radius: 32px;
+    background: #fff;
 
 
 `
@@ -70,5 +69,6 @@ export const TextLineOne = styled.p`
 `
 
 export const TextLineTwo = styled.h1`
+  font-size: 1.8rem;
 
 `

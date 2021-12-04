@@ -13,18 +13,18 @@ import img8 from '../../images/expertise/8.png'
 const HowWeWork = () => {
     return (
         <>
-        <Container style={{marginTop:'60px', maxHeight:'100vh'}} style={{backgroundImage:`url(${bgImage})`}}>
+        <Container style={{marginTop:'60px', maxHeight:'100vh'}} style={{backgroundImage:`url(${bgImage})`}}  id={'menu3'} >
             {/* <BgImage src= {bgImage}/> */}
             <div style={{position:'fixed', right:'',top:'', width:'200vw', height:'200%', zIndex:-1}}>
                 <img src={bgImage} style={{}}/>
             </div>
             <ContentWrapper>
-                <div style={{display:'flex', flexDirection:'column', justifyContent: 'flex-start',marginTop:'10%', marginBottom:'0px'}}  id={'menu3'} >
-                    <Title>Our Expertise</Title>
+                <div style={{display:'flex', flexDirection:'column', justifyContent: 'flex-start',marginTop:'10%', marginBottom:'0px'}}>
+                    {/* <Title>Our Expertise</Title> */}
                     <TitleShadow>Our Expertise</TitleShadow>
                     
                     </div>
-            <RowWrapper style={{maxWidth:'1440px', maxHeight:'60vh', margin:'auto'}}>
+            <RowWrapper style={{maxWidth:'1440px', margin:'auto', marginTop:'20px'}}>
                 <LeftColumn >
                     <ImageLeft src={warehouseimg}></ImageLeft>
                 </LeftColumn>

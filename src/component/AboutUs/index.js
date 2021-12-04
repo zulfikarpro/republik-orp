@@ -24,9 +24,9 @@ const AboutUsPage = ({
     return (
         <>
             <AboutUsContainer img={bgImage} lightBg={lightBg} id={id}>
-                <AboutUsWrapper>
+                <AboutUsWrapper style={{background:' rgba(0,0,0, 0.4)'}}>
                   
-            <DarkerBackground/>
+            {/* <DarkerBackground/> */}
             <AboutUsRow imgStart={imgStart} style={{maxWidth:'100%'}}>
             <AboutUsColumn1 >
               <AboutUsImage src={truckImage}/>
@@ -41,7 +41,7 @@ const AboutUsPage = ({
             <AboutUsTextWrapper>
                 {/* <TopLine lightText={lightText}>{topLine}</TopLine> */}
                 <HeadingShadow>{headline}</HeadingShadow>
-                <AboutUsHeading lightText={lightText} alignCenter={alignCenter}>{headline}</AboutUsHeading>
+                {/* <AboutUsHeading lightText={lightText} alignCenter={alignCenter}>{headline}</AboutUsHeading> */}
                 <div style={{height:'2px', width:'60%', background:'#FFF'}}/>
                 <AboutUsSubtitle darkText={darkText} alignCenter={alignCenter}>{description}</AboutUsSubtitle>
               </AboutUsTextWrapper>

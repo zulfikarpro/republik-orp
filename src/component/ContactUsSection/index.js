@@ -15,11 +15,12 @@ satisfaction across Indonesia and around the world. With REX, you will have a de
 shipping experience. 
                     </TextLineOne>
                     <TextLineTwo>
-                    For more info &amp; get in touch with us
+                    For more info &amp; 
+                    get in touch with us
                     </TextLineTwo>
                     <InputWrapper>
                     <Input />
-                    <FaEnvelope style={{color:'red', height:'20px', width:'20px', marginRight:'10%'}}/>
+                    <FaEnvelope style={{color:'red', height:'20px', width:'20px', marginRight:'20px'}}/>
                     </InputWrapper>
                 </ContactUsTextWrapper>    
                 <ContactUsTextWrapper style={{display:'flex',flexDirection:'column', width:'50%', padding:'40px', textAlign:'right'}}>

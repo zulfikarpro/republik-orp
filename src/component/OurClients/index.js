@@ -30,53 +30,51 @@ const OurClients = () => {
         <Container id={'ourclients'} style={{background:'white', paddingTop:'100px', minHeight:'100vh'}}>
         <ContentWrapper>
                 <div style={{width:'90%', display:'flex',flexDirection:'row', margin:'auto'}}>
-                    <Title style={{color:'#707070'}}>Our Clients</Title>
+                    {/* <Title style={{color:'#707070'}}>Our Clients</Title> */}
                     <TitleShadow style={{margin:'0px'}}>Our Clients</TitleShadow>
                 </div>
             <RowWrapper>
-                {/* <div style={{display:'flex', flexWrap:'wrap', flexDirection:'row', alignContent:'center',justifyContent:'space-evenly',alignSelf:'center'}}> */}
-                <Grid container spacing={2} style={{marginTop:'40px',marginBottom:'10%'}} id="ourpartner">
-                        <Grid item xs={12} sm={6} md={4} lg={3} xl={2} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
+                <Grid container spacing={2} style={{marginTop:'40px',marginBottom:'10%', maxWidth:'90%'}} id="ourpartner">
+                        <Grid item xs={12} sm={6} md={3} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
                           <GridContent pic={img1}/>
                           </Grid>
-                        <Grid item xs={12} sm={6} md={4} lg={3} xl={2} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
-                          <GridContent pic={img2}/>
-                          </Grid>
-                        <Grid item xs={12} sm={6} md={4} lg={3} xl={2} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
-                          <GridContent pic={img3}/>
-                          </Grid>
-                        <Grid item xs={12} sm={6} md={4} lg={3} xl={2} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
-                          <GridContent pic={img4}/>
-                          </Grid>
-                        <Grid item xs={12} sm={6} md={4} lg={3} xl={2} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
-                          <GridContent pic={img5}/>
-                          </Grid>
-                        <Grid item xs={12} sm={6} md={4} lg={3} xl={2} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
-                          <GridContent pic={img6}/>
-                          </Grid>
-                        <Grid item xs={12} sm={6} md={4} lg={3} xl={2} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
-                          <GridContent pic={img7}/>
-                          </Grid>
-                        <Grid item xs={12} sm={6} md={4} lg={3} xl={2} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
-                          <GridContent pic={img8}/>
-                          </Grid>
-                        <Grid item xs={12} sm={6} md={4} lg={3} xl={2} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
-                          <GridContent pic={img9}/>
-                          </Grid>
-                        <Grid item xs={12} sm={6} md={4} lg={3} xl={2} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
+                        <Grid item xs={12} sm={6} md={2} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
                           <GridContent pic={img10}/>
                           </Grid>
-                        <Grid item xs={12} sm={6} md={4} lg={3} xl={2} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
+                        <Grid item xs={12} sm={6} md={2} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
                           <GridContent pic={img11}/>
                           </Grid>
-                        <Grid item xs={12} sm={6} md={4} lg={3} xl={2} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
-                          <GridContent pic={img12}/>
+                        <Grid item xs={12} sm={6} md={2} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
+                          <GridContent pic={img5}/>
                           </Grid>
-                          <Grid item xs={12} sm={6} md={4} lg={3} xl={2} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
+                        <Grid item xs={12} sm={6} md={3}style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
+                          <GridContent pic={img8}/>
+                          </Grid>
+                        <Grid item xs={12} sm={6} md={3}style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
+                          <GridContent pic={img3}/>
+                          </Grid>
+                        <Grid item xs={12} sm={6} md={2}style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
                           <GridContent pic={img13}/>
                           </Grid>
+                        <Grid item xs={12} sm={6} md={2}style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
+                          <GridContent pic={img6}/>
+                          </Grid>
+                        <Grid item xs={12} sm={6} md={2}style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
+                          <GridContent pic={img7}/>
+                          </Grid>
+                        <Grid item xs={12} sm={6} md={3}style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
+                          <GridContent pic={img4}/>
+                          </Grid>
+                        <Grid item xs={12} sm={6} md={4}style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
+                          <GridContent pic={img9}/>
+                          </Grid>
+                        <Grid item xs={12} sm={6} md={4}style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
+                          <GridContent pic={img12}/>
+                          </Grid>
+                        <Grid item xs={12} sm={6} md={3}style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
+                          <GridContent pic={img2}/>
+                          </Grid>
                 </Grid>
-                {/* </div> */}
             </RowWrapper>
             </ContentWrapper>
         </Container>

@@ -5,7 +5,7 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: auto;
+    width: 100%;
     /* margin-bottom: 100px; */
     top:0;
     right:0;
@@ -31,9 +31,13 @@ export const TitleShadow = styled.h1`
     margin-top: 0px;
     margin-left: 10%;
     margin-right: 10%;
-    color: transparent;
+    color: rgba(255, 255, 255, 0.5);
     font-size: 64px;
-    text-shadow: 0px -120px 0px rgba(255, 255, 255, 0.2) ;
+
+    @media screen and (max-width:960px){
+        font-size: 50px;
+    }
+    /* text-shadow: 0px -120px 0px rgba(255, 255, 255, 0.2) ; */
 `
 
 export const HWWShadow = styled.h1`
@@ -59,6 +63,7 @@ export const Title = styled.h1`
 `
 
 export const RowWrapper = styled.div`
+    max-width: 100vw;
     width: 100%;
     margin-top: 0px;
     display: flex;

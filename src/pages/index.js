@@ -44,7 +44,7 @@ const toggle = () =>{
             <LandingSection/>
             
             <BackgroundMerahDiv>
-                <div style={{position:'flex', width:'100vw', flexDirection:'column', justifyContent:'flex-start'}}>
+                <div style={{position:'flex', width:'100%', flexDirection:'column', justifyContent:'flex-start'}}>
                 <div style={{display:'flex', flexDirection:'row', justifyContent:'center', maxWidth:'100%'}}>
                     <AboutUsPage {...homeObjOne}/>
                 </div>
@@ -85,7 +85,7 @@ const BackgroundMerahDiv = styled.div`
     z-index: 1;
     flex-direction: column;
     height: '200vh';
-    max-width: 100%;
+    max-width: 100vw;
     /* @media screen and (max-width: 768px) {
     width: 120;
   } */

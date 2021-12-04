@@ -25,13 +25,14 @@ export const VisimisiWrapper = styled.div`
 `
 
 export const VisimisiTextWrapper = styled.div`
-    width: 50%;
+    width: 45%;
     margin-right: 20px;
-    margin-left: 20px;
+    margin-left: 5%;
     align-self: center;
     /* background: red; */
     @media screen and (max-width: 960px) {
         margin: auto;
+    width: 100%;
     padding-bottom: 20px;
   }
 `
@@ -44,12 +45,12 @@ export const VisimisiTitle = styled.h1`
 
 export const TitleShadow = styled.h1`
     user-select: none;
-    position: absolute;
+    /* position: absolute; */
     height: 10%;
-    width: 50%;
-    color:transparent;
+    width: 100%;
+    color:rgba(255, 255, 255, 0.5);
     font-size: 64px;
-    text-shadow: -10px -90px 0px rgba(255, 255, 255, 0.2) ;
+    /* text-shadow: -10px -90px 0px rgba(255, 255, 255, 0.2) ; */
 `
 
 export const VisimisiParagraph = styled.p`
