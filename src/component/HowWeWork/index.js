@@ -17,6 +17,8 @@ const HowWeWork = () => {
             {/* <BgImage src= {bgImage}/> */}
             <div style={{position:'fixed', right:'',top:'', width:'200vw', height:'200%', zIndex:-1}}>
                 <img src={bgImage} style={{}}/>
+
+                
             </div>
             <ContentWrapper>
                 <div style={{display:'flex', flexDirection:'column', justifyContent: 'flex-start',marginTop:'10%', marginBottom:'0px'}}>
