@@ -2,23 +2,23 @@ import styled from 'styled-components';
 
 export const Text1 = styled.p`
     align-self: center;
-    text-align:left;
+    text-align:center;
     width: 70%;
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: 900;
     max-width: 600px;
 
     @media screen and (max-width:960px){
         width:70%;
-    font-size: 1.6rem;
+    font-size: .8rem;
     }
 `
 
 export const Text2 = styled.p`
 align-self: center;
-    text-align:left;
+    text-align:center;
 width: 70%;
-font-size: 1rem;
+font-size: .8rem;
 max-width: 500px;
 
 `

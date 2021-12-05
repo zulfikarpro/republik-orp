@@ -16,9 +16,13 @@ const AboutUsPage = (
                    
                  </div>
                   <div style={{display:'flex', flexDirection:'column', color:'#fff', maxWidth:'90%', justifyContent:'flex-start' , height:'100vh'}}>
-                  <Title>Who We Are<TitleShadow>Who We Are</TitleShadow></Title>
-                  <Text1>Republik Aerospace Dirgantara Established to strengthen the Indonesian Defense ecosystem</Text1>
+                  <Title>Who We Are</Title>
+                  <Text2>Republik Aerospace Dirgantara Established to strengthen the Indonesian Defense ecosystem</Text2>
                   <Text2>pushes aerospace innovation and technology for strategic advancements which will further drive Indonesia's global positioning. </Text2>
+                  <Text1>Vision</Text1>
+                  <Text2>provide integrated solutions through one stop logistics, modern technology, and a committed workforce.</Text2>   
+                  <Text1>Mission</Text1>
+                  <Text2>combining strategic planning with modern technology and workforce commitment to provide the best logistics solutions.</Text2>
                   <div style={{height:'20%', width:'100%'}}></div>
                  </div>
                  

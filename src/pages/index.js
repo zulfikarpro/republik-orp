@@ -32,7 +32,7 @@ const toggle = () =>{
             <HomePage/>
             <AboutUsPage/>
             <OurProducts/>
-            <OurTarget/>
+            {/* <OurTarget/> */}
             <Partnership/>
             {/* <ContactUsSection/> */}
             {/* <Footer/> */}

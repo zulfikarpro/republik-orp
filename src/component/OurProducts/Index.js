@@ -13,10 +13,10 @@ const ItemsCarousel = ({pic, title, text}) =>{
     <div style={{display:'flex', flexDirection:'column', justifyContent:'flex-end', width:'474px', height:'578px', backgroundImage:`url(${pic})`,
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
-    backgroundSize:'474px 578px'}}>
+    backgroundSize:'60vh'}}>
       {/* <Img src={pic}/> */}
       <h2 style={{margin:'20px', textAlign:'center'}}>{title}</h2>
-      <p style={{margin:'20px', textAlign:'center'}}>{text}</p>
+      <p style={{margin:'20px', textAlign:'center', fontSize:'1rem', maxWidth:'60%', marginLeft:'auto', marginRight:'auto'}}>{text}</p>
       <div style={{height:'40px'}}></div>
     </div>
   )
@@ -41,18 +41,14 @@ const OurProducts = (
   ) => {
     return (
         <>
-           {/* <Container style={{maxHeight:'200vh',minHeight:'100%', minWidth:'100%', marginTop:'0px', justifyContent:'flex-start'}} id="ourproduct">
-             <ContentDiv style={{minHeight:'100vh', maxHeight:'200vh', justifyContent:'flex-start', }}  > */}
-               <Container id="ourproduct">
+               <Container id="ourproduct" style={{height:'100%'}}>
                  <ContentDiv>
-               {/* <img style={{zIndex:-1 ,height:'100vh', objectFit:'cover', objectPosition:'20%', opacity:0 }} src={bg}/> */}
-               {/* <div style={{height:'100%'}}> */}
-                 <DivBackground style={{ backgroundImage:`url(${bg})`}}>
-                   <div style={{display:'flex', flexDirection:'column', color:'#fff',  width:'100%', height:'100%', justifyContent:'center'}}>
+                 <DivBackground style={{ backgroundSize:'100vw', backgroundImage:`url(${bg})`}}>
+                   <div style={{display:'flex', flexDirection:'column', color:'#fff',  width:'100%', height:'100vh', justifyContent:'center'}}>
                    {/* <h1 style={{fontSize: '5rem', textShadow: '100px 200px 0px rgba(255, 255, 255, 0.2) '}}>Our Products</h1> */}
                      {/* <Title style={{width:'100%', textAlign:'center', textShadow: '0px -100px 0px rgba(255, 255, 255, 0.2) '}}>Our Products</Title> */}
-                      <div style={{height:'80px', width:'100%'}}/>
-                      <Title>Our Products<TitleShadow>Our Products</TitleShadow></Title>
+                      {/* <div style={{height:'100px', width:'100%'}}/> */}
+                      <Title style={{marginTop:'100px'}}>Our Products</Title>
                       <div style={{height:'100px'}}/>
                      <Grid container spacing={2}>
                       <Grid item xs={12} md={6}>
@@ -66,7 +62,7 @@ const OurProducts = (
                         </div>
                       </Grid>
                       <Grid item xs={12} md={6}>
-                      <div style={{display:'flex', flexDirection:'column', justifyContent:'center', height:'100%', width:'100%',}}>
+                      <div style={{display:'flex', flexDirection:'column', justifyContent:'center', height:'85%', width:'100%',}}>
                         <div style={{display:'flex', flexDirection:'row', justifyContent:'center', width:'100%', alignItems:'center'}}>
                         <Carousel
                         style={{padding:'10%', justifySelf:'center'}}

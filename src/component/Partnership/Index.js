@@ -24,7 +24,7 @@ const Partnership = (
                     <Grid container spacing={2} style={{marginTop:'20%'}} id="ourpartner">
                       <Grid item xs={12} md={12}>
                         <div style={{width:'100%', textAlign:'center', zIndex:'-1'}}>
-                        <Title>Our Partners<TitleShadow>Our Partners</TitleShadow></Title>
+                        <Title>Our Partners</Title>
                         </div>
                         </Grid>
                         <Grid item xs={12} md={6} >
@@ -57,7 +57,7 @@ const Partnership = (
                       <Grid container spacing={2} style={{marginTop:'20%'}} id>
                         <Grid item xs={12} md={12} style={{zIndex:'-1'}}>
                           <div style={{width:'100%', textAlign:'center'}}>
-                          <Title>Join Our Force<TitleShadow>Join Our Force</TitleShadow></Title>
+                          <Title>Join Our Force</Title>
                           </div>
                           </Grid>
                         <Grid item xs={12} md={6} style={{zIndex:'4',}}>

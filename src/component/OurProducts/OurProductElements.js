@@ -22,9 +22,8 @@ z-index: 1;
     display:flex;
     justify-content: center;
     align-items: center;
-    min-height: 100%;
+    min-height: 100vh;
     max-width: 100%;
-    height: 100%;
 max-height: 200vh;
 
 @media screen and (max-width:960px){
@@ -61,11 +60,13 @@ export const Title = styled.h1`
 width:100%; 
 text-align:center; 
 position:relative;
-margin-top: 100px;
-/* textShadow: 0px -100px 0px rgba(255; 255; 255; 0.2)  */
+margin-top: 20px;
+color: rgba(255, 255, 255, 0.5); 
+font-size: 2.4rem;
 
     @media screen and (max-widht: 960px){
         margin-bottom: 400px;
+        font-size: 1.6;
     }
 `
 
