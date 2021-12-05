@@ -17,7 +17,7 @@ const HomePage = () => {
                 </TitleDiv> */}
                 <TitleDiv style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', position:'absolute', width:'100%', color:'red', zIndex:'2'}}>
                     <Title1>We’re Professional Trusted &amp; Competent</Title1>
-                    <Title2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</Title2>
+                    {/* <Title2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</Title2> */}
                 </TitleDiv>
                 <CarouselDiv style={{height:'100vh', width:'100vw'}}>
                 <Carousel

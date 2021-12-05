@@ -11,7 +11,7 @@ const ContactUsSection = (
     return (
       <div id='contactus'style={{display:'flex', flexDirection:'column', justifyContent:'flex-end',backgroundImage:`url(${bg})`, backgroundRepeat:'no-repeat', backgroundSize:'cover',minHeight:'100vh', height:'100%', width:'100%'}}>
       <div style={{display:'flex', flexDirection:'row', justifyContent:'center', color:'white', textAlign:'center', width:'90%', margin:'auto'}}>
-      <Grid container spacing={2} style={{margin:'auto', width:'100%'}}>
+      <Grid container spacing={2} style={{margin:'auto',marginTop:'80px', width:'100%'}}>
                     <Grid item xs={12}md={6} style={{display:'flex', flexDirection:'row', justifyContent:'center'}}>
                       <div style={{display:'flex', flexDirection:'column',width:'100%'}}>
                       <div style={{display:'flex', flexDirection:'row', width:'100%' , justifyContent:'flex-start'}}>

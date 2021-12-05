@@ -22,16 +22,16 @@ const AboutUsPage = (
   ) => {
     return (
         <>
-           <Container style={{marginTop:'0px',marginBottom:'0px', justifyContent:'flex-start',}}>
-             <ContentDiv style={{minWidth:'100%', justifyContent:'flex-start',}} id='aboutus'>
+           <Container style={{height:'100%', marginTop:'0px',marginBottom:'0px', justifyContent:'flex-start',}}>
+             <ContentDiv style={{height:'100%', minWidth:'100%', justifyContent:'flex-start',}} id='aboutus'>
                 <div style={{right:'', width:'100%',height:'4vh' }}>
                   <img style={{zIndex:-1 , height:'100vh', width:'100%', objectFit:'cover' }} src={bg}/>
                 </div>
                 <div style={{width:'100%',display:'flex', flexDirection:'row', justifyContent:'end'}}>
-                   <div style={{ display:'flex', flexDirection:'column', justifyContent:'center'}}>
+                   <div style={{ display:'flex', flexDirection:'column', justifyContent:'center', paddingRight:'10%', maxWidth:'50%'}}>
                      <img src={image} style={{width:'100%'}}/>
                    </div>
-                  <div style={{display:'flex', flexDirection:'column', margin:'10%', color:'#fff', maxWidth:'30%', textAlign:'justify'}}>
+                  <div style={{display:'flex', flexDirection:'column', color:'#fff', width:'50%', paddingLeft:'20px', paddingRight:'20px', marginTop:'40px', marginRight:'auto', textAlign:'justify'}}>
                     <H1>Company</H1>
                     <div style={{width:'100%', height:'2px', background:'white'}}/>
                     <P>

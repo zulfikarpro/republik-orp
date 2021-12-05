@@ -5,7 +5,7 @@ export const Container = styled.div`
     justify-content: center;
     align-items: center;
     min-height: 100%;
-    height: 100vh;
+    min-height: 100vh;
 
     @media screen and (max-width:960px){
         height: ${({ double }) => (double ? '200vh' : '100vh')};
