@@ -8,7 +8,7 @@ import logotrimatra from '../../images/products/logotrimatra.png'
 import logopalindo from '../../images/products/logopalindo.png'
 import logoexpres from '../../images/products/logoexpres.png'
 import logoarmamen from '../../images/products/logoarmamen.png'
-import logodefensindo from '../../images/products/logodefensindo.png'
+import logodefensindo from '../../images/products/logodefenseindo.png'
 // import Carousel from 'react-material-ui-carousel'
 // import produk1 from '../../images/products/produk1.png'
 // import produk2 from '../../images/products/produk2.png'
@@ -21,6 +21,9 @@ const GridContent = ({pic}) =>{
   return (
       <div style={{margin:'auto'}}>
           <img src={pic} style={{width:'100%' ,maxWidth:'400px', margin:'auto'}}/>
+          <div style={{width:'100%', display:'flex', flexDirection:'row', justifyContent:'center'}}>
+          <button style={{margin:'auto'}}>Visit Now</button>
+          </div>
       </div>
   )
 }
