@@ -1,19 +1,20 @@
 import React from 'react'
 import { Container, ContentDiv, CarouselDiv, Img, TitleDiv,Title1, Title2 } from './HomeElements'
 import logo from '../../images/logoaero.png'
-import main from '../../images/bg/main.jpg'
+import main from '../../images/banner/banner1.png'
 import { H1, P } from '../AboutUs/AboutUsElement'
 
 const HomePage = () => {
     return (
-        <Container style={{maxHeight:'200vh'}}>
-            <ContentDiv id='home' style={{height:'200vh', background:`url(${main})`, backgroundRepeat:'no-repeat'}}>
-                <div style={{width:'100%', height:'100vh', display:'flex', flexDirection:'column', justifyContent:'center'}} id='home'>
+        <Container style={{height:'100vh'}}>
+            <ContentDiv id='home' style={{width:'100%',backgroundPosition:'contain', backgroundRepeat:'no-repeat'}}>
+                <img src={main}/>
+                <div style={{position:'absolute', width:'100%', height:'100vh', display:'flex', flexDirection:'column', justifyContent:'center'}} id='home'>
                     <div style={{margin:'auto'}}>
                     <img src={logo}></img>
                     </div>
                 </div>
-                <div style={{display:'flex', flexDirection:'row',height:'100vh', width:'100%', zIndex:'1'}}>
+                {/* <div style={{display:'flex', flexDirection:'row',height:'100vh', width:'100%', zIndex:'1'}}>
                     <div style={{display:'flex', flexDirection:'column', justifyContent:'center', maxWidth:'50%', paddingLeft:'40px', color:'white'}}>
                         <H1 style={{textDecoration:'underline'}} id='aboutus'>About Us</H1>
                         <P>
@@ -25,7 +26,7 @@ Within its broad portfolio, ReDat offers a secure and stable system for the ATM/
 
                         </P>
                     </div>
-                </div>
+                </div> */}
             </ContentDiv>
         </Container>
     )

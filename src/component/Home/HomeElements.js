@@ -4,14 +4,14 @@ export const Container = styled.div`
     display:flex;
     justify-content: center;
     align-items: center;
-    max-height: 100vh;
     min-height: 100vh;
+    height: 100%;
 `
 
 export const ContentDiv = styled.div`
     display:flex;
     flex-direction: column;
-    max-height: 100%;
+    height: 100vh;
     justify-content: center;
 
 

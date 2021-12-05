@@ -4,13 +4,12 @@ import Navbar from '../component/Navbar'
 import Sidebar from '../component/sidebar'
 import ContactUsSection from '../component/ContactUsSection';
 import Footer from '../component/Footer';
-import FacilitiesPage from '../component/Facilities'
 import HomePage from '../component/Home';
-import AboutUsPage from '../component/AboutUs';
-import ProjectsPage from '../component/Projects';
 import ProductsPage from '../component/OurProduct';
 import OurClients from '../component/OurClients';
 import OurWorksPage from '../component/OurWorks';
+import AboutUsPage from '../component/AboutUs';
+import imageAboutUs from '../images/bg/aboutusimg.png'
 
 
 const Home = () => {
@@ -39,13 +38,12 @@ useEffect(() => {
             <Sidebar isOpen={isOpen} toggle={toggle}/>
             <Navbar toggle={toggle}/>
             {/* <LandingSection/> */}
+            <img src={imageAboutUs} style={{zIndex:'2', position:'absolute', width:'50%', right:'0', top:'78vh'}}/>
             <HomePage/>
+            <AboutUsPage/>
             <OurWorksPage/>
             <ProductsPage/>
             <OurClients/>
-            {/* <AboutUsPage/>
-            <FacilitiesPage/>
-            <ProjectsPage/> */}
             <ContactUsSection/>
             {/* <Footer/> */}
             {/* <div style={{position:'flex',height:'200px', width:'auto'}}></div> */}

@@ -2,19 +2,32 @@ import React from 'react'
 import { Container, ContentDiv } from '../Home/HomeElements'
 import bg from '../../images/bg/productbg.png'
 import { H1, H2 } from '../AboutUs/AboutUsElement'
-import content1 from '../../images/content.png'
+import content1 from '../../images/Group70.png'
+import content2 from '../../images/Group71.png'
+import content3 from '../../images/Group72.png'
+import { Grid } from '@material-ui/core'
+
 
 const Content = () => {
     return (
-        <div style={{margin:'auto'}}>
-            <img src={content1}></img>
-            </div>
+        <Grid container>
+            <Grid item xs={12} md={4}>
+                <img src={content1} style={{width:'100%'}}></img>
+            </Grid>
+            
+            <Grid item xs={12} md={4}>
+            <img src={content2} style={{width:'100%'}}></img>
+            </Grid>
+            <Grid item xs={12} md={4}>
+            <img src={content3} style={{width:'100%'}}></img>
+            </Grid>
+        </Grid>
     )
 }
 
 const ProductsPage = () => {
     return (
-        <Container style={{background: `url(${bg})`, color:'white'}} id='product'>
+        <Container style={{background: `url(${bg})`, color:'white', height:'100%', paddingBottom:'80px'}} id='product'>
             <ContentDiv style={{width:'100%'}}>
                 <H1 style={{textAlign:'center'}}>Our Product</H1>
                 <div style={{width:'200px', height:'1px', margin:'auto', background:'white'}}/>

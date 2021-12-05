@@ -6,7 +6,7 @@ import { H1 } from '../AboutUs/AboutUsElement'
 
 const OurClientsPage = () => {
     return (
-        <Container style={{height:'100vh', width:'100%', background:`url(${bg})`}} id='partner'>
+        <Container style={{backgroundSize:'100vw', backgroundRepeat:'no-repeat', background:`url(${bg})`}} id='partner'>
             <ContentDiv style={{width:'100%', height:'100%'}}>
                 <div style={{display:'flex', flexDirection:'row',justifyContent:'flex-start'}}>
                     <div style={{display:'flex', flexDirection:'column',width:'50%'}}>
