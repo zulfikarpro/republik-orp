@@ -3,7 +3,8 @@ import styled from 'styled-components'
 export const Container = styled.div`
 z-index: 1;
     display:flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-end;
     align-items: center;
     max-height: 100%;
     min-height: 100vh;
@@ -12,7 +13,7 @@ z-index: 1;
 export const ContentDiv = styled.div`
     display:flex;
     flex-direction: column;
-    max-height: 100%;
+    max-height: 100vh;
     justify-content: center;
 
 

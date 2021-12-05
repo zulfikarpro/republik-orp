@@ -8,8 +8,8 @@ const ContactUsSection = (
   ) => {
     return (
         <>
-           <Container style={{width:'100%', marginTop:'0px', justifyContent:'flex-start', backgroundImage:`url(${bg})`}}>
-             <ContentDiv style={{minWidth:'100%', minHeight:'100%',height:'auto', justifyContent:'flex-start'}} id='contactus'>
+           <Container style={{width:'100%', marginTop:'0px', backgroundImage:`url(${bg})`}}>
+             <ContentDiv style={{minWidth:'100%', minHeight:'100%',height:'100%'}} id='contactus'>
                  <ContactUsDiv style={{width:'100%', height:'auto', minHeight:'100%', display:'flex', flexDirection:'row', justifyContent:'center', color:'#fff'}}>
                    <div style={{display:'flex', flexDirection:'column', textAlign:'center', minWidth:'100%'}}>
                   <div style={{width:'100%', display:'flex', flexDirection:'row', justifyContent:'center', alignItems:'center'}}>
@@ -47,18 +47,20 @@ const ContactUsSection = (
                         <div style={{display:'flex', flexDirection:'row', justifyContent:'center', width:'100%'}}>
                         <p style={{textAlign:'center', maxWidth:'200px'}}>
                         (021) 75918007
-info@republikorp.com
+                        info@republikorp.com
                         </p>
                         </div>
                       </div>
                     </Grid>
                   </Grid>
+                  </div> 
                   </div>
+                 </ContactUsDiv>
                   
-                  
-                    <Footer/>
-                  </div>
-                 </ContactUsDiv>                
+                 <div style={{display:'flex', flexDirection:'column', zIndex:'4', width:'100%', marginTop:'5%'}}>
+                    
+                    <Footer style={{marginTop:'auto', background:'black'}}/>
+                  </div>        
              </ContentDiv>
              
            </Container>

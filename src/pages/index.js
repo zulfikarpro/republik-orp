@@ -33,7 +33,7 @@ const toggle = () =>{
             {/* <OurTarget/> */}
             {/* <AboutUsPage/> */}
             <OurProducts/>
-            <Partnership/>
+            {/* <Partnership/> */}
             <ContactUsSection/>
             {/* <Footer/> */}
             {/* <div style={{position:'flex',height:'200px', width:'auto'}}></div> */}

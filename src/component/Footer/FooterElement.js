@@ -4,7 +4,7 @@ export const FooterContainer = styled.div`
     color: #fff;
     justify-content: center;
     align-items: center;
-    margin-top:40px;
+    margin-bottom: '0px';
     
 /* background:linear-gradient(248.89deg, #596B80 27.08%, #0C1A2B 112.98%); */
 `
@@ -17,10 +17,11 @@ z-index: 1;
 height: 100px;
 width: 100%;
 max-width: 1100px;
+margin-bottom: '0px';
+margin-top: 'auto';
 margin-right: auto;
 margin-left: auto;
-/* padding: 0 24px; */
-/* justify-content: space-between; */
+background:'blue';
 
 
 `
@@ -29,10 +30,11 @@ export const FooterFirstLine = styled.div`
 display: flex;
 flex-direction: row;
 justify-content:center;
-height: 40px;
 `
 
 export const FooterSecondLine = styled.div`
+width: '100%';
+text-align: center;
 font-size: 1rem;
 
 `

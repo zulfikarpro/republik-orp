@@ -20,10 +20,7 @@ const HomePage = () => {
                 <div style={{display:'flex', flexDirection:'column', height:'100%',width:'50vw' ,color:'#fff'}}>
                     <Title>Our Company</Title>
                     <P style={{textAlign:'justify'}}>
-                    Berdiri sejak 27 Oktober 2014 sebagai holding company dari beberapa anak 
-perusahaan seperti aero, space, palindo, trimatra, rex, armamen, republik defence dengan mayoritas 
-bisnis yang bergerak untuk mendukung kebutuhan pertahanan darat , laut dan udara dengan 
-profesionalisme tinggi dan didukung oleh sumber daya manusia yg terlatih dan berpengalaman.
+                    Established since October 27, 2014 as a holding company of several subsidiaries such as aero, space, palindo, trimatra, rex, armamen, republic of defense with the majority of businesses engaged in supporting land, sea and air defense system with high professionalism and supported by trained and experienced human resources.
                     </P>
                     
                 </div>
