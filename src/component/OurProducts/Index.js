@@ -5,6 +5,9 @@ import Carousel from 'react-material-ui-carousel'
 import produk1 from '../../images/products/produk 1.png'
 import produk2 from '../../images/products/produk 2.png'
 import produk3 from '../../images/products/produk 3.png'
+import produk4 from '../../images/products/produk 4.png'
+import produk5 from '../../images/products/produk 5.png'
+import produk6 from '../../images/products/produk 6.png'
 import { Grid } from '@material-ui/core'
 
 const CarouselItem = ({pic,pic2,pic3}) => {
@@ -48,6 +51,8 @@ const OurProducts = (
                 }}
                   >
                   <CarouselItem pic={produk1} pic2={produk2} pic3={produk3}/>
+                  
+                  <CarouselItem pic={produk4} pic2={produk5} pic3={produk6}/>
                   
                   {/* <img src={produk2} style={{maxWidth:'100%'}}></img>
                   <img src={produk3} style={{maxWidth:'100%'}}></img> */}
