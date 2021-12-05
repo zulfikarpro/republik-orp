@@ -40,6 +40,10 @@ export const MilestoneTitleShadow = styled.h1`
     user-select: none;
     color:rgba(255, 255, 255, 0.5);
     font-size: 64px;
+
+    @media screen and (max-width: 960px){
+      font-size: 32px;
+    }
     /* text-shadow: -5px -120px 0px rgba(255, 255, 255, 0.2) ; */
 `
 export const MilestoneTitle = styled.h1`

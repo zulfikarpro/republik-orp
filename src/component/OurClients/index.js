@@ -33,8 +33,8 @@ const OurClients = () => {
                     {/* <Title style={{color:'#707070'}}>Our Clients</Title> */}
                     <TitleShadow style={{margin:'0px'}}>Our Clients</TitleShadow>
                 </div>
-            <RowWrapper>
-                <Grid container spacing={2} style={{marginTop:'40px',marginBottom:'10%', maxWidth:'90%'}} id="ourpartner">
+            <RowWrapper >
+                <Grid container spacing={2} style={{margin:'auto', marginBottom:'10%', marginTop:'10%', maxWidth:'90%'}} id="ourpartner">
                         <Grid item xs={12} sm={6} md={3} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
                           <GridContent pic={img1}/>
                           </Grid>

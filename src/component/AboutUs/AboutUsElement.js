@@ -59,6 +59,7 @@ justify-items: center;
 
 @media screen and (max-width: 960px) {
     padding-bottom: 20px;
+    margin-left: 20px;
   }
 
 `
@@ -145,7 +146,7 @@ export const HeadingShadow = styled.h1`
     font-size: 64px;
     /* text-shadow: -5px -100px 0px rgba(255, 255, 255, 0.2) ; */
     @media screen and (max-width: 768px) {
-    font-size: 40px;
+    font-size: 30px;
     width: 100%;
   }
 `
@@ -160,6 +161,7 @@ export const AboutUsSubtitle = styled.p`
   color: ${({ darkText }) => (darkText ? '#010606' : '#fff')};
   @media screen and (max-width: 960px) {
     font-size: 10px;
+    line-height: 14px;
     margin-right: 25px;
   }
 `

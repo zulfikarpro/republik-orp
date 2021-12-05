@@ -29,8 +29,8 @@ export const VisimisiTextWrapper = styled.div`
     align-self: center;
     /* background: red; */
     @media screen and (max-width: 960px) {
-        margin: auto;
-    width: 100%;
+    /* margin: auto; */
+    width: 60%;
     padding-bottom: 20px;
   }
 `
@@ -48,7 +48,10 @@ export const TitleShadow = styled.h1`
     width: 100%;
     color:rgba(255, 255, 255, 0.5);
     font-size: 64px;
-    /* text-shadow: -10px -90px 0px rgba(255, 255, 255, 0.2) ; */
+    
+    @media screen and (max-width: 960px){
+        font-size: 30px;
+    }
 `
 
 export const VisimisiParagraph = styled.p`
@@ -57,5 +60,9 @@ export const VisimisiParagraph = styled.p`
     text-align: justify;
     color: #fff;
     font-size: 14px;
+
+    @media screen and (max-width:960px){
+        font-size:12px
+    }
 
 `

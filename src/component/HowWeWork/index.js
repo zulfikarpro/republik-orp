@@ -21,12 +21,12 @@ const HowWeWork = () => {
                 
             </div>
             <ContentWrapper>
-                <div style={{display:'flex', flexDirection:'column', justifyContent: 'flex-start',marginTop:'10%', marginBottom:'0px'}}>
+                <div style={{display:'flex', flexDirection:'column', justifyContent: 'flex-start',marginTop:'6%', marginBottom:'0px'}}>
                     {/* <Title>Our Expertise</Title> */}
                     <TitleShadow>Our Expertise</TitleShadow>
                     
                     </div>
-            <RowWrapper style={{maxWidth:'1440px', margin:'auto', marginTop:'20px'}}>
+            <RowWrapper style={{margin:'auto', marginTop:'0px', background:'rgba(0,0,0,0.6', paddingTop:'20px', paddingBottom:'20px'}}>
                 <LeftColumn >
                     <ImageLeft src={warehouseimg}></ImageLeft>
                 </LeftColumn>
