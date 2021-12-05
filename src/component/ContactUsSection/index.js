@@ -27,7 +27,7 @@ const ContactUsSection = () => {
           <ContactUsDiv
             style={{
               width: "100%",
-              minHeight: "100%",
+              minHeight: "100vh",
               display: "flex",
               flexDirection: "row",
               justifyContent: "center",
@@ -39,7 +39,7 @@ const ContactUsSection = () => {
                 position: "absolute",
                 right: "",
                 width: "100%",
-                height: "100%",
+                height: "100vh",
                 diplay: "flex",
                 justifyContent: "flex-start",
               }}
@@ -49,7 +49,7 @@ const ContactUsSection = () => {
                   position: "absolute",
                   zIndex: -1,
                   width: "100%",
-                  height: "100%",
+                  height: "100vh",
                   objectFit: "cover",
                 }}
                 src={bg}
@@ -63,6 +63,7 @@ const ContactUsSection = () => {
                 justifyContent: "flex-end",
                 textAlign: "center",
                 minWidth: "90%",
+                marginTop:'80px'
               }}
             >
               <H1>Contact Us</H1>
@@ -180,7 +181,7 @@ const ContactUsSection = () => {
                         }}
                       >
                         <textarea
-                          rows="12"
+                          rows="10"
                           placeholder=""
                           style={{
                             padding: "10px",
@@ -213,7 +214,7 @@ const ContactUsSection = () => {
                   </Grid>
                 </Grid>
               </div>
-              <div style={{height:'100%', flex:'1', marginTop:'5%'}}>
+              <div style={{height:'100%', flex:'1'}}>
                 <Footer />
               </div>
             </div>

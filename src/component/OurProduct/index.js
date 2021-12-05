@@ -29,14 +29,27 @@ const ProductsPage = () => {
     return (
         <Container style={{background: `url(${bg})`, color:'white', height:'100%', paddingBottom:'80px'}} id='product'>
             <ContentDiv style={{width:'100%'}}>
-                <H1 style={{textAlign:'center'}}>Our Product</H1>
-                <div style={{width:'200px', height:'1px', margin:'auto', background:'white'}}/>
+                <H1 style={{textAlign:'center', marginTop:'80px'}}>Our Products</H1>
+                <div style={{width:'200px', height:'1px', margin:'auto', marginTop:'0px', background:'white'}}/>
                 <br/>
-                <div style={{display:'flex', flexDirection:'row', justifyContent:'space-between', margin:'auto', width:'80%'}}>
+                {/* <div style={{display:'flex', flexDirection:'row', justifyContent:'space-between', margin:'auto', width:'80%'}}>
                     <div style={{width:'300px'}}><H2 style={{textAlign:'center'}}>Air Cargo</H2></div>
                     <div style={{width:'300px'}}><H2 style={{textAlign:'center'}}>Airplanes repairs &amp; modernization</H2></div>
                     <div style={{width:'300px'}}><H2 style={{textAlign:'center'}}>Aviation industry &amp; components</H2></div>
-                </div>
+                </div> */}
+                
+                <Grid container>
+                    <Grid item xs={12} md={4}>
+                    <div style={{width:'100%'}}><H2 style={{textAlign:'center'}}>Air Cargo</H2></div>
+                    </Grid>
+                    
+                    <Grid item xs={12} md={4}>
+                    <div style={{width:'100%'}}><H2 style={{textAlign:'center'}}>Airplanes repairs &amp; modernization</H2></div>
+                    </Grid>
+                    <Grid item xs={12} md={4}>
+                    <div style={{width:'100%'}}><H2 style={{textAlign:'center'}}>Aviation industry &amp; components</H2></div>
+                    </Grid>
+                </Grid>
                 <br/>
                 <Content>
 
