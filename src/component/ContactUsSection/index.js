@@ -197,7 +197,7 @@ const ContactUsSection = () => {
           </div>
         </div>
       </ContactUsDiv>
-      <div style={{ marginTop: "auto", height:'100px' }}>
+      <div style={{ marginTop: "auto", height:'100px'}}>
         <Footer style={{height:'100%' }} />
       </div>
     </ContentDiv>
