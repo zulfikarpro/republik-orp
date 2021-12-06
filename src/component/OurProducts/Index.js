@@ -48,7 +48,7 @@ const OurProducts = (
                    {/* <h1 style={{fontSize: '5rem', textShadow: '100px 200px 0px rgba(255, 255, 255, 0.2) '}}>Our Products</h1> */}
                      {/* <Title style={{width:'100%', textAlign:'center', textShadow: '0px -100px 0px rgba(255, 255, 255, 0.2) '}}>Our Products</Title> */}
                       {/* <div style={{height:'100px', width:'100%'}}/> */}
-                      <Title style={{marginTop:'100px'}}>Our Products</Title>
+                      <Title style={{marginTop:'100px'}}>Our Services</Title>
                       <div style={{height:'100px'}}/>
                      <Grid container spacing={2}>
                       <Grid item xs={12} md={6}>
