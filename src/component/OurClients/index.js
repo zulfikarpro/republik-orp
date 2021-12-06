@@ -11,6 +11,7 @@ const OurClientsPage = () => {
                 <div style={{display:'flex', flexDirection:'row',justifyContent:'flex-start'}}>
                     <div style={{display:'flex', flexDirection:'column',width:'50%'}}>
                         <H1 style={{width:'auto', textAlign:'center'}}>Our Partners</H1>
+                <div style={{height:'2px', width:'40%', background:'black', marginLeft:'auto', marginRight:'auto'}}/>
                         <img src={client} style={{maxWidth:'400px', margin:'auto'}}/>
                     </div>
                 </div>

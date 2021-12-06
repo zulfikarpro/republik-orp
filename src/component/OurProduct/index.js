@@ -30,7 +30,7 @@ const ProductsPage = () => {
         <Container style={{background: `url(${bg})`, color:'white', height:'100%', paddingBottom:'80px'}} id='product'>
             <ContentDiv style={{width:'100%'}}>
                 <H1 style={{textAlign:'center', marginTop:'80px'}}>Our Products</H1>
-                <div style={{width:'200px', height:'1px', margin:'auto', marginTop:'0px', background:'white'}}/>
+                <div style={{height:'2px', width:'40%', background:'white', marginLeft:'auto', marginRight:'auto'}}/>
                 <br/>
                 {/* <div style={{display:'flex', flexDirection:'row', justifyContent:'space-between', margin:'auto', width:'80%'}}>
                     <div style={{width:'300px'}}><H2 style={{textAlign:'center'}}>Air Cargo</H2></div>

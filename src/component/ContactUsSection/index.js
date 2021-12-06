@@ -10,7 +10,8 @@ import {
   FaMapMarkerAlt,
   FaPhone,
 } from "react-icons/fa";
-import { H1 } from "../AboutUs/AboutUsElement";
+import { H1,P } from "../AboutUs/AboutUsElement";
+import { textAlign } from "@mui/system";
 const ContactUsSection = () => {
   return (
     <>
@@ -208,8 +209,16 @@ const ContactUsSection = () => {
                         display: "flex",
                         flexDirection: "column",
                         minWidth: "400px",
+                        textAlign:'center'
                       }}
                     >
+                      <h2>Address</h2>
+                      <P style={{textAlign:'center'}}>OFFICE 8 BUILDING 18th FLOOR<br/>
+                      UNIT A, JL. JENDERAL SUDIRMAN<br/>
+                      KAV.<br/>
+                      52-53, DKI JAKARTA 12190<br/>
+                      021-xxxxxxx<br/>
+                      info@aero.com</P>
                     </div>
                   </Grid>
                 </Grid>
