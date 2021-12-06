@@ -70,8 +70,9 @@ export const LandingContent = styled.div`
 `
 
 export const Logo =styled.img`
-    height:200%;
-    width:200%;
+    height:140%;
+    width:140%;
+    max-width: 1000px;
 
     @media screen and (max-width: 768px){
       height:100%;

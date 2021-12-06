@@ -1,6 +1,6 @@
 import React from 'react'
-import {Container, Title, RowWrapper, LeftColumn, RightColumn, ContentWrapper, HWWShadow, ImageLeft, ImageList, BgImage} from './HowWeWorkElements'
-import bgImage from '../../images/ourexpertisebg2x.png'
+import {Container, Title, RowWrapper, LeftColumn, RightColumn, ContentWrapper, HWWShadow, ImageLeft, ImageList, TitleShadow} from './HowWeWorkElements'
+import bgImage from '../../images/bghww.jpg'
 import warehouseimg from '../../images/warehousbg2x.png'
 import img1 from '../../images/expertise/1.png'
 import img2 from '../../images/expertise/2.png'
@@ -13,18 +13,24 @@ import img8 from '../../images/expertise/8.png'
 const HowWeWork = () => {
     return (
         <>
-        <Container id={'menu3'} >
-            <BgImage src= {bgImage}/>
+        <Container style={{marginTop:'60px', maxHeight:'100vh'}} style={{backgroundImage:`url(${bgImage})`}}  id={'menu3'} >
+            {/* <BgImage src= {bgImage}/> */}
+            <div style={{position:'fixed', right:'',top:'', width:'200vw', height:'200%', zIndex:-1}}>
+                <img src={bgImage} style={{}}/>
+
+                
+            </div>
             <ContentWrapper>
-                <div style={{paddingTop:'50px',width:'100%', display:'flex',flexDirection:'row-reverse'}}>
-                    <HWWShadow>How We Work</HWWShadow>
-                    <Title>Our Expertise</Title>
-                </div>
-            <RowWrapper>
+                <div style={{display:'flex', flexDirection:'column', justifyContent: 'flex-start',marginTop:'6%', marginBottom:'0px'}}>
+                    {/* <Title>Our Expertise</Title> */}
+                    <TitleShadow>Our Expertise</TitleShadow>
+                    
+                    </div>
+            <RowWrapper style={{margin:'auto', marginTop:'0px', background:'rgba(0,0,0,0.6', paddingTop:'20px', paddingBottom:'20px'}}>
                 <LeftColumn >
                     <ImageLeft src={warehouseimg}></ImageLeft>
                 </LeftColumn>
-                <RightColumn >
+                <RightColumn style={{margin:'auto'}} >
                     <ImageList src={img1}/>
                     <ImageList src={img2}/>
                     <ImageList src={img3}/>

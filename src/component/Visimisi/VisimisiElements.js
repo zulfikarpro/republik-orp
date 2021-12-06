@@ -1,10 +1,8 @@
 import styled from "styled-components";
-import image1 from '../../images/test.png'
 export const VisimisiContainer = styled.div`
     /* margin-top: 100px;
     margin-bottom: 100px; */
     height: 90vh;
-    /* background-image: ${props=>props.img? 'url('+image1+'),linear-gradient(rgba(0,0,0, 0.4),rgba(0,0,0, 0.4))' : ''}; */
     /* background: blue; */
     width: 100%;
     align-items: center;
@@ -15,6 +13,7 @@ export const VisimisiContainer = styled.div`
 `
 
 export const VisimisiWrapper = styled.div`
+    z-index: 1;
     display: flex;
     flex-direction: row;
     /* background: blue; */
@@ -24,12 +23,14 @@ export const VisimisiWrapper = styled.div`
 `
 
 export const VisimisiTextWrapper = styled.div`
-    width: 50%;
+    width: 45%;
     margin-right: 20px;
-    margin-left: 120px;
+    margin-left: 5%;
     align-self: center;
     /* background: red; */
     @media screen and (max-width: 960px) {
+    /* margin: auto; */
+    width: 60%;
     padding-bottom: 20px;
   }
 `
@@ -41,16 +42,27 @@ export const VisimisiTitle = styled.h1`
 
 
 export const TitleShadow = styled.h1`
-    position: absolute;
+    user-select: none;
+    /* position: absolute; */
     height: 10%;
-    width: 50%;
-    color:transparent;
+    width: 100%;
+    color:rgba(255, 255, 255, 0.5);
     font-size: 64px;
-    text-shadow: 20px -100px 0px rgba(255, 255, 255, 0.2) ;
+    
+    @media screen and (max-width: 960px){
+        font-size: 30px;
+    }
 `
 
 export const VisimisiParagraph = styled.p`
+    width: 80%;
+    margin-right: 20px;
+    text-align: justify;
     color: #fff;
     font-size: 14px;
+
+    @media screen and (max-width:960px){
+        font-size:12px
+    }
 
 `

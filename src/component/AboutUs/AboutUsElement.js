@@ -32,7 +32,7 @@ export const AboutUsWrapper = styled.div`
   z-index: 1;
   height: 60%;
   width: 100%;
-  background:'black'
+  /* background:'black' */
   /* align-self: center;
   justify-self: center; */
   /* max-width: 1100px; */
@@ -59,6 +59,7 @@ justify-items: center;
 
 @media screen and (max-width: 960px) {
     padding-bottom: 20px;
+    margin-left: 20px;
   }
 
 `
@@ -120,7 +121,9 @@ export const AboutUsImage = styled.img`
     /* position: fixed; */
     max-width: 60%;
     @media screen and (max-width: 1080px) {
-      width: 100%;
+      height: 100%;
+      max-width: 100%;
+      object-fit: contain;
   }
   `
 
@@ -138,42 +141,43 @@ export const AboutUsHeading = styled.h1`
   }
 `
 export const HeadingShadow = styled.h1`
-    position: absolute;
     height: 10%;
-    color:transparent;
+    color:rgba(255, 255, 255, 0.5);
     font-size: 64px;
-    text-shadow: 20px -100px 0px rgba(255, 255, 255, 0.2) ;
+    /* text-shadow: -5px -100px 0px rgba(255, 255, 255, 0.2) ; */
     @media screen and (max-width: 768px) {
-    font-size: 50px;
-    width: 50%;
+    font-size: 30px;
+    width: 100%;
   }
 `
 
 export const AboutUsSubtitle = styled.p`
   max-width: 600px;
   margin-bottom: 35px;
-  font-size: 18px;
+  font-size: 12px;
   line-height: 24px;
   /* text-align:${({alignCenter})=> alignCenter? 'center': ''}; */
-  text-align: start;
+  text-align: justify;
   color: ${({ darkText }) => (darkText ? '#010606' : '#fff')};
   @media screen and (max-width: 960px) {
-    font-size: 12px;
+    font-size: 10px;
+    line-height: 14px;
+    margin-right: 25px;
   }
 `
 
 export const DarkerBackground = styled.div`
   background: rgba(0,0,0, 0.4);
-  position: absolute;
+  /* position: absolute; */
   justify-self: center;
   align-self: center;
   display: flex;
-  z-index: 1;
-  height: 40%;
-  width: 100%;
+  z-index: 2;
+  height: 50%;
+  width: auto;
 
   @media screen and(max-width:960px){
-    height:80%
+    height:100vh
   }
 `
 ;

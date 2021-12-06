@@ -5,7 +5,7 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: auto;
+    width: 100%;
     /* margin-bottom: 100px; */
     top:0;
     right:0;
@@ -20,42 +20,52 @@ export const Container = styled.div`
 export const ContentWrapper = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     /* background: blue; */
     /* opacity: .2; */
     /* height: 100%; */
 `
-export const TitleShadow = styled.div`
-/* background: blue; */
-    position: absolute;
-    height: 10%;
-    width: 100%;
-    color:transparent;
+export const TitleShadow = styled.h1`
+    user-select: none;
+    text-align: right;
+    margin-top: 0px;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: rgba(255, 255, 255, 0.5);
     font-size: 64px;
-    text-shadow: 20px -100px 0px rgba(255, 255, 255, 0.2) ;
+
+    @media screen and (max-width:960px){
+        font-size: 50px;
+    }
+    /* text-shadow: 0px -120px 0px rgba(255, 255, 255, 0.2) ; */
 `
 
 export const HWWShadow = styled.h1`
     position: absolute;
     height: 10%;
-    color:transparent;
+    /* color:transparent; */
+    margin-top: 0px;
+    line-height: 0px;
     font-size: 64px;
-    text-shadow: -200px -80px 0px rgba(255, 255, 255, 0.2) ;
+    text-shadow: -120px -80px 0px rgba(255, 255, 255, 0.2) ;
 `
 
 export const Title = styled.h1`
     margin-left: 10%;
     margin-right: 10%;
+    margin-top: 0px;
+    margin-bottom: 0px;
     color: white;
+    text-align: right;
     /* width: 100%; */
-    align-self: flex-start;
     /* background: black; */
     
 `
 
 export const RowWrapper = styled.div`
+    max-width: 100vw;
     width: 100%;
-    height: 100%;
+    margin-top: 0px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -66,6 +76,11 @@ export const RowWrapper = styled.div`
 
 export const ImageList = styled.img`
     margin-top: 10px;
+    max-width: 300px;
+
+    @media screen and (max-width: 960px) {
+    max-width: 300px;
+  }
 `
 
 export const LeftColumn = styled.div`
@@ -82,6 +97,7 @@ export const RightColumn = styled.div`
 `
 
 export const ImageLeft = styled.img`
+    max-height: 60vh;
 
     @media screen and (max-width: 960px) {
         /* max-height: 50vh; */

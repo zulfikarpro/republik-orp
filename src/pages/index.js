@@ -33,24 +33,25 @@ const toggle = () =>{
 
     return (
         <div style={{minWidth:'100%'}}>
-            <div style={{position:'absolute', top:'-50%', left:'-50%', width:'100vw', height:'200%'}}>
-                <video style={{position: 'fixed', height:'100vh', width: '100%',right:'0', top:0, bottom:0, left:0, margin:'auto', zIndex:-4, overflow:'hidden', opacity: 1, background:'black'}} autoPlay loop muted src={Video} type='video/mp4'/>
-                <div style={{position:'fixed',height:'100vh', width: 'auto', margin:'auto', top:0, bottom:0, right:0, left:0, background:'red', opacity:.2, zIndex:-1,overflowX:'hidden'}}/>
-            </div>
             <Sidebar isOpen={isOpen} toggle={toggle}/>
             <Navbar toggle={toggle}/>
+            
+            <div style={{position:'fixed', top:'-50%', left:'', width:'200vw', height:'200%', zIndex:-4}}>
+            <video style={{position: 'fixed', height:'100vh', width: '100%',right:'0', top:0, bottom:0, left:0, margin:'auto', zIndex:-4, overflow:'hidden', opacity: 1, background:'black', objectFit:'cover', objectPosition:'center'}} autoPlay loop muted src={Video} type='video/mp4'/>
+                {/* <video style={{position: 'fixed', height:'100vh', width: '100%',right:'0', top:0, bottom:0, left:0, margin:'auto', zIndex:-4, overflow:'hidden', opacity: 1, background:'black'}} autoPlay loop muted src={Video} type='video/mp4'/> */}
+                <div style={{position:'fixed',height:'100vh', width: 'auto', margin:'auto', top:0, bottom:0, right:0, left:0, background:'red', opacity:.2, zIndex:-1,overflowX:'hidden'}}/>
+            </div>
             <LandingSection/>
             
             <BackgroundMerahDiv>
-                <div style={{position:'flex', width:'100%', flexDirection:'column'}}>
+                <div style={{position:'flex', width:'100%', flexDirection:'column', justifyContent:'flex-start'}}>
                 <div style={{display:'flex', flexDirection:'row', justifyContent:'center', maxWidth:'100%'}}>
-                    {/* <CustomInfoSection {...homeObjOne}/> */}
                     <AboutUsPage {...homeObjOne}/>
                 </div>
                 <Milestone {...homeObjOne} style={{width:'100%'}}/>
                 </div>
-                <div style={{position:'absolute',display:'flex', flexDirection:'row', justifyContent:'center', maxWidth:'100%'}}>
-                    <ImageBgMerah src={bgMerah}/>
+                <div style={{position:'absolute', right:'',width:'100%', height:'200%', zIndex:-1}}>
+                    <img src={bgMerah} style={{maxWidth:'100%'}} style={{zIndex:'-1' ,objectFit:'cover', position:'absolute', width:'100%', height:'250vh'}}/>
                 </div>
             </BackgroundMerahDiv>
             <Visimisi/>
@@ -84,7 +85,7 @@ const BackgroundMerahDiv = styled.div`
     z-index: 1;
     flex-direction: column;
     height: '200vh';
-    max-width: 100%;
+    max-width: 100vw;
     /* @media screen and (max-width: 768px) {
     width: 120;
   } */

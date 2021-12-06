@@ -5,21 +5,26 @@ color: #fff;
 `
 
 export const ContactUseWrapper = styled.div`
-display: grid;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  justify-content: center;
   z-index: 1;
   height: 100vh;
-  width: auto;
-  max-width: 1100px;
-  margin-right: auto;
-  margin-left: auto;
+  max-width: 1440px;
   padding: 0 24px;
-  justify-content: left;
-  align-items: center;
+
+  @media screen and (max-width: 768px) {
+      flex-direction: column;
+        }
   
 
 `
 
 export const ContactUsTextWrapper = styled.div`
+background: 'red';
+margin: auto;
+min-height: 240px;
 max-width: 540px;
   padding-top: 0;
   padding-bottom: 60px;
@@ -28,10 +33,9 @@ max-width: 540px;
 export const Input = styled.input`
 border: 0;
 margin: 10px 12px 10px 12px;
-min-width: 380px;
 outline: none;
-/* background: transparent; */
-  /* font-weight: 300; */
+min-width: 400px;
+    /* border-radius: 32px; */
   font-size: 1.5rem;
   /* border-radius:20px; */
   /* border: 0px; */
@@ -44,15 +48,19 @@ outline: none;
   :-ms-input-placeholder {
      color: red;
   } */
+
+  @media screen and (max-width:960px){
+    min-width: 0px;
+  }
 `
 export const InputWrapper = styled.div`
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    min-width: 380px;
-    background: #fff;
     border-radius: 32px;
+    background: #fff;
+
 
 `
 
@@ -61,5 +69,6 @@ export const TextLineOne = styled.p`
 `
 
 export const TextLineTwo = styled.h1`
+  font-size: 1.8rem;
 
 `

@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const FooterContainer = styled.div`
+    margin-right: 20px;
+    margin-left: 20px;
     color: #fff;
     justify-content: center;
     align-items: center;
@@ -24,11 +26,14 @@ margin-left: auto;
 export const FooterFirstLine = styled.div`
 display: flex;
 flex-direction: row;
-justify-content:space-evenly
+margin:auto;
+margin-bottom: 0px;
 height:40px;
+max-width: 200px;
 `
 
 export const FooterSecondLine = styled.div`
-font-size: 1.2rem;
-
+font-size: 1rem;
+margin: auto;
+text-align: center;
 `
