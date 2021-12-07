@@ -9,6 +9,7 @@ export const Title = styled.h1`
 export const TitleShadow = styled.h1`
     user-select: none;
     color: rgba(112, 112, 112, 0.5);
+    line-height: 0%;
     /* margin-left: auto; */
     /* position: absolute; */
     /* background: green; */

@@ -27,14 +27,24 @@ const GridContent = ({pic}) =>{
 const OurClients = () => {
     return (
         <>
-        <Container id={'ourclients'} style={{background:'white', paddingTop:'100px', minHeight:'100vh'}}>
-        <ContentWrapper>
-                <div style={{width:'90%', display:'flex',flexDirection:'row', margin:'auto'}}>
+        <Container style={{background:'white', paddingTop:'100px', minHeight:'100vh'}}>
+        <ContentWrapper id={'ourclients'}>
+                <div style={{width:'90%', display:'flex',flexDirection:'row', margin:'auto', marginBottom:'0px'}}>
                     {/* <Title style={{color:'#707070'}}>Our Clients</Title> */}
-                    <TitleShadow style={{margin:'0px'}}>Our Clients</TitleShadow>
+                    <TitleShadow>Our Clients</TitleShadow>
                 </div>
             <RowWrapper >
                 <Grid container spacing={2} style={{margin:'auto', marginBottom:'10%', marginTop:'10%', maxWidth:'90%'}} id="ourpartner">
+                        
+                <Grid item xs={12} sm={6} md={4}style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
+                          <GridContent pic={img9}/>
+                          </Grid>
+                        <Grid item xs={12} sm={6} md={4}style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
+                          <GridContent pic={img12}/>
+                          </Grid>
+                        <Grid item xs={12} sm={6} md={4}style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
+                          <GridContent pic={img2}/>
+                          </Grid>
                         <Grid item xs={12} sm={6} md={3} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
                           <GridContent pic={img1}/>
                           </Grid>
@@ -64,15 +74,6 @@ const OurClients = () => {
                           </Grid>
                         <Grid item xs={12} sm={6} md={3}style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
                           <GridContent pic={img4}/>
-                          </Grid>
-                        <Grid item xs={12} sm={6} md={4}style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
-                          <GridContent pic={img9}/>
-                          </Grid>
-                        <Grid item xs={12} sm={6} md={4}style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
-                          <GridContent pic={img12}/>
-                          </Grid>
-                        <Grid item xs={12} sm={6} md={3}style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
-                          <GridContent pic={img2}/>
                           </Grid>
                 </Grid>
             </RowWrapper>
