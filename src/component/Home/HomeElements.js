@@ -4,7 +4,6 @@ export const Container = styled.div`
     display:flex;
     justify-content: center;
     align-items: center;
-    min-height: 100%;
     min-height: 100vh;
 
     @media screen and (max-width:960px){
@@ -44,6 +43,7 @@ top:40;
     }
 `
 export const Title1 = styled.h1`
+    text-align: 'center';
     font-size: 4rem;
     max-width: 800px;
     color:#fff;
