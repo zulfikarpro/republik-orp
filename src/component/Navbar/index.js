@@ -30,7 +30,7 @@ const Navbar = ({toggle}) => {
         
       <IconContext.Provider value={{ color: '#fff' }}>
             <Nav scrollNav={scrollNav}>
-                <img src={bg} style={{position:'absolute', top:'0px', left:0, right:0, maxWidth:'100vw', minHeight:'120px'}}/>
+                <img src={bg} style={{position:'absolute', top:'0px', left:0, right:0, maxWidth:'100%', minHeight:'120px'}}/>
                 <NavbarContainer>
                     <NavLogo onClick={toggleHome} to='/'>
                         <Img src={logo}/>

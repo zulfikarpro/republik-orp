@@ -8,7 +8,7 @@ const ContactUsSection = (
   ) => {
     return (
         <>
-           <Container style={{width:'100%',height:'100vh', marginTop:'0px', backgroundImage:`url(${bg})`}}>
+           <Container style={{height:'100vh', marginTop:'0px', backgroundImage:`url(${bg})`}}>
              <ContentDiv style={{minWidth:'100%', minHeight:'100%',height:'60vh',flexDirection:'flex-end'}} >
                  <ContactUsDiv style={{width:'100%', height:'50vh', display:'flex', flexDirection:'row', justifyContent:'center', color:'#fff'}}>
                    <div style={{display:'flex', flexDirection:'column', textAlign:'center', minWidth:'100%'}}>

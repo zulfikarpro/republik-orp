@@ -21,7 +21,7 @@ const toggle = () =>{
 
 
     return (
-            <div style={{ maxWidth:'100vw', display:'flex', flexDirection:'column', }}>
+            <div style={{display:'flex', flexDirection:'column', }}>
             <Sidebar isOpen={isOpen} toggle={toggle}/>
             <Navbar toggle={toggle}/>
             <div style={{position:'fixed', top:'-50%', left:'', width:'100vw', height:'200%', }}>
@@ -30,9 +30,9 @@ const toggle = () =>{
             </div>
             <HomePage/>
             <WhatWeDO/>
-            {/* <OurProducts/> */}
+            <OurProducts/>
             {/* <Partnership/> */}
-            {/* <ContactUsSection/> */}
+            <ContactUsSection/>
             {/* <Footer/> */}
             {/* <div style={{position:'flex',height:'200px', width:'auto'}}></div> */}
         </div>
