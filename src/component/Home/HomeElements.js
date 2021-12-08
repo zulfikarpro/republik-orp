@@ -7,6 +7,7 @@ z-index: 1;
     justify-content: flex-end;
     align-items: center;
     height: 100%;
+    width: 100vw;
 `
 
 export const ContentDiv = styled.div`

@@ -22,7 +22,7 @@ z-index: 1;
     display:flex;
     justify-content: center;
     align-items: center;
-    max-width: 100%;
+    max-width: 100vw;
 max-height: 200vh;
 
 @media screen and (max-width:960px){
@@ -35,8 +35,7 @@ export const ContentDiv = styled.div`
     flex-direction: column;
     /* max-height: 100%; */
     justify-content: center;
-    max-width: 100%;
-    min-width: 100%;
+    max-width: 100vw;
     @media screen and (max-width:960px){
     height: 200vh;
 }

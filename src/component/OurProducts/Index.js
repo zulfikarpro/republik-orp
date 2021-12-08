@@ -31,7 +31,7 @@ const GridContent = ({pic}) =>{
 const OurProducts = (
   ) => {
     return (
-               <Container style={{height:'100vh', }} id='ourproduct'>
+               <Container style={{height:'100vh', width:'100%' }} id='ourproduct'>
                  <ContentDiv style={{backgroundImage:`url(${bg})`, height:'100vh', paddingTop:'50px',objectFit:'contain', backgroundRepeat:'no-repeat'}}>
                  {/* <DivBackground style={{ backgroundImage:`url(${bg})`}}> */}
                    <div style={{display:'flex', flexDirection:'column', color:'#fff',  width:'100%', height:'100%', justifyContent:'center', background:'rgba(0,0,0,0.4)'}}>
@@ -51,43 +51,12 @@ const OurProducts = (
                        <Grid item xs={6} md={4} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
                         <a href='http://170.187.226.245/' style={{margin:'auto', textDecoration:'none'}} target="_blank"><GridContent pic={logoexpres}/></a>
                        </Grid>
-                       {/* <Grid item xs={6} md={3} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
-                        <a href='http://170.187.226.245:31/' style={{margin:'auto'}}><GridContent pic={logotrimatra}/></a>
-                       </Grid> */}
                        <Grid item xs={6} md={4} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
                         <GridContent pic={logoarmamen}/>
                        </Grid>
                        <Grid item xs={6} md={4} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
                         <GridContent pic={logodefensindo}/>
                        </Grid>
-                      {/* <Grid item xs={12} md={4}>
-                      <div style={{display:'flex', flexDirection:'column', justifyContent:'center', height:'100%', width:'100%',}}>
-                        <div style={{display:'flex', flexDirection:'row', justifyContent:'center', width:'100%', alignItems:'center'}}>
-                        <Carousel
-                        style={{padding:'10%', justifySelf:'center'}}
-                        indicatorContainerProps={{
-                          style: {
-                              marginTop: '-40px', // 5
-                              textAlign: 'center' // 4
-                          }
-                          }}
-                        >
-                          <Img src={produk1}></Img>
-                          <Img src={produk2}></Img>
-                        </Carousel>
-                          </div>
-                        </div>
-                        </Grid> 
-                        <Grid item xs={12} md={4}>
-                        <div style={{width:'100%', height:'100%', style:'flex',display:'flex', flexDirection:'column', justifyContent:'center', }}>
-                          <div style={{width:'100%', justifyContent:'center', display:'flex', flexDirection:'row'}}>
-                          <h1>Product</h1>
-                          </div>
-                          <div style={{width:'100%', justifyContent:'center', display:'flex', flexDirection:'row'}}>
-                          <p style={{maxWidth:'400px', fontSize:'.8rem', textAlign:'justify'}}>Lorem ipsum dolor sit amet, et diceret volumus nam, nusquam gubergren quaerendum at vix. At nam audiam ullamcorper, consul laoreet te est. Ut vidisse dolorem mel, possim qualisque pertinacia mel ei, option qualisque usu an. Ne sint paulo congue usu, ne cibo salutandi constituam his, ne menandri hendrerit abhorreant eos. Primis quaerendum definitionem te vix, iuvaret nostrum voluptaria sea cu.</p>
-                          </div>
-                        </div>
-                      </Grid> */}
                       </Grid>
                       <div style={{width:'100%', height:'20%'}}></div>
                     </div>
