@@ -14,7 +14,7 @@ const AboutUsPage = (
                     <div style={{display:'flex', flexDirection:'column', justifyContent:'center', maxWidth:'50%', paddingLeft:'40px', color:'white'}}>
                         <H1 id='aboutus'>About Us</H1>
                         <div style={{height:'2px', width:'40%', background:'white'}}/>
-                        <P>
+                        <P style={{paddingRight:'80px'}}>
                         From the field of telecommunications RETIA has shaped its business division ReDat Recording Systems.
 ReDat Recording System provides comprehensive solution to record voice, screen and data and deliver system solutions with high added value. ReDat is a reliable and technologically independents solution for quality management, voice analysis, phone communications and radar operations.<br/>
 

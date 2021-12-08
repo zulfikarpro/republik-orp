@@ -68,6 +68,7 @@ const ContactUsSection = () => {
               }}
             >
               <H1>Contact Us</H1>
+            <div style={{margin:'auto', height:'2px', width:'18%', background:'white'}}/>
               <div
                 style={{
                   width: "100%",
