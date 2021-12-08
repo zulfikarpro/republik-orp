@@ -33,11 +33,11 @@ useEffect(() => {
 
 //   if(!isMobile){
     return (
-        <div style={{minWidth:'100%', display:'flex', flexDirection:'column'}}>
+        <div style={{maxWidth:'96vw', display:'flex', flexDirection:'column'}}>
             <Sidebar isOpen={isOpen} toggle={toggle}/>
             <Navbar toggle={toggle}/>
             {/* <LandingSection/> */}
-            <HomePage style={{maxWidth:'100vw'}}/>
+            <HomePage/>
             <AboutUsPage/>
             <WhatWeDO/>
             <Partnership/>

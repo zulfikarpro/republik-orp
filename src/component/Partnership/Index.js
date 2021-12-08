@@ -12,10 +12,10 @@ const Partnership = (
         <>
            <Container style={{justifyContent:'flex-start'}}>
              <ContentDiv style={{justifyContent:'flex-start'}} id='partnership'>
-             <div style={{position:'absolute',left:'', width:'100vw', height:'200%'}}>
+             <div style={{position:'absolute',left:'', width:'100%', height:'200%'}}>
                <img style={{position:'absolute', zIndex:-1 , width:'100%', height:'100vh', objectFit:'cover' }} src={bg}/>
               </div>
-               <div style={{width:'100vw', height:'100%',display:'flex', flexDirection:'row', justifyContent:'flex-end', marginTop:'10%'}}>
+               <div style={{width:'100%', height:'100%',display:'flex', flexDirection:'row', justifyContent:'flex-end', marginTop:'10%'}}>
                   
                   <div style={{width:'50%', color:'white', marginRight:'20px'}}>
                   <Grid container spacing={6}>

@@ -10,7 +10,7 @@ const HomePage = () => {
     return (
         <Container>
             <ContentDiv id='home'>
-                <TitleDiv style={{left:'0', top:'0',display:'flex', flexDirection:'row',margin:'auto',position:'absolute', height:'100vh',width:'100vw'}}>
+                <TitleDiv style={{left:'0', top:'0',display:'flex', flexDirection:'row',margin:'auto',position:'absolute', height:'100vh',width:'100%'}}>
                     <div style={{display:'flex', flexDirection:'row', justifyContent:'flex-start', width:'90%', zIndex:'4'}}>
                         <Img src={titletrimatra}/>
                     </div>

@@ -190,7 +190,7 @@ const ContactUsSection = () => {
                       justifyContent: "flex-end",
                     }}
                   >
-                    <p style={{ textAlign: 'right' }}>
+                    <p style={{ textAlign: 'right', fontSize:'1.2rem' }}>
                     RPX Building 7th floor,<br/>
                     Jl. Ciputat Raya no.99<br/>
                     12310 DKI Jakarta, Indonesia<br/>
