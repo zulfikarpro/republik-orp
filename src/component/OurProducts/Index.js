@@ -13,11 +13,11 @@ const ItemsCarousel = ({pic, title, text}) =>{
     <div style={{display:'flex', flexDirection:'column', justifyContent:'flex-end', width:'474px', height:'578px', backgroundImage:`url(${pic})`,
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
-    backgroundSize:'60vh'}}>
+    backgroundSize:'50vh'}}>
       {/* <Img src={pic}/> */}
-      <h2 style={{margin:'20px', textAlign:'center'}}>{title}</h2>
-      <p style={{margin:'20px', textAlign:'center', fontSize:'1rem', maxWidth:'60%', marginLeft:'auto', marginRight:'auto'}}>{text}</p>
-      <div style={{height:'40px'}}></div>
+      <h2 style={{margin:'10px', textAlign:'center'}}>{title}</h2>
+      <p style={{margin:'10px', textAlign:'center', fontSize:'1rem', maxWidth:'60%', marginLeft:'auto', marginRight:'auto'}}>{text}</p>
+      <div style={{height:'17%'}}></div>
     </div>
   )
 }
@@ -44,15 +44,15 @@ const OurProducts = (
                <Container id="ourproduct" style={{height:'100%'}}>
                  <ContentDiv>
                  <DivBackground style={{ backgroundSize:'100vw', backgroundImage:`url(${bg})`}}>
-                   <div style={{display:'flex', flexDirection:'column', color:'#fff',  width:'100%', height:'100vh', justifyContent:'center'}}>
+                   <div style={{display:'flex', flexDirection:'column', color:'#fff',  width:'100%', height:'70vh', justifyContent:'center', margin:'auto'}}>
                    {/* <h1 style={{fontSize: '5rem', textShadow: '100px 200px 0px rgba(255, 255, 255, 0.2) '}}>Our Products</h1> */}
                      {/* <Title style={{width:'100%', textAlign:'center', textShadow: '0px -100px 0px rgba(255, 255, 255, 0.2) '}}>Our Products</Title> */}
                       {/* <div style={{height:'100px', width:'100%'}}/> */}
-                      <Title style={{marginTop:'100px'}}>Our Services</Title>
-                      <div style={{height:'100px'}}/>
+                      <Title style={{}}>Our Services</Title>
+                      {/* <div style={{height:'100px'}}/> */}
                      <Grid container spacing={2}>
                       <Grid item xs={12} md={6}>
-                        <div style={{minHeight:'30vh' ,height:'100%', display:'flex', flexDirection:'column', justifyContent:'flex-end'}}>
+                        <div style={{minHeight:'30vh' ,maxHeight:'60vh', display:'flex', flexDirection:'column', justifyContent:'flex-end'}}>
                           <div style={{display:'flex', width:'100%', flexDirection:'row', justifyContent:'center'}}>
                              <div style={{display:'flex', flexDirection:'column', height:'60%', justifyContent:'flex-end'}}>
                               <h1 style={{lineHeight:'.8', cursor:'pointer'}}id='telco' onMouseDown={()=> onProductSeclected(true)}>Telecomunication</h1>
@@ -62,7 +62,7 @@ const OurProducts = (
                         </div>
                       </Grid>
                       <Grid item xs={12} md={6}>
-                      <div style={{display:'flex', flexDirection:'column', justifyContent:'center', height:'85%', width:'100%',}}>
+                      <div style={{display:'flex', flexDirection:'column', justifyContent:'center', height:'60vh', width:'100%',}}>
                         <div style={{display:'flex', flexDirection:'row', justifyContent:'center', width:'100%', alignItems:'center'}}>
                         <Carousel
                         style={{padding:'10%', justifySelf:'center'}}

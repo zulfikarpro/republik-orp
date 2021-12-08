@@ -18,10 +18,10 @@ const Partnership = (
              <ContentDiv style={{minWidth:'100%', minHeight:'100%',height:'200vh', justifyContent:'flex-start', }} >
                <img style={{zIndex:-1 ,height:'100%', objectFit:'cover'}} src={bg}/>
                {/* <div style={{height:'100%'}}> */}
-                <div style={{position:'absolute', width:'100%', height:'100%', display:'flex', flexDirection:'row', justifyContent:'center'}}  >
+                <div style={{position:'absolute', width:'100%', height:'100%', display:'flex', flexDirection:'row', justifyContent:'center'}}  id="ourpartner">
                   <div style={{display:'flex', flexDirection:'column', color:'#fff',justifyContent:'space-evenly', height:'200%'}}>
-                   <div style={{width:'100%', display:'flex', flexDirection:'row', justifyContent:'center', height:'20%'}}>
-                    <Grid container spacing={2} style={{marginTop:'20%'}} id="ourpartner">
+                   <div style={{width:'100%', display:'flex', flexDirection:'row', justifyContent:'center', height:'20%'}} >
+                    <Grid container spacing={2} style={{marginTop:'20vh'}}>
                       <Grid item xs={12} md={12}>
                         <div style={{width:'100%', textAlign:'center', zIndex:'-1'}}>
                         <Title>Our Partners</Title>
@@ -53,8 +53,8 @@ const Partnership = (
                       </Grid>
                     </div>
 
-                    <div style={{height:'100%', marginTop:'400px'}}>
-                      <Grid container spacing={2} style={{marginTop:'20%'}} id>
+                    <div style={{height:'85vh', marginTop:'400px'}}>
+                      <Grid container spacing={2} style={{marginTop:'20vh'}}  id='contactus'>
                         <Grid item xs={12} md={12} style={{zIndex:'-1'}}>
                           <div style={{width:'100%', textAlign:'center'}}>
                           <Title>Join Our Force</Title>
@@ -74,27 +74,28 @@ const Partnership = (
                         </Grid>
                         <Grid item xs={12} md={6}>
                         <div style={{ lineHeight:'1.2rem',height:'100%', maxWidth:'400px', display:'flex', flexDirection:'column', justifyContent:'center', paddingLeft:'14%', paddingRight:'14%', margin:'auto' ,textAlign:'right'}}>
-                          <h2 id='contactus'>Contact Address</h2>
+                          <h2>Contact Address</h2>
                           <p>
-                            OFFICE 8 BUILDING 18th FLOOR<br/>
-                            UNIT A, JL. JENDERAL SUDIRMAN<br/>
-                            KAV.<br/>
-                            52-53, DKI JAKARTA 12190<br/>
-                            021-xxxxxxx<br/>
+                          RPX Building 7th floor,<br/>
+                          Jl. Ciputat Raya no.99<br/>
+                          12310 DKI Jakarta, Indonesia<br/>
+                          7th floor (021) 75918007<br/>
                             info@space.com
                           </p>
                           </div>
                         </Grid>
                       </Grid>
                       </div>
-                  <div class={'socialmedia'} style={{maxWidth:'100%', paddingRight:'15%', paddingLeft:'15%', display:'flex', flexDirection:'row', justifyContent:'center', margin:'20px' }}>
-                  <FaWhatsapp style={{width:'auto', height:'30px',marginRight:'8px'}}/>
+                      <div>
+                      <div class={'socialmedia'} style={{maxWidth:'100%', paddingRight:'15%', paddingLeft:'15%', display:'flex', flexDirection:'row', justifyContent:'center', margin:'20px' }}>
+                        <FaWhatsapp style={{width:'auto', height:'30px',marginRight:'8px'}}/>
                         <FaInstagram style={{width:'auto', height:'30px',marginRight:'8px'}}/>
                         <FaYoutube style={{width:'auto', height:'30px',marginRight:'8px'}}/>
-                  </div>
-                  <div style={{maxWidth:'100%', paddingRight:'15%', paddingLeft:'15%', textAlign:'center', fontSize:'1rem'}}>
-                  © 2021 Republik Space.  Trademarks and brands are the property of their respective owners.
-                  </div>
+                      </div>
+                      <div style={{maxWidth:'100%', paddingRight:'15%', paddingLeft:'15%', textAlign:'center', fontSize:'1rem'}}>
+                      © 2021 Republik Space.  Trademarks and brands are the property of their respective owners.
+                      </div>
+                      </div>
                   </div> 
                  </div>
                {/* </div> */}

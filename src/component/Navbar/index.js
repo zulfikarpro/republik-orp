@@ -9,7 +9,8 @@ import logo from '../../images/logospace.png';
 const Navbar = ({toggle}) => {
     const [scrollNav, setScrollNav] = useState(false);
     const changeNav = () => {
-        if(window.scrollY>2000){
+        console.log()
+        if(window.scrollY>(window.innerHeight*2)){
             if(window.scrollY<=3000 || window.scrollY>4000){
                 return setScrollNav(true)
             }
@@ -84,7 +85,7 @@ const Navbar = ({toggle}) => {
                             duration={500}
                             spy={true}
                             exact='true'
-                            offset={-80}>Our Partner</NavLinks>
+                            offset={0}>Our Partner</NavLinks>
                         </NavItem>
                         <NavItem>
                                 <NavLinks to='contactus'

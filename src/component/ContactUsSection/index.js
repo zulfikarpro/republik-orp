@@ -42,8 +42,8 @@ const ContactUsSection = (
                         
                       </div>
                         <div style={{display:'flex', flexDirection:'row', justifyContent:'center', width:'100%'}}>
-                        <p style={{textAlign:'end'}}>OFFICE 8 BUILDING 18TH FLOOR<br/> UNIT A, JL. JENDERAL SUDIRMAN <br/>KAV.
-52-53, DKI JAKARTA 12190 <br/>REPUBLIC OF INDONESIA
+                          
+                        <p style={{textAlign:'end'}}>RPX Building 7th floor,<br/>Jl. Ciputat Raya no.99  <br/>12310 DKI Jakarta, Indonesia 7th floor (021) 75918007<br/>REPUBLIC OF INDONESIA
 <br/>
 021 - xxx xxx<br/>
 info@trimatraindustries.com
