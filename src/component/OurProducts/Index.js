@@ -40,16 +40,16 @@ const OurProducts = (
                        <h1 style={{textAlign:'center'}}>Our Companies</h1>
                        </Grid>
                        <Grid item xs={6} md={4} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
-                         <a href='http://170.187.226.245/' style={{margin:'auto', textDecoration:'none'}}><GridContent pic={logoaero}/></a>
+                         <a href='http://170.187.226.245/' style={{margin:'auto', textDecoration:'none'}} target="_blank"><GridContent pic={logoaero}/></a>
                        </Grid>
                        <Grid item xs={6} md={4} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
-                        <a href='http://170.187.226.245:81/' style={{margin:'auto', textDecoration:'none'}}><GridContent pic={logospace}/></a>
+                        <a href='http://170.187.226.245:81/' style={{margin:'auto', textDecoration:'none'}} target="_blank"><GridContent pic={logospace}/></a>
                        </Grid>
                        <Grid item xs={6} md={4} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
-                        <a href='http://170.187.226.245/' style={{margin:'auto', textDecoration:'none'}}><GridContent pic={logopalindo}/></a>
+                        <a href='http://170.187.226.245/' style={{margin:'auto', textDecoration:'none'}} target="_blank"><GridContent pic={logopalindo}/></a>
                        </Grid>
                        <Grid item xs={6} md={4} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
-                        <a href='http://170.187.226.245/' style={{margin:'auto', textDecoration:'none'}}><GridContent pic={logoexpres}/></a>
+                        <a href='http://170.187.226.245/' style={{margin:'auto', textDecoration:'none'}} target="_blank"><GridContent pic={logoexpres}/></a>
                        </Grid>
                        {/* <Grid item xs={6} md={3} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
                         <a href='http://170.187.226.245:31/' style={{margin:'auto'}}><GridContent pic={logotrimatra}/></a>
