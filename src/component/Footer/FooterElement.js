@@ -13,6 +13,7 @@ export const FooterContainer = styled.div`
 export const FooterWrapper = styled.div`
 display: flex;
 flex-direction: column;
+justify-content: flex-end;
 z-index: 1;
 height: 100px;
 width: 100%;

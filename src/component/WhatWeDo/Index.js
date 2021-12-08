@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, ContentDiv, DivText } from '../Home/HomeElements'
+import { Container, ContentDiv, DivText, Title } from '../Home/HomeElements'
 import bg from '../../images/bg/bgwhatwedo.png'
 const WhatWeDO = (
   ) => {
@@ -9,11 +9,10 @@ const WhatWeDO = (
              <ContentDiv style={{height:'100vh', minWidth:'100%',justifyContent:'center'}} id="whatwedo">
                <img style={{zIndex:-1 ,height:'90vh', maxWidth:'100%', minHeight:'auto', }} src={bg}/>
                {/* <div style={{height:'100%'}}> */}
-               <DivText style={{height:'60%', width:'100%', margin:'auto', marginTop:'5%'}}>
+               <DivText style={{height:'auto', width:'100%', margin:'auto', marginTop:'5%'}}>
                   <div style={{display:'flex', flexDirection:'column', justifyContent:'center', margin:'10%', color:'#fff', maxWidth:'40%'}}>
-                  <h1>What We Do</h1>
-                  <br/>
-                  <p style={{maxWidth:'400px', textAlign:'justify'}}>
+                  <Title style={{marginBottom:'10px', marginTop:'12%'}}>What We Do</Title>
+                  <p style={{maxWidth:'400px', textAlign:'justify', lineHeight:''}}>
                   With several reliable subsidiaries in their respective fields, we support all national and international defense needs.
 </p>
                   </div>

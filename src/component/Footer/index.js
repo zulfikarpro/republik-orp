@@ -5,9 +5,9 @@ import { FooterContainer, FooterWrapper, FooterFirstLine, FooterSecondLine } fro
 const Footer = () => {
     return (
         <>
-            <FooterContainer style={{marginBottom:'0px'}}>
+            <FooterContainer style={{marginBottom:'10px'}}>
                 <FooterWrapper>
-                    <FooterFirstLine style={{margin:'auto'}}>
+                    <FooterFirstLine style={{margin:'auto', marginBottom:'6px'}}>
                         <FaWhatsapp style={{width:'auto', height:'30px',marginRight:'8px'}}/>
                         <FaInstagram style={{width:'auto', height:'30px',marginRight:'8px'}}/>
                         <FaYoutube style={{width:'auto', height:'30px',marginRight:'8px'}}/>

@@ -21,7 +21,7 @@ export const ContentDiv = styled.div`
 export const DivContent = styled.div`
     display:flex; 
     flex-direction:row;
-    margin-top:14%;
+    margin-top:17%;
     max-width:100%;
 
     @media screen and (max-width:960px){
