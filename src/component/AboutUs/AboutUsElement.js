@@ -154,7 +154,7 @@ export const HeadingShadow = styled.h1`
 export const AboutUsSubtitle = styled.p`
   max-width: 600px;
   margin-bottom: 35px;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 24px;
   /* text-align:${({alignCenter})=> alignCenter? 'center': ''}; */
   text-align: justify;

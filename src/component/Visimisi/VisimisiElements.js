@@ -59,7 +59,7 @@ export const VisimisiParagraph = styled.p`
     margin-right: 20px;
     text-align: justify;
     color: #fff;
-    font-size: 14px;
+    font-size: 17px;
 
     @media screen and (max-width:960px){
         font-size:12px

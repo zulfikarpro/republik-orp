@@ -65,6 +65,9 @@ export const InputWrapper = styled.div`
 `
 
 export const TextLineOne = styled.p`
+  font-size: 1.2rem;
+  -webkit-text-stroke-width:.1px;
+  -webkit-text-stroke-color: black;
 
 `
 
