@@ -20,12 +20,14 @@ const Partnership = (
                {/* <div style={{height:'100%'}}> */}
                 <div style={{position:'absolute', width:'100%', height:'100%', display:'flex', flexDirection:'row', justifyContent:'center'}}  id="ourpartner">
                   <div style={{display:'flex', flexDirection:'column', color:'#fff',justifyContent:'space-evenly', height:'200%'}}>
-                   <div style={{width:'100%', display:'flex', flexDirection:'row', justifyContent:'center', height:'20%'}} >
-                    <Grid container spacing={2} style={{maxWidth:'98vw', marginTop:'25vh',}}>
-                      <Grid item xs={12} md={12}>
-                        <div style={{width:'100%', textAlign:'center', zIndex:'-1'}}>
+
+                  <div style={{width:'100%', textAlign:'center', zIndex:'-1', marginTop:'15vh', marginBottom:'10vh'}}>
                         <Title>Our Partners</Title>
                         </div>
+                   <div style={{width:'100%', display:'flex', flexDirection:'row', justifyContent:'center', height:'20%'}} >
+                     
+                    <Grid container spacing={12} style={{maxWidth:'98vw'}}>
+                      <Grid item xs={12} md={12}>
                         </Grid>
                         <Grid item xs={12} md={6} >
                           <div style={{width:'100%', maxWidth:'400px', margin:'auto', display:'flex', flexDirection:'row', justifyContent:'center'}}>
