@@ -35,7 +35,7 @@ const OurClients = () => {
             <RowWrapper >
                 <Grid container spacing={2} style={{margin:'auto', marginBottom:'10%', marginTop:'5%', maxWidth:'90%'}} id="ourpartner">
                         <Grid item xs={12}>
-                        <TitleShadow style={{color:'#707070', marginBottom:'60px'}}>Our Clients</TitleShadow> 
+                        <TitleShadow style={{color:'#707070', marginBottom:'20vh'}}>Our Clients</TitleShadow> 
                             </Grid>
                 <Grid item xs={12} sm={6} md={4}style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
                           <GridContent pic={img9}/>
