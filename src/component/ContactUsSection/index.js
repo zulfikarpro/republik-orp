@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, ContentDiv } from '../Home/HomeElements'
+import { Container, ContentDiv, } from '../Home/HomeElements'
 import { ContactUsDiv } from './ContactUsElement'
 import bg from '../../images/bg/bgcontactus.png'
 import { Grid } from '@material-ui/core'
@@ -8,12 +8,12 @@ const ContactUsSection = (
   ) => {
     return (
         <>
-           <Container style={{width:'100%', marginTop:'0px', backgroundImage:`url(${bg})`}}>
-             <ContentDiv style={{minWidth:'100%', minHeight:'100%',height:'100%'}} id='contactus'>
-                 <ContactUsDiv style={{width:'100%', height:'auto', minHeight:'100%', display:'flex', flexDirection:'row', justifyContent:'center', color:'#fff'}}>
+           <Container style={{width:'100%',height:'100vh', marginTop:'0px', backgroundImage:`url(${bg})`}}>
+             <ContentDiv style={{minWidth:'100%', minHeight:'100%',height:'100%'}} >
+                 <ContactUsDiv style={{width:'100%', height:'auto', display:'flex', flexDirection:'row', justifyContent:'center', color:'#fff'}}>
                    <div style={{display:'flex', flexDirection:'column', textAlign:'center', minWidth:'100%'}}>
                   <div style={{width:'100%', display:'flex', flexDirection:'row', justifyContent:'center', alignItems:'center', paddingTop:'10%'}}>
-                  <Grid container spacing={2} style={{margin:'auto', paddingLeft:'50px', paddingRight:'50px'}}>
+                  <Grid container spacing={2} style={{margin:'auto', paddingLeft:'50px', paddingRight:'50px'}} id='contactus'>
                     <Grid item xs={12} md={6}>
                       <div style={{display:'flex', flexDirection:'column',width:'100%',}}>
                       <div style={{display:'flex', flexDirection:'row', width:'100%' , justifyContent:'center'}}>
@@ -56,13 +56,11 @@ const ContactUsSection = (
                   </div> 
                   </div>
                  </ContactUsDiv>
-                  
-                 <div style={{display:'flex', flexDirection:'column', zIndex:'4', width:'100%', marginTop:'5%'}}>
+             <div style={{display:'flex', flexDirection:'column', zIndex:'4', width:'100%', marginTop:'5%'}}>
                     
                     <Footer style={{marginTop:'auto', background:'black'}}/>
-                  </div>        
-             </ContentDiv>
-             
+                  </div>  
+             </ContentDiv>      
            </Container>
         </>
     )

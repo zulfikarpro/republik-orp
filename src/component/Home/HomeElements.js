@@ -6,8 +6,7 @@ z-index: 1;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    max-height: 100%;
-    min-height: 100vh;
+    height: 100%;
 `
 
 export const ContentDiv = styled.div`

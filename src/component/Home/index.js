@@ -14,7 +14,7 @@ const HomePage = () => {
             <ContentDiv id='home' style={{height:'100vh', width:'100%'}}>
                 <DivContent>
                     <img src={bg} style={{position:'absolute', width:'100%', minHeight:'200px', objectFit:'cover', zIndex:'-1', top:'40%'}}/>
-                <div style={{width:'50%', display:'flex', flexDirection:'row', justifyContent:'center', maxHeight:'200px', padding:'auto', margin:'auto'}}>
+                <div style={{width:'40%', display:'flex', flexDirection:'row', justifyContent:'center', height:'100%', padding:'auto', margin:'auto', marginLeft:'0px'}}>
                     <Img src={logo} style={{maxHeight:'200px',maxWidth:'50%', objectFit:'contain'}}></Img>
                 </div>
                 <div style={{display:'flex', flexDirection:'column', height:'100%',width:'50vw' ,color:'#fff'}}>
