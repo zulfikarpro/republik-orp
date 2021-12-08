@@ -10,6 +10,8 @@ const ContactUsSection = () => {
     <ContentDiv
       double={true}
       style={{
+        width: '98.6vw',
+        margin: 'auto',
         background: "linear-gradient(270deg, #596B80 27.08%, #0C1A2B 112.98%)",
         paddingBottom:'0px',
         justifyContent:'flex-end'
