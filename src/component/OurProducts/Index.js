@@ -40,13 +40,13 @@ const OurProducts = (
                        <h1 style={{textAlign:'center'}}>Our Companies</h1>
                        </Grid>
                        <Grid item xs={6} md={4} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
-                         <a href='http://170.187.226.245/' style={{margin:'auto', textDecoration:'none'}} target="_blank"><GridContent pic={logoaero}/></a>
+                         <a href='http://139.162.57.222:51/' style={{margin:'auto', textDecoration:'none'}} target="_blank"><GridContent pic={logoaero}/></a>
                        </Grid>
                        <Grid item xs={6} md={4} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
                         <a href='http://170.187.226.245:81/' style={{margin:'auto', textDecoration:'none'}} target="_blank"><GridContent pic={logospace}/></a>
                        </Grid>
                        <Grid item xs={6} md={4} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
-                        <a href='http://170.187.226.245/' style={{margin:'auto', textDecoration:'none'}} target="_blank"><GridContent pic={logopalindo}/></a>
+                        <a href='http://139.162.57.222:33/' style={{margin:'auto', textDecoration:'none'}} target="_blank"><GridContent pic={logopalindo}/></a>
                        </Grid>
                        <Grid item xs={6} md={4} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
                         <a href='http://170.187.226.245/' style={{margin:'auto', textDecoration:'none'}} target="_blank"><GridContent pic={logoexpres}/></a>
