@@ -32,7 +32,7 @@ export const TitleShadow = styled.h1`
     margin-left: 10%;
     margin-right: 10%;
     color: rgba(255, 255, 255, 0.5);
-    font-size: 64px;
+    font-size: 3rem;
 
     @media screen and (max-width:960px){
         font-size: 50px;

@@ -6,7 +6,7 @@ import { ContactUsContainer ,ContactUseWrapper, ContactUsTextWrapper, TextLineOn
 const index = () => {
     return (
         <>
-        <ContactUsContainer id="contactus">
+        <ContactUsContainer id="contactus" style={{maxHeight:'85vh'}}>
             <ContactUseWrapper style={{}}>
                 <ContactUsTextWrapper style={{width:'50%',  padding:'40px'}}>
                     <TextLineOne style={{textAlign:'justify'}}>

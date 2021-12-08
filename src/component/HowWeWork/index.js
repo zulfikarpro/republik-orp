@@ -15,18 +15,18 @@ const HowWeWork = () => {
         <>
         <Container style={{marginTop:'60px', maxHeight:'100vh'}} style={{backgroundImage:`url(${bgImage})`}}  id={'menu3'} >
             {/* <BgImage src= {bgImage}/> */}
-            <div style={{position:'fixed', right:'',top:'', width:'200vw', height:'200%', zIndex:-1}}>
-                <img src={bgImage} style={{}}/>
+            <div style={{position:'fixed', right:'',top:'', width:'100vw', height:'100vh', Index:-1}}>
+                {/* <img src={bgImage} style={{}}/> */}
 
                 
             </div>
             <ContentWrapper>
                 <div style={{display:'flex', flexDirection:'column', justifyContent: 'flex-start',marginTop:'6%', marginBottom:'0px'}}>
                     {/* <Title>Our Expertise</Title> */}
-                    <TitleShadow>Our Expertise</TitleShadow>
+                    <TitleShadow style={{lineHeight:'12px', marginTop:'40px'}}>Our Expertise</TitleShadow>
                     
                     </div>
-            <RowWrapper style={{margin:'auto', marginTop:'0px', background:'rgba(0,0,0,0.6', paddingTop:'20px', paddingBottom:'20px'}}>
+            <RowWrapper style={{margin:'auto', maxHeight:'80vh', marginTop:'0px', background:'linear-gradient(to bottom, rgba(0,0,0,0.7), transparent)', paddingTop:'20px', paddingBottom:'20px'}}>
                 <LeftColumn >
                     <ImageLeft src={warehouseimg}></ImageLeft>
                 </LeftColumn>
