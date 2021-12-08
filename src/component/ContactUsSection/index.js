@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, ContentDiv, Title, } from '../Home/HomeElements'
+import { Container, ContentDiv, Title, P } from '../Home/HomeElements'
 import { ContactUsDiv } from './ContactUsElement'
 import bg from '../../images/bg/bgcontactus.png'
 import { Grid } from '@material-ui/core'
@@ -37,7 +37,7 @@ const ContactUsSection = (
                         <h2>Address</h2> 
                       </div>
                         <div style={{display:'flex', flexDirection:'row', justifyContent:'center', width:'100%'}}>
-                        <p style={{textAlign:'center', maxWidth:'300px'}}>
+                        <p style={{textAlign:'center', maxWidth:'300px', fontSize:'1.2rem'}}>
                           RPX Center Building 9th floor, <br/>Jl. Ciputat Raya no. 99<br/>12310 DKI Jakarta, Indonesia 
                         </p>
                         </div>
@@ -45,7 +45,7 @@ const ContactUsSection = (
                         <h2>Contact</h2> 
                       </div>
                         <div style={{display:'flex', flexDirection:'row', justifyContent:'center', width:'100%'}}>
-                        <p style={{textAlign:'center', maxWidth:'200px'}}>
+                        <p style={{textAlign:'center', maxWidth:'200px', fontSize:'1.2rem'}}>
                         (021) 75918007
                         info@republikorp.com
                         </p>

@@ -64,7 +64,7 @@ export const Title = styled.h1`
 `
 
 export const P = styled.p`
-    font-size: 1vw;
+    font-size: 1.2rem;
     padding-right: 10%;
 
     @media screen and (max-width:960px){

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, ContentDiv, DivText, Title } from '../Home/HomeElements'
+import { Container, ContentDiv, DivText, Title, P } from '../Home/HomeElements'
 import bg from '../../images/bg/bgwhatwedo.png'
 const WhatWeDO = (
   ) => {
@@ -12,9 +12,9 @@ const WhatWeDO = (
                <DivText style={{height:'auto', width:'100%', margin:'auto', marginTop:'5%'}}>
                   <div style={{display:'flex', flexDirection:'column', justifyContent:'center', margin:'10%', color:'#fff', maxWidth:'40%'}}>
                   <Title style={{marginBottom:'10px', marginTop:'12%'}}>What We Do</Title>
-                  <p style={{maxWidth:'400px', textAlign:'justify', lineHeight:''}}>
+                  <P style={{maxWidth:'400px', textAlign:'justify', lineHeight:''}}>
                   With several reliable subsidiaries in their respective fields, we support all national and international defense needs.
-</p>
+</P>
                   </div>
                  </DivText>
                {/* </div> */}
