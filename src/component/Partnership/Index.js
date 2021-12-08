@@ -23,18 +23,18 @@ const Partnership = (
                     <h1 style={{marginLeft:'5px'}}>Partnership</h1>
                     </Grid>
                     <Grid item xs={12}md={6} style={{ display:'flex', flexDirection:'row', justifyContent:'flex-start'}}>
-                    <img style={{width:'100%', height:'auto'}}src={brand2}/>
+                    <img style={{maxWidth:'350px', margin:'auto', width:'100%'}} src={brand2}/>
                     </Grid>
                     <Grid item xs={12} md={6} style={{ display:'flex', flexDirection:'row', justifyContent:'flex-start'}}>
-                      <img style={{width:'100%', height:'auto'}}src={brand1}/>
+                      <img style={{maxWidth:'350px', margin:'auto', width:'100%'}} src={brand1}/>
                     </Grid>
                     <Grid item xs={12} md={6} style={{ display:'flex', flexDirection:'row', justifyContent:'flex-start'}}>
                     
-                    <img style={{width:'100%', height:'auto'}} src={brand4}/>
+                    <img style={{maxWidth:'350px', margin:'auto', width:'100%'}}src={brand4}/>
                     </Grid>
                     <Grid item xs={12}md={6} style={{ display:'flex', flexDirection:'row', justifyContent:'flex-start'}}>
                     
-                    <img style={{width:'100%', height:'auto'}} src={brand3}/>
+                    <img style={{maxWidth:'350px', margin:'auto', width:'100%'}} src={brand3}/>
                     </Grid>
                   </Grid>
                   </div>

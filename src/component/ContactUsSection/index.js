@@ -180,25 +180,22 @@ const ContactUsSection = () => {
                   }}
                 >
                   <div>
-                    <h2>Contact Address</h2>
+                    <h2 style={{textAlign:'right', 
+                      width: "100%"}}>Contact Address</h2>
                   </div>
                   <div
                     style={{
                       display: "flex",
                       flexDirection: "row",
-                      justifyContent: "center",
-                      width: "100%",
+                      justifyContent: "flex-end",
                     }}
                   >
-                    <p style={{ textAlign: "start" }}>
-                      OFFICE 8 BUILDING 18TH FLOOR
-                      <br /> UNIT A, JL. JENDERAL SUDIRMAN <br />
-                      KAV. 52-53, DKI JAKARTA 12190 <br />
-                      REPUBLIC OF INDONESIA
-                      <br />
-                      021 - xxx xxx
-                      <br />
-                      info@trimatraindustries.com
+                    <p style={{ textAlign: 'right' }}>
+                    RPX Building 7th floor,<br/>
+                    Jl. Ciputat Raya no.99<br/>
+                    12310 DKI Jakarta, Indonesia<br/>
+                    (021) 75918007<br/>
+                    info@trimatraindustries.com
                     </p>
                   </div>
                 </div>
