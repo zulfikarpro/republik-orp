@@ -21,7 +21,7 @@ const ContactUsSection = () => {
             minWidth: "100%",
             height: "100%",
             margin: "auto",
-            justifyContent: "flex-start",
+            justifyContent: "flex-end",
           }}
           id="contactus"
         >
@@ -213,11 +213,10 @@ const ContactUsSection = () => {
                       }}
                     >
                       <h2>Address</h2>
-                      <P style={{textAlign:'center'}}>OFFICE 8 BUILDING 18th FLOOR<br/>
-                      UNIT A, JL. JENDERAL SUDIRMAN<br/>
-                      KAV.<br/>
-                      52-53, DKI JAKARTA 12190<br/>
-                      021-xxxxxxx<br/>
+                      <P style={{textAlign:'center'}}>RPX Building 7th floor,<br/>
+                      Jl. Ciputat Raya no.99 <br/>
+                      12310 DKI Jakarta, Indonesia<br/>
+                      (021) 75918007<br/>
                       info@aero.com</P>
                     </div>
                   </Grid>
