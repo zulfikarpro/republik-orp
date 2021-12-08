@@ -11,10 +11,12 @@ const ContactUsSection = () => {
       double={true}
       style={{
         background: "linear-gradient(270deg, #596B80 27.08%, #0C1A2B 112.98%)",
-        paddingBottom:'0px'
+        paddingBottom:'0px',
+        justifyContent:'flex-end'
       }}
+
     >
-      <ContactUsDiv style={{marginBottom:'0px', color: "white", maxHeight:'100%' }}>
+      <ContactUsDiv style={{color: "white", maxHeight:'100%', marginBottom:'0px' }}>
         <div
           style={{
             display: "flex",
@@ -203,10 +205,9 @@ const ContactUsSection = () => {
               </Grid>
             </Grid>
           </div>
-
-      {/* <div style={{marginBottom:'0px'}}> */}
-        <Footer/>
-      {/* </div> */}
+          <div style={{marginBottom:'0px', display:'flex'}}>
+            <Footer/>
+          </div>
         </div>
       </ContactUsDiv>
     </ContentDiv>

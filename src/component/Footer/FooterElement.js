@@ -4,8 +4,7 @@ export const FooterContainer = styled.div`
     color: #fff;
     justify-content: center;
     align-items: center;
-    margin:0px;
-    background: 'red';
+    width: 100%;
     /* background:linear-gradient(270deg, #596B80 27.08%, #0C1A2B 112.98%); */
 `
 
@@ -15,8 +14,9 @@ display: flex;
 flex-direction: column;
 z-index: 1;
 width: 100%;
+margin: auto;
 max-width: 1100px;
-margin:auto;
+/* margin:auto; */
 /* padding: 0 24px; */
 /* justify-content: space-between; */
 
