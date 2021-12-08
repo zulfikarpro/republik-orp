@@ -6,7 +6,7 @@ export const FooterContainer = styled.div`
     align-items: center;
     margin:0px;
     background: 'red';
-    background:linear-gradient(270deg, #596B80 27.08%, #0C1A2B 112.98%);
+    /* background:linear-gradient(270deg, #596B80 27.08%, #0C1A2B 112.98%); */
 `
 
 

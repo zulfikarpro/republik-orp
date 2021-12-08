@@ -8,14 +8,14 @@ import titletrimatra from '../../images/titletrimatra.png'
 
 const HomePage = () => {
     return (
-        <Container style={{maxWidth:'100vw'}}>
+        <Container>
             <ContentDiv id='home'>
-                <TitleDiv style={{left:'0', top:'0',display:'flex', flexDirection:'row',margin:'auto',position:'absolute', height:'100vh',width:'100%'}}>
-                    <div style={{display:'flex', flexDirection:'row', backGround:'blue', justifyContent:'flex-start', width:'100%',maxWidth:'100vw', zIndex:'4'}}>
-                        <Img src={titletrimatra} />
+                <TitleDiv style={{left:'0', top:'0',display:'flex', flexDirection:'row',margin:'auto',position:'absolute', height:'100vh',width:'100vw'}}>
+                    <div style={{display:'flex', flexDirection:'row', justifyContent:'flex-start', width:'90%', zIndex:'4'}}>
+                        <Img src={titletrimatra}/>
                     </div>
                 </TitleDiv>
-                <CarouselDiv style={{height:'100vh', maxWidth:'100vw'}}>
+                <CarouselDiv style={{height:'100vh', width:'100vw'}}>
                 <Carousel
                 indicatorContainerProps={{
                     style: {
@@ -25,7 +25,9 @@ const HomePage = () => {
             
                 }}
                 >
-                    <img src={banner1} style={{width:'100%', height:'auto', objectFit:'contain', margin:'auto'}}></img>
+                    <img src={banner1} style={{height:'110vh',width:'100vw', objectFit:'cover', margin:'auto'}}></img>
+                    {/* <img src={banner2} style={{maxWidth:'100%'}}></img>
+                    <img src={banner3} style={{maxWidth:'100%'}}></img> */}
                 </Carousel>
                 </CarouselDiv>
             </ContentDiv>

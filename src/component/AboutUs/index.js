@@ -12,7 +12,7 @@ const AboutUsPage = (
                <img style={{position:'absolute', zIndex:1 , width:'100%', height:'100vh', objectFit:'cover' }} src={bg}/>
                 </div>
                {/* <div style={{height:'100%'}}> */}
-                 <div style={{position:'absolute', width:'100%', height:'100%',display:'flex', flexDirection:'row', justifyContent:'end', zIndex:2 }}>
+                 <div style={{position:'absolute', width:'100%', height:'80%',display:'flex', flexDirection:'row', justifyContent:'end', zIndex:2, marginTop:'5%' }}>
                   <div style={{display:'flex', flexDirection:'column',justifyContent:'center', marginLeft:'10%',marginRight:'10%', color:'#fff', maxWidth:'35%',maxHeight:'80%', textAlign:'justify'}}>
                   <H1 style={{marginBottom:'0px', marginTop:'10%'}}>Who We Are</H1>
                   <P >We are private owned company with a

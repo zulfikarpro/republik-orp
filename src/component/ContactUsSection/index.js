@@ -11,9 +11,10 @@ const ContactUsSection = () => {
       double={true}
       style={{
         background: "linear-gradient(270deg, #596B80 27.08%, #0C1A2B 112.98%)",
+        paddingBottom:'0px'
       }}
     >
-      <ContactUsDiv style={{ color: "white" }}>
+      <ContactUsDiv style={{marginBottom:'0px', color: "white", maxHeight:'100%' }}>
         <div
           style={{
             display: "flex",
@@ -21,17 +22,24 @@ const ContactUsSection = () => {
             justifyContent: "flex-start",
             textAlign: "center",
             minWidth: "90%",
+            height: '90%',
+            paddingTop:'60px',
+            
           }}
+          id="contactus"
         >
-          <h1 id="contactus" style={{ marginTop: "100px" }}>
+          <h1 >
             Contact Us
           </h1>
           <div
             style={{
-              width: "100%",
+              width: "80%",
               display: "flex",
               flexDirection: "row",
               justifyContent: "center",
+              margin: 'auto',
+              marginBottom:'0px',
+              marginTop:'0px',
             }}
           >
             <Grid
@@ -140,7 +148,7 @@ const ContactUsSection = () => {
                     }}
                   >
                     <textarea
-                      rows="12"
+                      rows="8"
                       placeholder=""
                       style={{
                         padding: "10px",
@@ -195,11 +203,12 @@ const ContactUsSection = () => {
               </Grid>
             </Grid>
           </div>
+
+      {/* <div style={{marginBottom:'0px'}}> */}
+        <Footer/>
+      {/* </div> */}
         </div>
       </ContactUsDiv>
-      <div style={{ marginTop: "auto", height:'100px'}}>
-        <Footer style={{height:'100%' }} />
-      </div>
     </ContentDiv>
   );
 };

@@ -4,7 +4,7 @@ export const Container = styled.div`
     display:flex;
     justify-content: center;
     align-items: center;
-    height:100vh;
+    height:100%;
 
     @media screen and (max-width:960px){
         height: ${({ double }) => (double ? '200vh' : '100vh')};
@@ -39,7 +39,8 @@ export const Img = styled.img`
 z-index: 2;
 margin: auto;
 margin-left: 10%;
-        width:50%;
+margin-right: 10%;
+width: 50%;
     @media screen and (max-width:960px){
         width:60%;
     }
