@@ -11,10 +11,10 @@ const Navbar = ({toggle}) => {
     const changeNav = () => {
         console.log()
         if(window.scrollY>(window.innerHeight*2)){
-            if(window.scrollY<=3000 || window.scrollY>4000){
-                return setScrollNav(true)
-            }
-            setScrollNav(false)
+            // if(window.scrollY<=3000 || window.scrollY>4000){
+                // return setScrollNav(true)
+            // }
+            setScrollNav(true)
         }
         
         else {

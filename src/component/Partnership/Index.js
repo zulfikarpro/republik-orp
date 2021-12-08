@@ -21,7 +21,7 @@ const Partnership = (
                 <div style={{position:'absolute', width:'100%', height:'100%', display:'flex', flexDirection:'row', justifyContent:'center'}}  id="ourpartner">
                   <div style={{display:'flex', flexDirection:'column', color:'#fff',justifyContent:'space-evenly', height:'200%'}}>
                    <div style={{width:'100%', display:'flex', flexDirection:'row', justifyContent:'center', height:'20%'}} >
-                    <Grid container spacing={2} style={{marginTop:'20vh'}}>
+                    <Grid container spacing={2} style={{maxWidth:'98vw', marginTop:'25vh',}}>
                       <Grid item xs={12} md={12}>
                         <div style={{width:'100%', textAlign:'center', zIndex:'-1'}}>
                         <Title>Our Partners</Title>
@@ -79,7 +79,7 @@ const Partnership = (
                           RPX Building 7th floor,<br/>
                           Jl. Ciputat Raya no.99<br/>
                           12310 DKI Jakarta, Indonesia<br/>
-                          7th floor (021) 75918007<br/>
+                          (021) 75918007<br/>
                             info@space.com
                           </p>
                           </div>

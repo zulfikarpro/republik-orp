@@ -23,7 +23,7 @@ z-index: 1;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    max-width: 100%;
+    width: 100%;
 max-height: 200vh;
 
 @media screen and (max-width:960px){

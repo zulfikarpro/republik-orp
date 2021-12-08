@@ -43,13 +43,9 @@ const OurProducts = (
         <>
                <Container id="ourproduct" style={{height:'100%'}}>
                  <ContentDiv>
-                 <DivBackground style={{ backgroundSize:'100vw', backgroundImage:`url(${bg})`}}>
+                 <DivBackground style={{ backgroundSize:'100%', maxWidth:'99.5%', backgroundImage:`url(${bg})`, margin:'auto'}}>
                    <div style={{display:'flex', flexDirection:'column', color:'#fff',  width:'100%', height:'70vh', justifyContent:'center', margin:'auto'}}>
-                   {/* <h1 style={{fontSize: '5rem', textShadow: '100px 200px 0px rgba(255, 255, 255, 0.2) '}}>Our Products</h1> */}
-                     {/* <Title style={{width:'100%', textAlign:'center', textShadow: '0px -100px 0px rgba(255, 255, 255, 0.2) '}}>Our Products</Title> */}
-                      {/* <div style={{height:'100px', width:'100%'}}/> */}
                       <Title style={{}}>Our Services</Title>
-                      {/* <div style={{height:'100px'}}/> */}
                      <Grid container spacing={2}>
                       <Grid item xs={12} md={6}>
                         <div style={{minHeight:'30vh' ,maxHeight:'60vh', display:'flex', flexDirection:'column', justifyContent:'flex-end'}}>

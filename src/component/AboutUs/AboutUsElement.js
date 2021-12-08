@@ -20,7 +20,11 @@ align-self: center;
     text-align:center;
 width: 70%;
     line-height: 100%;
-font-size: .9rem;
+font-size: 1.1rem;
 max-width: 500px;
+@media screen and (max-width:960px){
+        width:70%;
+    font-size: .8rem;
+    }
 
 `
