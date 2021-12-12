@@ -27,7 +27,7 @@ const AboutUsPage = ({
                 <AboutUsWrapper style={{background:' rgba(0,0,0, 0.4)'}}>
                   
             {/* <DarkerBackground/> */}
-            <AboutUsRow imgStart={imgStart} style={{maxWidth:'100%'}}>
+            <AboutUsRow imgStart={imgStart} style={{maxWidth:'1280px'}}>
             <AboutUsColumn1 >
               <AboutUsImage src={truckImage}/>
               {/* <AboutUsTextWrapper>
@@ -38,11 +38,11 @@ const AboutUsPage = ({
               </AboutUsTextWrapper> */}
             </AboutUsColumn1>
             <AboutUsColumn2>
-            <AboutUsTextWrapper>
+            <AboutUsTextWrapper  style={{maxWidth:'90%'}}>
                 {/* <TopLine lightText={lightText}>{topLine}</TopLine> */}
-                <HeadingShadow>{headline}</HeadingShadow>
+                <HeadingShadow style={{marginBottom:'10px'}}>{headline}</HeadingShadow>
                 {/* <AboutUsHeading lightText={lightText} alignCenter={alignCenter}>{headline}</AboutUsHeading> */}
-                <div style={{height:'2px', width:'60%', background:'#FFF'}}/>
+                {/* <div style={{height:'2px', width:'60%', background:'#FFF'}}/> */}
                 <AboutUsSubtitle darkText={darkText} alignCenter={alignCenter}>{description}</AboutUsSubtitle>
               </AboutUsTextWrapper>
             </AboutUsColumn2>

@@ -21,17 +21,17 @@ const Milestone = ({
   }) => {
     return (
         <>
-            <MilestoneContainer id={"milestone"} style={{marginTop:'0px'}}>
+            <MilestoneContainer id={"milestone"} style={{marginTop:'0px'}} >
                 <MilestoneWrapper>
                     <MilestoneTextWrapper style={{maxWidth:'1440px', margin:'auto'}}>
-                        <MilestoneTitleShadow lightText={lightText}>
+                        <MilestoneTitleShadow lightText={lightText} style={{marginBottom:'5px'}}>
                             Group Milestones
                         </MilestoneTitleShadow>
                         {/* <MilestoneTitle lightText={lightText}>
                             Group Milestones
                         </MilestoneTitle> */}
                     </MilestoneTextWrapper>
-                    <MilestoneImages src={MilestoneImage}/>
+                    <MilestoneImages src={MilestoneImage} style={{marginTop:'0px'}}/>
                 </MilestoneWrapper>
             </MilestoneContainer>
         </>

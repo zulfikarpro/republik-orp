@@ -26,15 +26,18 @@ const HowWeWork = () => {
                     <TitleShadow style={{lineHeight:'12px', marginTop:'40px'}}>Our Expertise</TitleShadow>
                     
                     </div>
-            <RowWrapper style={{margin:'auto', maxHeight:'80vh', marginTop:'0px', background:'linear-gradient(to bottom, rgba(0,0,0,0.7), transparent)', paddingTop:'20px', paddingBottom:'20px'}}>
-                <LeftColumn >
+            <RowWrapper style={{padding:'auto', margin:'auto', maxHeight:'80vh', marginTop:'0px', background:'linear-gradient(to bottom, rgba(0,0,0,0.7) 40%, transparent 100%)', paddingTop:'20px', paddingBottom:'20px'}}>
+                <div style={{width:'6%', height:'auto'}}/>
+                <LeftColumn style={{justifyContent:'center'}}>
                     <ImageLeft src={warehouseimg}></ImageLeft>
                 </LeftColumn>
-                <RightColumn style={{margin:'auto'}} >
+                <RightColumn style={{margin:'auto', marginLeft:'80px', marginRight:'0px'}} >
                     <ImageList src={img1}/>
                     <ImageList src={img2}/>
                     <ImageList src={img3}/>
                     <ImageList src={img4}/>
+                </RightColumn>
+                <RightColumn style={{margin:'auto', marginLeft:'0px'}} >
                     <ImageList src={img5}/>
                     <ImageList src={img6}/>
                     <ImageList src={img7}/>

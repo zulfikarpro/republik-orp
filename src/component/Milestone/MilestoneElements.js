@@ -3,8 +3,6 @@ import styled from "styled-components";
 export const MilestoneContainer = styled.div`
     display: flex;
     flex-direction: row;
-    padding-top: 100px;
-    margin-top: 100px;
     height: 840px;
     align-items: center;
     justify-content: center;

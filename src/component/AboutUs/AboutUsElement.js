@@ -30,7 +30,7 @@ export const AboutUsContainer = styled.div`
 export const AboutUsWrapper = styled.div`
   display: grid;
   z-index: 1;
-  height: 60%;
+  height: 70%;
   width: 100%;
   /* background:'black' */
   /* align-self: center;

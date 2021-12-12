@@ -44,7 +44,7 @@ const toggle = () =>{
             <LandingSection/>
             
             <BackgroundMerahDiv>
-                <div style={{position:'flex', width:'100%', flexDirection:'column', justifyContent:'flex-start'}}>
+                <div style={{position:'flex', width:'100%', flexDirection:'row', justifyContent:'center'}}>
                 <div style={{display:'flex', flexDirection:'row', justifyContent:'center', maxWidth:'100%'}}>
                     <AboutUsPage {...homeObjOne}/>
                 </div>
