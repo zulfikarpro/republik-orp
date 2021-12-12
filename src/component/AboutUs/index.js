@@ -31,16 +31,15 @@ const AboutUsPage = (
                    <div style={{ display:'flex', flexDirection:'column', justifyContent:'center', paddingRight:'10%', maxWidth:'50%'}}>
                      <img src={image} style={{width:'100%'}}/>
                    </div>
-                  <div style={{display:'flex', flexDirection:'column', color:'#fff', width:'45%', paddingLeft:'20px', paddingRight:'20px', marginTop:'40px', marginRight:'auto', textAlign:'justify'}}>
-                    <H1>Company</H1>
-                    <div style={{width:'100%', height:'2px', background:'white'}}/>
-                    <P>
+                  <div style={{display:'flex', flexDirection:'column', color:'#fff', width:'40%', paddingLeft:'10px', paddingRight:'50px', marginTop:'40px', marginRight:'auto', textAlign:'justify'}}>
+                    <H1 style={{marginLeft:'20px'}}>Company</H1>
+                    <div style={{marginLeft:'20px',width:'100%', height:'2px', background:'white'}}/>
+                    <P style={{marginLeft:'20px'}}>
                       PT. Palindo Marine is a Shipyard located in Tanjung Uncang, Batam Island, Indonesia. We have more than 30 years of experience in building Ships, starting as a company using GRP as the material for the ship structure to Aluminium, Steel, and the combination of Steel and Aluminium.
                     </P>
-                    <P>
+                    <P style={{marginLeft:'20px'}}>
                       Our team of Workforce consist of highly skilled Engineers in their field of expertise with many years of experience in building various kind of veseels.
-                    </P>
-                    <P>
+                  
                       Lastly, we would like deeply express out Thanks to every Customers who have given us Chance and Opportunity in building their vessels, without them we might not be as big as right now.
                     </P>
                   <Carousel indicators={false}>
