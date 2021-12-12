@@ -30,33 +30,33 @@ const Partnership = (
                       <Grid item xs={12} md={12}>
                         </Grid>
                         <Grid item xs={12} md={6} >
-                          <div style={{width:'100%', maxWidth:'400px', margin:'auto', display:'flex', flexDirection:'row', justifyContent:'center'}}>
+                          <div style={{width:'100%', maxWidth:'500px', margin:'auto', display:'flex', flexDirection:'row', justifyContent:'center'}}>
                           <Img src={brand1}/>
                           </div>
                         </Grid>
                         <Grid item xs={12} md={6}>
                           
-                        <div style={{width:'100%', maxWidth:'400px', margin:'auto', display:'flex', flexDirection:'row', justifyContent:'center'}}>
+                        <div style={{width:'100%', maxWidth:'500px', margin:'auto', marginLeft:'10px', display:'flex', flexDirection:'row', justifyContent:'center'}}>
                           <Img src={brand2}/>
                           </div>
                         </Grid>
                         <Grid item xs={12} md={6}>
                           
-                        <div style={{width:'100%', maxWidth:'400px', margin:'auto', display:'flex', flexDirection:'row', justifyContent:'center'}}>
+                        <div style={{width:'100%', maxWidth:'500px', margin:'auto', marginLeft:'10px', display:'flex', flexDirection:'row', justifyContent:'center'}}>
                           <Img src={brand3}/>
                           </div>
                         </Grid>
                         <Grid item xs={12} md={6}>
                           
-                        <div style={{width:'100%', maxWidth:'400px', margin:'auto', display:'flex', flexDirection:'row', justifyContent:'center'}}>
+                        <div style={{width:'100%', maxWidth:'500px', margin:'auto', marginLeft:'10px', display:'flex', flexDirection:'row', justifyContent:'center'}}>
                           <Img src={brand4}/>
                         </div>
                         </Grid>
                       </Grid>
                     </div>
 
-                    <div style={{height:'85vh', marginTop:'400px'}}>
-                      <Grid container spacing={2} style={{marginTop:'20vh'}}  id='contactus'>
+                    <div style={{height:'85vh'}}>
+                      <Grid container spacing={2} style={{marginTop:'25vh'}}  id='contactus'>
                         <Grid item xs={12} md={12} style={{zIndex:'-1'}}>
                           <div style={{width:'100%', textAlign:'center'}}>
                           <Title>Join Our Force</Title>
