@@ -38,7 +38,7 @@ useEffect(() => {
             <Sidebar isOpen={isOpen} toggle={toggle}/>
             <Navbar toggle={toggle}/>
             {/* <LandingSection/> */}
-            <img src={imageAboutUs} style={{zIndex:'2', position:'absolute', width:'50%', right:'0', top:'78vh'}}/>
+            <img src={imageAboutUs} style={{zIndex:'2', position:'absolute', width:'50%', right:'0', top:'84vh'}}/>
             <HomePage/>
             <AboutUsPage/>
             <OurWorksPage/>

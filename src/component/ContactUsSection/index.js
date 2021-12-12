@@ -64,23 +64,24 @@ const ContactUsSection = () => {
                 justifyContent: "flex-end",
                 textAlign: "center",
                 minWidth: "90%",
-                marginTop:'80px'
+                marginTop:'60px'
               }}
             >
-              <H1>Contact Us</H1>
-            <div style={{margin:'auto', height:'2px', width:'18%', background:'white'}}/>
+              <H1 style={{marginBottom:'10px'}}>Contact Us</H1>
+            <div style={{margin:'auto', height:'2px', width:'18%', background:'white',}}/>
               <div
                 style={{
                   width: "100%",
                   display: "flex",
                   flexDirection: "row",
                   justifyContent: "center",
+                  paddingTop:'0px'
                 }}
               >
                 <Grid
                   container
                   spacing={2}
-                  style={{ margin: "auto", width: "100%"}}
+                  style={{width: "100%"}}
                 >
                   <Grid
                     item
@@ -97,6 +98,7 @@ const ContactUsSection = () => {
                         display: "flex",
                         flexDirection: "column",
                         width: "100%",
+                        marginLeft:'10%'
                       }}
                     >
                       <div
@@ -183,7 +185,7 @@ const ContactUsSection = () => {
                         }}
                       >
                         <textarea
-                          rows="10"
+                          rows="6"
                           placeholder=""
                           style={{
                             padding: "10px",
@@ -209,12 +211,15 @@ const ContactUsSection = () => {
                       style={{
                         display: "flex",
                         flexDirection: "column",
+                        width: '100%',
                         minWidth: "400px",
+                        paddingLeft:'30%',
+                        justifyContent:'center',
                         textAlign:'center'
                       }}
                     >
                       <h2>Address</h2>
-                      <P style={{textAlign:'center'}}>RPX Building 7th floor,<br/>
+                      <P style={{textAlign:'center', marginTop:'0px'}}>RPX Building 7th floor,<br/>
                       Jl. Ciputat Raya no.99 <br/>
                       12310 DKI Jakarta, Indonesia<br/>
                       (021) 75918007<br/>
@@ -223,7 +228,7 @@ const ContactUsSection = () => {
                   </Grid>
                 </Grid>
               </div>
-              <div style={{height:'100%', flex:'1'}}>
+              <div style={{height:'100%', flex:'1', margin:'0px', marginTop:'60px'}}>
                 <Footer />
               </div>
             </div>
