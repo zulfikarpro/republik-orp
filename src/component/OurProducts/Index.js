@@ -8,7 +8,7 @@ import logotrimatra from '../../images/products/logotrimatra.png'
 import logopalindo from '../../images/products/logopalindo.png'
 import logoexpres from '../../images/products/logoexpres.png'
 import logoarmamen from '../../images/products/logoarmamen.png'
-import logodefensindo from '../../images/products/logodefenseindo.png'
+import logodefensindo from '../../images/products/logodefense.png'
 // import Carousel from 'react-material-ui-carousel'
 // import produk1 from '../../images/products/produk1.png'
 // import produk2 from '../../images/products/produk2.png'
@@ -22,7 +22,9 @@ const GridContent = ({pic}) =>{
       <div style={{margin:'auto'}}>
           <img src={pic} style={{width:'100%' ,maxWidth:'400px', margin:'auto'}}/>
           <div style={{width:'100%', display:'flex', flexDirection:'row', justifyContent:'center'}}>
-          <div style={{margin:'auto', marginTop:'0px', background:'white',padding:'2px', paddingLeft:'6px', paddingRight:'6px', borderRadius:'8px', color:'grey', fontSize:'.6rem'}}>Visit Now</div>
+          <div style={{margin:'auto', marginTop:'0px', background:'white',padding:'2px', paddingLeft:'6px', paddingRight:'6px', borderRadius:'8px', color:'grey', fontSize:'.6rem'}}>
+            <p style={{margin:'0px', fontSize:'.8rem', color:'black'}}>Visit Now</p>
+            </div>
           </div>
       </div>
   )
@@ -51,11 +53,12 @@ const OurProducts = (
                        <Grid item xs={6} md={4} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
                         <a href='http://170.187.226.245/' style={{margin:'auto', textDecoration:'none'}} target="_blank"><GridContent pic={logoexpres}/></a>
                        </Grid>
-                       <Grid item xs={6} md={4} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
-                        <GridContent pic={logoarmamen}/>
-                       </Grid>
+
                        <Grid item xs={6} md={4} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
                         <GridContent pic={logodefensindo}/>
+                       </Grid>
+                       <Grid item xs={6} md={4} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
+                        <GridContent pic={logoarmamen}/>
                        </Grid>
                       </Grid>
                       <div style={{width:'100%', height:'20%'}}></div>
