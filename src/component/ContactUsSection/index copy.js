@@ -42,10 +42,10 @@ const ContactUsSection = (
                       </div>
                     </Grid>
                     <Grid item xs={12}md={6} style={{display:'flex', flexDirection:'row', justifyContent:'center'}}>
-                    <div style={{display:'flex', flexDirection:'column', minWidth:'400px'}}>
-                      <div>
+                    <div style={{display:'flex', flexDirection:'column', minWidth:'400px', justifyContent:'center'}}>
+                      <div style={{background:'red'}}>
                         <h2>Contact Address</h2>
-                        <FaMapMarkerAlt size={30}/>
+                        <FaMapMarkerAlt size={30} style={{margin:'0'}}/>
                         <p style={{textAlign:'center'}}>Sungai Lekop, Sagulung, <br/>
 Batam, Indonesia</p>
                         <FaPhone size={30}/>

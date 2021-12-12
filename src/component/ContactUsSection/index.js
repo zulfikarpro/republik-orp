@@ -34,20 +34,20 @@ const ContactUsSection = (
                         </div>
                       </div>
                     </Grid>
-                    <Grid item xs={12}md={6} style={{display:'flex', flexDirection:'row', justifyContent:'center'}}>
-                    <div style={{display:'flex', flexDirection:'column', minWidth:'400px'}}>
+                    <Grid item xs={12}md={6} style={{display:'flex', flexDirection:'row', justifyContent:'center', justifyContent:'flex-end'}}>
+                    <div style={{display:'flex', flexDirection:'column', minWidth:'400px', justifyContent:'center'}}>
                       <div>
-                        <h2>Contact Address</h2>
-                        <FaMapMarkerAlt size={30}/>
-                        <p style={{textAlign:'center'}}>Sungai Lekop, Sagulung, <br/>
+                        <h2 style={{marginBottom:'10px'}}>Contact Address</h2>
+                        <FaMapMarkerAlt size={30} style={{marginBottom:'0px'}}/>
+                        <p style={{textAlign:'center', marginTop:'0px', marginBottom:'10px'}}>Sungai Lekop, Sagulung, <br/>
 Batam, Indonesia</p>
                         <FaPhone size={30}/>
-                        <p style={{textAlign:'center'}}>
+                        <p style={{textAlign:'center', marginTop:'0px', marginBottom:'10px'}}>
                         (0778) 454543<br/>
                           Mon-Fri, 9am until 5pm
                         </p>
                         <FaEnvelope size={30}/>
-                        <p>
+                        <p style={{marginTop:'0px'}}>
                         info@palindomarine.co.id</p>
                       </div>
                         {/* <div style={{display:'flex', flexDirection:'row', justifyContent:'center', width:'100%'}}>
