@@ -7,7 +7,7 @@ import banner3 from '../../images/banner/banner3.png'
 
 const HomePage = () => {
     return (
-        <Container>
+        <Container style={{background:'red'}}>
             <ContentDiv id='home'>
                 <TitleDiv style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', position:'absolute', width:'100%', color:'red', zIndex:'2'}}>
                     <Title1 style={{textAlign:'center', WebkitTextStrokeWidth:'.21px', WebkitTextStrokeColor:'black'}}>We make it easier to ship your goods across broders.</Title1>
@@ -23,9 +23,9 @@ const HomePage = () => {
             
                 }}
                 >
-                    <img src={banner1} style={{height:'110vh',width:'100vw', objectFit:'cover', margin:'auto'}}></img>
-                    <img src={banner2} style={{height:'110vh',width:'100vw', objectFit:'cover', margin:'auto'}}></img>
-                    <img src={banner3} style={{height:'110vh',width:'100vw', objectFit:'cover', margin:'auto'}}></img>
+                    <img src={banner1} style={{height:'103vh',width:'100vw', objectFit:'cover', margin:'auto'}}></img>
+                    <img src={banner2} style={{height:'103vh',width:'100vw', objectFit:'cover', margin:'auto'}}></img>
+                    <img src={banner3} style={{height:'103vh',width:'100vw', objectFit:'cover', margin:'auto'}}></img>
                 </Carousel>
                 </CarouselDiv>
             </ContentDiv>

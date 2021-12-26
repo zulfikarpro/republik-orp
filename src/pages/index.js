@@ -11,11 +11,13 @@ import ProjectsPage from '../component/Projects';
 
 
 const Home = () => {
-    const [isMobile, setIsMobile] = useState(false);
+const [isMobile, setIsMobile] = useState(false);
 const [isOpen, setIsOpen] = useState(false);
 
 const handleResize = () => {
     if (window.innerWidth < 1080) {
+
+    // alert(window.innerWidth)
         setIsMobile(true)
     } else {
         setIsMobile(false)
@@ -36,8 +38,8 @@ useEffect(() => {
             <Sidebar isOpen={isOpen} toggle={toggle}/>
             <Navbar toggle={toggle}/>
             {/* <LandingSection/> */}
-            <HomePage/>
-            <AboutUsPage/>
+            <HomePage mobile={isMobile}/>
+            <AboutUsPage mobile={isMobile}/>
             <FacilitiesPage/>
             <ProjectsPage/>
             <ContactUsSection/>

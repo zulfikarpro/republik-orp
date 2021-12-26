@@ -26,6 +26,18 @@ justify-content: flex-start;
 /* opacity: .2; */
 /* height: 100%; */
 `
+export const DivAboutUs = styled.div`
+position: absolute;
+width:100%;
+display:flex; 
+flex-direction:row; 
+justify-content:end;
+
+@media screen and (max-width:960px){
+    flex-Direction:column;
+}
+
+` 
 
 export const H1 = styled.h1`
     font-size: 2.4rem;

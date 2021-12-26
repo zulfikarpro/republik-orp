@@ -35,7 +35,7 @@ const Navbar = ({toggle}) => {
                         {/* <img src="C:\projects\republik-orp\public\images\LOGO-01.png"  alt=""></img> */}
                         </NavLogo>
                     <MobileIcon onClick={toggle}>
-                        <FaBars/>
+                        <FaBars color={'black'}/>
                     </MobileIcon>
                     <NavMenu 
                              scrollNav={scrollNav}>
@@ -55,7 +55,7 @@ const Navbar = ({toggle}) => {
                             duration={500}
                             spy={true}
                             exact='true'
-                            offset={0}>About Us</NavLinks>
+                            offset={-80}>About Us</NavLinks>
                         </NavItem>
                         <NavItem>
                             <NavLinks to='facilities'
