@@ -30,11 +30,11 @@ const GridContent = ({pic}) =>{
   )
 }
 
-const OurProducts = (
+const OurProducts = ({mobile}
   ) => {
     return (
                <Container style={{height:'100vh', width:'100%' }} id='ourproduct'>
-                 <ContentDiv style={{backgroundImage:`url(${bg})`, height:'100vh', paddingTop:'50px',objectFit:'contain', backgroundRepeat:'no-repeat'}}>
+                 <ContentDiv style={{backgroundImage:`url(${bg})`, height:'100vh', paddingTop:'50px',objectFit:'contain', backgroundRepeat:'no-repeat', backgroundPositionX:`${mobile? '-500px': '0px'}`}}>
                  {/* <DivBackground style={{ backgroundImage:`url(${bg})`}}> */}
                    <div style={{display:'flex', flexDirection:'column', color:'#fff',  width:'100%', height:'100%', justifyContent:'center', background:'rgba(0,0,0,0.4)'}}>
                      <Grid container spacing={5} style={{maxWidth:'90%', margin:'auto'}}>

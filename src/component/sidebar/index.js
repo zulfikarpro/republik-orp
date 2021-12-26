@@ -24,8 +24,11 @@ const Sidebar = ({isOpen, toggle}) => {
                     {/* <SidebarLink to='ourpartner' onClick={toggle}>
                         Our Partner
                     </SidebarLink> */}
-                    <SidebarLink to='contactus' onClick={toggle}>
-                        Join Our Force
+                    <SidebarLink to='contactus' 
+                    
+                    offset={-120}
+                    onClick={toggle}>
+                        Contact Us
                     </SidebarLink>
 
                 </SidebarMenu>

@@ -4,15 +4,15 @@ import { ContactUsDiv } from './ContactUsElement'
 import bg from '../../images/bg/bgcontactus.png'
 import { Grid } from '@material-ui/core'
 import Footer from '../Footer'
-const ContactUsSection = (
+const ContactUsSection = ({mobile}
   ) => {
     return (
         <>
-           <Container style={{height:'100vh', marginTop:'0px', backgroundImage:`url(${bg})`}}>
+           <Container style={{height:`${mobile?'130vh':'100vh'}`, marginTop:'0px', backgroundImage:`url(${bg})`, backgroundSize:'cover', backgroundRepeat:'no-repeat'}}>
              <ContentDiv style={{minWidth:'100%', minHeight:'100%',height:'60vh',flexDirection:'flex-end'}} >
                  <ContactUsDiv style={{width:'100%', height:'50vh', display:'flex', flexDirection:'row', justifyContent:'center', color:'#fff'}}>
                    <div style={{display:'flex', flexDirection:'column', textAlign:'center', minWidth:'100%'}}>
-                  <div style={{width:'100%', display:'flex', flexDirection:'row', justifyContent:'center', alignItems:'center', paddingTop:'10%'}}>
+                  <div style={{width:'100%', display:'flex', flexDirection:'row', justifyContent:'center', alignItems:'center', paddingTop:`${mobile? '0px':'10%' }`}}>
                   <Grid container spacing={2} style={{margin:'auto', paddingLeft:'50px', paddingRight:'50px'}}>
                     <Grid item xs={12} md={6}>
                       <div style={{display:'flex', flexDirection:'column',width:'100%',}}>

@@ -48,18 +48,29 @@ export const Img = styled.img`
 `
 
 export const TitleDiv = styled.div`
-/* top:40; */
+
+display:flex;
+flex-direction:column; 
+height:50vh; 
+width:50vw ;
+color:#fff; 
+justify-content:center;
+
     @media screen and (max-width:960px){
-        /* top:20 */
+        margin-top:30vh;
+margin-bottom:auto; 
+        margin-left:auto;
+        width: 80%;
     }
 `
+
 
 export const Title = styled.h1`
     font-size:2vw;
     line-height:.1rem;
     /* color:#282855; */
     @media screen and (max-width:960px){
-        font-size: 6vw;
+        font-size: 2rem;
     }
 `
 
@@ -68,12 +79,11 @@ export const P = styled.p`
     padding-right: 10%;
 
     @media screen and (max-width:960px){
-        /* font-size: 0.4rem; */
+        font-size: 1rem;
     }
 `
 
-
-export const DivText = styled.div`
+export const DivTextWWD = styled.div`
 
 margin-top:200px ;
 position:absolute; 
@@ -82,9 +92,16 @@ height:100%;
 display:flex; 
 flex-direction:row; 
 justify-content:start;
+color:white;
 
 @media screen and (max-width:960px){
-    margin-top: 0px;
+    margin-top:0px;
+    top: 100vh;
+    height: 100vh;
+    flex-direction: column;
 }
+`
+
+export const DivText = styled.div`
 
 `
