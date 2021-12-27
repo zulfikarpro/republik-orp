@@ -4,14 +4,15 @@ import logo from '../../images/logoaero.png'
 import main from '../../images/banner/banner1.png'
 import { H1, P } from '../AboutUs/AboutUsElement'
 
-const HomePage = () => {
+const HomePage = ({mobile}) => {
+    // alert(mobile)
     return (
         <Container style={{height:'98vh'}}>
-            <ContentDiv id='home' style={{width:'100%',backgroundPosition:'contain', backgroundRepeat:'no-repeat'}}>
-                <img src={main}/>
+            <ContentDiv id='home' style={{height:'100%',backgroundPosition:'cover', backgroundRepeat:'no-repeat'}}>
+                <img src={main} style={{objectFit:'cover',height:`${mobile?'100vh':'auto'}`,width:`${mobile?'auto':'100vw'}`, objectPosition:`${mobile?'-550px':'0px'}`, width:'100%'}}/>
                 <div style={{position:'absolute', width:'100%', height:'100vh', display:'flex', flexDirection:'column', justifyContent:'center'}} id='home'>
                     <div style={{margin:'auto'}}>
-                    <img src={logo}></img>
+                    <img src={logo} style={{maxWidth:'90vw'}}/>
                     </div>
                 </div>
                 {/* <div style={{display:'flex', flexDirection:'row',height:'100vh', width:'100%', zIndex:'1'}}>

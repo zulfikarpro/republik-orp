@@ -5,7 +5,7 @@ import {Link as LinkS} from 'react-scroll';
 export const SidebarContainer = styled.aside`
     position: fixed;
     z-index: 999;
-    width: 220px;
+    width: 50%;
     height: 100%;
     background: rgba(0,0,0,0.6);
     display: grid;

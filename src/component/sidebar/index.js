@@ -12,17 +12,17 @@ const Sidebar = ({isOpen, toggle}) => {
                     <SidebarLink to='home' onClick={toggle}>
                         Home
                     </SidebarLink>
-                    <SidebarLink to='whoweare' onClick={toggle}>
-                        Who We are
+                    <SidebarLink to='aboutus' onClick={toggle}>
+                        About Us
                     </SidebarLink>
-                    <SidebarLink to='whatwedo' onClick={toggle}>
-                        What We Do
+                    <SidebarLink to='ourworks' onClick={toggle}>
+                        Our Works
                     </SidebarLink>
-                    {/* <SidebarLink to='partnership' onClick={toggle}>
-                        Partnership
-                    </SidebarLink> */}
-                    <SidebarLink to='ourproducts' onClick={toggle}>
-                        Products
+                    <SidebarLink to='product' onClick={toggle}>
+                        Our Products
+                    </SidebarLink>
+                    <SidebarLink to='partner' onClick={toggle}>
+                        Our Partners
                     </SidebarLink><SidebarLink to='contactus' onClick={toggle}>
                         Contact Us
                     </SidebarLink>

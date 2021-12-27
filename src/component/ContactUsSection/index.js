@@ -12,14 +12,14 @@ import {
 } from "react-icons/fa";
 import { H1,P } from "../AboutUs/AboutUsElement";
 import { textAlign } from "@mui/system";
-const ContactUsSection = () => {
+const ContactUsSection = ({mobile}) => {
   return (
     <>
       <Container style={{}}>
         <ContentDiv
           style={{
             minWidth: "100%",
-            height: "100%",
+            height: `${mobile? '100%':'100%'}`,
             margin: "auto",
             justifyContent: "flex-end",
           }}
@@ -39,7 +39,7 @@ const ContactUsSection = () => {
               style={{
                 position: "absolute",
                 right: "",
-                width: "100%",
+                width: "100vw",
                 height: "100vh",
                 diplay: "flex",
                 justifyContent: "flex-start",
@@ -49,8 +49,8 @@ const ContactUsSection = () => {
                 style={{
                   position: "absolute",
                   zIndex: -1,
-                  width: "100%",
-                  height: "100vh",
+                  height: "100%",
+                  width:'100vw',
                   objectFit: "cover",
                 }}
                 src={bg}
@@ -75,7 +75,7 @@ const ContactUsSection = () => {
                   display: "flex",
                   flexDirection: "row",
                   justifyContent: "center",
-                  paddingTop:'0px'
+                  paddingTop:'0px',
                 }}
               >
                 <Grid
@@ -98,7 +98,8 @@ const ContactUsSection = () => {
                         display: "flex",
                         flexDirection: "column",
                         width: "100%",
-                        marginLeft:'10%'
+                        marginLeft:'10%',
+                        marginRight:'10%'
                       }}
                     >
                       <div
@@ -213,9 +214,9 @@ const ContactUsSection = () => {
                         flexDirection: "column",
                         width: '100%',
                         minWidth: "400px",
-                        paddingLeft:'30%',
+                        paddingLeft:`${mobile?'':'20%'}`,
                         justifyContent:'center',
-                        textAlign:'center'
+                        textAlign:'center',
                       }}
                     >
                       <h2>Address</h2>

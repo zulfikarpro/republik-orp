@@ -13,7 +13,7 @@ import imageAboutUs from '../images/bg/aboutusimg.png'
 
 
 const Home = () => {
-    const [isMobile, setIsMobile] = useState(false);
+const [isMobile, setIsMobile] = useState(false);
 const [isOpen, setIsOpen] = useState(false);
 
 const handleResize = () => {
@@ -29,7 +29,7 @@ const toggle = () =>{
 }
 
 useEffect(() => {
-    window.addEventListener("resize", handleResize)
+    window.addEventListener("resize", handleResize())
   })
 
 //   if(!isMobile){
@@ -38,13 +38,13 @@ useEffect(() => {
             <Sidebar isOpen={isOpen} toggle={toggle}/>
             <Navbar toggle={toggle}/>
             {/* <LandingSection/> */}
-            <img src={imageAboutUs} style={{zIndex:'2', position:'absolute', width:'50%', right:'0', top:'84vh'}}/>
-            <HomePage/>
-            <AboutUsPage/>
-            <OurWorksPage/>
-            <ProductsPage/>
-            <OurClients/>
-            <ContactUsSection/>
+            <img src={imageAboutUs} style={{zIndex:'2', position:'absolute', width:`${isMobile?'70%':'50%'}`, right:'0', top:`${isMobile?'96vh':'84vh'}`}}/>
+            <HomePage mobile={isMobile}/>
+            <AboutUsPage mobile={isMobile}/>
+            <OurWorksPage mobile={isMobile} />
+            {/* <ProductsPage mobile={isMobile} style={{height:'200vh'}}/> */}
+            <OurClients mobile={isMobile}/>
+            <ContactUsSection mobile={isMobile}/>
             {/* <Footer/> */}
             {/* <div style={{position:'flex',height:'200px', width:'auto'}}></div> */}
         </div>

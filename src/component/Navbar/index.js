@@ -35,7 +35,7 @@ const Navbar = ({toggle}) => {
                         {/* <img src="C:\projects\republik-orp\public\images\LOGO-01.png"  alt=""></img> */}
                         </NavLogo>
                     <MobileIcon onClick={toggle}>
-                        <FaBars/>
+                        <FaBars style={{color:'black'}}/>
                     </MobileIcon>
                     <NavMenu 
                              scrollNav={scrollNav}>

@@ -5,6 +5,7 @@ import styled from 'styled-components';
 export const H1 = styled.h1`
     font-size: 2.4rem;
     /* font-size: 1.6vw; */
+
 `
 
 export const H2 = styled.h2`
@@ -17,6 +18,6 @@ export const P = styled.p`
     text-align: justify;
     @media screen and (max-width: 960px){
         
-    font-size: 1.4vh;
+    font-size: 1rem;
     }
 `
