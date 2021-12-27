@@ -7,7 +7,7 @@ import banner3 from '../../images/banner/banner3.png'
 
 const HomePage = () => {
     return (
-        <Container style={{background:'red'}}>
+        <Container style={{}}>
             <ContentDiv id='home'>
                 <TitleDiv style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', position:'absolute', width:'100%', color:'red', zIndex:'2'}}>
                     <Title1 style={{textAlign:'center', WebkitTextStrokeWidth:'.21px', WebkitTextStrokeColor:'black'}}>We make it easier to ship your goods across broders.</Title1>

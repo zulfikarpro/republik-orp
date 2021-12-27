@@ -33,6 +33,7 @@ max-width: 200px;
 `
 
 export const FooterSecondLine = styled.div`
+text-align:center;
 font-size: 1rem;
 margin: auto;
 

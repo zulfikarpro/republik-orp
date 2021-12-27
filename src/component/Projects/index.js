@@ -26,7 +26,8 @@ const CarouselContent = ({pic})=>{
 
 const TextTitle = (mobile) =>{
     if(mobile){
-        return(<div><H1 style={{fontSize:'3vw'}}>Projects</H1><div style={{height:'2px', width:'100%', background:'white', marginTop:'0px'}}/></div>)
+        return(<div><H1 style={{fontSize:'2.4rem'}}>Projects</H1>
+        <div style={{height:'2px', width:'40%',margin:'auto', background:'white', marginTop:'0px'}}/></div>)
     }else{
         return(
             <div style={{position:'absolute', maxWidth:'400px', right:'0', marginRight:'10%', color:'white', zIndex:2, display:'flex', flexDirection:'column'}}>
@@ -61,9 +62,9 @@ const ProjectsPage = ({mobile}) => {
                      <CarouselContent pic={product9}/>
                  </Carousel>
              </CarouselDiv>
-             {/* <TitleDiv>
+             <TitleDiv>
                    <TextTitle mobile={mobile}/>
-                </TitleDiv> */}
+                </TitleDiv>
             </ProjectsDiv>
         </Container>
     )

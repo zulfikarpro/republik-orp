@@ -9,7 +9,6 @@ justify-content:flex-end;
  color:#fff;
  max-width:35%;
 text-align:justify;
-height:80vh;
 
 @media screen and (max-width:960px){
     max-width:80%
@@ -33,7 +32,6 @@ border-radius:125px 0px 0px 125px;
     min-height:80px;
     padding:0px;
     margin-bottom:0px;
-    margin-top:100px;
 border-radius:0px 0px 0px 0px;
  }
 `

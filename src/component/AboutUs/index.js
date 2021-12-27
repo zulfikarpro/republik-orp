@@ -45,7 +45,7 @@ const AboutUsPage = ({mobile}
                   
                       Lastly, we would like deeply express out Thanks to every Customers who have given us Chance and Opportunity in building their vessels, without them we might not be as big as right now.
                     </P>
-                  <Carousel style={{margin:'auto', background:'red'}} indicators={false}>
+                  <Carousel style={{margin:'auto'}} indicators={false}>
                     <CarouselItem title={'Partners'} image={imagePartner}/>
                     <CarouselItem title={'Management Standard'} image={imageIso}/>
                     <CarouselItem title={'Clients'} image={imageClients}/>

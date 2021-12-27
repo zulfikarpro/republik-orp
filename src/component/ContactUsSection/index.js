@@ -35,7 +35,7 @@ const ContactUsSection = (
                       </div>
                     </Grid>
                     <Grid item xs={12}md={6} style={{display:'flex', flexDirection:'row', justifyContent:'center', justifyContent:'flex-end'}}>
-                    <div style={{display:'flex', flexDirection:'column', minWidth:'400px', justifyContent:'center'}}>
+                    <div style={{display:'flex', flexDirection:'column', minWidth:'400px', margin:'auto', justifyContent:'center'}}>
                       <div>
                         <h2 style={{marginBottom:'10px'}}>Contact Address</h2>
                         <FaMapMarkerAlt size={30} style={{marginBottom:'0px'}}/>
