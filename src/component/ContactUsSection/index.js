@@ -8,16 +8,16 @@ const ContactUsSection = ({mobile}
   ) => {
     return (
         <>
-           <Container style={{height:`${mobile?'130vh':'100vh'}`, marginTop:'0px', backgroundImage:`url(${bg})`, backgroundSize:'cover', backgroundRepeat:'no-repeat'}}>
+           <Container style={{height:`${mobile?'130vh':'100vh'}`, maxWidth:'100vw', marginTop:'0px', backgroundImage:`url(${bg})`, backgroundSize:'cover', backgroundRepeat:'no-repeat'}}>
              <ContentDiv style={{minWidth:'100%', minHeight:'100%',height:'60vh',flexDirection:'flex-end'}} >
-                 <ContactUsDiv style={{width:'100%', height:'50vh', display:'flex', flexDirection:'row', justifyContent:'center', color:'#fff'}}>
+                 <ContactUsDiv style={{width:'100%', height:`${mobile?'80vh':'50vh'}`, display:'flex', flexDirection:'row', justifyContent:'center', color:'#fff'}}>
                    <div style={{display:'flex', flexDirection:'column', textAlign:'center', minWidth:'100%'}}>
                   <div style={{width:'100%', display:'flex', flexDirection:'row', justifyContent:'center', alignItems:'center', paddingTop:`${mobile? '0px':'10%' }`}}>
-                  <Grid container spacing={2} style={{margin:'auto', paddingLeft:'50px', paddingRight:'50px'}}>
+                  <Grid container spacing={2} style={{margin:'auto'}}>
                     <Grid item xs={12} md={6}>
-                      <div style={{display:'flex', flexDirection:'column',width:'100%',}}>
+                      <div style={{display:'flex', flexDirection:'column',width:'80%', marginLeft:'auto', marginRight:'auto'}}>
                       <div style={{display:'flex', flexDirection:'row', width:'100%' , justifyContent:'center'}}>
-                        <Title id='contactus'>Contact Us</Title>
+                        <Title id='contactus' >Contact Us</Title>
                         </div>
                         <div style={{display:'flex', flexDirection:'row', width:'100%' , justifyContent:'center'}}>
                           <input placeholder='Your Name' style={{padding:'10px', borderRadius:'30px', marginBottom:'10px', width:'100%'}}/>

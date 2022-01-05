@@ -38,4 +38,8 @@ width: '100%';
 text-align: center;
 font-size: 1rem;
 
+@media screen and (max-width:960px){
+        font-size:.6rem;
+    }
+
 `

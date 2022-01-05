@@ -7,7 +7,7 @@ const WhatWeDO = ( {mobile}
 
     const BackgroundOrnament = () =>{
       if(mobile){
-        return (<img src={bgMobile} style={{objectFit:'cover', height:'100%'}} />)
+        return (<img src={bgMobile} style={{objectFit:'cover', height:'100%', maxWidth:'100vw'}} />)
       }else{
         return (
           <img style={{zIndex:-1 ,height:'90vh', maxWidth:'100%', minHeight:'auto', }} src={bg}/>

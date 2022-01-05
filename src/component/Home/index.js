@@ -27,11 +27,11 @@ const HomePage = ({mobile}) => {
         <Container id="home">
             <ContentDiv id='home' style={{height:'100vh', width:'100%'}}>
                 <DivContent> 
-                    <img src={Background} style={{position:'absolute', width:'100%', minHeight:'200px', objectFit:'cover', zIndex:'-1', top:'40%'}}/>
+                    <img src={Background} style={{position:'absolute', width:'100%', minHeight:'200px', objectFit:'cover', zIndex:'-1', marginTop:'auto'}}/>
                 
                 <ImageTitle/>
                 <TitleDiv style={{}}>
-                    <Title>Our Company</Title>
+                    <Title style={{marginBottom:`${mobile?'.1rem':'1rem'}`}}>Our Company</Title>
                     <P style={{textAlign:'justify'}}>
                     Established since October 27, 2014 as a holding company of several subsidiaries such as aero, space, palindo, trimatra, rex, armamen, republic of defense with the majority of businesses engaged in supporting land, sea and air defense system with high professionalism and supported by trained and experienced human resources.
                     </P>

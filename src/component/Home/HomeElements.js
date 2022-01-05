@@ -57,8 +57,11 @@ color:#fff;
 justify-content:center;
 
     @media screen and (max-width:960px){
-        margin-top:30vh;
-margin-bottom:auto; 
+        /* margin-top:20vh; */
+        /* margin-top:auto; */
+        /* margin-bottom:auto;  */
+        height: 40vh;
+        min-height:'200px';
         margin-left:auto;
         width: 80%;
     }
@@ -67,10 +70,12 @@ margin-bottom:auto;
 
 export const Title = styled.h1`
     font-size:2vw;
-    line-height:.1rem;
+    /* line-height:.1rem; */
     /* color:#282855; */
     @media screen and (max-width:960px){
+        /* margin-top: 0px; */
         font-size: 2rem;
+    line-height:auto;
     }
 `
 
