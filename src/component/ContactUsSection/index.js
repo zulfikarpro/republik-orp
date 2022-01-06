@@ -6,7 +6,7 @@ import bg from '../../images/bg/contactusbg.png'
 import { Grid } from '@material-ui/core'
 import {FaEnvelope, FaMailchimp, FaMapMarkerAlt, FaPhone} from 'react-icons/fa'
 import { ContentWrapper } from '../AboutUs/AboutUsElement'
-const ContactUsSection = (
+const ContactUsSection = ({mobile}
   ) => {
     return (
       <div id='contactus'style={{display:'flex', flexDirection:'column', justifyContent:'flex-end',backgroundImage:`url(${bg})`, backgroundRepeat:'no-repeat', backgroundSize:'cover',minHeight:'100vh', height:'100%', width:'100%'}}>
@@ -34,7 +34,7 @@ const ContactUsSection = (
                         </div>
                       </div>
                     </Grid>
-                    <Grid item xs={12}md={6} style={{display:'flex', flexDirection:'row', justifyContent:'center', justifyContent:'flex-end'}}>
+                    <Grid item xs={12}md={6} style={{display:'flex', flexDirection:'row', justifyContent:'center'}}>
                     <div style={{display:'flex', flexDirection:'column', minWidth:'400px', margin:'auto', justifyContent:'center'}}>
                       <div>
                         <h2 style={{marginBottom:'10px'}}>Contact Address</h2>

@@ -36,13 +36,13 @@ useEffect(() => {
     return (
         <div style={{minWidth:'100%', display:'flex', flexDirection:'column'}}>
             <Sidebar isOpen={isOpen} toggle={toggle}/>
-            <Navbar toggle={toggle}/>
+            <Navbar toggle={toggle} mobile={isMobile}/>
             {/* <LandingSection/> */}
             <HomePage mobile={isMobile}/>
             <AboutUsPage mobile={isMobile}/>
             <FacilitiesPage/>
             <ProjectsPage/>
-            <ContactUsSection/>
+            <ContactUsSection mobile={isMobile}/>
             {/* <Footer/> */}
             {/* <div style={{position:'flex',height:'200px', width:'auto'}}></div> */}
         </div>

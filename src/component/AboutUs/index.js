@@ -13,7 +13,7 @@ const CarouselItem = ({title, image}) =>{
   <div style={{width:'100%', maxWidth:'500px',minHeight:'200px', display:'flex', flexDirection:'column'}}>
     <H1 style={{fontSize:'1.3rem', textAlign:'center'}}>{title}</H1>
     {/* <div style={{width:'100%', height:'20px'}}/> */}
-    <img src={image} style={{height:'50%', width:'auto'}}/>
+    <img src={image} style={{maxWidth:'100%'}}/>
   </div>
   )
 

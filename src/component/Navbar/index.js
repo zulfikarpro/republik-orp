@@ -6,7 +6,7 @@ import { animateScroll as scroll } from 'react-scroll';
 // import { Logo } from '../LandingSection/LandingElement';
 import logo from '../../images/logopalindo.png';
 
-const Navbar = ({toggle}) => {
+const Navbar = ({toggle, mobile}) => {
     const [scrollNav, setScrollNav] = useState(false);
     const changeNav = () => {
         if (window.scrollY >= 2000 && window.scrollY<=6380) {
@@ -31,7 +31,7 @@ const Navbar = ({toggle}) => {
             <Nav scrollNav={scrollNav}>
                 <NavbarContainer>
                     <NavLogo onClick={toggleHome} to='/'>
-                        <Img src={logo}/>
+                        <Img src={logo} style={{maxWidth:`${mobile? '30vw' : 'auto'}`}}/>
                         {/* <img src="C:\projects\republik-orp\public\images\LOGO-01.png"  alt=""></img> */}
                         </NavLogo>
                     <MobileIcon onClick={toggle}>
