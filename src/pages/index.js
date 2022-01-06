@@ -16,7 +16,7 @@ const Home = () => {
 const [isOpen, setIsOpen] = useState(false);
 
 const handleResize = () => {
-    if (window.innerWidth < 1080) {
+    if (window.innerWidth < 960) {
         setIsMobile(true)
     } else {
         setIsMobile(false)
@@ -37,12 +37,12 @@ useEffect(() => {
             <Sidebar isOpen={isOpen} toggle={toggle}/>
             <Navbar toggle={toggle}/>
             {/* <LandingSection/> */}
-            <HomePage/>
-            <AboutUsPage/>
-            <WhatWeDO/>
+            <HomePage mobile={isMobile}/>
+            <AboutUsPage mobile={isMobile}/>
+            <WhatWeDO mobile={isMobile}/>
             <Partnership/>
             <OurProducts/>
-            <ContactUsSection/>
+            <ContactUsSection mobile={isMobile}/>
         </div>
     )
 //   }else{

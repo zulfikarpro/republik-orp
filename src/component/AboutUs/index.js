@@ -2,18 +2,18 @@ import React from 'react'
 import { Container, ContentDiv } from '../Home/HomeElements'
 import bg from '../../images/bg/bg2.png'
 import { H1,H2,P } from './AboutUsElement'
-const AboutUsPage = (
+const AboutUsPage = ({mobile}
   ) => {
     return (
         <>
            <Container style={{minWidth:'100%', marginTop:'0px', justifyContent:'flex-start'}}>
              <ContentDiv style={{minWidth:'100%', minHeight:'100%',justifyContent:'flex-start'}} id='whoweare'>
-               <div style={{position:'absolute',right:'', width:'100%', height:'100vh', background:'red'}}>
+               <div style={{position:'absolute',right:'', width:'100%', height:'100vh'}}>
                <img style={{position:'absolute', zIndex:1 , width:'100%', height:'100vh', objectFit:'cover' }} src={bg}/>
                 </div>
                {/* <div style={{height:'100%'}}> */}
-                 <div style={{position:'absolute', width:'100%', height:'80%',display:'flex', flexDirection:'row', justifyContent:'end', zIndex:2, marginTop:'5%' }}>
-                  <div style={{display:'flex', flexDirection:'column',justifyContent:'center', marginLeft:'10%',marginRight:'10%', color:'#fff', maxWidth:'35%',maxHeight:'80%', textAlign:'justify'}}>
+                 <div style={{position:'absolute', width:'100%', height:'80%',display:'flex', flexDirection:'row', justifyContent:'end', zIndex:2, marginTop:`${mobile? '15%': '5%'}` }}>
+                  <div style={{display:'flex', flexDirection:'column',justifyContent:'center', marginLeft:`${mobile?'auto':'10%'}`,marginRight:'10%', color:'#fff', maxWidth:`${mobile? '50%': '35%'}`,maxHeight:'80%', textAlign:'justify'}}>
                   <H1 style={{marginBottom:'0px', marginTop:'10%'}}>Who We Are</H1>
                   <P >We are private owned company with a
 decade history and experience of supply 

@@ -2,7 +2,7 @@ import React from 'react'
 import { Container, ContentDiv } from '../Home/HomeElements'
 import bg from '../../images/bg/bg3.png'
 import { H1, P } from '../AboutUs/AboutUsElement'
-const WhatWeDO = (
+const WhatWeDO = ({mobile}
   ) => {
     return (
         <>
@@ -13,7 +13,7 @@ const WhatWeDO = (
                 </div>
                {/* <div style={{height:'100%'}}> */}
                <div style={{position:'absolute', width:'100%', height:'100%',display:'flex', flexDirection:'row', justifyContent:'flex-end'}}>
-                  <div style={{display:'flex', flexDirection:'column', color:'#fff', width:'40%',textAlign:'justify',justifyContent:'center',}}>
+                  <div style={{display:'flex', flexDirection:'column', color:'#fff', width:'40%',textAlign:'justify',justifyContent:'center', marginTop:`${mobile?'15%':'0px'}`}}>
                   <H1>What We Do</H1>
                   <br/>
                   <P style={{maxWidth:'400px', marginRight:'20px'}}>We select worldwide providers with

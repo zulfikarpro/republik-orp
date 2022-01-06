@@ -36,4 +36,8 @@ export const FooterSecondLine = styled.div`
 font-size: 1rem;
 margin: auto;
 
+@media screen and (max-width:960px){
+    font-size:.6rem
+}
+
 `

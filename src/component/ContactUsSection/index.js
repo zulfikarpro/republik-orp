@@ -4,7 +4,7 @@ import { ContactUsDiv } from "./ContactUsElement";
 import Footer from "../Footer";
 import bg from "../../images/bg/bg5.png";
 import { Grid } from "@material-ui/core";
-const ContactUsSection = () => {
+const ContactUsSection = ({mobile}) => {
   return (
     //  <div style={{height:'100vh', display:'flex', flexDirection:'column', justifyContent:'flex-end' ,minWidth:'100%',maxHeight:'200vh', background:'linear-gradient(270deg, #596B80 27.08%, #0C1A2B 112.98%)'}}>
     <ContentDiv
@@ -182,17 +182,17 @@ const ContactUsSection = () => {
                   }}
                 >
                   <div>
-                    <h2 style={{textAlign:'right', 
+                    <h2 style={{textAlign:`${mobile? 'center': 'right'}`, 
                       width: "100%"}}>Contact Address</h2>
                   </div>
                   <div
                     style={{
                       display: "flex",
                       flexDirection: "row",
-                      justifyContent: "flex-end",
+                      justifyContent: `${mobile? 'center':'flex-end'}`,
                     }}
                   >
-                    <p style={{ textAlign: 'right', fontSize:'1.2rem' }}>
+                    <p style={{ textAlign: `${mobile? 'center': 'right'}`, fontSize:'1.2rem' }}>
                     RPX Building 7th floor,<br/>
                     Jl. Ciputat Raya no.99<br/>
                     12310 DKI Jakarta, Indonesia<br/>
