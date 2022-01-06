@@ -131,4 +131,8 @@ export const NavBtnLink = styled(LinkR)`
 export const Img = styled.img`
   height:100%;
   width:100%;
+
+  @media screen and (max-width:960px){
+    max-width:30vw;
+  }
 `

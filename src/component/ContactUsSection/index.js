@@ -49,7 +49,7 @@ const ContactUsSection = ({mobile}) => {
                 style={{
                   position: "absolute",
                   zIndex: -1,
-                  height: "100%",
+                  height: `${mobile? '115vh': '100%'}`,
                   width:'100vw',
                   objectFit: "cover",
                 }}
@@ -68,7 +68,7 @@ const ContactUsSection = ({mobile}) => {
               }}
             >
               <H1 style={{marginBottom:'10px'}}>Contact Us</H1>
-            <div style={{margin:'auto', height:'2px', width:'18%', background:'white',}}/>
+            <div style={{margin:'auto', height:'2px', width:'200px', background:'white',}}/>
               <div
                 style={{
                   width: "100%",
