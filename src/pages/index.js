@@ -21,47 +21,56 @@ import {
 import AboutUsPage from '../component/AboutUs';
 import Milestone from '../component/Milestone';
 import OurClients from '../component/OurClients';
+import { useEffect } from 'react';
 
 
 const Home = () => {
-const [isOpen, setIsOpen] = useState(false);
+    const [isMobile, setIsmobile] = useState(false);
+    const [isOpen, setIsOpen] = useState(false);
 
-const toggle = () =>{
-    setIsOpen(!isOpen);
-}
+    const handleResize = () => {
+        if(window.innerWidth<960){
+            setIsmobile(true)
+        }else{
+            setIsmobile(false)
+        }
+    }
+    const toggle = () =>{
+        setIsOpen(!isOpen);
+    }
+
+    useEffect(()=>{window.addEventListener('resize', handleResize)})
 
 
     return (
         <div style={{minWidth:'100%'}}>
             <Sidebar isOpen={isOpen} toggle={toggle}/>
             <Navbar toggle={toggle}/>
-            
             <div style={{position:'fixed', top:'-50%', left:'', width:'200vw', height:'200%', zIndex:-4}}>
             <video style={{position: 'fixed', height:'100vh', width: '100%',right:'0', top:0, bottom:0, left:0, margin:'auto', zIndex:-4, overflow:'hidden', opacity: 1, background:'black', objectFit:'cover', objectPosition:'center'}} autoPlay loop muted src={Video} type='video/mp4'/>
                 {/* <video style={{position: 'fixed', height:'100vh', width: '100%',right:'0', top:0, bottom:0, left:0, margin:'auto', zIndex:-4, overflow:'hidden', opacity: 1, background:'black'}} autoPlay loop muted src={Video} type='video/mp4'/> */}
                 <div style={{position:'fixed',height:'100vh', width: 'auto', margin:'auto', top:0, bottom:0, right:0, left:0, background:'red', opacity:.2, zIndex:-1,overflowX:'hidden'}}/>
             </div>
             <LandingSection/>
-            
             <BackgroundMerahDiv>
                 <div style={{position:'flex', width:'100%', flexDirection:'row', justifyContent:'center'}}>
                 <div style={{display:'flex', flexDirection:'row', justifyContent:'center', maxWidth:'100%'}}>
                     <AboutUsPage {...homeObjOne}/>
                 </div>
-                <Milestone {...homeObjOne} style={{width:'100%'}}/>
+                <Milestone {...homeObjOne} mobile={isMobile} style={{width:'100%'}}/>
                 </div>
                 <div style={{position:'absolute', right:'',width:'100%', height:'200%', zIndex:-1}}>
                     <img src={bgMerah} style={{maxWidth:'100%'}} style={{zIndex:'-1' ,objectFit:'cover', position:'absolute', width:'100%', height:'250vh'}}/>
                 </div>
             </BackgroundMerahDiv>
             <Visimisi/>
-            <HowWeWork/>
+            <HowWeWork mobile={isMobile}/>
             <OurClients/>
             {/* <CustomInfoSection {...homeObjTwo}/>
             <CustomInfoSection {...homeObjThree}/>
             <InfoSection {...homeObjThree} style={{zIndex:1}}/>
             <InfoSection {...homeObjFour} /> */}
-            <ContactUsSection/>
+            <ContactUsSection mobile={isMobile}/>
             <Footer/>
             {/* <div style={{position:'flex',height:'200px', width:'auto'}}></div> */}
         </div>

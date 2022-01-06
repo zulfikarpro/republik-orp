@@ -1,7 +1,9 @@
 import React from 'react'
 import { MilestoneImages, MilestoneContainer, MilestoneTitle, MilestoneTitleShadow, MilestoneWrapper,MilestoneTextWrapper  } from './MilestoneElements'
 import MilestoneImage from'../../images/milestone.png'
+import ImageMobile from'../../images/milestonemobile.png'
 const Milestone = ({
+    mobile,
     lightBg,
     imgStart,
     topLine,
@@ -19,6 +21,8 @@ const Milestone = ({
     alignCenter,
     bgImage
   }) => {
+
+    const background = mobile? ImageMobile : MilestoneImage
     return (
         <>
             <MilestoneContainer id={"milestone"} style={{marginTop:'0px'}} >
@@ -31,7 +35,7 @@ const Milestone = ({
                             Group Milestones
                         </MilestoneTitle> */}
                     </MilestoneTextWrapper>
-                    <MilestoneImages src={MilestoneImage} style={{marginTop:'0px'}}/>
+                    <MilestoneImages src={background} style={{marginTop:'0px'}}/>
                 </MilestoneWrapper>
             </MilestoneContainer>
         </>

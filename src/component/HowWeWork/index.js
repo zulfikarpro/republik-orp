@@ -1,5 +1,5 @@
 import React from 'react'
-import {Container, Title, RowWrapper, LeftColumn, RightColumn, ContentWrapper, HWWShadow, ImageLeft, ImageList, TitleShadow} from './HowWeWorkElements'
+import {Container, Title, RowWrapper, LeftColumn, RightColumn, ContentWrapper, HWWShadow, ImageLeft, ImageList, TitleShadow, CenterColumn} from './HowWeWorkElements'
 import bgImage from '../../images/bghww.jpg'
 import warehouseimg from '../../images/warehousbg2x.png'
 import img1 from '../../images/expertise/1.png'
@@ -10,7 +10,7 @@ import img5 from '../../images/expertise/5.png'
 import img6 from '../../images/expertise/6.png'
 import img7 from '../../images/expertise/7.png'
 import img8 from '../../images/expertise/8.png'
-const HowWeWork = () => {
+const HowWeWork = ({mobile}) => {
     return (
         <>
         <Container style={{marginTop:'60px', maxHeight:'100vh'}} style={{backgroundImage:`url(${bgImage})`}}  id={'menu3'} >
@@ -31,13 +31,13 @@ const HowWeWork = () => {
                 <LeftColumn style={{justifyContent:'center'}}>
                     <ImageLeft src={warehouseimg}></ImageLeft>
                 </LeftColumn>
-                <RightColumn style={{margin:'auto', marginLeft:'80px', marginRight:'0px'}} >
+                <CenterColumn style={{marginRight:'0px'}} >
                     <ImageList src={img1}/>
                     <ImageList src={img2}/>
                     <ImageList src={img3}/>
                     <ImageList src={img4}/>
-                </RightColumn>
-                <RightColumn style={{margin:'auto', marginLeft:'0px'}} >
+                </CenterColumn>
+                <RightColumn>
                     <ImageList src={img5}/>
                     <ImageList src={img6}/>
                     <ImageList src={img7}/>

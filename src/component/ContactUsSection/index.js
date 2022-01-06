@@ -3,12 +3,12 @@ import React from 'react'
 import {FaEnvelope} from 'react-icons/fa'
 import { ContactUsContainer ,ContactUseWrapper, ContactUsTextWrapper, TextLineOne, TextLineTwo, Input, InputWrapper } from './ContactUsElement'
 
-const index = () => {
+const index = ({mobile}) => {
     return (
         <>
-        <ContactUsContainer id="contactus" style={{maxHeight:'85vh'}}>
+        <ContactUsContainer id="contactus" style={{background:`${mobile? 'linear-gradient(180deg, rgba(0,0,0, 0.4), transparent)': 'transparent'}`, height:`${mobile? 'auto' : '85vh'}`}}>
             <ContactUseWrapper style={{}}>
-                <ContactUsTextWrapper style={{width:'50%',  padding:'40px'}}>
+                <ContactUsTextWrapper style={{width:`${mobile?'90%': '50%'}`}}>
                     <TextLineOne style={{textAlign:'justify'}}>
                     Our continuously growing extensive network enables us to deliver goods and customer
 satisfaction across Indonesia and around the world. With REX, you will have a delightful

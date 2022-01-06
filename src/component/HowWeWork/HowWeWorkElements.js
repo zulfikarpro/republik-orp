@@ -32,10 +32,10 @@ export const TitleShadow = styled.h1`
     margin-left: 10%;
     margin-right: 10%;
     color: rgba(255, 255, 255, 0.5);
-    font-size: 3rem;
+    font-size: 64px;
 
     @media screen and (max-width:960px){
-        font-size: 50px;
+        font-size: 32px;
     }
     /* text-shadow: 0px -120px 0px rgba(255, 255, 255, 0.2) ; */
 `
@@ -91,17 +91,38 @@ export const LeftColumn = styled.div`
 `
 
 export const RightColumn = styled.div`
+
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: auto;
+    margin-left: 0px;
+
+    @media screen and (max-width:960px){
+    margin-left: auto;
+            }
+
+
+`
+export const CenterColumn = styled.div`
+    margin:auto; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 0px;
+
+    @media screen and (max-width:960px){
+        margin-right:auto ;
+    }
 `
 
 export const ImageLeft = styled.img`
     max-height: 60vh;
 
     @media screen and (max-width: 960px) {
-        /* max-height: 50vh; */
+        max-height: 40vh;
         width: auto;
+        margin-top:20px;
   }
 `
 

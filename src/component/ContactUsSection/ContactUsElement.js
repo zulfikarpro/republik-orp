@@ -69,9 +69,18 @@ export const TextLineOne = styled.p`
   -webkit-text-stroke-width:.1px;
   -webkit-text-stroke-color: black;
 
+  @media screen and (max-width:960px){
+    font-size:.8rem;
+  -webkit-text-stroke-color: white;
+  /* -webkit-text-stroke-width:.3px; */
+  }
 `
 
 export const TextLineTwo = styled.h1`
   font-size: 1.8rem;
+
+  @media screen and (max-width:960px){
+    font-size: 1.4rem;
+  }
 
 `
