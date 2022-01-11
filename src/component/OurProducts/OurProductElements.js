@@ -9,10 +9,12 @@ flex-direction:row;
 justify-content:center;
 background-position: center;
 background-repeat: no-repeat;
-max-height: 200vh;
+background-size:100%;
+max-width:100vw; 
 
 @media screen and (max-width:960px){
-    height: 200vh;
+    background:blue;
+    height: 140vh;
 }
 
 `
@@ -24,10 +26,11 @@ z-index: 1;
     align-items: center;
     min-height: 100vh;
     width: 100%;
+    max-width:100vw
 max-height: 200vh;
 
 @media screen and (max-width:960px){
-    height: 200vh;
+    height: 120vh;
 }
 `
 
@@ -41,7 +44,7 @@ export const ContentDiv = styled.div`
     height: 100vh;
 
     @media screen and (max-width:960px){
-    height: 200vh;
+    height: 100vh;
 }
 `
 
@@ -65,7 +68,8 @@ color: rgba(255, 255, 255, 0.5);
 font-size: 2.4rem;
 
     @media screen and (max-widht: 960px){
-        margin-bottom: 400px;
+        margin-top:0px;
+        /* margin-bottom: 400px; */
         font-size: 1.6;
     }
 `

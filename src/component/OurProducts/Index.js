@@ -7,17 +7,18 @@ import produk1 from '../../images/products/produk1.png'
 import produk2 from '../../images/products/produk2.png'
 import { DivBackground, Container, ContentDiv, Img, Title, TitleShadow } from './OurProductElements'
 
-const ItemsCarousel = ({pic, title, text}) =>{
+const ItemsCarousel = ({pic, title, text, mobile}) =>{
   return (
-    // <Img src={pic} style={{width:'474', height:'578'}}/>
-    <div style={{display:'flex', flexDirection:'column', justifyContent:'flex-end', width:'474px', height:'578px', backgroundImage:`url(${pic})`,
+    <div style={{display:'flex', flexDirection:'row', justifyContent:'center'}}>
+    <div style={{display:'flex', flexDirection:'column', justifyContent:'flex-end', width:`${mobile?'355px':'474px'}`, height:`${mobile?'433px':'578px'}`, backgroundImage:`url(${pic})`,
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
-    backgroundSize:'50vh'}}>
+    backgroundSize:`${mobile?'50vh':'50vh'}`}}>
       {/* <Img src={pic}/> */}
       <h2 style={{margin:'10px', textAlign:'center'}}>{title}</h2>
       <p style={{margin:'10px', textAlign:'center', fontSize:'1rem', maxWidth:'60%', marginLeft:'auto', marginRight:'auto'}}>{text}</p>
       <div style={{height:'17%'}}></div>
+    </div>
     </div>
   )
 }
@@ -37,15 +38,15 @@ const onProductSeclected = (clicked) =>{
   
 }
 
-const OurProducts = (
+const OurProducts = ({mobile}
   ) => {
     return (
         <>
-               <Container id="ourproduct" style={{height:'100%'}}>
+               <Container id="ourproduct" style={{height:'100vh', background:'red'}}>
                  <ContentDiv>
-                 <DivBackground style={{ backgroundSize:'100%', maxWidth:'99.5%', backgroundImage:`url(${bg})`, margin:'auto'}}>
-                   <div style={{display:'flex', flexDirection:'column', color:'#fff',  width:'100%', height:'70vh', justifyContent:'center', margin:'auto'}}>
-                      <Title style={{}}>Our Services</Title>
+                 <DivBackground style={{ backgroundImage:`url(${bg})`, margin:'auto'}}>
+                   <div style={{display:'flex', flexDirection:'column', color:'#fff',  width:'100%', height:`${mobile? '100vh': '70vh'}`,marginTop:`${mobile?'':'auto'}`, justifyContent:'center'}}>
+                      <Title>Our Services</Title>
                      <Grid container spacing={2}>
                       <Grid item xs={12} md={6}>
                         <div style={{minHeight:'30vh' ,maxHeight:'60vh', display:'flex', flexDirection:'column', justifyContent:'flex-end'}}>
@@ -59,9 +60,9 @@ const OurProducts = (
                       </Grid>
                       <Grid item xs={12} md={6}>
                       <div style={{display:'flex', flexDirection:'column', justifyContent:'center', height:'60vh', width:'100%',}}>
-                        <div style={{display:'flex', flexDirection:'row', justifyContent:'center', width:'100%', alignItems:'center'}}>
+                        <div style={{display:'flex', flexDirection:'row', justifyContent:'center', width:`${mobile?'70vw':'100%'}`, margin:'auto', alignItems:'center'}}>
                         <Carousel
-                        style={{padding:'10%', justifySelf:'center'}}
+                        style={{padding:'10%', justifySelf:'center', background:'red'}}
                         indicatorContainerProps={{
                           style: {
                               marginTop: '-40px', // 5
@@ -69,8 +70,8 @@ const OurProducts = (
                           }
                           }}
                         >
-                          <ItemsCarousel pic={produk1} title='Recording System' text='Recording System provides comprehensive solution to record voice, screen and data and deliver system solutions with high added value.'/>
-                          <ItemsCarousel pic={produk2}/>
+                          <ItemsCarousel  mobile={mobile} pic={produk1} title='Recording System' text='Recording System provides comprehensive solution to record voice, screen and data and deliver system solutions with high added value.'/>
+                          <ItemsCarousel mobile={mobile} pic={produk2}/>
                         </Carousel>
                           </div>
                         </div>

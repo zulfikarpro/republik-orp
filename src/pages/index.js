@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import styled from 'styled-components';
 import Navbar from '../component/Navbar'
 import Sidebar from '../component/sidebar'
@@ -14,11 +14,22 @@ import OurTarget from '../component/OurTarget';
 
 
 const Home = () => {
-const [isOpen, setIsOpen] = useState(false);
+    const [isMobile, setIsmobile] = useState(false);
+    const [isOpen, setIsOpen] = useState(false);
 
-const toggle = () =>{
-    setIsOpen(!isOpen);
-}
+    const handleResize = () => {
+        if(window.innerWidth<720){
+            setIsmobile(true)
+        }else{
+            setIsmobile(false)
+        }
+    }
+    const toggle = () =>{
+        setIsOpen(!isOpen);
+    }
+
+    useEffect(()=>{window.addEventListener('resize', handleResize)})
+
 
 
     return (
@@ -30,10 +41,10 @@ const toggle = () =>{
                 <div style={{position:'fixed',height:'100vh', width: 'auto', margin:'auto', top:0, bottom:0, right:0, left:0, background:'white', opacity:.2, zIndex:-3,overflowX:'hidden'}}/>
             </div>
             <HomePage/>
-            <AboutUsPage/>
-            <OurProducts/>
+            <AboutUsPage mobile={isMobile}/>
+            <OurProducts mobile={isMobile}/>
             {/* <OurTarget/> */}
-            <Partnership/>
+            <Partnership mobile={isMobile}/>
             {/* <ContactUsSection/> */}
             {/* <Footer/> */}
             {/* <div style={{position:'flex',height:'200px', width:'auto'}}></div> */}
