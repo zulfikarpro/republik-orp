@@ -18,7 +18,10 @@ export const TitleShadow = styled.h1`
     /* text-shadow: -170px -40px 0px rgba(112, 112, 112, 0.5) ; */
 
     @media screen and (max-width:960px){
-        font-size: 32px
+        font-size: 32px;
+        margin-top:40px;
+        text-align:center
+
     }
 `
 

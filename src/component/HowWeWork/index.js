@@ -26,7 +26,7 @@ const HowWeWork = ({mobile}) => {
                     <TitleShadow style={{lineHeight:'12px', marginTop:'40px'}}>Our Expertise</TitleShadow>
                     
                     </div>
-            <RowWrapper style={{padding:'auto', margin:'auto', maxHeight:'80vh', marginTop:'0px', background:'linear-gradient(to bottom, rgba(0,0,0,0.7) 40%, transparent 100%)', paddingTop:'20px', paddingBottom:'20px'}}>
+            <RowWrapper style={{padding:'auto', margin:'auto', maxHeight:'80vh', marginTop:'0px', background:'linear-gradient(to bottom, rgba(0,0,0,0.7) 40%, transparent 100%)', paddingTop:`${mobile?'50px' : '20px'}`, paddingBottom:'20px'}}>
                 <div style={{width:'6%', height:'auto'}}/>
                 <LeftColumn style={{justifyContent:'center'}}>
                     <ImageLeft src={warehouseimg}></ImageLeft>

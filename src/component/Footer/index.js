@@ -15,7 +15,7 @@ const Footer = () => {
                         <FaYoutube style={{width:'auto', height:'30px',marginRight:'8px'}}/>
                     </FooterFirstLine>
                     <FooterSecondLine>
-                    © 2021 Republik Expres.  Trademarks and brands are the property of their respective owners.
+                    © 2021 Republik Expres. <br/> Trademarks and brands are the property of their respective owners.
                     </FooterSecondLine>
                 </FooterWrapper>
             </FooterContainer>

@@ -56,16 +56,14 @@ const Home = () => {
                 <div style={{position:'flex', width:'100%', flexDirection:'row', justifyContent:'center'}}>
                 <div style={{display:'flex', flexDirection:'row', justifyContent:'center', maxWidth:'100%'}}>
                     <AboutUsPage {...homeObjOne}/>
-                </div>
-                <Milestone {...homeObjOne} mobile={isMobile} style={{width:'100%'}}/>
-                </div>
+                </div></div>
                 <div style={{position:'absolute', right:'',width:'100%', height:'200%', zIndex:-1}}>
                     <img src={bgMerah} style={{maxWidth:'100%'}} style={{zIndex:'-1' ,objectFit:'cover', position:'absolute', width:'100%', height:'250vh'}}/>
                 </div>
             </BackgroundMerahDiv>
             <Visimisi/>
             <HowWeWork mobile={isMobile}/>
-            <OurClients/>
+            <OurClients mobile={isMobile}/>
             {/* <CustomInfoSection {...homeObjTwo}/>
             <CustomInfoSection {...homeObjThree}/>
             <InfoSection {...homeObjThree} style={{zIndex:1}}/>
@@ -75,6 +73,19 @@ const Home = () => {
             {/* <div style={{position:'flex',height:'200px', width:'auto'}}></div> */}
         </div>
     )
+}
+
+const MilestoneMobile = ()=>{
+    if (this.isMobile){
+        return(
+            <>
+            </>
+        )
+    }else{
+        return(
+        <Milestone {...homeObjOne} mobile={this.isMobile} style={{width:'100%'}}/>
+        )
+    }
 }
 
 export const VideoBg = styled.video`

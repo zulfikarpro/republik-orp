@@ -22,12 +22,16 @@ export const ContactUseWrapper = styled.div`
 `
 
 export const ContactUsTextWrapper = styled.div`
-background: 'red';
 margin: auto;
 min-height: 240px;
 max-width: 540px;
   padding-top: 0;
   padding-bottom: 60px;
+  @media screen and (max-width:960px){
+    min-height:100px;
+    margin-top:0px;
+    margin-bottom:0px;
+  }
 `
 
 export const Input = styled.input`
@@ -70,7 +74,7 @@ export const TextLineOne = styled.p`
   -webkit-text-stroke-color: black;
 
   @media screen and (max-width:960px){
-    font-size:.8rem;
+    font-size:1rem;
   -webkit-text-stroke-color: white;
   /* -webkit-text-stroke-width:.3px; */
   }
@@ -81,6 +85,7 @@ export const TextLineTwo = styled.h1`
 
   @media screen and (max-width:960px){
     font-size: 1.4rem;
+    margin-top:0px
   }
 
 `

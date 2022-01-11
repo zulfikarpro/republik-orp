@@ -35,6 +35,7 @@ export const TitleShadow = styled.h1`
     font-size: 64px;
 
     @media screen and (max-width:960px){
+        text-align:center;
         font-size: 32px;
     }
     /* text-shadow: 0px -120px 0px rgba(255, 255, 255, 0.2) ; */
@@ -79,7 +80,10 @@ export const ImageList = styled.img`
     max-width: 300px;
 
     @media screen and (max-width: 960px) {
-    max-width: 300px;
+    max-width: 80%;
+    /* margin: auto; */
+    margin-left:auto;
+    margin-right:auto;
   }
 `
 
@@ -88,6 +92,11 @@ export const LeftColumn = styled.div`
     flex-direction: column;
     justify-content: center;
     height: 100%;
+
+    @media screen and (max-width: 960px){
+        width:0px;
+        height: 0px;
+    }
 `
 
 export const RightColumn = styled.div`
@@ -96,10 +105,13 @@ export const RightColumn = styled.div`
     flex-direction: column;
     justify-content: center;
     margin: auto;
-    margin-left: 0px;
+    /* margin-left: 0px; */
 
     @media screen and (max-width:960px){
-    margin-left: auto;
+        width;
+        margin: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
             }
 
 
@@ -111,8 +123,10 @@ export const CenterColumn = styled.div`
     justify-content: center;
     margin-right: 0px;
 
-    @media screen and (max-width:960px){
-        margin-right:auto ;
+    @media screen and (max-width:768px){
+        width:;
+        margin: auto;
+        /* margin-right: 20px; */
     }
 `
 
@@ -120,9 +134,7 @@ export const ImageLeft = styled.img`
     max-height: 60vh;
 
     @media screen and (max-width: 960px) {
-        max-height: 40vh;
-        width: auto;
-        margin-top:20px;
+        height:0px;
   }
 `
 

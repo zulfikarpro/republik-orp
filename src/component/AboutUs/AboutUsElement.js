@@ -42,6 +42,9 @@ export const AboutUsWrapper = styled.div`
   /* align-items: flex-start; */
   /* align-content: flex-start; */
   /* justify-content: flex-start; */
+  @media screen and (max-width:960px){
+    height:100%
+  }
 `;
 
 export const AboutUsTextWrapper = styled.div`
@@ -58,6 +61,7 @@ align-items: center;
 justify-items: center;
 
 @media screen and (max-width: 960px) {
+  width: 100%;
     padding-bottom: 20px;
     margin-left: 20px;
   }
@@ -74,6 +78,11 @@ export const AboutUsRow = styled.div`
       max-width: 100%;
 
         @media screen and (max-width: 768px) {
+          width: 100vw;
+          flex-direction: column;
+          justify-content: center;
+          margin-left:auto;
+          margin-right:auto;
             // grid-template-areas: ${({ imgStart }) => imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`};
         }
       
@@ -97,6 +106,13 @@ export const AboutUsColumn2 = styled.div`
     justify-content: end;
     align-items: flex-end; */
     /* background: yellow; */
+
+    @media screen and (max-width:960px){
+      max-width:80%;
+      width:100vw;
+      margin-left:auto;
+      margin-right:auto;
+    }
 `
 
 export const AboutUsColumn1 = styled.div`
@@ -113,6 +129,12 @@ export const AboutUsColumn1 = styled.div`
     /* justify-content: center;
     align-items: center;
     flex:1; */
+    @media screen and (max-width:960px){
+      max-width:80%;
+      width:100vw;
+      margin-left:auto;
+      margin-right:auto;
+    }
 `
 export const AboutUsImage = styled.img`
     align-items: center;
@@ -123,6 +145,8 @@ export const AboutUsImage = styled.img`
     @media screen and (max-width: 1080px) {
       height: 100%;
       max-width: 100%;
+      margin-left:auto;
+      margin-right:auto;
       object-fit: contain;
   }
   `
@@ -148,6 +172,7 @@ export const HeadingShadow = styled.h1`
     @media screen and (max-width: 768px) {
     font-size: 30px;
     width: 100%;
+    text-align:right;
   }
 `
 
@@ -160,7 +185,8 @@ export const AboutUsSubtitle = styled.p`
   text-align: justify;
   color: ${({ darkText }) => (darkText ? '#010606' : '#fff')};
   @media screen and (max-width: 960px) {
-    font-size: 10px;
+    font-size: 14px;
+    width:100%;
     line-height: 14px;
     margin-right: 25px;
   }

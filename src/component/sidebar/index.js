@@ -9,19 +9,19 @@ const Sidebar = ({isOpen, toggle}) => {
             </Icon>
             <SidebarWrapper>
                 <SidebarMenu>
-                    <SidebarLink to='menu1' onClick={toggle}>
+                    <SidebarLink to='menu1' onClick={toggle} offset={20}>
                     About Us
                     </SidebarLink>
-                    <SidebarLink to='visimisi' onClick={toggle}>
+                    <SidebarLink to='visimisi' onClick={toggle} offset={-80}>
                     Target
                     </SidebarLink>
-                    <SidebarLink to='menu3' onClick={toggle}>
+                    <SidebarLink to='menu3' onClick={toggle} offset={-80}>
                     Our Expertise
                     </SidebarLink>
-                    <SidebarLink to='ourclients' onClick={toggle}>
+                    <SidebarLink to='ourclients' onClick={toggle} offset={-40}>
                     Our Clients
                     </SidebarLink>
-                    <SidebarLink to='contactus' onClick={toggle}>
+                    <SidebarLink to='contactus' onClick={toggle} offset={80}>
                     Contact Us
                     </SidebarLink>
                 </SidebarMenu>
