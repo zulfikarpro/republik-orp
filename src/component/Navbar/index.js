@@ -31,7 +31,7 @@ const Navbar = ({toggle, mobile}) => {
             <Nav scrollNav={scrollNav}>
                 <NavbarContainer>
                     <NavLogo onClick={toggleHome} to='/'>
-                        <Img src={logo} style={{maxWidth:`${mobile? '30vw' : 'auto'}`}}/>
+                        <Img src={logo} style={{maxWidth:`${mobile? '40vw' : 'auto'}`, height:'auto'}}/>
                         {/* <img src="C:\projects\republik-orp\public\images\LOGO-01.png"  alt=""></img> */}
                         </NavLogo>
                     <MobileIcon onClick={toggle}>

@@ -8,9 +8,9 @@ import Carousel from 'react-material-ui-carousel'
 import imagePartner from '../../images/partner1.png'
 import imageIso from '../../images/iso.png'
 import imageClients from '../../images/client.png'
-const CarouselItem = ({title, image}) =>{
+const CarouselItem = ({title, image, mobile}) =>{
   return(
-  <div style={{width:'100%', maxWidth:'500px',minHeight:'200px', display:'flex', flexDirection:'column'}}>
+  <div style={{width:'100%', maxWidth:`${mobile? '80vw': '500px'}`,minHeight:'200px', display:'flex', flexDirection:'column', margin:'auto'}}>
     <H1 style={{fontSize:'1.3rem', textAlign:'center'}}>{title}</H1>
     {/* <div style={{width:'100%', height:'20px'}}/> */}
     <img src={image} style={{maxWidth:'100%'}}/>
@@ -46,9 +46,9 @@ const AboutUsPage = ({mobile}
                       Lastly, we would like deeply express out Thanks to every Customers who have given us Chance and Opportunity in building their vessels, without them we might not be as big as right now.
                     </P>
                   <Carousel style={{margin:'auto'}} indicators={false}>
-                    <CarouselItem title={'Partners'} image={imagePartner}/>
-                    <CarouselItem title={'Management Standard'} image={imageIso}/>
-                    <CarouselItem title={'Clients'} image={imageClients}/>
+                    <CarouselItem mobile={mobile} title={'Partners'} image={imagePartner}/>
+                    <CarouselItem mobile={mobile} title={'Management Standard'} image={imageIso}/>
+                    <CarouselItem mobile={mobile} title={'Clients'} image={imageClients}/>
                   </Carousel>
                  </div>
                  </DivAboutUs>

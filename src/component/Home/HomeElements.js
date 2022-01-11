@@ -48,6 +48,11 @@ export const Title1 = styled.h1`
     font-size: 4rem;
     max-width: 800px;
     color:#fff;
+
+    @media screen and (max-width:960px){
+        font-size:3rem;
+        max-width: 80vw;
+    }
 `
 
 export const Title2 = styled.h1`

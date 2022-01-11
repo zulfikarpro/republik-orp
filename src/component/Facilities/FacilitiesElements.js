@@ -16,5 +16,9 @@ export const P = styled.p`
     @media screen and (max-width: 960px){
         
     font-size: 1.4vh;
+    text-align:justify;
+    max-width:80%;
+    
+
     }
 `

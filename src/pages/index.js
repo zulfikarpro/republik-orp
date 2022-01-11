@@ -40,7 +40,7 @@ useEffect(() => {
             {/* <LandingSection/> */}
             <HomePage mobile={isMobile}/>
             <AboutUsPage mobile={isMobile}/>
-            <FacilitiesPage/>
+            <FacilitiesPage mobile={isMobile}/>
             <ProjectsPage/>
             <ContactUsSection mobile={isMobile}/>
             {/* <Footer/> */}
