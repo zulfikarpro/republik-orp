@@ -63,7 +63,7 @@ export const LandingContent = styled.div`
     z-index: 2;
     max-width: 1200px;
     position: absolute;
-    padding: 8px 24px;
+    /* padding: 8px 24px; */
     display: flex;
     flex-direction: column;
     align-items: center;

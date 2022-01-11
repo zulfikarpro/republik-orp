@@ -107,7 +107,7 @@ const ContactUsSection = ({mobile}) => {
                           display: "flex",
                           flexDirection: "row",
                           width: "100%",
-                          justifyContent: "flex-start",
+                          justifyContent: `${mobile?'center':'flex-start'}`,
                         }}
                       >
                         <h2>Drop us a Line</h2>

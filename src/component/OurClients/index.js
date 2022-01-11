@@ -16,7 +16,7 @@ const clientImage = mobile? clientmobile: client;
                     <div style={{display:'flex', flexDirection:'column',width:`${mobile?'100%':'50%'}`, background:`${mobile?'white':''}`, paddingBottom:`${mobile?'20px': ''}`}}>
                         <H1 style={{width:'auto', textAlign:'center', marginBottom:'10px', }}>Our Partners</H1>
                         <div style={{height:'2px', width:'40%', background:'black', marginLeft:'auto', marginRight:'auto', marginBottom:'20px'}}/>
-                        <img src={clientImage} style={{maxWidth:'400px', margin:'auto'}}/>
+                        <img src={clientImage} style={{maxWidth:`${mobile? '80vw': '400px'}`, margin:'auto'}}/>
                     </div>
                 </div>
             </ContentDiv>
