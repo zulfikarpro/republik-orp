@@ -19,14 +19,14 @@ const Partnership = ({mobile}
              <ContentDiv style={{minWidth:'100%', minHeight:'100%',height:'200vh', justifyContent:'flex-start', }} >
                <img style={{zIndex:-1 ,height:`${mobile?'200vh':'100%'}`, objectFit:'cover'}} src={bg}/>
                {/* <div style={{height:'100%'}}> */}
-                <div style={{position:'absolute', width:'100%', height:'100%', display:'flex', flexDirection:'row', justifyContent:'center'}}  id="ourpartner">
-                  <div style={{display:'flex', flexDirection:'column', color:'#fff',justifyContent:'space-evenly', height:'200%'}}>
+                <div style={{position:'absolute', width:'100vw', height:'100%', display:'flex', flexDirection:'row', justifyContent:'center'}}  id="ourpartner">
+                  <div style={{display:'flex', flexDirection:'column', color:'#fff',justifyContent:'space-evenly', height:'200%' , padding:'0px'}}>
 
-                  <div style={{width:'100%', textAlign:'center', zIndex:'-1', marginTop:`${mobile? '20px': '15vh' }`, marginBottom:`${mobile? '20px': '10vh' }`}}>
-                    <Title>Our Partners</Title>
+                  <div style={{width:'100%', textAlign:'center', zIndex:'-1', marginTop:`${mobile? '40px': '15vh' }`, marginBottom:`${mobile? '0px': '10vh' }`}}>
+                    <Title style={{maxWidth:'100vw', marginBottom:'0px'}}>Our Partners</Title>
                   </div>
-                    <div style={{width:'100%', display:'flex', flexDirection:'row', justifyContent:'center', height:'20%'}} >
-                      <Grid container spacing={12} style={{maxWidth:'98vw'}}>
+                    <div style={{width:'100%', display:'flex', flexDirection:'row', justifyContent:'center', height:'20%', marginTop:'0px'}} >
+                      <Grid container spacing={12} style={{maxWidth:'100vw'}}>
                         <Grid item xs={12} md={12}>
                           </Grid>
                           <Grid item xs={12} md={6} >
@@ -59,38 +59,38 @@ const Partnership = ({mobile}
                       <Grid container spacing={2} style={{marginTop:'25vh'}}  id='contactus'>
                         <Grid item xs={12} md={12} style={{zIndex:'-1'}}>
                           <div style={{width:'100%', textAlign:'center'}}>
-                          <Title>Join Our Force</Title>
+                            <Title style={{marginBottom:`${mobile? '0px': ''}`}}>Join Our Force</Title>
                           </div>
-                          </Grid>
+                        </Grid>
                         <Grid item xs={12} md={6} style={{zIndex:'4',}}>
                           <div style={{height:'100%', maxWidth:`${mobile? '90vw':'400px'}`, display:'flex', flexDirection:'column', justifyContent:'flex-end', paddingLeft:'12%', paddingRight:'12%', margin:'auto'}}>
-                          <h2 style={{paddingLeft:'20px'}}>Drop Us a Line</h2>
-                          <Input placeholder='Name' style={{paddingLeft:'10px', borderRadius:'20px', padding:'6px', marginBottom:'10px', width:'auto'}}/>
-                          <Input placeholder='Email' style={{paddingLeft:'10px', borderRadius:'20px', padding:'6px', marginBottom:'10px', width:'auto'}}/>
-                          <div style={{display:'flex', flexDirection:'row', maxWidth:`${mobile? '80vw':'480px'}`, justifyContent:'space-between'}}>
-                            <Input placeholder='Phone' style={{paddingLeft:'10px', borderRadius:'20px', padding:'6px', marginBottom:'10px',  flex:1, width:'50%' }}/>
-                            <Input placeholder='Subject' style={{paddingLeft:'10px', borderRadius:'20px', padding:'6px', marginBottom:'10px', flex:1, width:'50%' }}/>
-                          </div>
-                          <textarea rows='3' placeholder='' style={{padding:'10px', borderRadius:'10px', marginBottom:'10px', width:'auto'}}/>
+                            <h2 style={{paddingLeft:`${mobile? '0px':'20px'}`, textAlign:`${mobile?'center':''}`}}>Drop Us a Line</h2>
+                            <Input placeholder='Name' style={{paddingLeft:'10px', borderRadius:'20px', padding:'6px', marginBottom:'10px', width:'auto'}}/>
+                            <Input placeholder='Email' style={{paddingLeft:'10px', borderRadius:'20px', padding:'6px', marginBottom:'10px', width:'auto'}}/>
+                            <div style={{display:'flex', flexDirection:'row', maxWidth:`${mobile? '80vw':'480px'}`, justifyContent:'space-between'}}>
+                              <Input placeholder='Phone' style={{paddingLeft:'10px', borderRadius:'20px', padding:'6px', marginBottom:'10px',  flex:1, width:'50%' }}/>
+                              <Input placeholder='Subject' style={{paddingLeft:'10px', borderRadius:'20px', padding:'6px', marginBottom:'10px', flex:1, width:'50%' }}/>
+                            </div>
+                            <textarea rows='3' placeholder='' style={{padding:'10px', borderRadius:'10px', marginBottom:'10px', width:'auto'}}/>
                           </div>
                         </Grid>
                         <Grid item xs={12} md={6}>
-                        <div style={{ lineHeight:'1.2rem',height:'100%', maxWidth:'400px', display:'flex', flexDirection:'column', justifyContent:'center', paddingLeft:'14%', paddingRight:'14%', margin:'auto' , textAlign:`${mobile? 'center': 'right'}`}}>
-                          <h2>Contact Address</h2>
-                          <p>
-                          RPX Building 7th floor,<br/>
-                          Jl. Ciputat Raya no.99<br/>
-                          12310 DKI Jakarta, Indonesia<br/>
-                          (021) 75918007<br/>
-                            info@space.com
-                          </p>
+                          <div style={{ lineHeight:'1.2rem',height:'100%', maxWidth:'400px', display:'flex', flexDirection:'column', justifyContent:'center', paddingLeft:'14%', paddingRight:'14%', margin:'auto' , textAlign:`${mobile? 'center': 'right'}`}}>
+                            <h2>Contact Address</h2>
+                            <p>
+                            RPX Building 7th floor,<br/>
+                            Jl. Ciputat Raya no.99<br/>
+                            12310 DKI Jakarta, Indonesia<br/>
+                            (021) 75918007<br/>
+                              info@space.com
+                            </p>
                           </div>
                         </Grid>
                       </Grid>
                       <MobileFooter mobile={mobile}/>
-                      </div>
+                    </div>
 
-                      <TestingComponent mobile={mobile}/>
+                      {/* <TestingComponent mobile={mobile}/> */}
                   </div> 
                 </div>
              </ContentDiv>

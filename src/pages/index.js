@@ -34,21 +34,17 @@ const Home = () => {
 
     return (
             <div style={{minWidth:'100%', display:'flex', flexDirection:'column', fontFamily:'Exo2'}}>
-            <Sidebar isOpen={isOpen} toggle={toggle}/>
-            <Navbar toggle={toggle}/>
-            <div style={{position:'fixed', top:'-50%', left:'', width:'200vw', height:'200%', }}>
-                <video style={{position: 'fixed', height:'100vh', width: '100%',right:'0', top:0, bottom:0, left:0, margin:'auto', zIndex:-4, overflow:'hidden', opacity: 1, background:'black', objectFit:'cover', objectPosition:'center'}} autoPlay loop muted src={bgvideo} type='video/mp4'/>
-                <div style={{position:'fixed',height:'100vh', width: 'auto', margin:'auto', top:0, bottom:0, right:0, left:0, background:'white', opacity:.2, zIndex:-3,overflowX:'hidden'}}/>
+                <Sidebar isOpen={isOpen} toggle={toggle}/>
+                <Navbar toggle={toggle}/>
+                <div style={{position:'fixed', top:'-50%', left:'', width:'200vw', height:'200%', }}>
+                    <video style={{position: 'fixed', height:'100vh', width: '100%',right:'0', top:0, bottom:0, left:0, margin:'auto', zIndex:-4, overflow:'hidden', opacity: 1, background:'black', objectFit:'cover', objectPosition:'center'}} autoPlay loop muted src={bgvideo} type='video/mp4'/>
+                    <div style={{position:'fixed',height:'100vh', width: 'auto', margin:'auto', top:0, bottom:0, right:0, left:0, background:'white', opacity:.2, zIndex:-3,overflowX:'hidden'}}/>
+                </div>
+                <HomePage/>
+                <AboutUsPage mobile={isMobile}/>
+                <OurProducts mobile={isMobile}/>
+                <Partnership mobile={isMobile}/>
             </div>
-            <HomePage/>
-            <AboutUsPage mobile={isMobile}/>
-            <OurProducts mobile={isMobile}/>
-            {/* <OurTarget/> */}
-            <Partnership mobile={isMobile}/>
-            {/* <ContactUsSection/> */}
-            {/* <Footer/> */}
-            {/* <div style={{position:'flex',height:'200px', width:'auto'}}></div> */}
-        </div>
     )
 }
 

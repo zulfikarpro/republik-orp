@@ -15,15 +15,15 @@ const Sidebar = ({isOpen, toggle}) => {
                     <SidebarLink to='whoweare' onClick={toggle} offset={-80}>
                         Who We are
                     </SidebarLink>
-                    <SidebarLink to='ourproduct' onClick={toggle}>
+                    <SidebarLink to='ourproduct' onClick={toggle} offset={-190}>
                         Our Service
                     </SidebarLink>
                     {/* <SidebarLink to='ourtarget' onClick={toggle}>
                         Our Target
                     </SidebarLink> */}
-                    <SidebarLink to='ourpartner' onClick={toggle} >
+                    <SidebarLink to='ourpartner' onClick={toggle} offset={-80}>
                         Our Partner
-                    </SidebarLink><SidebarLink to='contactus' onClick={toggle}>
+                    </SidebarLink><SidebarLink to='contactus' onClick={toggle} offset={-60}>
                         Join Our Force
                     </SidebarLink>
 

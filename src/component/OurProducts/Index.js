@@ -42,24 +42,24 @@ const OurProducts = ({mobile}
   ) => {
     return (
         <>
-               <Container id="ourproduct" style={{height:'100vh', background:'red'}}>
+               <Container id="ourproduct" style={{height:'100vh', paddingTop:`${mobile? '40px':''}`}}>
                  <ContentDiv>
                  <DivBackground style={{ backgroundImage:`url(${bg})`, margin:'auto'}}>
                    <div style={{display:'flex', flexDirection:'column', color:'#fff',  width:'100%', height:`${mobile? '100vh': '70vh'}`,marginTop:`${mobile?'':'auto'}`, justifyContent:'center'}}>
-                      <Title>Our Services</Title>
-                     <Grid container spacing={2}>
+                      <Title style={{marginBottom:`${mobile? '0px': ''}`, paddingBottom:'20px'}}>Our Services</Title>
+                     <Grid container spacing={0} >
                       <Grid item xs={12} md={6}>
-                        <div style={{minHeight:'30vh' ,maxHeight:'60vh', display:'flex', flexDirection:'column', justifyContent:'flex-end'}}>
+                        <div style={{minHeight:`${mobile?'auto':'30vh'}` ,maxHeight:'60vh', display:'flex', flexDirection:'column', justifyContent:`${mobile?'flex-start': 'flex-end'}`}}>
                           <div style={{display:'flex', width:'100%', flexDirection:'row', justifyContent:'center'}}>
-                             <div style={{display:'flex', flexDirection:'column', height:'60%', justifyContent:'flex-end'}}>
-                              <h1 style={{lineHeight:'.8', cursor:'pointer'}}id='telco' onMouseDown={()=> onProductSeclected(true)}>Telecomunication</h1>
-                              <h1 style={{lineHeight:'.8', color:'grey', cursor:'pointer'}} id='wireless' onMouseDown={()=> onProductSeclected(false)}>Wireless Telecomunication</h1>
+                             <div style={{display:'flex', flexDirection:'column', height:`${mobile? '20%':'60%'}`, justifyContent:'flex-end'}}>
+                              <h1 style={{lineHeight:'.8', cursor:'pointer', fontSize:`${mobile? '1.4rem': ''}`, marginBottom:`${mobile? '0px': ''}`}}id='telco' onMouseDown={()=> onProductSeclected(true)}>• Telecomunication</h1>
+                              <h1 style={{lineHeight:'.8', color:'grey', cursor:'pointer', fontSize:`${mobile? '1.4rem': ''}`, marginBottom:`${mobile? '0px': ''}`}} id='wireless' onMouseDown={()=> onProductSeclected(false)}>• Wireless Telecomunication</h1>
                             </div>
                           </div>
                         </div>
                       </Grid>
                       <Grid item xs={12} md={6}>
-                      <div style={{display:'flex', flexDirection:'column', justifyContent:'center', height:'60vh', width:'100%',}}>
+                      <div style={{display:'flex', flexDirection:'column', justifyContent:'center', height:'60vh', width:'100%'}}>
                         <div style={{display:'flex', flexDirection:'row', justifyContent:'center', width:`${mobile?'70vw':'100%'}`, margin:'auto', alignItems:'center'}}>
                         <Carousel
                         style={{padding:'10%', justifySelf:'center', background:'red'}}
