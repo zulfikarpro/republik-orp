@@ -53,5 +53,7 @@ export const Title = styled.h1`
     color:#282855;
     @media screen and (max-width:960px){
         font-size: 6vw;
+        margin-left:auto;
+        margin-right:auto;
     }
 `

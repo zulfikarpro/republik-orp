@@ -11,7 +11,7 @@ export const Text1 = styled.p`
 
     @media screen and (max-width:960px){
         width:70%;
-    font-size: .8rem;
+    font-size: 1.1rem;
     }
 `
 
@@ -24,7 +24,7 @@ font-size: 1.1rem;
 max-width: 500px;
 @media screen and (max-width:960px){
         width:70%;
-    font-size: .8rem;
+    font-size: 1rem;
     }
 
 `

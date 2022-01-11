@@ -34,4 +34,7 @@ height:40px;
 export const FooterSecondLine = styled.div`
 font-size: 1rem;
 
+@media screen and (max-width:960px){
+    font-size:.8rem;
+}
 `

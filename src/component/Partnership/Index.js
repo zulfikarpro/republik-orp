@@ -109,8 +109,8 @@ const MobileFooter = ({mobile}) =>{
           <FaYoutube style={{width:'auto', height:'30px',marginRight:'8px'}}/>
         </div>
 
-        <div style={{maxWidth:'100%', paddingRight:'15%', paddingLeft:'15%', textAlign:'center', fontSize:'1rem'}}>
-          © 2021 Republik Space.  Trademarks and brands are the property of their respective owners.
+        <div style={{maxWidth:'100%', paddingRight:'15%', paddingLeft:'15%', textAlign:'center', fontSize:'.8rem'}}>
+          © 2021 Republik Space.  <br/> Trademarks and brands are the property of their respective owners.
         </div>
       </div>
     )
