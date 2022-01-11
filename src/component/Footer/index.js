@@ -15,7 +15,7 @@ const Footer = () => {
                         <FaYoutube style={{width:'auto', height:'30px',marginRight:'8px'}}/>
                     </FooterFirstLine>
                     <FooterSecondLine style={{textAlign:'center', marginRight:'20px', marginLeft:'20px', marginBottom:'20px'}}>
-                    © 2021 Trimatra Industries.  Trademarks and brands are the property of their respective owners.
+                    © 2021 Trimatra Industries. <br/> Trademarks and brands are the property of their respective owners.
                     </FooterSecondLine>
                 </FooterWrapper>
             </FooterContainer>

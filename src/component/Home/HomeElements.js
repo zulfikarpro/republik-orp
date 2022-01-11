@@ -11,6 +11,9 @@ export const Container = styled.div`
 
     @media screen and (max-width:960px){
         height: ${({ double }) => (double ? '200vh' : '100vh')};
+        max-width:100vw;
+        max-height: 100vh;
+        max-width: 100vw;
     } 
 `
 
@@ -21,7 +24,8 @@ export const ContentDiv = styled.div`
     height:100vh;
 
     @media screen and (max-width:960px){
-    height:120vh;
+    height:100vh;
+    width: 100vw;
         /* height: ${({ double }) => (double ? '200vh' : '100vh')}; */
     } 
 

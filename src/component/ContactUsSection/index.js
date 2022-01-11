@@ -10,11 +10,14 @@ const ContactUsSection = ({mobile}) => {
     <ContentDiv
       double={true}
       style={{
-        width: '98.6vw',
+        // width: `${mobile? '100vw': '98.6vw'}`,
+        width:'100vw',
+        height:`${mobile? '100vh': '100vh'}`,
+        maxWidth:'100vw',
         margin: 'auto',
         background: "linear-gradient(270deg, #596B80 27.08%, #0C1A2B 112.98%)",
         paddingBottom:'0px',
-        justifyContent:'flex-end'
+        justifyContent:'flex-start'
       }}
 
     >
@@ -37,11 +40,11 @@ const ContactUsSection = ({mobile}) => {
           </h1>
           <div
             style={{
-              width: "80%",
+              width: `${mobile? '96vw':'100vw' }`,
               display: "flex",
               flexDirection: "row",
               justifyContent: "center",
-              margin: 'auto',
+              // margin:'auto',
               marginBottom:'0px',
               marginTop:'0px',
             }}
@@ -76,7 +79,7 @@ const ContactUsSection = ({mobile}) => {
                       justifyContent: "flex-start",
                     }}
                   >
-                    <h2>Drop us a Line</h2>
+                    <h3 style={{margin:'auto', marginBottom:'20px'}}>Drop us a Line</h3>
                   </div>
                   <div
                     style={{
@@ -182,17 +185,18 @@ const ContactUsSection = ({mobile}) => {
                   }}
                 >
                   <div>
-                    <h2 style={{textAlign:`${mobile? 'center': 'right'}`, 
-                      width: "100%"}}>Contact Address</h2>
+                    <h3 style={{textAlign:`${mobile? 'center': 'right'}`, 
+                      width: "100%", marginBottom:`${mobile? '0px':''}`, marginTop:`${mobile? '0px':''}`}}>Contact Address</h3>
                   </div>
                   <div
                     style={{
+                      marginTop:'0px',
                       display: "flex",
                       flexDirection: "row",
                       justifyContent: `${mobile? 'center':'flex-end'}`,
                     }}
                   >
-                    <p style={{ textAlign: `${mobile? 'center': 'right'}`, fontSize:'1.2rem' }}>
+                    <p style={{ textAlign: `${mobile? 'center': 'right'}`, fontSize:`${mobile?'.8rem':'1.2rem'}` }}>
                     RPX Building 7th floor,<br/>
                     Jl. Ciputat Raya no.99<br/>
                     12310 DKI Jakarta, Indonesia<br/>
@@ -204,7 +208,7 @@ const ContactUsSection = ({mobile}) => {
               </Grid>
             </Grid>
           </div>
-          <div style={{marginBottom:'0px', display:'flex'}}>
+          <div style={{marginBottom:'0px', display:'flex', justifySelf:'flex-end'}}>
             <Footer/>
           </div>
         </div>

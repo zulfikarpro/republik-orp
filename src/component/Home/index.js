@@ -6,9 +6,9 @@ import banner2 from '../../images/banner/banner2.png'
 import banner3 from '../../images/banner/banner3.png'
 import titletrimatra from '../../images/titletrimatra.png'
 
-const HomePage = () => {
+const HomePage = ({mobile}) => {
     return (
-        <Container>
+        <Container style={{backgeround:'red'}}> 
             <ContentDiv id='home'>
                 <TitleDiv style={{left:'0', top:'0',display:'flex', flexDirection:'row',margin:'auto',position:'absolute', height:'100vh',width:'100%'}}>
                     <div style={{display:'flex', flexDirection:'row', justifyContent:'flex-start', width:'90%', zIndex:'4'}}>

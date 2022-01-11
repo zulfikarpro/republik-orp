@@ -6,7 +6,7 @@ import brand1 from '../../images/brand/brand1.png'
 import brand2 from '../../images/brand/brand2.png'
 import brand3 from '../../images/brand/brand3.png'
 import brand4 from '../../images/brand/brand4.png'
-const Partnership = (
+const Partnership = ({mobile}
   ) => {
     return (
         <>
@@ -17,10 +17,11 @@ const Partnership = (
               </div>
                <div style={{width:'100%', height:'100%',display:'flex', flexDirection:'row', justifyContent:'flex-end', marginTop:'10%'}}>
                   
-                  <div style={{width:'50%', color:'white', marginRight:'20px'}}>
+                  <div style={{width:'50%', color:'white', marginRight:`${mobile?'30px':'20px'}`, marginTop:`${mobile?'40px':''}`}}>
                   <Grid container spacing={6}>
                     <Grid item xs={12}>
                     <h1 style={{marginLeft:'5px'}}>Partnership</h1>
+                    <div style={{height:'2px', width:'200px', backgroundColor:`${mobile?'white': '' }`}}></div>
                     </Grid>
                     <Grid item xs={12}md={6} style={{ display:'flex', flexDirection:'row', justifyContent:'flex-start'}}>
                     <img style={{maxWidth:'350px', margin:'auto', width:'100%'}} src={brand2}/>
@@ -32,9 +33,9 @@ const Partnership = (
                     
                     <img style={{maxWidth:'350px', margin:'auto', width:'100%'}}src={brand4}/>
                     </Grid>
-                    <Grid item xs={12}md={6} style={{ display:'flex', flexDirection:'row', justifyContent:'flex-start'}}>
+                    <Grid item xs={12}md={6} style={{ display:'flex', flexDirection:'row', justifyContent:'center'}}>
                     
-                    <img style={{maxWidth:'350px', margin:'auto', width:'100%'}} src={brand3}/>
+                    <img style={{maxWidth:'200px', margin:'', width:'100%'}} src={brand3}/>
                     </Grid>
                   </Grid>
                   </div>

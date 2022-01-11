@@ -19,7 +19,7 @@ export const H2 = styled.h2`
 export const P = styled.p`
     font-size: 1.2rem;
     @media screen and (max-width: 960px){
-        
+        text-align: center;
     font-size: .8rem;
     }
 `

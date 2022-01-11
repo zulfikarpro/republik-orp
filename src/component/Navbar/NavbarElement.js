@@ -7,6 +7,7 @@ background: linear-gradient(to right, #fff, transparent);
   height: 80px;
   margin-top: -80px;
   width: 100%;
+  max-width:100vw;
   display: flex;
   justify-content: center;
   align-items: center;
