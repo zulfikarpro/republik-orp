@@ -15,7 +15,7 @@ const Sidebar = ({isOpen, toggle}) => {
                     <SidebarLink to='whatwedo' onClick={toggle}>
                         What We Do
                     </SidebarLink>
-                    <SidebarLink to='ourproduct' onClick={toggle}>
+                    <SidebarLink to='ourproduct' onClick={toggle} offset={-40}>
                         Our Companies
                     </SidebarLink>
                     {/* <SidebarLink to='ourpartner' onClick={toggle}>

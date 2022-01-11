@@ -16,42 +16,41 @@ const ContactUsSection = ({mobile}
                   <Grid container spacing={2} style={{margin:'auto'}}>
                     <Grid item xs={12} md={6}>
                       <div style={{display:'flex', flexDirection:'column',width:'80%', marginLeft:'auto', marginRight:'auto'}}>
-                      <div style={{display:'flex', flexDirection:'row', width:'100%' , justifyContent:'center'}}>
-                        <Title id='contactus' >Contact Us</Title>
+                        <div style={{display:'flex', flexDirection:'row', width:'100%' , justifyContent:'center'}}>
+                          <Title id='contactus' >Contact Us</Title>
                         </div>
                         <div style={{display:'flex', flexDirection:'row', width:'100%' , justifyContent:'center'}}>
                           <input placeholder='Your Name' style={{padding:'10px', borderRadius:'30px', marginBottom:'10px', width:'100%'}}/>
-                          </div>
-                          
+                        </div>    
                         <div style={{display:'flex', flexDirection:'row', width:'100%' , justifyContent:'center'}}>
-                        <input placeholder='Your email' style={{padding:'10px', borderRadius:'30px', marginBottom:'10px', width:'100%'}}/>
+                          <input placeholder='Your email' style={{padding:'10px', borderRadius:'30px', marginBottom:'10px', width:'100%'}}/>
                         </div>
                         <div style={{display:'flex', flexDirection:'row', width:'100%' , justifyContent:'center'}}>
-                        <textarea rows='12' placeholder='' style={{padding:'10px', borderRadius:'10px', marginBottom:'10px', width:'100%'}}/>
+                          <textarea rows='12' placeholder='' style={{padding:'10px', borderRadius:'10px', marginBottom:'10px', width:'100%'}}/>
                         </div>
                       </div>
                     </Grid>
                     <Grid item xs={12} md={2}>
                     </Grid>
                     <Grid item xs={12}md={4}>
-                    <div style={{display:'flex', flexDirection:'column', minWidth:'400px'}}>
-                      <div>
-                        <h2>Address</h2> 
-                      </div>
-                        <div style={{display:'flex', flexDirection:'row', justifyContent:'center', width:'100%'}}>
-                        <p style={{textAlign:'center', maxWidth:'300px', fontSize:'1.2rem'}}>
+                    <div style={{display:'flex', flexDirection:'column', minWidth:'400px', justifyContent:'center'}}>
+                      {/* <div style={{background:'green'}}> */}
+                        <h2 style={{marginTop:`${mobile? '0px':''}`}}>Address</h2> 
+                      {/* </div> */}
+                      <div style={{display:'flex', flexDirection:'row', justifyContent:'center', width:'100%', paddingTop:'0px'}}>
+                        <p style={{textAlign:'center', maxWidth:'300px', fontSize:`${mobile?'1rem':'1.2rem'}`, marginTop:`${mobile?'0px':''}`, marginBottom:`${mobile?'0px':''}`}}>
                           RPX Center Building 9th floor, <br/>Jl. Ciputat Raya no. 99<br/>12310 DKI Jakarta, Indonesia 
                         </p>
-                        </div>
-                        <div>
-                        <h2>Contact</h2> 
                       </div>
-                        <div style={{display:'flex', flexDirection:'row', justifyContent:'center', width:'100%'}}>
-                        <p style={{textAlign:'center', maxWidth:'200px', fontSize:'1.2rem'}}>
+                      {/* <div> */}
+                        <h2>Contact</h2> 
+                      {/* </div> */}
+                      <div style={{display:'flex', flexDirection:'row', justifyContent:'center', width:'100%'}}>
+                        <p style={{textAlign:'center', maxWidth:'200px', fontSize:`${mobile?'1rem':'1.2rem'}`,  marginTop:`${mobile?'0px':''}`, marginBottom:`${mobile?'0px':''}`}}>
                         (021) 75918007
                         info@republikorp.com
                         </p>
-                        </div>
+                      </div>
                       </div>
                     </Grid>
                   </Grid>

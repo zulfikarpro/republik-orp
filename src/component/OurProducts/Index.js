@@ -37,7 +37,7 @@ const OurProducts = ({mobile}
                  <ContentDiv style={{backgroundImage:`url(${bg})`, height:'100vh', paddingTop:'50px',objectFit:'contain', backgroundRepeat:'no-repeat', backgroundPositionX:`${mobile? '-500px': '0px'}`}}>
                  {/* <DivBackground style={{ backgroundImage:`url(${bg})`}}> */}
                    <div style={{display:'flex', flexDirection:'column', color:'#fff',  width:'100%', height:'100%', justifyContent:'center', background:'rgba(0,0,0,0.4)'}}>
-                     <Grid container spacing={5} style={{maxWidth:'90%', margin:'auto'}}>
+                     <Grid container spacing={mobile? 2 : 5} style={{maxWidth:'96%', margin:'auto'}}>
                        <Grid item xs={12} md={12}>
                        <h1 style={{textAlign:'center'}}>Our Companies</h1>
                        </Grid>
