@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container, ContentDiv } from '../Home/HomeElements'
 import bg from '../../images/bg/partnersbg.png'
-import bgmobile from '../../images/bg/partnersbgmobile.png'
+import bgmobile from '../../images/bg/bgourclients.png'
 import client from '../../images/clients.png'
 import clientmobile from '../../images/clientsmobile.png'
 import { H1 } from '../AboutUs/AboutUsElement'
