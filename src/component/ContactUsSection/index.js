@@ -3,13 +3,15 @@ import { Container, ContentDiv } from '../Home/HomeElements'
 import { ContactUsDiv } from './ContactUsElement'
 import Footer from '../Footer'
 import bg from '../../images/bg/contactusbg.png'
+import bgMobile from '../../images/bg/bgMobileContactus.png'
 import { Grid } from '@material-ui/core'
 import {FaEnvelope, FaMailchimp, FaMapMarkerAlt, FaPhone} from 'react-icons/fa'
 import { ContentWrapper } from '../AboutUs/AboutUsElement'
 const ContactUsSection = ({mobile}
   ) => {
+    const Background = mobile? bgMobile : bg
     return (
-      <div id='contactus'style={{display:'flex', flexDirection:'column', justifyContent:'flex-end',backgroundImage:`url(${bg})`, backgroundRepeat:'no-repeat', backgroundSize:'cover',minHeight:'100vh', height:'100%', width:'100%'}}>
+      <div id='contactus'style={{display:'flex', flexDirection:'column', justifyContent:'flex-end',backgroundImage:`url(${Background})`, backgroundRepeat:'no-repeat', backgroundSize:'cover',minHeight:'100vh', height:'100%', width:'100%'}}>
       <div style={{display:'flex', flexDirection:'row', justifyContent:'center', color:'white', textAlign:'center', width:'90%', margin:'auto'}}>
       <Grid container spacing={2} style={{margin:'auto',marginTop:'80px', width:'100%'}}>
                     <Grid item xs={12}md={6} style={{display:'flex', flexDirection:'row', justifyContent:'center'}}>

@@ -1,6 +1,7 @@
 import React from 'react'
 import {Container, ContentDiv } from '../Home/HomeElements'
 import bg from '../../images/bg/projectbg.png'
+import bgMobile from '../../images/bg/bgprojects.png'
 import image from '../../images/bg/projectimg.png'
 import Carousel from 'react-material-ui-carousel'
 import { H1,H2,P } from '../AboutUs/AboutUsElement'
@@ -24,13 +25,13 @@ const CarouselContent = ({pic})=>{
     )
 }
 
-const TextTitle = (mobile) =>{
+const TextTitle = ({mobile}) =>{
     if(mobile){
         return(<div><H1 style={{fontSize:'2.4rem'}}>Projects</H1>
         <div style={{height:'2px', width:'40%',margin:'auto', background:'white', marginTop:'0px'}}/></div>)
     }else{
         return(
-            <div style={{position:'absolute', maxWidth:'400px', right:'0', marginRight:'10%', color:'white', zIndex:2, display:'flex', flexDirection:'column'}}>
+            <div style={{position:'absolute', maxWidth:'400px', right:'0', marginRight:'10%', color:'white', zIndex:2, display:'flex', flexDirection:'column', bakcground:'red'}}>
                     <H1 style={{fontSize:'3vw'}}>Projects</H1>
                     <div style={{height:'2px', width:'100%', background:'white', marginTop:'0px'}}/>
                     {/* <P style={{textAlign:'justify', fontSize:'1.2vw'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</P> */}
@@ -40,8 +41,10 @@ const TextTitle = (mobile) =>{
     }
 }
 const ProjectsPage = ({mobile}) => {
+    const deviceTypeMobile = mobile || true;
+    const BackgroundImages = mobile? bgMobile: bg;
     return (
-        <Container style={{display:'flex', flexDirection:'column', justifyContent:'flex-end',backgroundImage:`url(${bg})`, backgroundRepeat:'no-repeat', backgroundSize:'cover',minHeight:'100vh', height:'100%', width:'100%'}}>
+        <Container style={{display:'flex', flexDirection:'column', justifyContent:'flex-end',backgroundImage:`url(${BackgroundImages})`, backgroundRepeat:'no-repeat', backgroundSize:'100vw', backgroundPositionX:'', minHeight:'100vh', height:'100%', width:'100%'}}>
             <ProjectsDiv style={{}}>
                     
              <CarouselDiv id='projects'>
@@ -63,7 +66,8 @@ const ProjectsPage = ({mobile}) => {
                  </Carousel>
              </CarouselDiv>
              <TitleDiv>
-                   <TextTitle mobile={mobile}/>
+                   <TextTitle mobile={deviceTypeMobile}/>
+                   <h1>{deviceTypeMobile}</h1>
                 </TitleDiv>
             </ProjectsDiv>
         </Container>

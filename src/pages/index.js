@@ -41,10 +41,8 @@ useEffect(() => {
             <HomePage mobile={isMobile}/>
             <AboutUsPage mobile={isMobile}/>
             <FacilitiesPage mobile={isMobile}/>
-            <ProjectsPage/>
+            <ProjectsPage mobile={isMobile}/>
             <ContactUsSection mobile={isMobile}/>
-            {/* <Footer/> */}
-            {/* <div style={{position:'flex',height:'200px', width:'auto'}}></div> */}
         </div>
     )
 //   }else{
