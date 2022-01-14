@@ -7,13 +7,13 @@ const AboutUsPage = ({mobile}
   ) => {
     return (
         <>
-           <Container style={{minHeight:'100%', minWidth:'100%', marginTop:'0px', justifyContent:'flex-start'}}>
+           <Container style={{minHeight:`${mobile?'110vh':'100%'}`, minWidth:'100%', marginTop:'0px', justifyContent:'flex-start'}}>
              <ContentDiv style={{minWidth:'100%', minHeight:'100%',height:'100vh', justifyContent:'flex-start'}} id='whoweare'>
-               <img style={{ objectFit:'cover', objectPosition:'70%', zIndex:-1, minHeight:'60%' }} src={bg}/>
+               <img style={{ objectFit:'cover', objectPosition:'70%', zIndex:-1, minHeight:'60%'}} src={bg}/>
                {/* <div style={{height:'100%'}}> */}
-                <div style={{position:'absolute', width:'100%', height:'100%',display:'flex', flexDirection:'row', justifyContent:'end'}}>
+                <div style={{position:'absolute', width:'100%', height:'100%',display:'flex', flexDirection:'row', justifyContent:'end', background:`${mobile?'rgba(0,0,0,.3)':''}`}}>
                   <div style={{width:`${mobile? '0%':'20%'}`,height:'100%'}}/>
-                    <div style={{display:'flex', flexDirection:'column', color:'#fff', maxWidth:'90%', justifyContent:'center', marginLeft:`${mobile? 'auto': ''}` , marginRight:`${mobile? 'auto': ''}` , marginTop:'0px'}}>
+                    <div style={{display:'flex', flexDirection:'column', color:'#fff', maxWidth:'90%', justifyContent:'center', marginLeft:`${mobile? 'auto': ''}` , marginRight:`${mobile? 'auto': ''}` , marginTop:`${mobile?'20px':''}`}}>
                       <Title>Who We Are</Title>
                       <Text2>Republik Aerospace Dirgantara Established to strengthen the Indonesian Defense ecosystem</Text2>
                       <Text2>pushes aerospace innovation and technology for strategic advancements which will further drive Indonesia's global positioning. </Text2>

@@ -37,7 +37,7 @@ const ContactUsSection = (
                     </Grid>
                     <Grid item xs={8}md={6}>
                     <div style={{display:'flex', flexDirection:'column', minWidth:'400px'}}>
-                      <div>
+                      <div style={{marginTop:'400px'}}>
                         <h2>Contact Address</h2>
                         
                       </div>

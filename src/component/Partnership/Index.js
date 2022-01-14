@@ -20,31 +20,30 @@ const Partnership = ({mobile}
                {/* <div style={{height:'100%'}}> */}
                 <div style={{position:'absolute', width:'100vw', height:'100%', display:'flex', flexDirection:'row', justifyContent:'center'}}  id="ourpartner">
                   <div style={{display:'flex', flexDirection:'column', color:'#fff',justifyContent:'space-evenly', height:'200%' , padding:'0px'}}>
-
-                  <div style={{width:'100%', textAlign:'center', zIndex:'-1', marginTop:`${mobile? '40px': '15vh' }`, marginBottom:`${mobile? '0px': '10vh' }`}}>
-                    <Title style={{maxWidth:'100vw', marginBottom:'0px'}}>Our Partners</Title>
-                  </div>
+                    <div style={{width:'100%', textAlign:'center', zIndex:'-1', marginTop:`${mobile? '0px': '15vh' }`, marginBottom:`${mobile? '0px': '10vh' }`}}>
+                      <Title style={{maxWidth:'100vw', marginBottom:'0px'}}>Our Partners</Title>
+                    </div>
                     <div style={{width:'100%', display:'flex', flexDirection:'row', justifyContent:'center', height:'20%', marginTop:'0px'}} >
-                      <Grid container spacing={12} style={{maxWidth:'90vw'}}>
+                      <Grid container spacing={0} style={{maxWidth:'90vw'}}>
+                        {/* <Grid item xs={12} md={12} style={{}}>
+                          </Grid> */}
                         <Grid item xs={12} md={12}>
-                          </Grid>
-                          <Grid item xs={12} md={6} >
-                            <div style={{width:'100%', maxWidth:`${mobile?'':'500px'}`, margin:'auto', marginLeft:'10px', display:'flex', flexDirection:'row', justifyContent:'center'}}>
+                            <div style={{width:'100%', maxWidth:`${mobile?'':'500px'}`, margin:'auto', marginLeft:`${mobile?'-10px':''}`, display:'flex', flexDirection:'row', justifyContent:'center'}}>
                             <Img src={brand1}/>
                             </div>
                           </Grid>
-                          <Grid item xs={12} md={6}>
-                          <div style={{width:'100%', maxWidth:`${mobile?'':'500px'}`, margin:'auto', marginLeft:'10px', display:'flex', flexDirection:'row', justifyContent:'center'}}>
+                        <Grid item xs={12} md={12}>
+                          <div style={{width:'100%', maxWidth:`${mobile?'':'500px'}`, margin:'auto', marginTop:`${mobile?'20px':''}`, marginLeft:'auto', display:'flex', flexDirection:'row', justifyContent:'center'}}>
                             <Img src={brand2}/>
                             </div>
                           </Grid>
-                          <Grid item xs={12} md={6}>
-                          <div style={{width:'100%', maxWidth:`${mobile?'':'500px'}`, margin:'auto', marginLeft:'10px', display:'flex', flexDirection:'row', justifyContent:'center'}}>
+                        <Grid item xs={12} md={12}>
+                          <div style={{width:'100%', maxWidth:`${mobile?'':'500px'}`, margin:'auto', marginTop:`${mobile?'20px':''}`, marginLeft:'auto', display:'flex', flexDirection:'row', justifyContent:'center'}}>
                             <Img src={brand3}/>
                             </div>
                           </Grid>
-                          <Grid item xs={12} md={6}>    
-                          <div style={{width:'100%', maxWidth:`${mobile?'':'500px'}`, margin:'auto', marginLeft:'10px', display:'flex', flexDirection:'row', justifyContent:'center'}}>
+                        <Grid item xs={12} md={12}>
+                          <div style={{width:'100%', maxWidth:`${mobile?'':'500px'}`, margin:'auto', marginTop:`${mobile?'30px':''}`, marginLeft:'auto', display:'flex', flexDirection:'row', justifyContent:'center'}}>
                               <Img src={brand4}/>
                           </div>
                         </Grid>
@@ -52,13 +51,13 @@ const Partnership = ({mobile}
                     </div>
 
                     <div style={{height:`${mobile?'100vh' : '85vh'}`, width:`${mobile?'100vw':''}`}}>
-                      <Grid container spacing={2} style={{marginTop:'25vh', maxWidth:'100vw'}}  id='contactus'>
+                      <Grid container spacing={2} style={{marginTop:'25vh', maxWidth:'100vw', marginRight:'auto', marginLeft:'auto'}}  id='contactus'>
                         <Grid item xs={12} md={12} style={{zIndex:'-1'}}>
                           <div style={{width:'100%', textAlign:'center'}}>
                             <Title style={{marginBottom:`${mobile? '0px': ''}`}}>Join Our Force</Title>
                           </div>
                         </Grid>
-                        <Grid item xs={12} md={6} style={{zIndex:'4',maxWidth:'100vw'}}>
+                        <Grid item xs={12} md={6} style={{zIndex:'4',maxWidth:'100vw', margin:'auto'}}>
                           <div style={{height:'100%', maxWidth:`${mobile? '100vw':'400px'}`, display:'flex', flexDirection:'column', justifyContent:'flex-end', paddingLeft:'12%', paddingRight:'12%', margin:'auto'}}>
                             <h2 style={{paddingLeft:`${mobile? '0px':'20px'}`, textAlign:`${mobile?'center':''}`}}>Drop Us a Line</h2>
                             <Input placeholder='Name' style={{paddingLeft:'10px', borderRadius:'20px', padding:'6px', marginBottom:'10px', width:'auto'}}/>
@@ -67,11 +66,11 @@ const Partnership = ({mobile}
                               <Input placeholder='Phone' style={{paddingLeft:'10px', borderRadius:'20px', padding:'6px', marginBottom:'10px',  flex:1, width:'50%' }}/>
                               <Input placeholder='Subject' style={{paddingLeft:'10px', borderRadius:'20px', padding:'6px', marginBottom:'10px', flex:1, width:'50%' }}/>
                             </div>
-                            <textarea rows='3' placeholder='' style={{padding:'10px', borderRadius:'10px', marginBottom:'10px', width:'auto'}}/>
+                            <textarea rows='5' placeholder='' style={{padding:'10px', borderRadius:'10px', marginBottom:'10px', width:'auto'}}/>
                           </div>
                         </Grid>
-                        <Grid item xs={12} md={6}>
-                          <div style={{ lineHeight:'1.2rem',height:'100%', maxWidth:'400px', display:'flex', flexDirection:'column', justifyContent:'center', paddingLeft:'14%', paddingRight:'14%', margin:'auto' , textAlign:`${mobile? 'center': 'right'}`}}>
+                        <Grid item xs={12} md={6} style={{maxWidth:'90vw', margin:'auto'}}>
+                          <div style={{marginTop:`${mobile?'80px':''}`,marginBottom:`${mobile?'0px':''}`, lineHeight:'1.2rem',height:'100%', maxWidth:`${mobile?'100vw':'400px'}`, display:'flex', flexDirection:'column', justifyContent:'center', paddingLeft:'14%', paddingRight:'14%', margin:'auto', marginLeft:'auto', marginRight:'auto', textAlign:`${mobile? 'center': 'right'}`}}>
                             <h2>Contact Address</h2>
                             <p>
                             RPX Building 7th floor,<br/>

@@ -16,13 +16,13 @@ const Sidebar = ({isOpen, toggle}) => {
                         Who We are
                     </SidebarLink>
                     <SidebarLink to='ourproduct' onClick={toggle} offset={-190}>
-                        Our Service
+                        Our Services
                     </SidebarLink>
                     {/* <SidebarLink to='ourtarget' onClick={toggle}>
                         Our Target
                     </SidebarLink> */}
                     <SidebarLink to='ourpartner' onClick={toggle} offset={-80}>
-                        Our Partner
+                        Our Partners
                     </SidebarLink><SidebarLink to='contactus' onClick={toggle} offset={-60}>
                         Join Our Force
                     </SidebarLink>

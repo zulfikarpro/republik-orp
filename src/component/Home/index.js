@@ -5,7 +5,7 @@ import Carousel from 'react-material-ui-carousel'
 const HomePage = ({mobile}) => {
     return (
         <Container>
-            <ContentDiv id='home' style={{height:'100vh', width:'100vw', background:`${mobile? '':'rgba(255,255,255,.5 )' }`}}>
+            <ContentDiv id='home' style={{height:'100vh', width:'100vw', background:`${mobile? '':'rgba(255,255,255,.2 )' }`}}>
                 {/* <Img src={titletrimatra}></Img> */}
                 <Title style={{}}>Established to strenghten</Title>
                 <Title>Indonesian Defense ecosystem</Title>
