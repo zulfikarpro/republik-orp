@@ -14,7 +14,7 @@ const Partnership = ({mobile}
   ) => {
     // if(mobile){
     return (
-           <Container style={{overflow:'hidden', maxWidth:'100vw', minHeight:'100%', minWidth:'100%', marginTop:'0px', justifyContent:'flex-start'}}>
+           <Container style={{overflow:'hidden', maxWidth:'100vw', minHeight:'100%', minWidth:`${mobile?'':'100%'}`, marginTop:'0px', justifyContent:'flex-start'}}>
              <ContentDiv style={{minWidth:'100%', minHeight:'100%',height:'200vh', justifyContent:'flex-start', }} >
                <img style={{zIndex:-1 ,height:`${mobile?'200vh':'100%'}`, objectFit:'cover'}} src={bg}/>
                {/* <div style={{height:'100%'}}> */}
@@ -25,44 +25,41 @@ const Partnership = ({mobile}
                     <Title style={{maxWidth:'100vw', marginBottom:'0px'}}>Our Partners</Title>
                   </div>
                     <div style={{width:'100%', display:'flex', flexDirection:'row', justifyContent:'center', height:'20%', marginTop:'0px'}} >
-                      <Grid container spacing={12} style={{maxWidth:'100vw'}}>
+                      <Grid container spacing={12} style={{maxWidth:'90vw'}}>
                         <Grid item xs={12} md={12}>
                           </Grid>
                           <Grid item xs={12} md={6} >
-                            <div style={{width:'100%', maxWidth:'500px', margin:'auto', display:'flex', flexDirection:'row', justifyContent:'center'}}>
+                            <div style={{width:'100%', maxWidth:`${mobile?'':'500px'}`, margin:'auto', marginLeft:'10px', display:'flex', flexDirection:'row', justifyContent:'center'}}>
                             <Img src={brand1}/>
                             </div>
                           </Grid>
                           <Grid item xs={12} md={6}>
-                            
-                          <div style={{width:'100%', maxWidth:'500px', margin:'auto', marginLeft:'10px', display:'flex', flexDirection:'row', justifyContent:'center'}}>
+                          <div style={{width:'100%', maxWidth:`${mobile?'':'500px'}`, margin:'auto', marginLeft:'10px', display:'flex', flexDirection:'row', justifyContent:'center'}}>
                             <Img src={brand2}/>
                             </div>
                           </Grid>
                           <Grid item xs={12} md={6}>
-                            
-                          <div style={{width:'100%', maxWidth:'500px', margin:'auto', marginLeft:'10px', display:'flex', flexDirection:'row', justifyContent:'center'}}>
+                          <div style={{width:'100%', maxWidth:`${mobile?'':'500px'}`, margin:'auto', marginLeft:'10px', display:'flex', flexDirection:'row', justifyContent:'center'}}>
                             <Img src={brand3}/>
                             </div>
                           </Grid>
-                          <Grid item xs={12} md={6}>
-                            
-                          <div style={{width:'100%', maxWidth:'500px', margin:'auto', marginLeft:'10px', display:'flex', flexDirection:'row', justifyContent:'center'}}>
-                            <Img src={brand4}/>
+                          <Grid item xs={12} md={6}>    
+                          <div style={{width:'100%', maxWidth:`${mobile?'':'500px'}`, margin:'auto', marginLeft:'10px', display:'flex', flexDirection:'row', justifyContent:'center'}}>
+                              <Img src={brand4}/>
                           </div>
                         </Grid>
                       </Grid>
                     </div>
 
-                    <div style={{height:`${mobile?'100vh' : '85vh'}`}}>
-                      <Grid container spacing={2} style={{marginTop:'25vh'}}  id='contactus'>
+                    <div style={{height:`${mobile?'100vh' : '85vh'}`, width:`${mobile?'100vw':''}`}}>
+                      <Grid container spacing={2} style={{marginTop:'25vh', maxWidth:'100vw'}}  id='contactus'>
                         <Grid item xs={12} md={12} style={{zIndex:'-1'}}>
                           <div style={{width:'100%', textAlign:'center'}}>
                             <Title style={{marginBottom:`${mobile? '0px': ''}`}}>Join Our Force</Title>
                           </div>
                         </Grid>
-                        <Grid item xs={12} md={6} style={{zIndex:'4',}}>
-                          <div style={{height:'100%', maxWidth:`${mobile? '90vw':'400px'}`, display:'flex', flexDirection:'column', justifyContent:'flex-end', paddingLeft:'12%', paddingRight:'12%', margin:'auto'}}>
+                        <Grid item xs={12} md={6} style={{zIndex:'4',maxWidth:'100vw'}}>
+                          <div style={{height:'100%', maxWidth:`${mobile? '100vw':'400px'}`, display:'flex', flexDirection:'column', justifyContent:'flex-end', paddingLeft:'12%', paddingRight:'12%', margin:'auto'}}>
                             <h2 style={{paddingLeft:`${mobile? '0px':'20px'}`, textAlign:`${mobile?'center':''}`}}>Drop Us a Line</h2>
                             <Input placeholder='Name' style={{paddingLeft:'10px', borderRadius:'20px', padding:'6px', marginBottom:'10px', width:'auto'}}/>
                             <Input placeholder='Email' style={{paddingLeft:'10px', borderRadius:'20px', padding:'6px', marginBottom:'10px', width:'auto'}}/>
