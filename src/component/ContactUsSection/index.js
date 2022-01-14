@@ -203,6 +203,7 @@ const ContactUsSection = ({mobile}) => {
                     xs={12}
                     md={6}
                     style={{
+                      maxWidth:'90vw',
                       display: "flex",
                       flexDirection: "row",
                       justifyContent: "center",

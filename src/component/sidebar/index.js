@@ -23,7 +23,7 @@ const Sidebar = ({isOpen, toggle}) => {
                     </SidebarLink> */}
                     <SidebarLink to='partner' onClick={toggle}>
                         Our Partners
-                    </SidebarLink><SidebarLink to='contactus' onClick={toggle}>
+                    </SidebarLink><SidebarLink to='contactus' onClick={toggle} offset={-20}>
                         Contact Us
                     </SidebarLink>
 

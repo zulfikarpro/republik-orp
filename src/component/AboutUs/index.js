@@ -10,8 +10,8 @@ const AboutUsPage = ({mobile}
       <Container style={{height:'100vh', background:'red', overflow:'hidden'}} id='aboutus'>
           <ContentDiv id='home' style={{background:`url(${main})`, width:'100%',backgroundPosition:'contain', backgroundRepeat:'no-repeat'}}>  
                 {/* <img src={main} style={{left:'0',marginTop:'6vh'}}/>    */}
-                <div style={{left:'0', display:'flex', flexDirection:`${mobile?'column-reverse':'row'}`, height:'100vh', width:'100%', maxWidth:'100vw', zIndex:'1', position:'absolute', marginBottom:'20px'}}>
-                    <div style={{display:'flex', flexDirection:'column', justifyContent:'center', maxWidth:`${mobile?'100%':'50%'}`, width:'100%', color:'white'}}>
+                <div style={{left:'0', display:'flex', flexDirection:`${mobile?'column':'row'}`, height:'100vh', width:'100%', maxWidth:'100vw', zIndex:'1', position:'absolute', marginBottom:'20px'}}>
+                    <div style={{display:'flex', flexDirection:'column', justifyContent:'center', maxWidth:`${mobile?'100%':'50%'}`, width:'100%', color:'white', marginTop:`${mobile?'30vh':''}`}}>
                         <H1 id='aboutus' style={{marginBottom:'10px', maxWidth:'100vw',marginLeft:'40px'}}>About Us</H1>
                         <div style={{height:'2px', width:'40%', background:'white', marginLeft:'40px'}}/>
                         <P style={{maxWidth:'80%', marginLeft:'auto', marginRight:'auto'}}>

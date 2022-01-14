@@ -18,6 +18,6 @@ export const P = styled.p`
     text-align: justify;
     @media screen and (max-width: 960px){
         
-    font-size: 1rem;
+    font-size: .9rem;
     }
 `
