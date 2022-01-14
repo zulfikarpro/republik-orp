@@ -12,10 +12,9 @@ import { Img, Input } from './PartnershipElements'
 import zIndex from '@material-ui/core/styles/zIndex'
 const Partnership = ({mobile}
   ) => {
+    // if(mobile){
     return (
-
-        <>
-           <Container style={{minHeight:'100%', minWidth:'100%', marginTop:'0px', justifyContent:'flex-start'}}>
+           <Container style={{overflow:'hidden', maxWidth:'100vw', minHeight:'100%', minWidth:'100%', marginTop:'0px', justifyContent:'flex-start'}}>
              <ContentDiv style={{minWidth:'100%', minHeight:'100%',height:'200vh', justifyContent:'flex-start', }} >
                <img style={{zIndex:-1 ,height:`${mobile?'200vh':'100%'}`, objectFit:'cover'}} src={bg}/>
                {/* <div style={{height:'100%'}}> */}
@@ -95,8 +94,8 @@ const Partnership = ({mobile}
                 </div>
              </ContentDiv>
            </Container>
-        </>
     )
+  // }else
 }
 
 const MobileFooter = ({mobile}) =>{

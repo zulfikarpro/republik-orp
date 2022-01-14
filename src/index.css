@@ -5,7 +5,13 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
+  /* overflow-y: hidden !important; */
+}
+
+html {
+  margin: 0;
+  max-width: 100% !important;
+  /* overflow-y: hidden !important; */
 }
 
 code {

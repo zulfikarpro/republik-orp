@@ -16,6 +16,7 @@ background: linear-gradient(to right, #fff, transparent);
   z-index: 10;
 
   @media screen and (max-width: 960px) {
+    max-width:100vw
     transition: 0.8s all ease;
   }
 `;
