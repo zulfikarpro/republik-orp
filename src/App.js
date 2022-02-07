@@ -4,7 +4,7 @@ import Home from './pages';
 
 function App() {
   return (
-    <Router>
+    <Router basename='/index.html'>
       <Home/>
       {/* <div style={{height:'1920', width:'100%',backgroundColor: '#fff' }}/> */}
     </Router>

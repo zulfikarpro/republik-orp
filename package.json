@@ -1,7 +1,7 @@
 {
   "name": "republik-orp",
   "version": "0.1.0",
-  "private": true,
+  "homepage": "http://170.187.226.245",
   "dependencies": {
     "@material-ui/core": "^4.12.3",
     "@testing-library/jest-dom": "^5.14.1",
