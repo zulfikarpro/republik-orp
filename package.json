@@ -1,7 +1,7 @@
 {
-  "name": "republik-orp",
+  "name": "republik-space",
   "version": "0.1.0",
-  "private": true,
+  "homepage": "http://179.187.226.245",
   "dependencies": {
     "@material-ui/core": "^4.12.3",
     "@material-ui/icons": "^4.11.2",
