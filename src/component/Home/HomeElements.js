@@ -13,8 +13,6 @@ export const ContentDiv = styled.div`
     flex-direction: column;
     max-height: 100%;
     justify-content: center;
-
-
 `
 
 export const CarouselDiv = styled.div`
@@ -51,6 +49,7 @@ export const Title = styled.h1`
     /* -.5px .5px 0 #fff, */
      .5px .5px 0 #fff;
     color:#282855;
+    margin-left: 10%;
     @media screen and (max-width:960px){
         font-size: 6vw;
         margin-left:auto;
