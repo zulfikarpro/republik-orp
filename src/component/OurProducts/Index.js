@@ -42,10 +42,10 @@ const OurProducts = ({mobile}
   ) => {
     return (
         <>
-               <Container id="ourproduct" style={{height:'100vh', paddingTop:`${mobile? '40px':''}`}}>
-                 <ContentDiv>
+               <Container id="ourproduct" style={{height:'100vh', paddingTop:`${mobile? '40px':''}`, background:'red'}}>
+                 <ContentDiv style={{minWidth:'100%', minHeight:'100%',height:'100vh', justifyContent:'flex-start'}} >
                  <DivBackground style={{ backgroundImage:`url(${bg})`, margin:'auto'}}>
-                   <div style={{display:'flex', flexDirection:'column', color:'#fff',  width:'100%', height:`${mobile? '100vh': '70vh'}`,marginTop:`${mobile?'':'auto'}`, justifyContent:'center', background:'rgba(0,0,0,.4)'}}>
+                   <div style={{display:'flex', flexDirection:'column', color:'#fff',  width:'100%', height:`${mobile? '100vh': '70vh'}`,margin:`${mobile?'':'auto'}`, justifyContent:'center', background:'rgba(0,0,0,.4)'}}>
                       <Title style={{marginBottom:`${mobile? '0px': ''}`, paddingBottom:'20px'}}>Our Services</Title>
                      <Grid container spacing={2} style={{maxWidth:`${mobile?'90vw':''}`, marginRight:`${mobile?'auto':''}` , marginLeft:`${mobile?'auto':''}`}}>
                       <Grid item xs={12} md={6}>

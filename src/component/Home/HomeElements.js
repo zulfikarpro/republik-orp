@@ -4,7 +4,6 @@ export const Container = styled.div`
 z-index: 1;
     display:flex;
     justify-content: center;
-    width: 100vw;
     max-height: 100%;
 `
 
