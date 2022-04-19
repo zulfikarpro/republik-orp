@@ -18,7 +18,7 @@ const Partnership = ({mobile}
                <div style={{width:'100%', height:'100%',display:'flex', flexDirection:'row', justifyContent:'flex-end', marginTop:'10%'}}>
                   
                   <div style={{width:'50%', color:'white', marginRight:`${mobile?'30px':'20px'}`, marginTop:`${mobile?'40px':''}`}}>
-                  <Grid container spacing={6}>
+                  <Grid container spacing={4}>
                     <Grid item xs={12}>
                     <h1 style={{marginLeft:'5px'}}>Partnership</h1>
                     <div style={{height:'2px', width:'200px', backgroundColor:`${mobile?'white': '' }`}}></div>
@@ -30,12 +30,10 @@ const Partnership = ({mobile}
                       <img style={{maxWidth:'350px', margin:'auto', width:'100%'}} src={brand1}/>
                     </Grid>
                     <Grid item xs={12} md={6} style={{ display:'flex', flexDirection:'row', justifyContent:'flex-start'}}>
-                    
-                    <img style={{maxWidth:'350px', margin:'auto', width:'100%'}}src={brand4}/>
+                    <img style={{maxWidth:'350px', width:'100%'}}src={brand4}/>
                     </Grid>
                     <Grid item xs={12}md={6} style={{ display:'flex', flexDirection:'row', justifyContent:'center'}}>
-                    
-                    <img style={{maxWidth:'200px', margin:'', width:'100%'}} src={brand3}/>
+                    <img style={{maxWidth:'300px', margin:'', width:'100%'}} src={brand3}/>
                     </Grid>
                   </Grid>
                   </div>

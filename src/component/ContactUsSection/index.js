@@ -11,7 +11,7 @@ const ContactUsSection = ({mobile}) => {
       double={true}
       style={{
         // width: `${mobile? '100vw': '98.6vw'}`,
-        width:'100vw',
+        width:'99vw',
         height:`${mobile? '100vh': '100vh'}`,
         maxWidth:'100vw',
         margin: 'auto',
@@ -44,7 +44,6 @@ const ContactUsSection = ({mobile}) => {
               display: "flex",
               flexDirection: "row",
               justifyContent: "center",
-              // margin:'auto',
               marginBottom:'0px',
               marginTop:'0px',
             }}
@@ -52,7 +51,7 @@ const ContactUsSection = ({mobile}) => {
             <Grid
               container
               spacing={2}
-              style={{ margin: "auto"}}
+              style={{ }}
             >
               <Grid
                 item
@@ -68,7 +67,7 @@ const ContactUsSection = ({mobile}) => {
                   style={{
                     display: "flex",
                     flexDirection: "column",
-                    width: "100%",
+                    width: "70%",
                   }}
                 >
                   <div
