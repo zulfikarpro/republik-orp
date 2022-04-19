@@ -24,7 +24,7 @@ const Navbar = ({ toggle }) => {
     if (param === true) {
         setScrollNav(true)
     } else {
-      if (window.scrollY >= windowHeight*5 && window.scrollY <= windowHeight*6) {
+      if (window.scrollY >= windowHeight*4 && window.scrollY <= windowHeight*5) {
         setScrollNav(true);
       } else {
         setScrollNav(false);
