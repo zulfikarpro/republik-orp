@@ -61,6 +61,7 @@ export const Img = styled.img`
 
 export const Title = styled.h1`
 width:100%; 
+margin-bottom: 0px;
 text-align:center; 
 position:relative;
 margin-top: 20px;

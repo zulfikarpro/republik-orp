@@ -24,26 +24,26 @@ const Partnership = ({mobile}
                       <Title style={{maxWidth:'100vw', marginBottom:'0px'}}>Our Partners</Title>
                     </div>
                     <div style={{width:'100%', display:'flex', flexDirection:'row', justifyContent:'center', height:'20%', marginTop:'0px'}} >
-                      <Grid container spacing={0} style={{maxWidth:'90vw'}}>
+                      <Grid container spacing={2} style={{maxWidth:'90vw'}}>
                         {/* <Grid item xs={12} md={12} style={{}}>
                           </Grid> */}
                         <Grid item xs={12} md={12}>
-                            <div style={{width:'100%', maxWidth:`${mobile?'':'500px'}`, margin:'auto', marginLeft:`${mobile?'-10px':'auto'}`, display:'flex', flexDirection:'row', justifyContent:'center'}}>
+                            <div style={{width:'100%', maxWidth:`${mobile?'':'500px'}`, margin:'auto', marginLeft:`${mobile?'-10px':''}`, marginBottom:'0px', display:'flex', flexDirection:'row', justifyContent:'center'}}>
                             <Img src={brand1}/>
                             </div>
                           </Grid>
                         <Grid item xs={12} md={12}>
-                          <div style={{width:'100%', maxWidth:`${mobile?'':'500px'}`, margin:'auto', marginTop:`${mobile?'20px':''}`, marginLeft:'auto', display:'flex', flexDirection:'row', justifyContent:'center'}}>
+                          <div style={{width:'100%', maxWidth:`${mobile?'':'500px'}`, margin:'auto', marginTop:`${mobile?'20px':'0px'}`, marginLeft:`${mobile?'-10px':''}`, display:'flex', flexDirection:'row', justifyContent:'center'}}>
                             <Img src={brand2}/>
                             </div>
                           </Grid>
                         <Grid item xs={12} md={12}>
-                          <div style={{width:'100%', maxWidth:`${mobile?'':'500px'}`, margin:'auto', marginTop:`${mobile?'20px':''}`, marginLeft:'auto', display:'flex', flexDirection:'row', justifyContent:'center'}}>
+                          <div style={{width:'100%', maxWidth:`${mobile?'':'500px'}`, margin:'auto', marginTop:`${mobile?'20px':'auto'}`, marginLeft:`${mobile?'-10px':''}`, display:'flex', flexDirection:'row', justifyContent:'center'}}>
                             <Img src={brand3}/>
                             </div>
                           </Grid>
                         <Grid item xs={12} md={12}>
-                          <div style={{width:'100%', maxWidth:`${mobile?'':'500px'}`, margin:'auto', marginTop:`${mobile?'30px':''}`, marginLeft:'auto', display:'flex', flexDirection:'row', justifyContent:'center'}}>
+                          <div style={{width:'100%', maxWidth:`${mobile?'':'500px'}`, margin:'auto', marginTop:`${mobile?'30px':'auto'}`, marginLeft:`${mobile?'-10px':''}`, display:'flex', flexDirection:'row', justifyContent:'center'}}>
                               <Img src={brand4}/>
                           </div>
                         </Grid>
@@ -69,9 +69,9 @@ const Partnership = ({mobile}
                             <textarea rows='5' placeholder='' style={{padding:'10px', borderRadius:'10px', marginBottom:'10px', width:'auto'}}/>
                           </div>
                         </Grid>
-                        <Grid item xs={12} md={6} style={{maxWidth:'90vw', margin:'auto'}}>
-                          <div style={{marginTop:`${mobile?'80px':''}`,marginBottom:`${mobile?'0px':''}`, lineHeight:'1.2rem',height:'100%', maxWidth:`${mobile?'100vw':'400px'}`, display:'flex', flexDirection:'column', justifyContent:'center', paddingLeft:'14%', paddingRight:'14%', margin:'auto', marginLeft:'auto', marginRight:'auto', textAlign:`${mobile? 'center': 'right'}`}}>
-                            <h2>Contact Address</h2>
+                        <Grid item xs={12} md={6} style={{maxWidth:`${mobile?'90vw':'80vw'}`, margin:'auto', height:`${mobile?'':'300px'}`, paddingRight:`${mobile?'0px':'50px'}`}}>
+                          <div style={{marginTop:`${mobile?'80px':''}`,marginBottom:`${mobile?'0px':''}`, lineHeight:'1.2rem',height:'120%', maxWidth:`${mobile?'100vw':'400px'}`, display:'flex', flexDirection:'column', justifyContent:'flex-start',alignContent:'flex-start', paddingLeft:'14%', paddingRight:'14%', margin:'auto', marginLeft:'auto', marginRight:'auto', textAlign:`${mobile? 'center': 'right'}`}}>
+                            <h2 style={{marginBottom:'2px'}}>Contact Address</h2>
                             <p>
                             RPX Building 7th floor,<br/>
                             Jl. Ciputat Raya no.99<br/>
