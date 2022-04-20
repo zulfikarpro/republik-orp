@@ -28,7 +28,7 @@ const Partnership = ({mobile}
                         {/* <Grid item xs={12} md={12} style={{}}>
                           </Grid> */}
                         <Grid item xs={12} md={12}>
-                            <div style={{width:'100%', maxWidth:`${mobile?'':'500px'}`, margin:'auto', marginLeft:`${mobile?'-10px':''}`, display:'flex', flexDirection:'row', justifyContent:'center'}}>
+                            <div style={{width:'100%', maxWidth:`${mobile?'':'500px'}`, margin:'auto', marginLeft:`${mobile?'-10px':'auto'}`, display:'flex', flexDirection:'row', justifyContent:'center'}}>
                             <Img src={brand1}/>
                             </div>
                           </Grid>
