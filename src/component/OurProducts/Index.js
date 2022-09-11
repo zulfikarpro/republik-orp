@@ -9,6 +9,9 @@ import logopalindo from '../../images/products/logopalindo.png'
 import logoexpres from '../../images/products/logoexpres.png'
 import logoarmamen from '../../images/products/logoarmamen.png'
 import logodefensindo from '../../images/products/logodefense.png'
+import logotechno from '../../images/products/logotechno.png'
+import logomotor from '../../images/products/logomotor.png'
+import logokapital from '../../images/products/logokapital.png'
 // import Carousel from 'react-material-ui-carousel'
 // import produk1 from '../../images/products/produk1.png'
 // import produk2 from '../../images/products/produk2.png'
@@ -42,23 +45,37 @@ const OurProducts = ({mobile}
                        <h1 style={{textAlign:'center'}}>Our Companies</h1>
                        </Grid>
                        <Grid item xs={6} md={4} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
-                         <a href='http://139.162.57.222:51/' style={{margin:'auto', textDecoration:'none'}} target="_blank"><GridContent pic={logoaero}/></a>
+                         <a href='https://republikaero.com' style={{margin:'auto', textDecoration:'none'}} target="_blank"><GridContent pic={logoaero}/></a>
                        </Grid>
                        <Grid item xs={6} md={4} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
-                        <a href='http://170.187.226.245:81/' style={{margin:'auto', textDecoration:'none'}} target="_blank"><GridContent pic={logospace}/></a>
+                        <a href='https://republikspace.com' style={{margin:'auto', textDecoration:'none'}} target="_blank"><GridContent pic={logospace}/></a>
                        </Grid>
                        <Grid item xs={6} md={4} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
-                        <a href='http://139.162.57.222:33/' style={{margin:'auto', textDecoration:'none'}} target="_blank"><GridContent pic={logopalindo}/></a>
+                        <a href='https://republikpalindo.com' style={{margin:'auto', textDecoration:'none'}} target="_blank"><GridContent pic={logopalindo}/></a>
                        </Grid>
                        <Grid item xs={6} md={4} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
-                        <a href='http://170.187.226.245/' style={{margin:'auto', textDecoration:'none'}} target="_blank"><GridContent pic={logoexpres}/></a>
+                        <a href='https://republikexpres.com' style={{margin:'auto', textDecoration:'none'}} target="_blank"><GridContent pic={logoexpres}/></a>
                        </Grid>
 
                        <Grid item xs={6} md={4} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
-                        <GridContent pic={logodefensindo}/>
+                       <a href='https://republikdefence.com/' style={{margin:'auto', textDecoration:'none'}} target="_blank">
+                        <GridContent pic={logodefensindo}/></a>
                        </Grid>
                        <Grid item xs={6} md={4} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
-                        <GridContent pic={logoarmamen}/>
+                         <a href='https://republikarmamen.com/' style={{margin:'auto', textDecoration:'none'}} target="_blank">
+                        <GridContent pic={logoarmamen}/></a>
+                       </Grid>
+                       <Grid item xs={6} md={4} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
+                         <a href='https://republiktech.com/' style={{margin:'auto', textDecoration:'none'}} target="_blank">
+                        <GridContent pic={logotechno}/></a>
+                       </Grid>
+                       <Grid item xs={6} md={4} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
+                         <a href='https://republikmotor.com/' style={{margin:'auto', textDecoration:'none'}} target="_blank">
+                        <GridContent pic={logomotor}/></a>
+                       </Grid>
+                       <Grid item xs={6} md={4} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
+                         <a href='https://republikkapital.com/' style={{margin:'auto', textDecoration:'none'}} target="_blank">
+                        <GridContent pic={logokapital}/></a>
                        </Grid>
                       </Grid>
                       <div style={{width:'100%', height:'20%'}}></div>
