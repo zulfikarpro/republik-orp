@@ -23,7 +23,7 @@ const test = (port) =>{
 const GridContent = ({pic}) =>{
   return (
       <div style={{margin:'auto'}}>
-          <img src={pic} style={{width:'100%' ,maxWidth:'400px', margin:'auto'}}/>
+          <img src={pic} style={{width:'100%' ,maxWidth:'300px', margin:'auto'}}/>
           <div style={{width:'100%', display:'flex', flexDirection:'row', justifyContent:'center'}}>
           <div style={{margin:'auto', marginTop:'0px', background:'white',padding:'2px', paddingLeft:'6px', paddingRight:'6px', borderRadius:'8px', color:'grey', fontSize:'.6rem'}}>
             <p style={{margin:'0px', fontSize:'.8rem', color:'black'}}>Visit Now</p>
